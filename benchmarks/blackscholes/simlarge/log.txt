@@ -1,0 +1,99 @@
+Default timeout is set to 500 by default.
+======Fault Injection======
+---FI Config #0---
+Run with default timeout 500
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 18 
+
+[>--------------------------------------------------] 0.1% (1 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish -11
+	 time taken 15 
+
+[>--------------------------------------------------] 0.1% (2 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish -11
+	 time taken 10 
+
+[>--------------------------------------------------] 0.1% (3 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish -11
+	 time taken 3 
+
+[>--------------------------------------------------] 0.2% (4 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 15 
+
+[>--------------------------------------------------] 0.2% (5 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 17 
+
+[>--------------------------------------------------] 0.3% (6 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 17 
+
+[>--------------------------------------------------] 0.4% (7 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 16 
+
+[>--------------------------------------------------] 0.4% (8 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish -11
+	 time taken 10 
+
+[>--------------------------------------------------] 0.4% (9 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 16 
+
+[>--------------------------------------------------] 0.5% (10 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 16 
+
+[>--------------------------------------------------] 0.5% (11 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish -11
+	 time taken 11 
+
+[>--------------------------------------------------] 0.6% (12 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 16 
+
+[>--------------------------------------------------] 0.7% (13 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 15 
+
+[>--------------------------------------------------] 0.7% (14 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish -11
+	 time taken 4 
+
+[>--------------------------------------------------] 0.8% (15 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 16 
+
+[>--------------------------------------------------] 0.8% (16 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 17 
+
+[>--------------------------------------------------] 0.9% (17 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 18 
+
+[>--------------------------------------------------] 0.9% (18 / 2000)
+/home/foo/edc-predictor/benchmarks/blackscholes/simlarge/llfi/blackscholes-faultinjection.exe 1 simlarge.txt prices.txt
+	 program finish 0
+	 time taken 15 
+
+[>--------------------------------------------------] 0.9% (19 / 2000)
