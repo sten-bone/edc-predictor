@@ -1,0 +1,23 @@
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+                       MULTIGRID OUTPUTS
+iter 71, level 8, residual norm 8.00274594e-08, work =  33.875
+iter 31, level 8, residual norm 4.08062997e-08, work =  13.562
+iter 22, level 8, residual norm 5.94548243e-08, work =   9.438
+iter 12, level 8, residual norm 4.05573548e-08, work =   6.188
+iter 2, level 8, residual norm 8.20209761e-08, work =   2.000
+iter 20, level 8, residual norm 2.45241178e-08, work =  11.750
+iter 19, level 8, residual norm 9.15383585e-08, work =  10.750
+iter 20, level 8, residual norm 2.44976734e-08, work =  11.750
+iter 19, level 8, residual norm 9.13682156e-08, work =  10.750
+iter 25, level 8, residual norm 7.69251258e-08, work =  14.500
+iter 25, level 8, residual norm 6.15462974e-08, work =  14.500
+iter 25, level 8, residual norm 7.69228685e-08, work =  14.500
+iter 25, level 8, residual norm 6.15492563e-08, work =  14.500
+

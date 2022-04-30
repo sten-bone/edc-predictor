@@ -1,0 +1,14 @@
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+
+
+Invalid command string traversal.
+Warning: unrecognized env command: traversal.
+
+
+Invalid command string huniform.
+Warning: unrecognized env command: huniform.
+Unable to open model file inputs/car.geo.

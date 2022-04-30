@@ -1,0 +1,14 @@
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+
+
+Invalid command string hu_lazy.
+Warning: unrecognized env command: hu_lazy.
+
+
+Invalid command string 0.
+Warning: unrecognized env command: 0.
+Unable to open model file inputs/car.geo.

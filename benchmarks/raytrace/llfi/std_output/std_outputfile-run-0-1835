@@ -1,0 +1,18 @@
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+
+
+Invalid command string bundle.
+Warning: unrecognized env command: bundle.
+
+
+Invalid command string 4.
+Warning: unrecognized env command: 4.
+
+
+Invalid command string 4.
+Warning: unrecognized env command: 4.
+Unable to open model file inputs/car.geo.

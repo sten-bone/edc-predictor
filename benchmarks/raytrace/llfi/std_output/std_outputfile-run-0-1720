@@ -1,0 +1,19 @@
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Warning: unrecognized env command: ambient.
+
+
+Invalid command string 0.200000.
+Warning: unrecognized env command: 0.200000.
+
+
+Invalid command string 0.200000.
+Warning: unrecognized env command: 0.200000.
+
+
+Invalid command string 0.200000.
+Warning: unrecognized env command: 0.200000.
+Unable to open model file inputs/car.geo.

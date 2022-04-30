@@ -1,0 +1,11 @@
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Warning: unrecognized env command: hu_maxsubdiv.
+
+
+Invalid command string 3.
+Warning: unrecognized env command: 3.
+Unable to open model file inputs/car.geo.

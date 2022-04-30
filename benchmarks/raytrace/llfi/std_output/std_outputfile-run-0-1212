@@ -1,0 +1,11 @@
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Warning: unrecognized env command: rlfile.
+
+
+Invalid command string inputs/car.rl.
+Warning: unrecognized env command: inputs/car.rl.
+Unable to open model file inputs/car.geo.
