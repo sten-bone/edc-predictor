@@ -1,0 +1,6 @@
+EDC count     = 10
+Non-EDC count = 6
+Crash count   = 352
+Benign count  = 1632
+Hang count    = 0
+Total Fi runs = 2000

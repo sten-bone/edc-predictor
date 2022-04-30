@@ -11,7 +11,7 @@ print("\nBegin\n")
 curdir = os.path.dirname(os.path.realpath(__file__))
 std_output = curdir + "/llfi/std_output"
 baseline = curdir + "/llfi/baseline"
-errdir = curdir + "/llfi/prog_output"
+errdir = curdir + "/llfi/error_output"
 
 # read golden output from ./baseline/golden_std_output
 print ("Reading golden output...")
