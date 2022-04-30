@@ -3,6 +3,8 @@ import sys
 import filecmp
 
 def is_edc(file_out, golden_file):
+    with open(golden_file, "r") as gld:
+        with open(file_out, "r") as run:
     return True
 
 print("\nBegin\n")
@@ -10,6 +12,7 @@ print("\nBegin\n")
 # set directory variables
 curdir = os.path.dirname(os.path.realpath(__file__))
 std_output = curdir + "/llfi/std_output"
+prog_output = curdir + "/llfi/prog_output"
 baseline = curdir + "/llfi/baseline"
 errdir = curdir + "/llfi/error_output"
 
@@ -57,6 +60,7 @@ print ("Complete.", end="\r")
 print ("\n")
 print ("EDC count     = " + str(edc_count))
 print ("Non-EDC count     = " + str(sdc_count - edc_count))
+print ("Crash count   = " + str(crash_count))
 print ("Benign count  = " + str(benign_count))
 print ("Hang count    = " + str(hang_count))
 print ("Total Fi runs = " + str(run_count)) 
