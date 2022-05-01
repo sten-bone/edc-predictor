@@ -1,2 +1,3 @@
 PARSEC Benchmark Suite
 Number of Simulations: 5,  Number of threads: 1 Number of swaptions: 1
+Swaption 0: [SwaptionPrice: 22.2369462142 StdError: -nan] 

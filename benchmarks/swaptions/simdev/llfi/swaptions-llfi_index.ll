@@ -2831,99 +2831,98 @@ define i32 @main(i32 %argc, i8** %argv) #3 {
   store i32 0, i32* %i, align 4, !llfi_index !2241
   br label %453, !llfi_index !2242
 
-; <label>:453                                     ; preds = %473, %450
+; <label>:453                                     ; preds = %472, %450
   %454 = load i32* %i, align 4, !llfi_index !2243
   %455 = load i32* @nSwaptions, align 4, !llfi_index !2244
   %456 = icmp slt i32 %454, %455, !llfi_index !2245
-  br i1 %456, label %457, label %476, !llfi_index !2246
+  br i1 %456, label %457, label %475, !llfi_index !2246
 
 ; <label>:457                                     ; preds = %453
-  %458 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !2247
+  %458 = load i32* %i, align 4, !llfi_index !2247
   %459 = load i32* %i, align 4, !llfi_index !2248
-  %460 = load i32* %i, align 4, !llfi_index !2249
-  %461 = sext i32 %460 to i64, !llfi_index !2250
-  %462 = load %struct.parm** @swaptions, align 8, !llfi_index !2251
-  %463 = getelementptr inbounds %struct.parm* %462, i64 %461, !llfi_index !2252
-  %464 = getelementptr inbounds %struct.parm* %463, i32 0, i32 1, !llfi_index !2253
-  %465 = load double* %464, align 8, !llfi_index !2254
-  %466 = load i32* %i, align 4, !llfi_index !2255
-  %467 = sext i32 %466 to i64, !llfi_index !2256
-  %468 = load %struct.parm** @swaptions, align 8, !llfi_index !2257
-  %469 = getelementptr inbounds %struct.parm* %468, i64 %467, !llfi_index !2258
-  %470 = getelementptr inbounds %struct.parm* %469, i32 0, i32 2, !llfi_index !2259
-  %471 = load double* %470, align 8, !llfi_index !2260
-  %472 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %458, i8* getelementptr inbounds ([56 x i8]* @.str17, i32 0, i32 0), i32 %459, double %465, double %471), !llfi_index !2261
-  br label %473, !llfi_index !2262
+  %460 = sext i32 %459 to i64, !llfi_index !2249
+  %461 = load %struct.parm** @swaptions, align 8, !llfi_index !2250
+  %462 = getelementptr inbounds %struct.parm* %461, i64 %460, !llfi_index !2251
+  %463 = getelementptr inbounds %struct.parm* %462, i32 0, i32 1, !llfi_index !2252
+  %464 = load double* %463, align 8, !llfi_index !2253
+  %465 = load i32* %i, align 4, !llfi_index !2254
+  %466 = sext i32 %465 to i64, !llfi_index !2255
+  %467 = load %struct.parm** @swaptions, align 8, !llfi_index !2256
+  %468 = getelementptr inbounds %struct.parm* %467, i64 %466, !llfi_index !2257
+  %469 = getelementptr inbounds %struct.parm* %468, i32 0, i32 2, !llfi_index !2258
+  %470 = load double* %469, align 8, !llfi_index !2259
+  %471 = call i32 (i8*, ...)* @printf(i8* getelementptr inbounds ([56 x i8]* @.str17, i32 0, i32 0), i32 %458, double %464, double %470), !llfi_index !2260
+  br label %472, !llfi_index !2261
 
-; <label>:473                                     ; preds = %457
-  %474 = load i32* %i, align 4, !llfi_index !2263
-  %475 = add nsw i32 %474, 1, !llfi_index !2264
-  store i32 %475, i32* %i, align 4, !llfi_index !2265
-  br label %453, !llfi_index !2266
+; <label>:472                                     ; preds = %457
+  %473 = load i32* %i, align 4, !llfi_index !2262
+  %474 = add nsw i32 %473, 1, !llfi_index !2263
+  store i32 %474, i32* %i, align 4, !llfi_index !2264
+  br label %453, !llfi_index !2265
 
-; <label>:476                                     ; preds = %453
-  store i32 0, i32* %i, align 4, !llfi_index !2267
-  br label %477, !llfi_index !2268
+; <label>:475                                     ; preds = %453
+  store i32 0, i32* %i, align 4, !llfi_index !2266
+  br label %476, !llfi_index !2267
 
-; <label>:477                                     ; preds = %518, %476
-  %478 = load i32* %i, align 4, !llfi_index !2269
-  %479 = load i32* @nSwaptions, align 4, !llfi_index !2270
-  %480 = icmp slt i32 %478, %479, !llfi_index !2271
-  br i1 %480, label %481, label %521, !llfi_index !2272
+; <label>:476                                     ; preds = %517, %475
+  %477 = load i32* %i, align 4, !llfi_index !2268
+  %478 = load i32* @nSwaptions, align 4, !llfi_index !2269
+  %479 = icmp slt i32 %477, %478, !llfi_index !2270
+  br i1 %479, label %480, label %520, !llfi_index !2271
 
-; <label>:481                                     ; preds = %477
-  %482 = load i32* %i, align 4, !llfi_index !2273
-  %483 = sext i32 %482 to i64, !llfi_index !2274
-  %484 = load %struct.parm** @swaptions, align 8, !llfi_index !2275
-  %485 = getelementptr inbounds %struct.parm* %484, i64 %483, !llfi_index !2276
-  %486 = getelementptr inbounds %struct.parm* %485, i32 0, i32 11, !llfi_index !2277
-  %487 = load double** %486, align 8, !llfi_index !2278
-  %488 = load i32* %i, align 4, !llfi_index !2279
-  %489 = sext i32 %488 to i64, !llfi_index !2280
-  %490 = load %struct.parm** @swaptions, align 8, !llfi_index !2281
-  %491 = getelementptr inbounds %struct.parm* %490, i64 %489, !llfi_index !2282
-  %492 = getelementptr inbounds %struct.parm* %491, i32 0, i32 8, !llfi_index !2283
-  %493 = load i32* %492, align 4, !llfi_index !2284
-  %494 = sub nsw i32 %493, 1, !llfi_index !2285
-  %495 = sext i32 %494 to i64, !llfi_index !2286
-  call void @_Z12free_dvectorPdll(double* %487, i64 0, i64 %495), !llfi_index !2287
-  %496 = load i32* %i, align 4, !llfi_index !2288
-  %497 = sext i32 %496 to i64, !llfi_index !2289
-  %498 = load %struct.parm** @swaptions, align 8, !llfi_index !2290
-  %499 = getelementptr inbounds %struct.parm* %498, i64 %497, !llfi_index !2291
-  %500 = getelementptr inbounds %struct.parm* %499, i32 0, i32 12, !llfi_index !2292
-  %501 = load double*** %500, align 8, !llfi_index !2293
-  %502 = load i32* %i, align 4, !llfi_index !2294
-  %503 = sext i32 %502 to i64, !llfi_index !2295
-  %504 = load %struct.parm** @swaptions, align 8, !llfi_index !2296
-  %505 = getelementptr inbounds %struct.parm* %504, i64 %503, !llfi_index !2297
-  %506 = getelementptr inbounds %struct.parm* %505, i32 0, i32 10, !llfi_index !2298
-  %507 = load i32* %506, align 4, !llfi_index !2299
-  %508 = sub nsw i32 %507, 1, !llfi_index !2300
-  %509 = sext i32 %508 to i64, !llfi_index !2301
-  %510 = load i32* %i, align 4, !llfi_index !2302
-  %511 = sext i32 %510 to i64, !llfi_index !2303
-  %512 = load %struct.parm** @swaptions, align 8, !llfi_index !2304
-  %513 = getelementptr inbounds %struct.parm* %512, i64 %511, !llfi_index !2305
-  %514 = getelementptr inbounds %struct.parm* %513, i32 0, i32 8, !llfi_index !2306
-  %515 = load i32* %514, align 4, !llfi_index !2307
-  %516 = sub nsw i32 %515, 2, !llfi_index !2308
-  %517 = sext i32 %516 to i64, !llfi_index !2309
-  call void @_Z12free_dmatrixPPdllll(double** %501, i64 0, i64 %509, i64 0, i64 %517), !llfi_index !2310
-  br label %518, !llfi_index !2311
+; <label>:480                                     ; preds = %476
+  %481 = load i32* %i, align 4, !llfi_index !2272
+  %482 = sext i32 %481 to i64, !llfi_index !2273
+  %483 = load %struct.parm** @swaptions, align 8, !llfi_index !2274
+  %484 = getelementptr inbounds %struct.parm* %483, i64 %482, !llfi_index !2275
+  %485 = getelementptr inbounds %struct.parm* %484, i32 0, i32 11, !llfi_index !2276
+  %486 = load double** %485, align 8, !llfi_index !2277
+  %487 = load i32* %i, align 4, !llfi_index !2278
+  %488 = sext i32 %487 to i64, !llfi_index !2279
+  %489 = load %struct.parm** @swaptions, align 8, !llfi_index !2280
+  %490 = getelementptr inbounds %struct.parm* %489, i64 %488, !llfi_index !2281
+  %491 = getelementptr inbounds %struct.parm* %490, i32 0, i32 8, !llfi_index !2282
+  %492 = load i32* %491, align 4, !llfi_index !2283
+  %493 = sub nsw i32 %492, 1, !llfi_index !2284
+  %494 = sext i32 %493 to i64, !llfi_index !2285
+  call void @_Z12free_dvectorPdll(double* %486, i64 0, i64 %494), !llfi_index !2286
+  %495 = load i32* %i, align 4, !llfi_index !2287
+  %496 = sext i32 %495 to i64, !llfi_index !2288
+  %497 = load %struct.parm** @swaptions, align 8, !llfi_index !2289
+  %498 = getelementptr inbounds %struct.parm* %497, i64 %496, !llfi_index !2290
+  %499 = getelementptr inbounds %struct.parm* %498, i32 0, i32 12, !llfi_index !2291
+  %500 = load double*** %499, align 8, !llfi_index !2292
+  %501 = load i32* %i, align 4, !llfi_index !2293
+  %502 = sext i32 %501 to i64, !llfi_index !2294
+  %503 = load %struct.parm** @swaptions, align 8, !llfi_index !2295
+  %504 = getelementptr inbounds %struct.parm* %503, i64 %502, !llfi_index !2296
+  %505 = getelementptr inbounds %struct.parm* %504, i32 0, i32 10, !llfi_index !2297
+  %506 = load i32* %505, align 4, !llfi_index !2298
+  %507 = sub nsw i32 %506, 1, !llfi_index !2299
+  %508 = sext i32 %507 to i64, !llfi_index !2300
+  %509 = load i32* %i, align 4, !llfi_index !2301
+  %510 = sext i32 %509 to i64, !llfi_index !2302
+  %511 = load %struct.parm** @swaptions, align 8, !llfi_index !2303
+  %512 = getelementptr inbounds %struct.parm* %511, i64 %510, !llfi_index !2304
+  %513 = getelementptr inbounds %struct.parm* %512, i32 0, i32 8, !llfi_index !2305
+  %514 = load i32* %513, align 4, !llfi_index !2306
+  %515 = sub nsw i32 %514, 2, !llfi_index !2307
+  %516 = sext i32 %515 to i64, !llfi_index !2308
+  call void @_Z12free_dmatrixPPdllll(double** %500, i64 0, i64 %508, i64 0, i64 %516), !llfi_index !2309
+  br label %517, !llfi_index !2310
 
-; <label>:518                                     ; preds = %481
-  %519 = load i32* %i, align 4, !llfi_index !2312
-  %520 = add nsw i32 %519, 1, !llfi_index !2313
-  store i32 %520, i32* %i, align 4, !llfi_index !2314
-  br label %477, !llfi_index !2315
+; <label>:517                                     ; preds = %480
+  %518 = load i32* %i, align 4, !llfi_index !2311
+  %519 = add nsw i32 %518, 1, !llfi_index !2312
+  store i32 %519, i32* %i, align 4, !llfi_index !2313
+  br label %476, !llfi_index !2314
 
-; <label>:521                                     ; preds = %477
-  %522 = load %struct.parm** @swaptions, align 8, !llfi_index !2316
-  %523 = bitcast %struct.parm* %522 to i8*, !llfi_index !2317
-  call void @free(i8* %523) #5, !llfi_index !2318
-  %524 = load i32* %iSuccess, align 4, !llfi_index !2319
-  ret i32 %524, !llfi_index !2320
+; <label>:520                                     ; preds = %476
+  %521 = load %struct.parm** @swaptions, align 8, !llfi_index !2315
+  %522 = bitcast %struct.parm* %521 to i8*, !llfi_index !2316
+  call void @free(i8* %522) #5, !llfi_index !2317
+  %523 = load i32* %iSuccess, align 4, !llfi_index !2318
+  ret i32 %523, !llfi_index !2319
 }
 
 declare i32 @printf(i8*, ...) #4
@@ -2946,2623 +2945,2623 @@ declare noalias i8* @malloc(i64) #2
 declare void @free(i8*) #2
 
 define internal void @_GLOBAL__I_a() section ".text.startup" {
-  call void @__cxx_global_var_init(), !llfi_index !2321
-  ret void, !llfi_index !2322
+  call void @__cxx_global_var_init(), !llfi_index !2320
+  ret void, !llfi_index !2321
 }
 
 define internal void @__cxx_global_var_init() section ".text.startup" {
-  call void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit), !llfi_index !2323
-  %1 = call i32 @atexit(void ()* @__dtor__ZStL8__ioinit) #5, !llfi_index !2324
-  ret void, !llfi_index !2325
+  call void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit), !llfi_index !2322
+  %1 = call i32 @atexit(void ()* @__dtor__ZStL8__ioinit) #5, !llfi_index !2323
+  ret void, !llfi_index !2324
 }
 
 define internal void @__dtor__ZStL8__ioinit() section ".text.startup" {
-  call void @_ZNSt8ios_base4InitD1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit), !llfi_index !2326
-  ret void, !llfi_index !2327
+  call void @_ZNSt8ios_base4InitD1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit), !llfi_index !2325
+  ret void, !llfi_index !2326
 }
 
 ; Function Attrs: uwtable
 define void @_Z7serialBPPdS0_iii(double** %pdZ, double** %randZ, i32 %BLOCKSIZE, i32 %iN, i32 %iFactors) #3 {
-  %1 = alloca double**, align 8, !llfi_index !2328
-  %2 = alloca double**, align 8, !llfi_index !2329
-  %3 = alloca i32, align 4, !llfi_index !2330
-  %4 = alloca i32, align 4, !llfi_index !2331
-  %5 = alloca i32, align 4, !llfi_index !2332
-  %l = alloca i32, align 4, !llfi_index !2333
-  %b = alloca i32, align 4, !llfi_index !2334
-  %j = alloca i32, align 4, !llfi_index !2335
-  store double** %pdZ, double*** %1, align 8, !llfi_index !2336
-  store double** %randZ, double*** %2, align 8, !llfi_index !2337
-  store i32 %BLOCKSIZE, i32* %3, align 4, !llfi_index !2338
-  store i32 %iN, i32* %4, align 4, !llfi_index !2339
-  store i32 %iFactors, i32* %5, align 4, !llfi_index !2340
-  store i32 0, i32* %l, align 4, !llfi_index !2341
-  br label %6, !llfi_index !2342
+  %1 = alloca double**, align 8, !llfi_index !2327
+  %2 = alloca double**, align 8, !llfi_index !2328
+  %3 = alloca i32, align 4, !llfi_index !2329
+  %4 = alloca i32, align 4, !llfi_index !2330
+  %5 = alloca i32, align 4, !llfi_index !2331
+  %l = alloca i32, align 4, !llfi_index !2332
+  %b = alloca i32, align 4, !llfi_index !2333
+  %j = alloca i32, align 4, !llfi_index !2334
+  store double** %pdZ, double*** %1, align 8, !llfi_index !2335
+  store double** %randZ, double*** %2, align 8, !llfi_index !2336
+  store i32 %BLOCKSIZE, i32* %3, align 4, !llfi_index !2337
+  store i32 %iN, i32* %4, align 4, !llfi_index !2338
+  store i32 %iFactors, i32* %5, align 4, !llfi_index !2339
+  store i32 0, i32* %l, align 4, !llfi_index !2340
+  br label %6, !llfi_index !2341
 
 ; <label>:6                                       ; preds = %57, %0
-  %7 = load i32* %l, align 4, !llfi_index !2343
-  %8 = load i32* %5, align 4, !llfi_index !2344
-  %9 = sub nsw i32 %8, 1, !llfi_index !2345
-  %10 = icmp sle i32 %7, %9, !llfi_index !2346
-  br i1 %10, label %11, label %60, !llfi_index !2347
+  %7 = load i32* %l, align 4, !llfi_index !2342
+  %8 = load i32* %5, align 4, !llfi_index !2343
+  %9 = sub nsw i32 %8, 1, !llfi_index !2344
+  %10 = icmp sle i32 %7, %9, !llfi_index !2345
+  br i1 %10, label %11, label %60, !llfi_index !2346
 
 ; <label>:11                                      ; preds = %6
-  store i32 0, i32* %b, align 4, !llfi_index !2348
-  br label %12, !llfi_index !2349
+  store i32 0, i32* %b, align 4, !llfi_index !2347
+  br label %12, !llfi_index !2348
 
 ; <label>:12                                      ; preds = %53, %11
-  %13 = load i32* %b, align 4, !llfi_index !2350
-  %14 = load i32* %3, align 4, !llfi_index !2351
-  %15 = icmp slt i32 %13, %14, !llfi_index !2352
-  br i1 %15, label %16, label %56, !llfi_index !2353
+  %13 = load i32* %b, align 4, !llfi_index !2349
+  %14 = load i32* %3, align 4, !llfi_index !2350
+  %15 = icmp slt i32 %13, %14, !llfi_index !2351
+  br i1 %15, label %16, label %56, !llfi_index !2352
 
 ; <label>:16                                      ; preds = %12
-  store i32 1, i32* %j, align 4, !llfi_index !2354
-  br label %17, !llfi_index !2355
+  store i32 1, i32* %j, align 4, !llfi_index !2353
+  br label %17, !llfi_index !2354
 
 ; <label>:17                                      ; preds = %49, %16
-  %18 = load i32* %j, align 4, !llfi_index !2356
-  %19 = load i32* %4, align 4, !llfi_index !2357
-  %20 = sub nsw i32 %19, 1, !llfi_index !2358
-  %21 = icmp sle i32 %18, %20, !llfi_index !2359
-  br i1 %21, label %22, label %52, !llfi_index !2360
+  %18 = load i32* %j, align 4, !llfi_index !2355
+  %19 = load i32* %4, align 4, !llfi_index !2356
+  %20 = sub nsw i32 %19, 1, !llfi_index !2357
+  %21 = icmp sle i32 %18, %20, !llfi_index !2358
+  br i1 %21, label %22, label %52, !llfi_index !2359
 
 ; <label>:22                                      ; preds = %17
-  %23 = load i32* %3, align 4, !llfi_index !2361
-  %24 = load i32* %j, align 4, !llfi_index !2362
-  %25 = mul nsw i32 %23, %24, !llfi_index !2363
-  %26 = load i32* %b, align 4, !llfi_index !2364
-  %27 = add nsw i32 %25, %26, !llfi_index !2365
-  %28 = sext i32 %27 to i64, !llfi_index !2366
-  %29 = load i32* %l, align 4, !llfi_index !2367
-  %30 = sext i32 %29 to i64, !llfi_index !2368
-  %31 = load double*** %2, align 8, !llfi_index !2369
-  %32 = getelementptr inbounds double** %31, i64 %30, !llfi_index !2370
-  %33 = load double** %32, align 8, !llfi_index !2371
-  %34 = getelementptr inbounds double* %33, i64 %28, !llfi_index !2372
-  %35 = load double* %34, align 8, !llfi_index !2373
-  %36 = call double @_Z12CumNormalInvd(double %35), !llfi_index !2374
-  %37 = load i32* %3, align 4, !llfi_index !2375
-  %38 = load i32* %j, align 4, !llfi_index !2376
-  %39 = mul nsw i32 %37, %38, !llfi_index !2377
-  %40 = load i32* %b, align 4, !llfi_index !2378
-  %41 = add nsw i32 %39, %40, !llfi_index !2379
-  %42 = sext i32 %41 to i64, !llfi_index !2380
-  %43 = load i32* %l, align 4, !llfi_index !2381
-  %44 = sext i32 %43 to i64, !llfi_index !2382
-  %45 = load double*** %1, align 8, !llfi_index !2383
-  %46 = getelementptr inbounds double** %45, i64 %44, !llfi_index !2384
-  %47 = load double** %46, align 8, !llfi_index !2385
-  %48 = getelementptr inbounds double* %47, i64 %42, !llfi_index !2386
-  store double %36, double* %48, align 8, !llfi_index !2387
-  br label %49, !llfi_index !2388
+  %23 = load i32* %3, align 4, !llfi_index !2360
+  %24 = load i32* %j, align 4, !llfi_index !2361
+  %25 = mul nsw i32 %23, %24, !llfi_index !2362
+  %26 = load i32* %b, align 4, !llfi_index !2363
+  %27 = add nsw i32 %25, %26, !llfi_index !2364
+  %28 = sext i32 %27 to i64, !llfi_index !2365
+  %29 = load i32* %l, align 4, !llfi_index !2366
+  %30 = sext i32 %29 to i64, !llfi_index !2367
+  %31 = load double*** %2, align 8, !llfi_index !2368
+  %32 = getelementptr inbounds double** %31, i64 %30, !llfi_index !2369
+  %33 = load double** %32, align 8, !llfi_index !2370
+  %34 = getelementptr inbounds double* %33, i64 %28, !llfi_index !2371
+  %35 = load double* %34, align 8, !llfi_index !2372
+  %36 = call double @_Z12CumNormalInvd(double %35), !llfi_index !2373
+  %37 = load i32* %3, align 4, !llfi_index !2374
+  %38 = load i32* %j, align 4, !llfi_index !2375
+  %39 = mul nsw i32 %37, %38, !llfi_index !2376
+  %40 = load i32* %b, align 4, !llfi_index !2377
+  %41 = add nsw i32 %39, %40, !llfi_index !2378
+  %42 = sext i32 %41 to i64, !llfi_index !2379
+  %43 = load i32* %l, align 4, !llfi_index !2380
+  %44 = sext i32 %43 to i64, !llfi_index !2381
+  %45 = load double*** %1, align 8, !llfi_index !2382
+  %46 = getelementptr inbounds double** %45, i64 %44, !llfi_index !2383
+  %47 = load double** %46, align 8, !llfi_index !2384
+  %48 = getelementptr inbounds double* %47, i64 %42, !llfi_index !2385
+  store double %36, double* %48, align 8, !llfi_index !2386
+  br label %49, !llfi_index !2387
 
 ; <label>:49                                      ; preds = %22
-  %50 = load i32* %j, align 4, !llfi_index !2389
-  %51 = add nsw i32 %50, 1, !llfi_index !2390
-  store i32 %51, i32* %j, align 4, !llfi_index !2391
-  br label %17, !llfi_index !2392
+  %50 = load i32* %j, align 4, !llfi_index !2388
+  %51 = add nsw i32 %50, 1, !llfi_index !2389
+  store i32 %51, i32* %j, align 4, !llfi_index !2390
+  br label %17, !llfi_index !2391
 
 ; <label>:52                                      ; preds = %17
-  br label %53, !llfi_index !2393
+  br label %53, !llfi_index !2392
 
 ; <label>:53                                      ; preds = %52
-  %54 = load i32* %b, align 4, !llfi_index !2394
-  %55 = add nsw i32 %54, 1, !llfi_index !2395
-  store i32 %55, i32* %b, align 4, !llfi_index !2396
-  br label %12, !llfi_index !2397
+  %54 = load i32* %b, align 4, !llfi_index !2393
+  %55 = add nsw i32 %54, 1, !llfi_index !2394
+  store i32 %55, i32* %b, align 4, !llfi_index !2395
+  br label %12, !llfi_index !2396
 
 ; <label>:56                                      ; preds = %12
-  br label %57, !llfi_index !2398
+  br label %57, !llfi_index !2397
 
 ; <label>:57                                      ; preds = %56
-  %58 = load i32* %l, align 4, !llfi_index !2399
-  %59 = add nsw i32 %58, 1, !llfi_index !2400
-  store i32 %59, i32* %l, align 4, !llfi_index !2401
-  br label %6, !llfi_index !2402
+  %58 = load i32* %l, align 4, !llfi_index !2398
+  %59 = add nsw i32 %58, 1, !llfi_index !2399
+  store i32 %59, i32* %l, align 4, !llfi_index !2400
+  br label %6, !llfi_index !2401
 
 ; <label>:60                                      ; preds = %6
-  ret void, !llfi_index !2403
+  ret void, !llfi_index !2402
 }
 
 ; Function Attrs: uwtable
 define i32 @_Z28HJM_SimPath_Forward_BlockingPPdiidS_S_S0_Pli(double** %ppdHJMPath, i32 %iN, i32 %iFactors, double %dYears, double* %pdForward, double* %pdTotalDrift, double** %ppdFactors, i64* %lRndSeed, i32 %BLOCKSIZE) #3 {
-  %1 = alloca double**, align 8, !llfi_index !2404
-  %2 = alloca i32, align 4, !llfi_index !2405
-  %3 = alloca i32, align 4, !llfi_index !2406
-  %4 = alloca double, align 8, !llfi_index !2407
-  %5 = alloca double*, align 8, !llfi_index !2408
-  %6 = alloca double*, align 8, !llfi_index !2409
-  %7 = alloca double**, align 8, !llfi_index !2410
-  %8 = alloca i64*, align 8, !llfi_index !2411
-  %9 = alloca i32, align 4, !llfi_index !2412
-  %iSuccess = alloca i32, align 4, !llfi_index !2413
-  %i = alloca i32, align 4, !llfi_index !2414
-  %j = alloca i32, align 4, !llfi_index !2415
-  %l = alloca i32, align 4, !llfi_index !2416
-  %pdZ = alloca double**, align 8, !llfi_index !2417
-  %randZ = alloca double**, align 8, !llfi_index !2418
-  %dTotalShock = alloca double, align 8, !llfi_index !2419
-  %ddelt = alloca double, align 8, !llfi_index !2420
-  %sqrt_ddelt = alloca double, align 8, !llfi_index !2421
-  %b = alloca i32, align 4, !llfi_index !2422
-  %b1 = alloca i32, align 4, !llfi_index !2423
-  %s = alloca i32, align 4, !llfi_index !2424
-  %b2 = alloca i32, align 4, !llfi_index !2425
-  store double** %ppdHJMPath, double*** %1, align 8, !llfi_index !2426
-  store i32 %iN, i32* %2, align 4, !llfi_index !2427
-  store i32 %iFactors, i32* %3, align 4, !llfi_index !2428
-  store double %dYears, double* %4, align 8, !llfi_index !2429
-  store double* %pdForward, double** %5, align 8, !llfi_index !2430
-  store double* %pdTotalDrift, double** %6, align 8, !llfi_index !2431
-  store double** %ppdFactors, double*** %7, align 8, !llfi_index !2432
-  store i64* %lRndSeed, i64** %8, align 8, !llfi_index !2433
-  store i32 %BLOCKSIZE, i32* %9, align 4, !llfi_index !2434
-  store i32 0, i32* %iSuccess, align 4, !llfi_index !2435
-  %10 = load double* %4, align 8, !llfi_index !2436
-  %11 = load i32* %2, align 4, !llfi_index !2437
-  %12 = sitofp i32 %11 to double, !llfi_index !2438
-  %13 = fdiv double %10, %12, !llfi_index !2439
-  store double %13, double* %ddelt, align 8, !llfi_index !2440
-  %14 = load double* %ddelt, align 8, !llfi_index !2441
-  %15 = call double @sqrt(double %14) #5, !llfi_index !2442
-  store double %15, double* %sqrt_ddelt, align 8, !llfi_index !2443
-  %16 = load i32* %3, align 4, !llfi_index !2444
-  %17 = sub nsw i32 %16, 1, !llfi_index !2445
-  %18 = sext i32 %17 to i64, !llfi_index !2446
-  %19 = load i32* %2, align 4, !llfi_index !2447
-  %20 = load i32* %9, align 4, !llfi_index !2448
-  %21 = mul nsw i32 %19, %20, !llfi_index !2449
-  %22 = sub nsw i32 %21, 1, !llfi_index !2450
-  %23 = sext i32 %22 to i64, !llfi_index !2451
-  %24 = call double** @_Z7dmatrixllll(i64 0, i64 %18, i64 0, i64 %23), !llfi_index !2452
-  store double** %24, double*** %pdZ, align 8, !llfi_index !2453
-  %25 = load i32* %3, align 4, !llfi_index !2454
-  %26 = sub nsw i32 %25, 1, !llfi_index !2455
-  %27 = sext i32 %26 to i64, !llfi_index !2456
-  %28 = load i32* %2, align 4, !llfi_index !2457
-  %29 = load i32* %9, align 4, !llfi_index !2458
-  %30 = mul nsw i32 %28, %29, !llfi_index !2459
-  %31 = sub nsw i32 %30, 1, !llfi_index !2460
-  %32 = sext i32 %31 to i64, !llfi_index !2461
-  %33 = call double** @_Z7dmatrixllll(i64 0, i64 %27, i64 0, i64 %32), !llfi_index !2462
-  store double** %33, double*** %randZ, align 8, !llfi_index !2463
-  store i32 0, i32* %b, align 4, !llfi_index !2464
-  br label %34, !llfi_index !2465
+  %1 = alloca double**, align 8, !llfi_index !2403
+  %2 = alloca i32, align 4, !llfi_index !2404
+  %3 = alloca i32, align 4, !llfi_index !2405
+  %4 = alloca double, align 8, !llfi_index !2406
+  %5 = alloca double*, align 8, !llfi_index !2407
+  %6 = alloca double*, align 8, !llfi_index !2408
+  %7 = alloca double**, align 8, !llfi_index !2409
+  %8 = alloca i64*, align 8, !llfi_index !2410
+  %9 = alloca i32, align 4, !llfi_index !2411
+  %iSuccess = alloca i32, align 4, !llfi_index !2412
+  %i = alloca i32, align 4, !llfi_index !2413
+  %j = alloca i32, align 4, !llfi_index !2414
+  %l = alloca i32, align 4, !llfi_index !2415
+  %pdZ = alloca double**, align 8, !llfi_index !2416
+  %randZ = alloca double**, align 8, !llfi_index !2417
+  %dTotalShock = alloca double, align 8, !llfi_index !2418
+  %ddelt = alloca double, align 8, !llfi_index !2419
+  %sqrt_ddelt = alloca double, align 8, !llfi_index !2420
+  %b = alloca i32, align 4, !llfi_index !2421
+  %b1 = alloca i32, align 4, !llfi_index !2422
+  %s = alloca i32, align 4, !llfi_index !2423
+  %b2 = alloca i32, align 4, !llfi_index !2424
+  store double** %ppdHJMPath, double*** %1, align 8, !llfi_index !2425
+  store i32 %iN, i32* %2, align 4, !llfi_index !2426
+  store i32 %iFactors, i32* %3, align 4, !llfi_index !2427
+  store double %dYears, double* %4, align 8, !llfi_index !2428
+  store double* %pdForward, double** %5, align 8, !llfi_index !2429
+  store double* %pdTotalDrift, double** %6, align 8, !llfi_index !2430
+  store double** %ppdFactors, double*** %7, align 8, !llfi_index !2431
+  store i64* %lRndSeed, i64** %8, align 8, !llfi_index !2432
+  store i32 %BLOCKSIZE, i32* %9, align 4, !llfi_index !2433
+  store i32 0, i32* %iSuccess, align 4, !llfi_index !2434
+  %10 = load double* %4, align 8, !llfi_index !2435
+  %11 = load i32* %2, align 4, !llfi_index !2436
+  %12 = sitofp i32 %11 to double, !llfi_index !2437
+  %13 = fdiv double %10, %12, !llfi_index !2438
+  store double %13, double* %ddelt, align 8, !llfi_index !2439
+  %14 = load double* %ddelt, align 8, !llfi_index !2440
+  %15 = call double @sqrt(double %14) #5, !llfi_index !2441
+  store double %15, double* %sqrt_ddelt, align 8, !llfi_index !2442
+  %16 = load i32* %3, align 4, !llfi_index !2443
+  %17 = sub nsw i32 %16, 1, !llfi_index !2444
+  %18 = sext i32 %17 to i64, !llfi_index !2445
+  %19 = load i32* %2, align 4, !llfi_index !2446
+  %20 = load i32* %9, align 4, !llfi_index !2447
+  %21 = mul nsw i32 %19, %20, !llfi_index !2448
+  %22 = sub nsw i32 %21, 1, !llfi_index !2449
+  %23 = sext i32 %22 to i64, !llfi_index !2450
+  %24 = call double** @_Z7dmatrixllll(i64 0, i64 %18, i64 0, i64 %23), !llfi_index !2451
+  store double** %24, double*** %pdZ, align 8, !llfi_index !2452
+  %25 = load i32* %3, align 4, !llfi_index !2453
+  %26 = sub nsw i32 %25, 1, !llfi_index !2454
+  %27 = sext i32 %26 to i64, !llfi_index !2455
+  %28 = load i32* %2, align 4, !llfi_index !2456
+  %29 = load i32* %9, align 4, !llfi_index !2457
+  %30 = mul nsw i32 %28, %29, !llfi_index !2458
+  %31 = sub nsw i32 %30, 1, !llfi_index !2459
+  %32 = sext i32 %31 to i64, !llfi_index !2460
+  %33 = call double** @_Z7dmatrixllll(i64 0, i64 %27, i64 0, i64 %32), !llfi_index !2461
+  store double** %33, double*** %randZ, align 8, !llfi_index !2462
+  store i32 0, i32* %b, align 4, !llfi_index !2463
+  br label %34, !llfi_index !2464
 
 ; <label>:34                                      ; preds = %86, %0
-  %35 = load i32* %b, align 4, !llfi_index !2466
-  %36 = load i32* %9, align 4, !llfi_index !2467
-  %37 = icmp slt i32 %35, %36, !llfi_index !2468
-  br i1 %37, label %38, label %89, !llfi_index !2469
+  %35 = load i32* %b, align 4, !llfi_index !2465
+  %36 = load i32* %9, align 4, !llfi_index !2466
+  %37 = icmp slt i32 %35, %36, !llfi_index !2467
+  br i1 %37, label %38, label %89, !llfi_index !2468
 
 ; <label>:38                                      ; preds = %34
-  store i32 0, i32* %j, align 4, !llfi_index !2470
-  br label %39, !llfi_index !2471
+  store i32 0, i32* %j, align 4, !llfi_index !2469
+  br label %39, !llfi_index !2470
 
 ; <label>:39                                      ; preds = %82, %38
-  %40 = load i32* %j, align 4, !llfi_index !2472
-  %41 = load i32* %2, align 4, !llfi_index !2473
-  %42 = sub nsw i32 %41, 1, !llfi_index !2474
-  %43 = icmp sle i32 %40, %42, !llfi_index !2475
-  br i1 %43, label %44, label %85, !llfi_index !2476
+  %40 = load i32* %j, align 4, !llfi_index !2471
+  %41 = load i32* %2, align 4, !llfi_index !2472
+  %42 = sub nsw i32 %41, 1, !llfi_index !2473
+  %43 = icmp sle i32 %40, %42, !llfi_index !2474
+  br i1 %43, label %44, label %85, !llfi_index !2475
 
 ; <label>:44                                      ; preds = %39
-  %45 = load i32* %j, align 4, !llfi_index !2477
-  %46 = sext i32 %45 to i64, !llfi_index !2478
-  %47 = load double** %5, align 8, !llfi_index !2479
-  %48 = getelementptr inbounds double* %47, i64 %46, !llfi_index !2480
-  %49 = load double* %48, align 8, !llfi_index !2481
-  %50 = load i32* %9, align 4, !llfi_index !2482
-  %51 = load i32* %j, align 4, !llfi_index !2483
-  %52 = mul nsw i32 %50, %51, !llfi_index !2484
-  %53 = load i32* %b, align 4, !llfi_index !2485
-  %54 = add nsw i32 %52, %53, !llfi_index !2486
-  %55 = sext i32 %54 to i64, !llfi_index !2487
-  %56 = load double*** %1, align 8, !llfi_index !2488
-  %57 = getelementptr inbounds double** %56, i64 0, !llfi_index !2489
-  %58 = load double** %57, align 8, !llfi_index !2490
-  %59 = getelementptr inbounds double* %58, i64 %55, !llfi_index !2491
-  store double %49, double* %59, align 8, !llfi_index !2492
-  store i32 1, i32* %i, align 4, !llfi_index !2493
-  br label %60, !llfi_index !2494
+  %45 = load i32* %j, align 4, !llfi_index !2476
+  %46 = sext i32 %45 to i64, !llfi_index !2477
+  %47 = load double** %5, align 8, !llfi_index !2478
+  %48 = getelementptr inbounds double* %47, i64 %46, !llfi_index !2479
+  %49 = load double* %48, align 8, !llfi_index !2480
+  %50 = load i32* %9, align 4, !llfi_index !2481
+  %51 = load i32* %j, align 4, !llfi_index !2482
+  %52 = mul nsw i32 %50, %51, !llfi_index !2483
+  %53 = load i32* %b, align 4, !llfi_index !2484
+  %54 = add nsw i32 %52, %53, !llfi_index !2485
+  %55 = sext i32 %54 to i64, !llfi_index !2486
+  %56 = load double*** %1, align 8, !llfi_index !2487
+  %57 = getelementptr inbounds double** %56, i64 0, !llfi_index !2488
+  %58 = load double** %57, align 8, !llfi_index !2489
+  %59 = getelementptr inbounds double* %58, i64 %55, !llfi_index !2490
+  store double %49, double* %59, align 8, !llfi_index !2491
+  store i32 1, i32* %i, align 4, !llfi_index !2492
+  br label %60, !llfi_index !2493
 
 ; <label>:60                                      ; preds = %78, %44
-  %61 = load i32* %i, align 4, !llfi_index !2495
-  %62 = load i32* %2, align 4, !llfi_index !2496
-  %63 = sub nsw i32 %62, 1, !llfi_index !2497
-  %64 = icmp sle i32 %61, %63, !llfi_index !2498
-  br i1 %64, label %65, label %81, !llfi_index !2499
+  %61 = load i32* %i, align 4, !llfi_index !2494
+  %62 = load i32* %2, align 4, !llfi_index !2495
+  %63 = sub nsw i32 %62, 1, !llfi_index !2496
+  %64 = icmp sle i32 %61, %63, !llfi_index !2497
+  br i1 %64, label %65, label %81, !llfi_index !2498
 
 ; <label>:65                                      ; preds = %60
-  %66 = load i32* %9, align 4, !llfi_index !2500
-  %67 = load i32* %j, align 4, !llfi_index !2501
-  %68 = mul nsw i32 %66, %67, !llfi_index !2502
-  %69 = load i32* %b, align 4, !llfi_index !2503
-  %70 = add nsw i32 %68, %69, !llfi_index !2504
-  %71 = sext i32 %70 to i64, !llfi_index !2505
-  %72 = load i32* %i, align 4, !llfi_index !2506
-  %73 = sext i32 %72 to i64, !llfi_index !2507
-  %74 = load double*** %1, align 8, !llfi_index !2508
-  %75 = getelementptr inbounds double** %74, i64 %73, !llfi_index !2509
-  %76 = load double** %75, align 8, !llfi_index !2510
-  %77 = getelementptr inbounds double* %76, i64 %71, !llfi_index !2511
-  store double 0.000000e+00, double* %77, align 8, !llfi_index !2512
-  br label %78, !llfi_index !2513
+  %66 = load i32* %9, align 4, !llfi_index !2499
+  %67 = load i32* %j, align 4, !llfi_index !2500
+  %68 = mul nsw i32 %66, %67, !llfi_index !2501
+  %69 = load i32* %b, align 4, !llfi_index !2502
+  %70 = add nsw i32 %68, %69, !llfi_index !2503
+  %71 = sext i32 %70 to i64, !llfi_index !2504
+  %72 = load i32* %i, align 4, !llfi_index !2505
+  %73 = sext i32 %72 to i64, !llfi_index !2506
+  %74 = load double*** %1, align 8, !llfi_index !2507
+  %75 = getelementptr inbounds double** %74, i64 %73, !llfi_index !2508
+  %76 = load double** %75, align 8, !llfi_index !2509
+  %77 = getelementptr inbounds double* %76, i64 %71, !llfi_index !2510
+  store double 0.000000e+00, double* %77, align 8, !llfi_index !2511
+  br label %78, !llfi_index !2512
 
 ; <label>:78                                      ; preds = %65
-  %79 = load i32* %i, align 4, !llfi_index !2514
-  %80 = add nsw i32 %79, 1, !llfi_index !2515
-  store i32 %80, i32* %i, align 4, !llfi_index !2516
-  br label %60, !llfi_index !2517
+  %79 = load i32* %i, align 4, !llfi_index !2513
+  %80 = add nsw i32 %79, 1, !llfi_index !2514
+  store i32 %80, i32* %i, align 4, !llfi_index !2515
+  br label %60, !llfi_index !2516
 
 ; <label>:81                                      ; preds = %60
-  br label %82, !llfi_index !2518
+  br label %82, !llfi_index !2517
 
 ; <label>:82                                      ; preds = %81
-  %83 = load i32* %j, align 4, !llfi_index !2519
-  %84 = add nsw i32 %83, 1, !llfi_index !2520
-  store i32 %84, i32* %j, align 4, !llfi_index !2521
-  br label %39, !llfi_index !2522
+  %83 = load i32* %j, align 4, !llfi_index !2518
+  %84 = add nsw i32 %83, 1, !llfi_index !2519
+  store i32 %84, i32* %j, align 4, !llfi_index !2520
+  br label %39, !llfi_index !2521
 
 ; <label>:85                                      ; preds = %39
-  br label %86, !llfi_index !2523
+  br label %86, !llfi_index !2522
 
 ; <label>:86                                      ; preds = %85
-  %87 = load i32* %b, align 4, !llfi_index !2524
-  %88 = add nsw i32 %87, 1, !llfi_index !2525
-  store i32 %88, i32* %b, align 4, !llfi_index !2526
-  br label %34, !llfi_index !2527
+  %87 = load i32* %b, align 4, !llfi_index !2523
+  %88 = add nsw i32 %87, 1, !llfi_index !2524
+  store i32 %88, i32* %b, align 4, !llfi_index !2525
+  br label %34, !llfi_index !2526
 
 ; <label>:89                                      ; preds = %34
-  store i32 0, i32* %b1, align 4, !llfi_index !2528
-  br label %90, !llfi_index !2529
+  store i32 0, i32* %b1, align 4, !llfi_index !2527
+  br label %90, !llfi_index !2528
 
 ; <label>:90                                      ; preds = %139, %89
-  %91 = load i32* %b1, align 4, !llfi_index !2530
-  %92 = load i32* %9, align 4, !llfi_index !2531
-  %93 = icmp slt i32 %91, %92, !llfi_index !2532
-  br i1 %93, label %94, label %142, !llfi_index !2533
+  %91 = load i32* %b1, align 4, !llfi_index !2529
+  %92 = load i32* %9, align 4, !llfi_index !2530
+  %93 = icmp slt i32 %91, %92, !llfi_index !2531
+  br i1 %93, label %94, label %142, !llfi_index !2532
 
 ; <label>:94                                      ; preds = %90
-  store i32 0, i32* %s, align 4, !llfi_index !2534
-  br label %95, !llfi_index !2535
+  store i32 0, i32* %s, align 4, !llfi_index !2533
+  br label %95, !llfi_index !2534
 
 ; <label>:95                                      ; preds = %135, %94
-  %96 = load i32* %s, align 4, !llfi_index !2536
-  %97 = icmp slt i32 %96, 1, !llfi_index !2537
-  br i1 %97, label %98, label %138, !llfi_index !2538
+  %96 = load i32* %s, align 4, !llfi_index !2535
+  %97 = icmp slt i32 %96, 1, !llfi_index !2536
+  br i1 %97, label %98, label %138, !llfi_index !2537
 
 ; <label>:98                                      ; preds = %95
-  store i32 1, i32* %j, align 4, !llfi_index !2539
-  br label %99, !llfi_index !2540
+  store i32 1, i32* %j, align 4, !llfi_index !2538
+  br label %99, !llfi_index !2539
 
 ; <label>:99                                      ; preds = %131, %98
-  %100 = load i32* %j, align 4, !llfi_index !2541
-  %101 = load i32* %2, align 4, !llfi_index !2542
-  %102 = sub nsw i32 %101, 1, !llfi_index !2543
-  %103 = icmp sle i32 %100, %102, !llfi_index !2544
-  br i1 %103, label %104, label %134, !llfi_index !2545
+  %100 = load i32* %j, align 4, !llfi_index !2540
+  %101 = load i32* %2, align 4, !llfi_index !2541
+  %102 = sub nsw i32 %101, 1, !llfi_index !2542
+  %103 = icmp sle i32 %100, %102, !llfi_index !2543
+  br i1 %103, label %104, label %134, !llfi_index !2544
 
 ; <label>:104                                     ; preds = %99
-  store i32 0, i32* %l, align 4, !llfi_index !2546
-  br label %105, !llfi_index !2547
+  store i32 0, i32* %l, align 4, !llfi_index !2545
+  br label %105, !llfi_index !2546
 
 ; <label>:105                                     ; preds = %127, %104
-  %106 = load i32* %l, align 4, !llfi_index !2548
-  %107 = load i32* %3, align 4, !llfi_index !2549
-  %108 = sub nsw i32 %107, 1, !llfi_index !2550
-  %109 = icmp sle i32 %106, %108, !llfi_index !2551
-  br i1 %109, label %110, label %130, !llfi_index !2552
+  %106 = load i32* %l, align 4, !llfi_index !2547
+  %107 = load i32* %3, align 4, !llfi_index !2548
+  %108 = sub nsw i32 %107, 1, !llfi_index !2549
+  %109 = icmp sle i32 %106, %108, !llfi_index !2550
+  br i1 %109, label %110, label %130, !llfi_index !2551
 
 ; <label>:110                                     ; preds = %105
-  %111 = load i64** %8, align 8, !llfi_index !2553
-  %112 = call double @_Z7RanUnifPl(i64* %111), !llfi_index !2554
-  %113 = load i32* %9, align 4, !llfi_index !2555
-  %114 = load i32* %j, align 4, !llfi_index !2556
-  %115 = mul nsw i32 %113, %114, !llfi_index !2557
-  %116 = load i32* %b1, align 4, !llfi_index !2558
-  %117 = add nsw i32 %115, %116, !llfi_index !2559
-  %118 = load i32* %s, align 4, !llfi_index !2560
-  %119 = add nsw i32 %117, %118, !llfi_index !2561
-  %120 = sext i32 %119 to i64, !llfi_index !2562
-  %121 = load i32* %l, align 4, !llfi_index !2563
-  %122 = sext i32 %121 to i64, !llfi_index !2564
-  %123 = load double*** %randZ, align 8, !llfi_index !2565
-  %124 = getelementptr inbounds double** %123, i64 %122, !llfi_index !2566
-  %125 = load double** %124, align 8, !llfi_index !2567
-  %126 = getelementptr inbounds double* %125, i64 %120, !llfi_index !2568
-  store double %112, double* %126, align 8, !llfi_index !2569
-  br label %127, !llfi_index !2570
+  %111 = load i64** %8, align 8, !llfi_index !2552
+  %112 = call double @_Z7RanUnifPl(i64* %111), !llfi_index !2553
+  %113 = load i32* %9, align 4, !llfi_index !2554
+  %114 = load i32* %j, align 4, !llfi_index !2555
+  %115 = mul nsw i32 %113, %114, !llfi_index !2556
+  %116 = load i32* %b1, align 4, !llfi_index !2557
+  %117 = add nsw i32 %115, %116, !llfi_index !2558
+  %118 = load i32* %s, align 4, !llfi_index !2559
+  %119 = add nsw i32 %117, %118, !llfi_index !2560
+  %120 = sext i32 %119 to i64, !llfi_index !2561
+  %121 = load i32* %l, align 4, !llfi_index !2562
+  %122 = sext i32 %121 to i64, !llfi_index !2563
+  %123 = load double*** %randZ, align 8, !llfi_index !2564
+  %124 = getelementptr inbounds double** %123, i64 %122, !llfi_index !2565
+  %125 = load double** %124, align 8, !llfi_index !2566
+  %126 = getelementptr inbounds double* %125, i64 %120, !llfi_index !2567
+  store double %112, double* %126, align 8, !llfi_index !2568
+  br label %127, !llfi_index !2569
 
 ; <label>:127                                     ; preds = %110
-  %128 = load i32* %l, align 4, !llfi_index !2571
-  %129 = add nsw i32 %128, 1, !llfi_index !2572
-  store i32 %129, i32* %l, align 4, !llfi_index !2573
-  br label %105, !llfi_index !2574
+  %128 = load i32* %l, align 4, !llfi_index !2570
+  %129 = add nsw i32 %128, 1, !llfi_index !2571
+  store i32 %129, i32* %l, align 4, !llfi_index !2572
+  br label %105, !llfi_index !2573
 
 ; <label>:130                                     ; preds = %105
-  br label %131, !llfi_index !2575
+  br label %131, !llfi_index !2574
 
 ; <label>:131                                     ; preds = %130
-  %132 = load i32* %j, align 4, !llfi_index !2576
-  %133 = add nsw i32 %132, 1, !llfi_index !2577
-  store i32 %133, i32* %j, align 4, !llfi_index !2578
-  br label %99, !llfi_index !2579
+  %132 = load i32* %j, align 4, !llfi_index !2575
+  %133 = add nsw i32 %132, 1, !llfi_index !2576
+  store i32 %133, i32* %j, align 4, !llfi_index !2577
+  br label %99, !llfi_index !2578
 
 ; <label>:134                                     ; preds = %99
-  br label %135, !llfi_index !2580
+  br label %135, !llfi_index !2579
 
 ; <label>:135                                     ; preds = %134
-  %136 = load i32* %s, align 4, !llfi_index !2581
-  %137 = add nsw i32 %136, 1, !llfi_index !2582
-  store i32 %137, i32* %s, align 4, !llfi_index !2583
-  br label %95, !llfi_index !2584
+  %136 = load i32* %s, align 4, !llfi_index !2580
+  %137 = add nsw i32 %136, 1, !llfi_index !2581
+  store i32 %137, i32* %s, align 4, !llfi_index !2582
+  br label %95, !llfi_index !2583
 
 ; <label>:138                                     ; preds = %95
-  br label %139, !llfi_index !2585
+  br label %139, !llfi_index !2584
 
 ; <label>:139                                     ; preds = %138
-  %140 = load i32* %b1, align 4, !llfi_index !2586
-  %141 = add nsw i32 %140, 1, !llfi_index !2587
-  store i32 %141, i32* %b1, align 4, !llfi_index !2588
-  br label %90, !llfi_index !2589
+  %140 = load i32* %b1, align 4, !llfi_index !2585
+  %141 = add nsw i32 %140, 1, !llfi_index !2586
+  store i32 %141, i32* %b1, align 4, !llfi_index !2587
+  br label %90, !llfi_index !2588
 
 ; <label>:142                                     ; preds = %90
-  %143 = load double*** %pdZ, align 8, !llfi_index !2590
-  %144 = load double*** %randZ, align 8, !llfi_index !2591
-  %145 = load i32* %9, align 4, !llfi_index !2592
-  %146 = load i32* %2, align 4, !llfi_index !2593
-  %147 = load i32* %3, align 4, !llfi_index !2594
-  call void @_Z7serialBPPdS0_iii(double** %143, double** %144, i32 %145, i32 %146, i32 %147), !llfi_index !2595
-  store i32 0, i32* %b2, align 4, !llfi_index !2596
-  br label %148, !llfi_index !2597
+  %143 = load double*** %pdZ, align 8, !llfi_index !2589
+  %144 = load double*** %randZ, align 8, !llfi_index !2590
+  %145 = load i32* %9, align 4, !llfi_index !2591
+  %146 = load i32* %2, align 4, !llfi_index !2592
+  %147 = load i32* %3, align 4, !llfi_index !2593
+  call void @_Z7serialBPPdS0_iii(double** %143, double** %144, i32 %145, i32 %146, i32 %147), !llfi_index !2594
+  store i32 0, i32* %b2, align 4, !llfi_index !2595
+  br label %148, !llfi_index !2596
 
 ; <label>:148                                     ; preds = %249, %142
-  %149 = load i32* %b2, align 4, !llfi_index !2598
-  %150 = load i32* %9, align 4, !llfi_index !2599
-  %151 = icmp slt i32 %149, %150, !llfi_index !2600
-  br i1 %151, label %152, label %252, !llfi_index !2601
+  %149 = load i32* %b2, align 4, !llfi_index !2597
+  %150 = load i32* %9, align 4, !llfi_index !2598
+  %151 = icmp slt i32 %149, %150, !llfi_index !2599
+  br i1 %151, label %152, label %252, !llfi_index !2600
 
 ; <label>:152                                     ; preds = %148
-  store i32 1, i32* %j, align 4, !llfi_index !2602
-  br label %153, !llfi_index !2603
+  store i32 1, i32* %j, align 4, !llfi_index !2601
+  br label %153, !llfi_index !2602
 
 ; <label>:153                                     ; preds = %245, %152
-  %154 = load i32* %j, align 4, !llfi_index !2604
-  %155 = load i32* %2, align 4, !llfi_index !2605
-  %156 = sub nsw i32 %155, 1, !llfi_index !2606
-  %157 = icmp sle i32 %154, %156, !llfi_index !2607
-  br i1 %157, label %158, label %248, !llfi_index !2608
+  %154 = load i32* %j, align 4, !llfi_index !2603
+  %155 = load i32* %2, align 4, !llfi_index !2604
+  %156 = sub nsw i32 %155, 1, !llfi_index !2605
+  %157 = icmp sle i32 %154, %156, !llfi_index !2606
+  br i1 %157, label %158, label %248, !llfi_index !2607
 
 ; <label>:158                                     ; preds = %153
-  store i32 0, i32* %l, align 4, !llfi_index !2609
-  br label %159, !llfi_index !2610
+  store i32 0, i32* %l, align 4, !llfi_index !2608
+  br label %159, !llfi_index !2609
 
 ; <label>:159                                     ; preds = %241, %158
-  %160 = load i32* %l, align 4, !llfi_index !2611
-  %161 = load i32* %2, align 4, !llfi_index !2612
-  %162 = load i32* %j, align 4, !llfi_index !2613
-  %163 = add nsw i32 %162, 1, !llfi_index !2614
-  %164 = sub nsw i32 %161, %163, !llfi_index !2615
-  %165 = icmp sle i32 %160, %164, !llfi_index !2616
-  br i1 %165, label %166, label %244, !llfi_index !2617
+  %160 = load i32* %l, align 4, !llfi_index !2610
+  %161 = load i32* %2, align 4, !llfi_index !2611
+  %162 = load i32* %j, align 4, !llfi_index !2612
+  %163 = add nsw i32 %162, 1, !llfi_index !2613
+  %164 = sub nsw i32 %161, %163, !llfi_index !2614
+  %165 = icmp sle i32 %160, %164, !llfi_index !2615
+  br i1 %165, label %166, label %244, !llfi_index !2616
 
 ; <label>:166                                     ; preds = %159
-  store double 0.000000e+00, double* %dTotalShock, align 8, !llfi_index !2618
-  store i32 0, i32* %i, align 4, !llfi_index !2619
-  br label %167, !llfi_index !2620
+  store double 0.000000e+00, double* %dTotalShock, align 8, !llfi_index !2617
+  store i32 0, i32* %i, align 4, !llfi_index !2618
+  br label %167, !llfi_index !2619
 
 ; <label>:167                                     ; preds = %198, %166
-  %168 = load i32* %i, align 4, !llfi_index !2621
-  %169 = load i32* %3, align 4, !llfi_index !2622
-  %170 = sub nsw i32 %169, 1, !llfi_index !2623
-  %171 = icmp sle i32 %168, %170, !llfi_index !2624
-  br i1 %171, label %172, label %201, !llfi_index !2625
+  %168 = load i32* %i, align 4, !llfi_index !2620
+  %169 = load i32* %3, align 4, !llfi_index !2621
+  %170 = sub nsw i32 %169, 1, !llfi_index !2622
+  %171 = icmp sle i32 %168, %170, !llfi_index !2623
+  br i1 %171, label %172, label %201, !llfi_index !2624
 
 ; <label>:172                                     ; preds = %167
-  %173 = load i32* %l, align 4, !llfi_index !2626
-  %174 = sext i32 %173 to i64, !llfi_index !2627
-  %175 = load i32* %i, align 4, !llfi_index !2628
-  %176 = sext i32 %175 to i64, !llfi_index !2629
-  %177 = load double*** %7, align 8, !llfi_index !2630
-  %178 = getelementptr inbounds double** %177, i64 %176, !llfi_index !2631
-  %179 = load double** %178, align 8, !llfi_index !2632
-  %180 = getelementptr inbounds double* %179, i64 %174, !llfi_index !2633
-  %181 = load double* %180, align 8, !llfi_index !2634
-  %182 = load i32* %9, align 4, !llfi_index !2635
-  %183 = load i32* %j, align 4, !llfi_index !2636
-  %184 = mul nsw i32 %182, %183, !llfi_index !2637
-  %185 = load i32* %b2, align 4, !llfi_index !2638
-  %186 = add nsw i32 %184, %185, !llfi_index !2639
-  %187 = sext i32 %186 to i64, !llfi_index !2640
-  %188 = load i32* %i, align 4, !llfi_index !2641
-  %189 = sext i32 %188 to i64, !llfi_index !2642
-  %190 = load double*** %pdZ, align 8, !llfi_index !2643
-  %191 = getelementptr inbounds double** %190, i64 %189, !llfi_index !2644
-  %192 = load double** %191, align 8, !llfi_index !2645
-  %193 = getelementptr inbounds double* %192, i64 %187, !llfi_index !2646
-  %194 = load double* %193, align 8, !llfi_index !2647
-  %195 = fmul double %181, %194, !llfi_index !2648
-  %196 = load double* %dTotalShock, align 8, !llfi_index !2649
-  %197 = fadd double %196, %195, !llfi_index !2650
-  store double %197, double* %dTotalShock, align 8, !llfi_index !2651
-  br label %198, !llfi_index !2652
+  %173 = load i32* %l, align 4, !llfi_index !2625
+  %174 = sext i32 %173 to i64, !llfi_index !2626
+  %175 = load i32* %i, align 4, !llfi_index !2627
+  %176 = sext i32 %175 to i64, !llfi_index !2628
+  %177 = load double*** %7, align 8, !llfi_index !2629
+  %178 = getelementptr inbounds double** %177, i64 %176, !llfi_index !2630
+  %179 = load double** %178, align 8, !llfi_index !2631
+  %180 = getelementptr inbounds double* %179, i64 %174, !llfi_index !2632
+  %181 = load double* %180, align 8, !llfi_index !2633
+  %182 = load i32* %9, align 4, !llfi_index !2634
+  %183 = load i32* %j, align 4, !llfi_index !2635
+  %184 = mul nsw i32 %182, %183, !llfi_index !2636
+  %185 = load i32* %b2, align 4, !llfi_index !2637
+  %186 = add nsw i32 %184, %185, !llfi_index !2638
+  %187 = sext i32 %186 to i64, !llfi_index !2639
+  %188 = load i32* %i, align 4, !llfi_index !2640
+  %189 = sext i32 %188 to i64, !llfi_index !2641
+  %190 = load double*** %pdZ, align 8, !llfi_index !2642
+  %191 = getelementptr inbounds double** %190, i64 %189, !llfi_index !2643
+  %192 = load double** %191, align 8, !llfi_index !2644
+  %193 = getelementptr inbounds double* %192, i64 %187, !llfi_index !2645
+  %194 = load double* %193, align 8, !llfi_index !2646
+  %195 = fmul double %181, %194, !llfi_index !2647
+  %196 = load double* %dTotalShock, align 8, !llfi_index !2648
+  %197 = fadd double %196, %195, !llfi_index !2649
+  store double %197, double* %dTotalShock, align 8, !llfi_index !2650
+  br label %198, !llfi_index !2651
 
 ; <label>:198                                     ; preds = %172
-  %199 = load i32* %i, align 4, !llfi_index !2653
-  %200 = add nsw i32 %199, 1, !llfi_index !2654
-  store i32 %200, i32* %i, align 4, !llfi_index !2655
-  br label %167, !llfi_index !2656
+  %199 = load i32* %i, align 4, !llfi_index !2652
+  %200 = add nsw i32 %199, 1, !llfi_index !2653
+  store i32 %200, i32* %i, align 4, !llfi_index !2654
+  br label %167, !llfi_index !2655
 
 ; <label>:201                                     ; preds = %167
-  %202 = load i32* %9, align 4, !llfi_index !2657
-  %203 = load i32* %l, align 4, !llfi_index !2658
-  %204 = add nsw i32 %203, 1, !llfi_index !2659
-  %205 = mul nsw i32 %202, %204, !llfi_index !2660
-  %206 = load i32* %b2, align 4, !llfi_index !2661
-  %207 = add nsw i32 %205, %206, !llfi_index !2662
-  %208 = sext i32 %207 to i64, !llfi_index !2663
-  %209 = load i32* %j, align 4, !llfi_index !2664
-  %210 = sub nsw i32 %209, 1, !llfi_index !2665
-  %211 = sext i32 %210 to i64, !llfi_index !2666
-  %212 = load double*** %1, align 8, !llfi_index !2667
-  %213 = getelementptr inbounds double** %212, i64 %211, !llfi_index !2668
-  %214 = load double** %213, align 8, !llfi_index !2669
-  %215 = getelementptr inbounds double* %214, i64 %208, !llfi_index !2670
-  %216 = load double* %215, align 8, !llfi_index !2671
-  %217 = load i32* %l, align 4, !llfi_index !2672
-  %218 = sext i32 %217 to i64, !llfi_index !2673
-  %219 = load double** %6, align 8, !llfi_index !2674
-  %220 = getelementptr inbounds double* %219, i64 %218, !llfi_index !2675
-  %221 = load double* %220, align 8, !llfi_index !2676
-  %222 = load double* %ddelt, align 8, !llfi_index !2677
-  %223 = fmul double %221, %222, !llfi_index !2678
-  %224 = fadd double %216, %223, !llfi_index !2679
-  %225 = load double* %sqrt_ddelt, align 8, !llfi_index !2680
-  %226 = load double* %dTotalShock, align 8, !llfi_index !2681
-  %227 = fmul double %225, %226, !llfi_index !2682
-  %228 = fadd double %224, %227, !llfi_index !2683
-  %229 = load i32* %9, align 4, !llfi_index !2684
-  %230 = load i32* %l, align 4, !llfi_index !2685
-  %231 = mul nsw i32 %229, %230, !llfi_index !2686
-  %232 = load i32* %b2, align 4, !llfi_index !2687
-  %233 = add nsw i32 %231, %232, !llfi_index !2688
-  %234 = sext i32 %233 to i64, !llfi_index !2689
-  %235 = load i32* %j, align 4, !llfi_index !2690
-  %236 = sext i32 %235 to i64, !llfi_index !2691
-  %237 = load double*** %1, align 8, !llfi_index !2692
-  %238 = getelementptr inbounds double** %237, i64 %236, !llfi_index !2693
-  %239 = load double** %238, align 8, !llfi_index !2694
-  %240 = getelementptr inbounds double* %239, i64 %234, !llfi_index !2695
-  store double %228, double* %240, align 8, !llfi_index !2696
-  br label %241, !llfi_index !2697
+  %202 = load i32* %9, align 4, !llfi_index !2656
+  %203 = load i32* %l, align 4, !llfi_index !2657
+  %204 = add nsw i32 %203, 1, !llfi_index !2658
+  %205 = mul nsw i32 %202, %204, !llfi_index !2659
+  %206 = load i32* %b2, align 4, !llfi_index !2660
+  %207 = add nsw i32 %205, %206, !llfi_index !2661
+  %208 = sext i32 %207 to i64, !llfi_index !2662
+  %209 = load i32* %j, align 4, !llfi_index !2663
+  %210 = sub nsw i32 %209, 1, !llfi_index !2664
+  %211 = sext i32 %210 to i64, !llfi_index !2665
+  %212 = load double*** %1, align 8, !llfi_index !2666
+  %213 = getelementptr inbounds double** %212, i64 %211, !llfi_index !2667
+  %214 = load double** %213, align 8, !llfi_index !2668
+  %215 = getelementptr inbounds double* %214, i64 %208, !llfi_index !2669
+  %216 = load double* %215, align 8, !llfi_index !2670
+  %217 = load i32* %l, align 4, !llfi_index !2671
+  %218 = sext i32 %217 to i64, !llfi_index !2672
+  %219 = load double** %6, align 8, !llfi_index !2673
+  %220 = getelementptr inbounds double* %219, i64 %218, !llfi_index !2674
+  %221 = load double* %220, align 8, !llfi_index !2675
+  %222 = load double* %ddelt, align 8, !llfi_index !2676
+  %223 = fmul double %221, %222, !llfi_index !2677
+  %224 = fadd double %216, %223, !llfi_index !2678
+  %225 = load double* %sqrt_ddelt, align 8, !llfi_index !2679
+  %226 = load double* %dTotalShock, align 8, !llfi_index !2680
+  %227 = fmul double %225, %226, !llfi_index !2681
+  %228 = fadd double %224, %227, !llfi_index !2682
+  %229 = load i32* %9, align 4, !llfi_index !2683
+  %230 = load i32* %l, align 4, !llfi_index !2684
+  %231 = mul nsw i32 %229, %230, !llfi_index !2685
+  %232 = load i32* %b2, align 4, !llfi_index !2686
+  %233 = add nsw i32 %231, %232, !llfi_index !2687
+  %234 = sext i32 %233 to i64, !llfi_index !2688
+  %235 = load i32* %j, align 4, !llfi_index !2689
+  %236 = sext i32 %235 to i64, !llfi_index !2690
+  %237 = load double*** %1, align 8, !llfi_index !2691
+  %238 = getelementptr inbounds double** %237, i64 %236, !llfi_index !2692
+  %239 = load double** %238, align 8, !llfi_index !2693
+  %240 = getelementptr inbounds double* %239, i64 %234, !llfi_index !2694
+  store double %228, double* %240, align 8, !llfi_index !2695
+  br label %241, !llfi_index !2696
 
 ; <label>:241                                     ; preds = %201
-  %242 = load i32* %l, align 4, !llfi_index !2698
-  %243 = add nsw i32 %242, 1, !llfi_index !2699
-  store i32 %243, i32* %l, align 4, !llfi_index !2700
-  br label %159, !llfi_index !2701
+  %242 = load i32* %l, align 4, !llfi_index !2697
+  %243 = add nsw i32 %242, 1, !llfi_index !2698
+  store i32 %243, i32* %l, align 4, !llfi_index !2699
+  br label %159, !llfi_index !2700
 
 ; <label>:244                                     ; preds = %159
-  br label %245, !llfi_index !2702
+  br label %245, !llfi_index !2701
 
 ; <label>:245                                     ; preds = %244
-  %246 = load i32* %j, align 4, !llfi_index !2703
-  %247 = add nsw i32 %246, 1, !llfi_index !2704
-  store i32 %247, i32* %j, align 4, !llfi_index !2705
-  br label %153, !llfi_index !2706
+  %246 = load i32* %j, align 4, !llfi_index !2702
+  %247 = add nsw i32 %246, 1, !llfi_index !2703
+  store i32 %247, i32* %j, align 4, !llfi_index !2704
+  br label %153, !llfi_index !2705
 
 ; <label>:248                                     ; preds = %153
-  br label %249, !llfi_index !2707
+  br label %249, !llfi_index !2706
 
 ; <label>:249                                     ; preds = %248
-  %250 = load i32* %b2, align 4, !llfi_index !2708
-  %251 = add nsw i32 %250, 1, !llfi_index !2709
-  store i32 %251, i32* %b2, align 4, !llfi_index !2710
-  br label %148, !llfi_index !2711
+  %250 = load i32* %b2, align 4, !llfi_index !2707
+  %251 = add nsw i32 %250, 1, !llfi_index !2708
+  store i32 %251, i32* %b2, align 4, !llfi_index !2709
+  br label %148, !llfi_index !2710
 
 ; <label>:252                                     ; preds = %148
-  %253 = load double*** %pdZ, align 8, !llfi_index !2712
-  %254 = load i32* %3, align 4, !llfi_index !2713
-  %255 = sub nsw i32 %254, 1, !llfi_index !2714
-  %256 = sext i32 %255 to i64, !llfi_index !2715
-  %257 = load i32* %2, align 4, !llfi_index !2716
-  %258 = load i32* %9, align 4, !llfi_index !2717
-  %259 = mul nsw i32 %257, %258, !llfi_index !2718
-  %260 = sub nsw i32 %259, 1, !llfi_index !2719
-  %261 = sext i32 %260 to i64, !llfi_index !2720
-  call void @_Z12free_dmatrixPPdllll(double** %253, i64 0, i64 %256, i64 0, i64 %261), !llfi_index !2721
-  %262 = load double*** %randZ, align 8, !llfi_index !2722
-  %263 = load i32* %3, align 4, !llfi_index !2723
-  %264 = sub nsw i32 %263, 1, !llfi_index !2724
-  %265 = sext i32 %264 to i64, !llfi_index !2725
-  %266 = load i32* %2, align 4, !llfi_index !2726
-  %267 = load i32* %9, align 4, !llfi_index !2727
-  %268 = mul nsw i32 %266, %267, !llfi_index !2728
-  %269 = sub nsw i32 %268, 1, !llfi_index !2729
-  %270 = sext i32 %269 to i64, !llfi_index !2730
-  call void @_Z12free_dmatrixPPdllll(double** %262, i64 0, i64 %265, i64 0, i64 %270), !llfi_index !2731
-  store i32 1, i32* %iSuccess, align 4, !llfi_index !2732
-  %271 = load i32* %iSuccess, align 4, !llfi_index !2733
-  ret i32 %271, !llfi_index !2734
+  %253 = load double*** %pdZ, align 8, !llfi_index !2711
+  %254 = load i32* %3, align 4, !llfi_index !2712
+  %255 = sub nsw i32 %254, 1, !llfi_index !2713
+  %256 = sext i32 %255 to i64, !llfi_index !2714
+  %257 = load i32* %2, align 4, !llfi_index !2715
+  %258 = load i32* %9, align 4, !llfi_index !2716
+  %259 = mul nsw i32 %257, %258, !llfi_index !2717
+  %260 = sub nsw i32 %259, 1, !llfi_index !2718
+  %261 = sext i32 %260 to i64, !llfi_index !2719
+  call void @_Z12free_dmatrixPPdllll(double** %253, i64 0, i64 %256, i64 0, i64 %261), !llfi_index !2720
+  %262 = load double*** %randZ, align 8, !llfi_index !2721
+  %263 = load i32* %3, align 4, !llfi_index !2722
+  %264 = sub nsw i32 %263, 1, !llfi_index !2723
+  %265 = sext i32 %264 to i64, !llfi_index !2724
+  %266 = load i32* %2, align 4, !llfi_index !2725
+  %267 = load i32* %9, align 4, !llfi_index !2726
+  %268 = mul nsw i32 %266, %267, !llfi_index !2727
+  %269 = sub nsw i32 %268, 1, !llfi_index !2728
+  %270 = sext i32 %269 to i64, !llfi_index !2729
+  call void @_Z12free_dmatrixPPdllll(double** %262, i64 0, i64 %265, i64 0, i64 %270), !llfi_index !2730
+  store i32 1, i32* %iSuccess, align 4, !llfi_index !2731
+  %271 = load i32* %iSuccess, align 4, !llfi_index !2732
+  ret i32 %271, !llfi_index !2733
 }
 
 ; Function Attrs: uwtable
 define i32 @_Z21HJM_Swaption_BlockingPddddddiidS_PS_llii(double* %pdSwaptionPrice, double %dStrike, double %dCompounding, double %dMaturity, double %dTenor, double %dPaymentInterval, i32 %iN, i32 %iFactors, double %dYears, double* %pdYield, double** %ppdFactors, i64 %iRndSeed, i64 %lTrials, i32 %BLOCKSIZE, i32 %tid) #3 {
-  %1 = alloca i32, align 4, !llfi_index !2735
-  %2 = alloca double*, align 8, !llfi_index !2736
-  %3 = alloca double, align 8, !llfi_index !2737
-  %4 = alloca double, align 8, !llfi_index !2738
-  %5 = alloca double, align 8, !llfi_index !2739
-  %6 = alloca double, align 8, !llfi_index !2740
-  %7 = alloca double, align 8, !llfi_index !2741
-  %8 = alloca i32, align 4, !llfi_index !2742
-  %9 = alloca i32, align 4, !llfi_index !2743
-  %10 = alloca double, align 8, !llfi_index !2744
-  %11 = alloca double*, align 8, !llfi_index !2745
-  %12 = alloca double**, align 8, !llfi_index !2746
-  %13 = alloca i64, align 8, !llfi_index !2747
-  %14 = alloca i64, align 8, !llfi_index !2748
-  %15 = alloca i32, align 4, !llfi_index !2749
-  %16 = alloca i32, align 4, !llfi_index !2750
-  %iSuccess = alloca i32, align 4, !llfi_index !2751
-  %i = alloca i32, align 4, !llfi_index !2752
-  %b = alloca i32, align 4, !llfi_index !2753
-  %l = alloca i64, align 8, !llfi_index !2754
-  %ddelt = alloca double, align 8, !llfi_index !2755
-  %iFreqRatio = alloca i32, align 4, !llfi_index !2756
-  %dStrikeCont = alloca double, align 8, !llfi_index !2757
-  %iSwapVectorLength = alloca i32, align 4, !llfi_index !2758
-  %ppdHJMPath = alloca double**, align 8, !llfi_index !2759
-  %pdForward = alloca double*, align 8, !llfi_index !2760
-  %ppdDrifts = alloca double**, align 8, !llfi_index !2761
-  %pdTotalDrift = alloca double*, align 8, !llfi_index !2762
-  %pdDiscountingRatePath = alloca double*, align 8, !llfi_index !2763
-  %pdPayoffDiscountFactors = alloca double*, align 8, !llfi_index !2764
-  %pdSwapRatePath = alloca double*, align 8, !llfi_index !2765
-  %pdSwapDiscountFactors = alloca double*, align 8, !llfi_index !2766
-  %pdSwapPayoffs = alloca double*, align 8, !llfi_index !2767
-  %iSwapStartTimeIndex = alloca i32, align 4, !llfi_index !2768
-  %iSwapTimePoints = alloca i32, align 4, !llfi_index !2769
-  %dSwapVectorYears = alloca double, align 8, !llfi_index !2770
-  %dSwaptionPayoff = alloca double, align 8, !llfi_index !2771
-  %dDiscSwaptionPayoff = alloca double, align 8, !llfi_index !2772
-  %dFixedLegValue = alloca double, align 8, !llfi_index !2773
-  %dSumSimSwaptionPrice = alloca double, align 8, !llfi_index !2774
-  %dSumSquareSimSwaptionPrice = alloca double, align 8, !llfi_index !2775
-  %dSimSwaptionMeanPrice = alloca double, align 8, !llfi_index !2776
-  %dSimSwaptionStdError = alloca double, align 8, !llfi_index !2777
-  store double* %pdSwaptionPrice, double** %2, align 8, !llfi_index !2778
-  store double %dStrike, double* %3, align 8, !llfi_index !2779
-  store double %dCompounding, double* %4, align 8, !llfi_index !2780
-  store double %dMaturity, double* %5, align 8, !llfi_index !2781
-  store double %dTenor, double* %6, align 8, !llfi_index !2782
-  store double %dPaymentInterval, double* %7, align 8, !llfi_index !2783
-  store i32 %iN, i32* %8, align 4, !llfi_index !2784
-  store i32 %iFactors, i32* %9, align 4, !llfi_index !2785
-  store double %dYears, double* %10, align 8, !llfi_index !2786
-  store double* %pdYield, double** %11, align 8, !llfi_index !2787
-  store double** %ppdFactors, double*** %12, align 8, !llfi_index !2788
-  store i64 %iRndSeed, i64* %13, align 8, !llfi_index !2789
-  store i64 %lTrials, i64* %14, align 8, !llfi_index !2790
-  store i32 %BLOCKSIZE, i32* %15, align 4, !llfi_index !2791
-  store i32 %tid, i32* %16, align 4, !llfi_index !2792
-  store i32 0, i32* %iSuccess, align 4, !llfi_index !2793
-  %17 = load double* %10, align 8, !llfi_index !2794
-  %18 = load i32* %8, align 4, !llfi_index !2795
-  %19 = sitofp i32 %18 to double, !llfi_index !2796
-  %20 = fdiv double %17, %19, !llfi_index !2797
-  store double %20, double* %ddelt, align 8, !llfi_index !2798
-  %21 = load double* %7, align 8, !llfi_index !2799
-  %22 = load double* %ddelt, align 8, !llfi_index !2800
-  %23 = fdiv double %21, %22, !llfi_index !2801
-  %24 = fadd double %23, 5.000000e-01, !llfi_index !2802
-  %25 = fptosi double %24 to i32, !llfi_index !2803
-  store i32 %25, i32* %iFreqRatio, align 4, !llfi_index !2804
-  %26 = load double* %4, align 8, !llfi_index !2805
-  %27 = fcmp oeq double %26, 0.000000e+00, !llfi_index !2806
-  br i1 %27, label %28, label %30, !llfi_index !2807
+  %1 = alloca i32, align 4, !llfi_index !2734
+  %2 = alloca double*, align 8, !llfi_index !2735
+  %3 = alloca double, align 8, !llfi_index !2736
+  %4 = alloca double, align 8, !llfi_index !2737
+  %5 = alloca double, align 8, !llfi_index !2738
+  %6 = alloca double, align 8, !llfi_index !2739
+  %7 = alloca double, align 8, !llfi_index !2740
+  %8 = alloca i32, align 4, !llfi_index !2741
+  %9 = alloca i32, align 4, !llfi_index !2742
+  %10 = alloca double, align 8, !llfi_index !2743
+  %11 = alloca double*, align 8, !llfi_index !2744
+  %12 = alloca double**, align 8, !llfi_index !2745
+  %13 = alloca i64, align 8, !llfi_index !2746
+  %14 = alloca i64, align 8, !llfi_index !2747
+  %15 = alloca i32, align 4, !llfi_index !2748
+  %16 = alloca i32, align 4, !llfi_index !2749
+  %iSuccess = alloca i32, align 4, !llfi_index !2750
+  %i = alloca i32, align 4, !llfi_index !2751
+  %b = alloca i32, align 4, !llfi_index !2752
+  %l = alloca i64, align 8, !llfi_index !2753
+  %ddelt = alloca double, align 8, !llfi_index !2754
+  %iFreqRatio = alloca i32, align 4, !llfi_index !2755
+  %dStrikeCont = alloca double, align 8, !llfi_index !2756
+  %iSwapVectorLength = alloca i32, align 4, !llfi_index !2757
+  %ppdHJMPath = alloca double**, align 8, !llfi_index !2758
+  %pdForward = alloca double*, align 8, !llfi_index !2759
+  %ppdDrifts = alloca double**, align 8, !llfi_index !2760
+  %pdTotalDrift = alloca double*, align 8, !llfi_index !2761
+  %pdDiscountingRatePath = alloca double*, align 8, !llfi_index !2762
+  %pdPayoffDiscountFactors = alloca double*, align 8, !llfi_index !2763
+  %pdSwapRatePath = alloca double*, align 8, !llfi_index !2764
+  %pdSwapDiscountFactors = alloca double*, align 8, !llfi_index !2765
+  %pdSwapPayoffs = alloca double*, align 8, !llfi_index !2766
+  %iSwapStartTimeIndex = alloca i32, align 4, !llfi_index !2767
+  %iSwapTimePoints = alloca i32, align 4, !llfi_index !2768
+  %dSwapVectorYears = alloca double, align 8, !llfi_index !2769
+  %dSwaptionPayoff = alloca double, align 8, !llfi_index !2770
+  %dDiscSwaptionPayoff = alloca double, align 8, !llfi_index !2771
+  %dFixedLegValue = alloca double, align 8, !llfi_index !2772
+  %dSumSimSwaptionPrice = alloca double, align 8, !llfi_index !2773
+  %dSumSquareSimSwaptionPrice = alloca double, align 8, !llfi_index !2774
+  %dSimSwaptionMeanPrice = alloca double, align 8, !llfi_index !2775
+  %dSimSwaptionStdError = alloca double, align 8, !llfi_index !2776
+  store double* %pdSwaptionPrice, double** %2, align 8, !llfi_index !2777
+  store double %dStrike, double* %3, align 8, !llfi_index !2778
+  store double %dCompounding, double* %4, align 8, !llfi_index !2779
+  store double %dMaturity, double* %5, align 8, !llfi_index !2780
+  store double %dTenor, double* %6, align 8, !llfi_index !2781
+  store double %dPaymentInterval, double* %7, align 8, !llfi_index !2782
+  store i32 %iN, i32* %8, align 4, !llfi_index !2783
+  store i32 %iFactors, i32* %9, align 4, !llfi_index !2784
+  store double %dYears, double* %10, align 8, !llfi_index !2785
+  store double* %pdYield, double** %11, align 8, !llfi_index !2786
+  store double** %ppdFactors, double*** %12, align 8, !llfi_index !2787
+  store i64 %iRndSeed, i64* %13, align 8, !llfi_index !2788
+  store i64 %lTrials, i64* %14, align 8, !llfi_index !2789
+  store i32 %BLOCKSIZE, i32* %15, align 4, !llfi_index !2790
+  store i32 %tid, i32* %16, align 4, !llfi_index !2791
+  store i32 0, i32* %iSuccess, align 4, !llfi_index !2792
+  %17 = load double* %10, align 8, !llfi_index !2793
+  %18 = load i32* %8, align 4, !llfi_index !2794
+  %19 = sitofp i32 %18 to double, !llfi_index !2795
+  %20 = fdiv double %17, %19, !llfi_index !2796
+  store double %20, double* %ddelt, align 8, !llfi_index !2797
+  %21 = load double* %7, align 8, !llfi_index !2798
+  %22 = load double* %ddelt, align 8, !llfi_index !2799
+  %23 = fdiv double %21, %22, !llfi_index !2800
+  %24 = fadd double %23, 5.000000e-01, !llfi_index !2801
+  %25 = fptosi double %24 to i32, !llfi_index !2802
+  store i32 %25, i32* %iFreqRatio, align 4, !llfi_index !2803
+  %26 = load double* %4, align 8, !llfi_index !2804
+  %27 = fcmp oeq double %26, 0.000000e+00, !llfi_index !2805
+  br i1 %27, label %28, label %30, !llfi_index !2806
 
 ; <label>:28                                      ; preds = %0
-  %29 = load double* %3, align 8, !llfi_index !2808
-  store double %29, double* %dStrikeCont, align 8, !llfi_index !2809
-  br label %39, !llfi_index !2810
+  %29 = load double* %3, align 8, !llfi_index !2807
+  store double %29, double* %dStrikeCont, align 8, !llfi_index !2808
+  br label %39, !llfi_index !2809
 
 ; <label>:30                                      ; preds = %0
-  %31 = load double* %4, align 8, !llfi_index !2811
-  %32 = fdiv double 1.000000e+00, %31, !llfi_index !2812
-  %33 = load double* %3, align 8, !llfi_index !2813
-  %34 = load double* %4, align 8, !llfi_index !2814
-  %35 = fmul double %33, %34, !llfi_index !2815
-  %36 = fadd double 1.000000e+00, %35, !llfi_index !2816
-  %37 = call double @log(double %36) #5, !llfi_index !2817
-  %38 = fmul double %32, %37, !llfi_index !2818
-  store double %38, double* %dStrikeCont, align 8, !llfi_index !2819
-  br label %39, !llfi_index !2820
+  %31 = load double* %4, align 8, !llfi_index !2810
+  %32 = fdiv double 1.000000e+00, %31, !llfi_index !2811
+  %33 = load double* %3, align 8, !llfi_index !2812
+  %34 = load double* %4, align 8, !llfi_index !2813
+  %35 = fmul double %33, %34, !llfi_index !2814
+  %36 = fadd double 1.000000e+00, %35, !llfi_index !2815
+  %37 = call double @log(double %36) #5, !llfi_index !2816
+  %38 = fmul double %32, %37, !llfi_index !2817
+  store double %38, double* %dStrikeCont, align 8, !llfi_index !2818
+  br label %39, !llfi_index !2819
 
 ; <label>:39                                      ; preds = %30, %28
-  %40 = load i32* %8, align 4, !llfi_index !2821
-  %41 = sub nsw i32 %40, 1, !llfi_index !2822
-  %42 = sext i32 %41 to i64, !llfi_index !2823
-  %43 = load i32* %8, align 4, !llfi_index !2824
-  %44 = load i32* %15, align 4, !llfi_index !2825
-  %45 = mul nsw i32 %43, %44, !llfi_index !2826
-  %46 = sub nsw i32 %45, 1, !llfi_index !2827
-  %47 = sext i32 %46 to i64, !llfi_index !2828
-  %48 = call double** @_Z7dmatrixllll(i64 0, i64 %42, i64 0, i64 %47), !llfi_index !2829
-  store double** %48, double*** %ppdHJMPath, align 8, !llfi_index !2830
-  %49 = load i32* %8, align 4, !llfi_index !2831
-  %50 = sub nsw i32 %49, 1, !llfi_index !2832
-  %51 = sext i32 %50 to i64, !llfi_index !2833
-  %52 = call double* @_Z7dvectorll(i64 0, i64 %51), !llfi_index !2834
-  store double* %52, double** %pdForward, align 8, !llfi_index !2835
-  %53 = load i32* %9, align 4, !llfi_index !2836
-  %54 = sub nsw i32 %53, 1, !llfi_index !2837
-  %55 = sext i32 %54 to i64, !llfi_index !2838
-  %56 = load i32* %8, align 4, !llfi_index !2839
-  %57 = sub nsw i32 %56, 2, !llfi_index !2840
-  %58 = sext i32 %57 to i64, !llfi_index !2841
-  %59 = call double** @_Z7dmatrixllll(i64 0, i64 %55, i64 0, i64 %58), !llfi_index !2842
-  store double** %59, double*** %ppdDrifts, align 8, !llfi_index !2843
-  %60 = load i32* %8, align 4, !llfi_index !2844
-  %61 = sub nsw i32 %60, 2, !llfi_index !2845
-  %62 = sext i32 %61 to i64, !llfi_index !2846
-  %63 = call double* @_Z7dvectorll(i64 0, i64 %62), !llfi_index !2847
-  store double* %63, double** %pdTotalDrift, align 8, !llfi_index !2848
-  %64 = load i32* %8, align 4, !llfi_index !2849
-  %65 = load i32* %15, align 4, !llfi_index !2850
-  %66 = mul nsw i32 %64, %65, !llfi_index !2851
-  %67 = sub nsw i32 %66, 1, !llfi_index !2852
-  %68 = sext i32 %67 to i64, !llfi_index !2853
-  %69 = call double* @_Z7dvectorll(i64 0, i64 %68), !llfi_index !2854
-  store double* %69, double** %pdPayoffDiscountFactors, align 8, !llfi_index !2855
-  %70 = load i32* %8, align 4, !llfi_index !2856
-  %71 = load i32* %15, align 4, !llfi_index !2857
-  %72 = mul nsw i32 %70, %71, !llfi_index !2858
-  %73 = sub nsw i32 %72, 1, !llfi_index !2859
-  %74 = sext i32 %73 to i64, !llfi_index !2860
-  %75 = call double* @_Z7dvectorll(i64 0, i64 %74), !llfi_index !2861
-  store double* %75, double** %pdDiscountingRatePath, align 8, !llfi_index !2862
-  %76 = load i32* %8, align 4, !llfi_index !2863
-  %77 = sitofp i32 %76 to double, !llfi_index !2864
-  %78 = load double* %5, align 8, !llfi_index !2865
-  %79 = load double* %ddelt, align 8, !llfi_index !2866
-  %80 = fdiv double %78, %79, !llfi_index !2867
-  %81 = fsub double %77, %80, !llfi_index !2868
-  %82 = fadd double %81, 5.000000e-01, !llfi_index !2869
-  %83 = fptosi double %82 to i32, !llfi_index !2870
-  store i32 %83, i32* %iSwapVectorLength, align 4, !llfi_index !2871
-  %84 = load i32* %iSwapVectorLength, align 4, !llfi_index !2872
-  %85 = load i32* %15, align 4, !llfi_index !2873
-  %86 = mul nsw i32 %84, %85, !llfi_index !2874
-  %87 = sub nsw i32 %86, 1, !llfi_index !2875
-  %88 = sext i32 %87 to i64, !llfi_index !2876
-  %89 = call double* @_Z7dvectorll(i64 0, i64 %88), !llfi_index !2877
-  store double* %89, double** %pdSwapRatePath, align 8, !llfi_index !2878
-  %90 = load i32* %iSwapVectorLength, align 4, !llfi_index !2879
-  %91 = load i32* %15, align 4, !llfi_index !2880
-  %92 = mul nsw i32 %90, %91, !llfi_index !2881
-  %93 = sub nsw i32 %92, 1, !llfi_index !2882
-  %94 = sext i32 %93 to i64, !llfi_index !2883
-  %95 = call double* @_Z7dvectorll(i64 0, i64 %94), !llfi_index !2884
-  store double* %95, double** %pdSwapDiscountFactors, align 8, !llfi_index !2885
-  %96 = load i32* %iSwapVectorLength, align 4, !llfi_index !2886
-  %97 = sub nsw i32 %96, 1, !llfi_index !2887
-  %98 = sext i32 %97 to i64, !llfi_index !2888
-  %99 = call double* @_Z7dvectorll(i64 0, i64 %98), !llfi_index !2889
-  store double* %99, double** %pdSwapPayoffs, align 8, !llfi_index !2890
-  %100 = load double* %5, align 8, !llfi_index !2891
-  %101 = load double* %ddelt, align 8, !llfi_index !2892
-  %102 = fdiv double %100, %101, !llfi_index !2893
-  %103 = fadd double %102, 5.000000e-01, !llfi_index !2894
-  %104 = fptosi double %103 to i32, !llfi_index !2895
-  store i32 %104, i32* %iSwapStartTimeIndex, align 4, !llfi_index !2896
-  %105 = load double* %6, align 8, !llfi_index !2897
-  %106 = load double* %ddelt, align 8, !llfi_index !2898
-  %107 = fdiv double %105, %106, !llfi_index !2899
-  %108 = fadd double %107, 5.000000e-01, !llfi_index !2900
-  %109 = fptosi double %108 to i32, !llfi_index !2901
-  store i32 %109, i32* %iSwapTimePoints, align 4, !llfi_index !2902
-  %110 = load i32* %iSwapVectorLength, align 4, !llfi_index !2903
-  %111 = sitofp i32 %110 to double, !llfi_index !2904
-  %112 = load double* %ddelt, align 8, !llfi_index !2905
-  %113 = fmul double %111, %112, !llfi_index !2906
-  store double %113, double* %dSwapVectorYears, align 8, !llfi_index !2907
-  store i32 0, i32* %i, align 4, !llfi_index !2908
-  br label %114, !llfi_index !2909
+  %40 = load i32* %8, align 4, !llfi_index !2820
+  %41 = sub nsw i32 %40, 1, !llfi_index !2821
+  %42 = sext i32 %41 to i64, !llfi_index !2822
+  %43 = load i32* %8, align 4, !llfi_index !2823
+  %44 = load i32* %15, align 4, !llfi_index !2824
+  %45 = mul nsw i32 %43, %44, !llfi_index !2825
+  %46 = sub nsw i32 %45, 1, !llfi_index !2826
+  %47 = sext i32 %46 to i64, !llfi_index !2827
+  %48 = call double** @_Z7dmatrixllll(i64 0, i64 %42, i64 0, i64 %47), !llfi_index !2828
+  store double** %48, double*** %ppdHJMPath, align 8, !llfi_index !2829
+  %49 = load i32* %8, align 4, !llfi_index !2830
+  %50 = sub nsw i32 %49, 1, !llfi_index !2831
+  %51 = sext i32 %50 to i64, !llfi_index !2832
+  %52 = call double* @_Z7dvectorll(i64 0, i64 %51), !llfi_index !2833
+  store double* %52, double** %pdForward, align 8, !llfi_index !2834
+  %53 = load i32* %9, align 4, !llfi_index !2835
+  %54 = sub nsw i32 %53, 1, !llfi_index !2836
+  %55 = sext i32 %54 to i64, !llfi_index !2837
+  %56 = load i32* %8, align 4, !llfi_index !2838
+  %57 = sub nsw i32 %56, 2, !llfi_index !2839
+  %58 = sext i32 %57 to i64, !llfi_index !2840
+  %59 = call double** @_Z7dmatrixllll(i64 0, i64 %55, i64 0, i64 %58), !llfi_index !2841
+  store double** %59, double*** %ppdDrifts, align 8, !llfi_index !2842
+  %60 = load i32* %8, align 4, !llfi_index !2843
+  %61 = sub nsw i32 %60, 2, !llfi_index !2844
+  %62 = sext i32 %61 to i64, !llfi_index !2845
+  %63 = call double* @_Z7dvectorll(i64 0, i64 %62), !llfi_index !2846
+  store double* %63, double** %pdTotalDrift, align 8, !llfi_index !2847
+  %64 = load i32* %8, align 4, !llfi_index !2848
+  %65 = load i32* %15, align 4, !llfi_index !2849
+  %66 = mul nsw i32 %64, %65, !llfi_index !2850
+  %67 = sub nsw i32 %66, 1, !llfi_index !2851
+  %68 = sext i32 %67 to i64, !llfi_index !2852
+  %69 = call double* @_Z7dvectorll(i64 0, i64 %68), !llfi_index !2853
+  store double* %69, double** %pdPayoffDiscountFactors, align 8, !llfi_index !2854
+  %70 = load i32* %8, align 4, !llfi_index !2855
+  %71 = load i32* %15, align 4, !llfi_index !2856
+  %72 = mul nsw i32 %70, %71, !llfi_index !2857
+  %73 = sub nsw i32 %72, 1, !llfi_index !2858
+  %74 = sext i32 %73 to i64, !llfi_index !2859
+  %75 = call double* @_Z7dvectorll(i64 0, i64 %74), !llfi_index !2860
+  store double* %75, double** %pdDiscountingRatePath, align 8, !llfi_index !2861
+  %76 = load i32* %8, align 4, !llfi_index !2862
+  %77 = sitofp i32 %76 to double, !llfi_index !2863
+  %78 = load double* %5, align 8, !llfi_index !2864
+  %79 = load double* %ddelt, align 8, !llfi_index !2865
+  %80 = fdiv double %78, %79, !llfi_index !2866
+  %81 = fsub double %77, %80, !llfi_index !2867
+  %82 = fadd double %81, 5.000000e-01, !llfi_index !2868
+  %83 = fptosi double %82 to i32, !llfi_index !2869
+  store i32 %83, i32* %iSwapVectorLength, align 4, !llfi_index !2870
+  %84 = load i32* %iSwapVectorLength, align 4, !llfi_index !2871
+  %85 = load i32* %15, align 4, !llfi_index !2872
+  %86 = mul nsw i32 %84, %85, !llfi_index !2873
+  %87 = sub nsw i32 %86, 1, !llfi_index !2874
+  %88 = sext i32 %87 to i64, !llfi_index !2875
+  %89 = call double* @_Z7dvectorll(i64 0, i64 %88), !llfi_index !2876
+  store double* %89, double** %pdSwapRatePath, align 8, !llfi_index !2877
+  %90 = load i32* %iSwapVectorLength, align 4, !llfi_index !2878
+  %91 = load i32* %15, align 4, !llfi_index !2879
+  %92 = mul nsw i32 %90, %91, !llfi_index !2880
+  %93 = sub nsw i32 %92, 1, !llfi_index !2881
+  %94 = sext i32 %93 to i64, !llfi_index !2882
+  %95 = call double* @_Z7dvectorll(i64 0, i64 %94), !llfi_index !2883
+  store double* %95, double** %pdSwapDiscountFactors, align 8, !llfi_index !2884
+  %96 = load i32* %iSwapVectorLength, align 4, !llfi_index !2885
+  %97 = sub nsw i32 %96, 1, !llfi_index !2886
+  %98 = sext i32 %97 to i64, !llfi_index !2887
+  %99 = call double* @_Z7dvectorll(i64 0, i64 %98), !llfi_index !2888
+  store double* %99, double** %pdSwapPayoffs, align 8, !llfi_index !2889
+  %100 = load double* %5, align 8, !llfi_index !2890
+  %101 = load double* %ddelt, align 8, !llfi_index !2891
+  %102 = fdiv double %100, %101, !llfi_index !2892
+  %103 = fadd double %102, 5.000000e-01, !llfi_index !2893
+  %104 = fptosi double %103 to i32, !llfi_index !2894
+  store i32 %104, i32* %iSwapStartTimeIndex, align 4, !llfi_index !2895
+  %105 = load double* %6, align 8, !llfi_index !2896
+  %106 = load double* %ddelt, align 8, !llfi_index !2897
+  %107 = fdiv double %105, %106, !llfi_index !2898
+  %108 = fadd double %107, 5.000000e-01, !llfi_index !2899
+  %109 = fptosi double %108 to i32, !llfi_index !2900
+  store i32 %109, i32* %iSwapTimePoints, align 4, !llfi_index !2901
+  %110 = load i32* %iSwapVectorLength, align 4, !llfi_index !2902
+  %111 = sitofp i32 %110 to double, !llfi_index !2903
+  %112 = load double* %ddelt, align 8, !llfi_index !2904
+  %113 = fmul double %111, %112, !llfi_index !2905
+  store double %113, double* %dSwapVectorYears, align 8, !llfi_index !2906
+  store i32 0, i32* %i, align 4, !llfi_index !2907
+  br label %114, !llfi_index !2908
 
 ; <label>:114                                     ; preds = %124, %39
-  %115 = load i32* %i, align 4, !llfi_index !2910
-  %116 = load i32* %iSwapVectorLength, align 4, !llfi_index !2911
-  %117 = sub nsw i32 %116, 1, !llfi_index !2912
-  %118 = icmp sle i32 %115, %117, !llfi_index !2913
-  br i1 %118, label %119, label %127, !llfi_index !2914
+  %115 = load i32* %i, align 4, !llfi_index !2909
+  %116 = load i32* %iSwapVectorLength, align 4, !llfi_index !2910
+  %117 = sub nsw i32 %116, 1, !llfi_index !2911
+  %118 = icmp sle i32 %115, %117, !llfi_index !2912
+  br i1 %118, label %119, label %127, !llfi_index !2913
 
 ; <label>:119                                     ; preds = %114
-  %120 = load i32* %i, align 4, !llfi_index !2915
-  %121 = sext i32 %120 to i64, !llfi_index !2916
-  %122 = load double** %pdSwapPayoffs, align 8, !llfi_index !2917
-  %123 = getelementptr inbounds double* %122, i64 %121, !llfi_index !2918
-  store double 0.000000e+00, double* %123, align 8, !llfi_index !2919
-  br label %124, !llfi_index !2920
+  %120 = load i32* %i, align 4, !llfi_index !2914
+  %121 = sext i32 %120 to i64, !llfi_index !2915
+  %122 = load double** %pdSwapPayoffs, align 8, !llfi_index !2916
+  %123 = getelementptr inbounds double* %122, i64 %121, !llfi_index !2917
+  store double 0.000000e+00, double* %123, align 8, !llfi_index !2918
+  br label %124, !llfi_index !2919
 
 ; <label>:124                                     ; preds = %119
-  %125 = load i32* %i, align 4, !llfi_index !2921
-  %126 = add nsw i32 %125, 1, !llfi_index !2922
-  store i32 %126, i32* %i, align 4, !llfi_index !2923
-  br label %114, !llfi_index !2924
+  %125 = load i32* %i, align 4, !llfi_index !2920
+  %126 = add nsw i32 %125, 1, !llfi_index !2921
+  store i32 %126, i32* %i, align 4, !llfi_index !2922
+  br label %114, !llfi_index !2923
 
 ; <label>:127                                     ; preds = %114
-  %128 = load i32* %iFreqRatio, align 4, !llfi_index !2925
-  store i32 %128, i32* %i, align 4, !llfi_index !2926
-  br label %129, !llfi_index !2927
+  %128 = load i32* %iFreqRatio, align 4, !llfi_index !2924
+  store i32 %128, i32* %i, align 4, !llfi_index !2925
+  br label %129, !llfi_index !2926
 
 ; <label>:129                                     ; preds = %161, %127
-  %130 = load i32* %i, align 4, !llfi_index !2928
-  %131 = load i32* %iSwapTimePoints, align 4, !llfi_index !2929
-  %132 = icmp sle i32 %130, %131, !llfi_index !2930
-  br i1 %132, label %133, label %165, !llfi_index !2931
+  %130 = load i32* %i, align 4, !llfi_index !2927
+  %131 = load i32* %iSwapTimePoints, align 4, !llfi_index !2928
+  %132 = icmp sle i32 %130, %131, !llfi_index !2929
+  br i1 %132, label %133, label %165, !llfi_index !2930
 
 ; <label>:133                                     ; preds = %129
-  %134 = load i32* %i, align 4, !llfi_index !2932
-  %135 = load i32* %iSwapTimePoints, align 4, !llfi_index !2933
-  %136 = icmp ne i32 %134, %135, !llfi_index !2934
-  br i1 %136, label %137, label %147, !llfi_index !2935
+  %134 = load i32* %i, align 4, !llfi_index !2931
+  %135 = load i32* %iSwapTimePoints, align 4, !llfi_index !2932
+  %136 = icmp ne i32 %134, %135, !llfi_index !2933
+  br i1 %136, label %137, label %147, !llfi_index !2934
 
 ; <label>:137                                     ; preds = %133
-  %138 = load double* %dStrikeCont, align 8, !llfi_index !2936
-  %139 = load double* %7, align 8, !llfi_index !2937
-  %140 = fmul double %138, %139, !llfi_index !2938
-  %141 = call double @exp(double %140) #5, !llfi_index !2939
-  %142 = fsub double %141, 1.000000e+00, !llfi_index !2940
-  %143 = load i32* %i, align 4, !llfi_index !2941
-  %144 = sext i32 %143 to i64, !llfi_index !2942
-  %145 = load double** %pdSwapPayoffs, align 8, !llfi_index !2943
-  %146 = getelementptr inbounds double* %145, i64 %144, !llfi_index !2944
-  store double %142, double* %146, align 8, !llfi_index !2945
-  br label %147, !llfi_index !2946
+  %138 = load double* %dStrikeCont, align 8, !llfi_index !2935
+  %139 = load double* %7, align 8, !llfi_index !2936
+  %140 = fmul double %138, %139, !llfi_index !2937
+  %141 = call double @exp(double %140) #5, !llfi_index !2938
+  %142 = fsub double %141, 1.000000e+00, !llfi_index !2939
+  %143 = load i32* %i, align 4, !llfi_index !2940
+  %144 = sext i32 %143 to i64, !llfi_index !2941
+  %145 = load double** %pdSwapPayoffs, align 8, !llfi_index !2942
+  %146 = getelementptr inbounds double* %145, i64 %144, !llfi_index !2943
+  store double %142, double* %146, align 8, !llfi_index !2944
+  br label %147, !llfi_index !2945
 
 ; <label>:147                                     ; preds = %137, %133
-  %148 = load i32* %i, align 4, !llfi_index !2947
-  %149 = load i32* %iSwapTimePoints, align 4, !llfi_index !2948
-  %150 = icmp eq i32 %148, %149, !llfi_index !2949
-  br i1 %150, label %151, label %160, !llfi_index !2950
+  %148 = load i32* %i, align 4, !llfi_index !2946
+  %149 = load i32* %iSwapTimePoints, align 4, !llfi_index !2947
+  %150 = icmp eq i32 %148, %149, !llfi_index !2948
+  br i1 %150, label %151, label %160, !llfi_index !2949
 
 ; <label>:151                                     ; preds = %147
-  %152 = load double* %dStrikeCont, align 8, !llfi_index !2951
-  %153 = load double* %7, align 8, !llfi_index !2952
-  %154 = fmul double %152, %153, !llfi_index !2953
-  %155 = call double @exp(double %154) #5, !llfi_index !2954
-  %156 = load i32* %i, align 4, !llfi_index !2955
-  %157 = sext i32 %156 to i64, !llfi_index !2956
-  %158 = load double** %pdSwapPayoffs, align 8, !llfi_index !2957
-  %159 = getelementptr inbounds double* %158, i64 %157, !llfi_index !2958
-  store double %155, double* %159, align 8, !llfi_index !2959
-  br label %160, !llfi_index !2960
+  %152 = load double* %dStrikeCont, align 8, !llfi_index !2950
+  %153 = load double* %7, align 8, !llfi_index !2951
+  %154 = fmul double %152, %153, !llfi_index !2952
+  %155 = call double @exp(double %154) #5, !llfi_index !2953
+  %156 = load i32* %i, align 4, !llfi_index !2954
+  %157 = sext i32 %156 to i64, !llfi_index !2955
+  %158 = load double** %pdSwapPayoffs, align 8, !llfi_index !2956
+  %159 = getelementptr inbounds double* %158, i64 %157, !llfi_index !2957
+  store double %155, double* %159, align 8, !llfi_index !2958
+  br label %160, !llfi_index !2959
 
 ; <label>:160                                     ; preds = %151, %147
-  br label %161, !llfi_index !2961
+  br label %161, !llfi_index !2960
 
 ; <label>:161                                     ; preds = %160
-  %162 = load i32* %iFreqRatio, align 4, !llfi_index !2962
-  %163 = load i32* %i, align 4, !llfi_index !2963
-  %164 = add nsw i32 %163, %162, !llfi_index !2964
-  store i32 %164, i32* %i, align 4, !llfi_index !2965
-  br label %129, !llfi_index !2966
+  %162 = load i32* %iFreqRatio, align 4, !llfi_index !2961
+  %163 = load i32* %i, align 4, !llfi_index !2962
+  %164 = add nsw i32 %163, %162, !llfi_index !2963
+  store i32 %164, i32* %i, align 4, !llfi_index !2964
+  br label %129, !llfi_index !2965
 
 ; <label>:165                                     ; preds = %129
-  %166 = load double** %pdForward, align 8, !llfi_index !2967
-  %167 = load i32* %8, align 4, !llfi_index !2968
-  %168 = load double** %11, align 8, !llfi_index !2969
-  %169 = call i32 @_Z20HJM_Yield_to_ForwardPdiS_(double* %166, i32 %167, double* %168), !llfi_index !2970
-  store i32 %169, i32* %iSuccess, align 4, !llfi_index !2971
-  %170 = load i32* %iSuccess, align 4, !llfi_index !2972
-  %171 = icmp ne i32 %170, 1, !llfi_index !2973
-  br i1 %171, label %172, label %174, !llfi_index !2974
+  %166 = load double** %pdForward, align 8, !llfi_index !2966
+  %167 = load i32* %8, align 4, !llfi_index !2967
+  %168 = load double** %11, align 8, !llfi_index !2968
+  %169 = call i32 @_Z20HJM_Yield_to_ForwardPdiS_(double* %166, i32 %167, double* %168), !llfi_index !2969
+  store i32 %169, i32* %iSuccess, align 4, !llfi_index !2970
+  %170 = load i32* %iSuccess, align 4, !llfi_index !2971
+  %171 = icmp ne i32 %170, 1, !llfi_index !2972
+  br i1 %171, label %172, label %174, !llfi_index !2973
 
 ; <label>:172                                     ; preds = %165
-  %173 = load i32* %iSuccess, align 4, !llfi_index !2975
-  store i32 %173, i32* %1, !llfi_index !2976
-  br label %399, !llfi_index !2977
+  %173 = load i32* %iSuccess, align 4, !llfi_index !2974
+  store i32 %173, i32* %1, !llfi_index !2975
+  br label %399, !llfi_index !2976
 
 ; <label>:174                                     ; preds = %165
-  %175 = load double** %pdTotalDrift, align 8, !llfi_index !2978
-  %176 = load double*** %ppdDrifts, align 8, !llfi_index !2979
-  %177 = load i32* %8, align 4, !llfi_index !2980
-  %178 = load i32* %9, align 4, !llfi_index !2981
-  %179 = load double* %10, align 8, !llfi_index !2982
-  %180 = load double*** %12, align 8, !llfi_index !2983
-  %181 = call i32 @_Z10HJM_DriftsPdPS_iidS0_(double* %175, double** %176, i32 %177, i32 %178, double %179, double** %180), !llfi_index !2984
-  store i32 %181, i32* %iSuccess, align 4, !llfi_index !2985
-  %182 = load i32* %iSuccess, align 4, !llfi_index !2986
-  %183 = icmp ne i32 %182, 1, !llfi_index !2987
-  br i1 %183, label %184, label %186, !llfi_index !2988
+  %175 = load double** %pdTotalDrift, align 8, !llfi_index !2977
+  %176 = load double*** %ppdDrifts, align 8, !llfi_index !2978
+  %177 = load i32* %8, align 4, !llfi_index !2979
+  %178 = load i32* %9, align 4, !llfi_index !2980
+  %179 = load double* %10, align 8, !llfi_index !2981
+  %180 = load double*** %12, align 8, !llfi_index !2982
+  %181 = call i32 @_Z10HJM_DriftsPdPS_iidS0_(double* %175, double** %176, i32 %177, i32 %178, double %179, double** %180), !llfi_index !2983
+  store i32 %181, i32* %iSuccess, align 4, !llfi_index !2984
+  %182 = load i32* %iSuccess, align 4, !llfi_index !2985
+  %183 = icmp ne i32 %182, 1, !llfi_index !2986
+  br i1 %183, label %184, label %186, !llfi_index !2987
 
 ; <label>:184                                     ; preds = %174
-  %185 = load i32* %iSuccess, align 4, !llfi_index !2989
-  store i32 %185, i32* %1, !llfi_index !2990
-  br label %399, !llfi_index !2991
+  %185 = load i32* %iSuccess, align 4, !llfi_index !2988
+  store i32 %185, i32* %1, !llfi_index !2989
+  br label %399, !llfi_index !2990
 
 ; <label>:186                                     ; preds = %174
-  store double 0.000000e+00, double* %dSumSimSwaptionPrice, align 8, !llfi_index !2992
-  store double 0.000000e+00, double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !2993
-  store i64 0, i64* %l, align 8, !llfi_index !2994
-  br label %187, !llfi_index !2995
+  store double 0.000000e+00, double* %dSumSimSwaptionPrice, align 8, !llfi_index !2991
+  store double 0.000000e+00, double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !2992
+  store i64 0, i64* %l, align 8, !llfi_index !2993
+  br label %187, !llfi_index !2994
 
 ; <label>:187                                     ; preds = %365, %186
-  %188 = load i64* %l, align 8, !llfi_index !2996
-  %189 = load i64* %14, align 8, !llfi_index !2997
-  %190 = sub nsw i64 %189, 1, !llfi_index !2998
-  %191 = icmp sle i64 %188, %190, !llfi_index !2999
-  br i1 %191, label %192, label %370, !llfi_index !3000
+  %188 = load i64* %l, align 8, !llfi_index !2995
+  %189 = load i64* %14, align 8, !llfi_index !2996
+  %190 = sub nsw i64 %189, 1, !llfi_index !2997
+  %191 = icmp sle i64 %188, %190, !llfi_index !2998
+  br i1 %191, label %192, label %370, !llfi_index !2999
 
 ; <label>:192                                     ; preds = %187
-  %193 = load double*** %ppdHJMPath, align 8, !llfi_index !3001
-  %194 = load i32* %8, align 4, !llfi_index !3002
-  %195 = load i32* %9, align 4, !llfi_index !3003
-  %196 = load double* %10, align 8, !llfi_index !3004
-  %197 = load double** %pdForward, align 8, !llfi_index !3005
-  %198 = load double** %pdTotalDrift, align 8, !llfi_index !3006
-  %199 = load double*** %12, align 8, !llfi_index !3007
-  %200 = load i32* %15, align 4, !llfi_index !3008
-  %201 = call i32 @_Z28HJM_SimPath_Forward_BlockingPPdiidS_S_S0_Pli(double** %193, i32 %194, i32 %195, double %196, double* %197, double* %198, double** %199, i64* %13, i32 %200), !llfi_index !3009
-  store i32 %201, i32* %iSuccess, align 4, !llfi_index !3010
-  %202 = load i32* %iSuccess, align 4, !llfi_index !3011
-  %203 = icmp ne i32 %202, 1, !llfi_index !3012
-  br i1 %203, label %204, label %206, !llfi_index !3013
+  %193 = load double*** %ppdHJMPath, align 8, !llfi_index !3000
+  %194 = load i32* %8, align 4, !llfi_index !3001
+  %195 = load i32* %9, align 4, !llfi_index !3002
+  %196 = load double* %10, align 8, !llfi_index !3003
+  %197 = load double** %pdForward, align 8, !llfi_index !3004
+  %198 = load double** %pdTotalDrift, align 8, !llfi_index !3005
+  %199 = load double*** %12, align 8, !llfi_index !3006
+  %200 = load i32* %15, align 4, !llfi_index !3007
+  %201 = call i32 @_Z28HJM_SimPath_Forward_BlockingPPdiidS_S_S0_Pli(double** %193, i32 %194, i32 %195, double %196, double* %197, double* %198, double** %199, i64* %13, i32 %200), !llfi_index !3008
+  store i32 %201, i32* %iSuccess, align 4, !llfi_index !3009
+  %202 = load i32* %iSuccess, align 4, !llfi_index !3010
+  %203 = icmp ne i32 %202, 1, !llfi_index !3011
+  br i1 %203, label %204, label %206, !llfi_index !3012
 
 ; <label>:204                                     ; preds = %192
-  %205 = load i32* %iSuccess, align 4, !llfi_index !3014
-  store i32 %205, i32* %1, !llfi_index !3015
-  br label %399, !llfi_index !3016
+  %205 = load i32* %iSuccess, align 4, !llfi_index !3013
+  store i32 %205, i32* %1, !llfi_index !3014
+  br label %399, !llfi_index !3015
 
 ; <label>:206                                     ; preds = %192
-  store i32 0, i32* %i, align 4, !llfi_index !3017
-  br label %207, !llfi_index !3018
+  store i32 0, i32* %i, align 4, !llfi_index !3016
+  br label %207, !llfi_index !3017
 
 ; <label>:207                                     ; preds = %241, %206
-  %208 = load i32* %i, align 4, !llfi_index !3019
-  %209 = load i32* %8, align 4, !llfi_index !3020
-  %210 = sub nsw i32 %209, 1, !llfi_index !3021
-  %211 = icmp sle i32 %208, %210, !llfi_index !3022
-  br i1 %211, label %212, label %244, !llfi_index !3023
+  %208 = load i32* %i, align 4, !llfi_index !3018
+  %209 = load i32* %8, align 4, !llfi_index !3019
+  %210 = sub nsw i32 %209, 1, !llfi_index !3020
+  %211 = icmp sle i32 %208, %210, !llfi_index !3021
+  br i1 %211, label %212, label %244, !llfi_index !3022
 
 ; <label>:212                                     ; preds = %207
-  store i32 0, i32* %b, align 4, !llfi_index !3024
-  br label %213, !llfi_index !3025
+  store i32 0, i32* %b, align 4, !llfi_index !3023
+  br label %213, !llfi_index !3024
 
 ; <label>:213                                     ; preds = %237, %212
-  %214 = load i32* %b, align 4, !llfi_index !3026
-  %215 = load i32* %15, align 4, !llfi_index !3027
-  %216 = sub nsw i32 %215, 1, !llfi_index !3028
-  %217 = icmp sle i32 %214, %216, !llfi_index !3029
-  br i1 %217, label %218, label %240, !llfi_index !3030
+  %214 = load i32* %b, align 4, !llfi_index !3025
+  %215 = load i32* %15, align 4, !llfi_index !3026
+  %216 = sub nsw i32 %215, 1, !llfi_index !3027
+  %217 = icmp sle i32 %214, %216, !llfi_index !3028
+  br i1 %217, label %218, label %240, !llfi_index !3029
 
 ; <label>:218                                     ; preds = %213
-  %219 = load i32* %b, align 4, !llfi_index !3031
-  %220 = add nsw i32 0, %219, !llfi_index !3032
-  %221 = sext i32 %220 to i64, !llfi_index !3033
-  %222 = load i32* %i, align 4, !llfi_index !3034
-  %223 = sext i32 %222 to i64, !llfi_index !3035
-  %224 = load double*** %ppdHJMPath, align 8, !llfi_index !3036
-  %225 = getelementptr inbounds double** %224, i64 %223, !llfi_index !3037
-  %226 = load double** %225, align 8, !llfi_index !3038
-  %227 = getelementptr inbounds double* %226, i64 %221, !llfi_index !3039
-  %228 = load double* %227, align 8, !llfi_index !3040
-  %229 = load i32* %15, align 4, !llfi_index !3041
-  %230 = load i32* %i, align 4, !llfi_index !3042
-  %231 = mul nsw i32 %229, %230, !llfi_index !3043
-  %232 = load i32* %b, align 4, !llfi_index !3044
-  %233 = add nsw i32 %231, %232, !llfi_index !3045
-  %234 = sext i32 %233 to i64, !llfi_index !3046
-  %235 = load double** %pdDiscountingRatePath, align 8, !llfi_index !3047
-  %236 = getelementptr inbounds double* %235, i64 %234, !llfi_index !3048
-  store double %228, double* %236, align 8, !llfi_index !3049
-  br label %237, !llfi_index !3050
+  %219 = load i32* %b, align 4, !llfi_index !3030
+  %220 = add nsw i32 0, %219, !llfi_index !3031
+  %221 = sext i32 %220 to i64, !llfi_index !3032
+  %222 = load i32* %i, align 4, !llfi_index !3033
+  %223 = sext i32 %222 to i64, !llfi_index !3034
+  %224 = load double*** %ppdHJMPath, align 8, !llfi_index !3035
+  %225 = getelementptr inbounds double** %224, i64 %223, !llfi_index !3036
+  %226 = load double** %225, align 8, !llfi_index !3037
+  %227 = getelementptr inbounds double* %226, i64 %221, !llfi_index !3038
+  %228 = load double* %227, align 8, !llfi_index !3039
+  %229 = load i32* %15, align 4, !llfi_index !3040
+  %230 = load i32* %i, align 4, !llfi_index !3041
+  %231 = mul nsw i32 %229, %230, !llfi_index !3042
+  %232 = load i32* %b, align 4, !llfi_index !3043
+  %233 = add nsw i32 %231, %232, !llfi_index !3044
+  %234 = sext i32 %233 to i64, !llfi_index !3045
+  %235 = load double** %pdDiscountingRatePath, align 8, !llfi_index !3046
+  %236 = getelementptr inbounds double* %235, i64 %234, !llfi_index !3047
+  store double %228, double* %236, align 8, !llfi_index !3048
+  br label %237, !llfi_index !3049
 
 ; <label>:237                                     ; preds = %218
-  %238 = load i32* %b, align 4, !llfi_index !3051
-  %239 = add nsw i32 %238, 1, !llfi_index !3052
-  store i32 %239, i32* %b, align 4, !llfi_index !3053
-  br label %213, !llfi_index !3054
+  %238 = load i32* %b, align 4, !llfi_index !3050
+  %239 = add nsw i32 %238, 1, !llfi_index !3051
+  store i32 %239, i32* %b, align 4, !llfi_index !3052
+  br label %213, !llfi_index !3053
 
 ; <label>:240                                     ; preds = %213
-  br label %241, !llfi_index !3055
+  br label %241, !llfi_index !3054
 
 ; <label>:241                                     ; preds = %240
-  %242 = load i32* %i, align 4, !llfi_index !3056
-  %243 = add nsw i32 %242, 1, !llfi_index !3057
-  store i32 %243, i32* %i, align 4, !llfi_index !3058
-  br label %207, !llfi_index !3059
+  %242 = load i32* %i, align 4, !llfi_index !3055
+  %243 = add nsw i32 %242, 1, !llfi_index !3056
+  store i32 %243, i32* %i, align 4, !llfi_index !3057
+  br label %207, !llfi_index !3058
 
 ; <label>:244                                     ; preds = %207
-  %245 = load double** %pdPayoffDiscountFactors, align 8, !llfi_index !3060
-  %246 = load i32* %8, align 4, !llfi_index !3061
-  %247 = load double* %10, align 8, !llfi_index !3062
-  %248 = load double** %pdDiscountingRatePath, align 8, !llfi_index !3063
-  %249 = load i32* %15, align 4, !llfi_index !3064
-  %250 = call i32 @_Z25Discount_Factors_BlockingPdidS_i(double* %245, i32 %246, double %247, double* %248, i32 %249), !llfi_index !3065
-  store i32 %250, i32* %iSuccess, align 4, !llfi_index !3066
-  %251 = load i32* %iSuccess, align 4, !llfi_index !3067
-  %252 = icmp ne i32 %251, 1, !llfi_index !3068
-  br i1 %252, label %253, label %255, !llfi_index !3069
+  %245 = load double** %pdPayoffDiscountFactors, align 8, !llfi_index !3059
+  %246 = load i32* %8, align 4, !llfi_index !3060
+  %247 = load double* %10, align 8, !llfi_index !3061
+  %248 = load double** %pdDiscountingRatePath, align 8, !llfi_index !3062
+  %249 = load i32* %15, align 4, !llfi_index !3063
+  %250 = call i32 @_Z25Discount_Factors_BlockingPdidS_i(double* %245, i32 %246, double %247, double* %248, i32 %249), !llfi_index !3064
+  store i32 %250, i32* %iSuccess, align 4, !llfi_index !3065
+  %251 = load i32* %iSuccess, align 4, !llfi_index !3066
+  %252 = icmp ne i32 %251, 1, !llfi_index !3067
+  br i1 %252, label %253, label %255, !llfi_index !3068
 
 ; <label>:253                                     ; preds = %244
-  %254 = load i32* %iSuccess, align 4, !llfi_index !3070
-  store i32 %254, i32* %1, !llfi_index !3071
-  br label %399, !llfi_index !3072
+  %254 = load i32* %iSuccess, align 4, !llfi_index !3069
+  store i32 %254, i32* %1, !llfi_index !3070
+  br label %399, !llfi_index !3071
 
 ; <label>:255                                     ; preds = %244
-  store i32 0, i32* %i, align 4, !llfi_index !3073
-  br label %256, !llfi_index !3074
+  store i32 0, i32* %i, align 4, !llfi_index !3072
+  br label %256, !llfi_index !3073
 
 ; <label>:256                                     ; preds = %292, %255
-  %257 = load i32* %i, align 4, !llfi_index !3075
-  %258 = load i32* %iSwapVectorLength, align 4, !llfi_index !3076
-  %259 = sub nsw i32 %258, 1, !llfi_index !3077
-  %260 = icmp sle i32 %257, %259, !llfi_index !3078
-  br i1 %260, label %261, label %295, !llfi_index !3079
+  %257 = load i32* %i, align 4, !llfi_index !3074
+  %258 = load i32* %iSwapVectorLength, align 4, !llfi_index !3075
+  %259 = sub nsw i32 %258, 1, !llfi_index !3076
+  %260 = icmp sle i32 %257, %259, !llfi_index !3077
+  br i1 %260, label %261, label %295, !llfi_index !3078
 
 ; <label>:261                                     ; preds = %256
-  store i32 0, i32* %b, align 4, !llfi_index !3080
-  br label %262, !llfi_index !3081
+  store i32 0, i32* %b, align 4, !llfi_index !3079
+  br label %262, !llfi_index !3080
 
 ; <label>:262                                     ; preds = %288, %261
-  %263 = load i32* %b, align 4, !llfi_index !3082
-  %264 = load i32* %15, align 4, !llfi_index !3083
-  %265 = icmp slt i32 %263, %264, !llfi_index !3084
-  br i1 %265, label %266, label %291, !llfi_index !3085
+  %263 = load i32* %b, align 4, !llfi_index !3081
+  %264 = load i32* %15, align 4, !llfi_index !3082
+  %265 = icmp slt i32 %263, %264, !llfi_index !3083
+  br i1 %265, label %266, label %291, !llfi_index !3084
 
 ; <label>:266                                     ; preds = %262
-  %267 = load i32* %i, align 4, !llfi_index !3086
-  %268 = load i32* %15, align 4, !llfi_index !3087
-  %269 = mul nsw i32 %267, %268, !llfi_index !3088
-  %270 = load i32* %b, align 4, !llfi_index !3089
-  %271 = add nsw i32 %269, %270, !llfi_index !3090
-  %272 = sext i32 %271 to i64, !llfi_index !3091
-  %273 = load i32* %iSwapStartTimeIndex, align 4, !llfi_index !3092
-  %274 = sext i32 %273 to i64, !llfi_index !3093
-  %275 = load double*** %ppdHJMPath, align 8, !llfi_index !3094
-  %276 = getelementptr inbounds double** %275, i64 %274, !llfi_index !3095
-  %277 = load double** %276, align 8, !llfi_index !3096
-  %278 = getelementptr inbounds double* %277, i64 %272, !llfi_index !3097
-  %279 = load double* %278, align 8, !llfi_index !3098
-  %280 = load i32* %i, align 4, !llfi_index !3099
-  %281 = load i32* %15, align 4, !llfi_index !3100
-  %282 = mul nsw i32 %280, %281, !llfi_index !3101
-  %283 = load i32* %b, align 4, !llfi_index !3102
-  %284 = add nsw i32 %282, %283, !llfi_index !3103
-  %285 = sext i32 %284 to i64, !llfi_index !3104
-  %286 = load double** %pdSwapRatePath, align 8, !llfi_index !3105
-  %287 = getelementptr inbounds double* %286, i64 %285, !llfi_index !3106
-  store double %279, double* %287, align 8, !llfi_index !3107
-  br label %288, !llfi_index !3108
+  %267 = load i32* %i, align 4, !llfi_index !3085
+  %268 = load i32* %15, align 4, !llfi_index !3086
+  %269 = mul nsw i32 %267, %268, !llfi_index !3087
+  %270 = load i32* %b, align 4, !llfi_index !3088
+  %271 = add nsw i32 %269, %270, !llfi_index !3089
+  %272 = sext i32 %271 to i64, !llfi_index !3090
+  %273 = load i32* %iSwapStartTimeIndex, align 4, !llfi_index !3091
+  %274 = sext i32 %273 to i64, !llfi_index !3092
+  %275 = load double*** %ppdHJMPath, align 8, !llfi_index !3093
+  %276 = getelementptr inbounds double** %275, i64 %274, !llfi_index !3094
+  %277 = load double** %276, align 8, !llfi_index !3095
+  %278 = getelementptr inbounds double* %277, i64 %272, !llfi_index !3096
+  %279 = load double* %278, align 8, !llfi_index !3097
+  %280 = load i32* %i, align 4, !llfi_index !3098
+  %281 = load i32* %15, align 4, !llfi_index !3099
+  %282 = mul nsw i32 %280, %281, !llfi_index !3100
+  %283 = load i32* %b, align 4, !llfi_index !3101
+  %284 = add nsw i32 %282, %283, !llfi_index !3102
+  %285 = sext i32 %284 to i64, !llfi_index !3103
+  %286 = load double** %pdSwapRatePath, align 8, !llfi_index !3104
+  %287 = getelementptr inbounds double* %286, i64 %285, !llfi_index !3105
+  store double %279, double* %287, align 8, !llfi_index !3106
+  br label %288, !llfi_index !3107
 
 ; <label>:288                                     ; preds = %266
-  %289 = load i32* %b, align 4, !llfi_index !3109
-  %290 = add nsw i32 %289, 1, !llfi_index !3110
-  store i32 %290, i32* %b, align 4, !llfi_index !3111
-  br label %262, !llfi_index !3112
+  %289 = load i32* %b, align 4, !llfi_index !3108
+  %290 = add nsw i32 %289, 1, !llfi_index !3109
+  store i32 %290, i32* %b, align 4, !llfi_index !3110
+  br label %262, !llfi_index !3111
 
 ; <label>:291                                     ; preds = %262
-  br label %292, !llfi_index !3113
+  br label %292, !llfi_index !3112
 
 ; <label>:292                                     ; preds = %291
-  %293 = load i32* %i, align 4, !llfi_index !3114
-  %294 = add nsw i32 %293, 1, !llfi_index !3115
-  store i32 %294, i32* %i, align 4, !llfi_index !3116
-  br label %256, !llfi_index !3117
+  %293 = load i32* %i, align 4, !llfi_index !3113
+  %294 = add nsw i32 %293, 1, !llfi_index !3114
+  store i32 %294, i32* %i, align 4, !llfi_index !3115
+  br label %256, !llfi_index !3116
 
 ; <label>:295                                     ; preds = %256
-  %296 = load double** %pdSwapDiscountFactors, align 8, !llfi_index !3118
-  %297 = load i32* %iSwapVectorLength, align 4, !llfi_index !3119
-  %298 = load double* %dSwapVectorYears, align 8, !llfi_index !3120
-  %299 = load double** %pdSwapRatePath, align 8, !llfi_index !3121
-  %300 = load i32* %15, align 4, !llfi_index !3122
-  %301 = call i32 @_Z25Discount_Factors_BlockingPdidS_i(double* %296, i32 %297, double %298, double* %299, i32 %300), !llfi_index !3123
-  store i32 %301, i32* %iSuccess, align 4, !llfi_index !3124
-  %302 = load i32* %iSuccess, align 4, !llfi_index !3125
-  %303 = icmp ne i32 %302, 1, !llfi_index !3126
-  br i1 %303, label %304, label %306, !llfi_index !3127
+  %296 = load double** %pdSwapDiscountFactors, align 8, !llfi_index !3117
+  %297 = load i32* %iSwapVectorLength, align 4, !llfi_index !3118
+  %298 = load double* %dSwapVectorYears, align 8, !llfi_index !3119
+  %299 = load double** %pdSwapRatePath, align 8, !llfi_index !3120
+  %300 = load i32* %15, align 4, !llfi_index !3121
+  %301 = call i32 @_Z25Discount_Factors_BlockingPdidS_i(double* %296, i32 %297, double %298, double* %299, i32 %300), !llfi_index !3122
+  store i32 %301, i32* %iSuccess, align 4, !llfi_index !3123
+  %302 = load i32* %iSuccess, align 4, !llfi_index !3124
+  %303 = icmp ne i32 %302, 1, !llfi_index !3125
+  br i1 %303, label %304, label %306, !llfi_index !3126
 
 ; <label>:304                                     ; preds = %295
-  %305 = load i32* %iSuccess, align 4, !llfi_index !3128
-  store i32 %305, i32* %1, !llfi_index !3129
-  br label %399, !llfi_index !3130
+  %305 = load i32* %iSuccess, align 4, !llfi_index !3127
+  store i32 %305, i32* %1, !llfi_index !3128
+  br label %399, !llfi_index !3129
 
 ; <label>:306                                     ; preds = %295
-  store i32 0, i32* %b, align 4, !llfi_index !3131
-  br label %307, !llfi_index !3132
+  store i32 0, i32* %b, align 4, !llfi_index !3130
+  br label %307, !llfi_index !3131
 
 ; <label>:307                                     ; preds = %361, %306
-  %308 = load i32* %b, align 4, !llfi_index !3133
-  %309 = load i32* %15, align 4, !llfi_index !3134
-  %310 = icmp slt i32 %308, %309, !llfi_index !3135
-  br i1 %310, label %311, label %364, !llfi_index !3136
+  %308 = load i32* %b, align 4, !llfi_index !3132
+  %309 = load i32* %15, align 4, !llfi_index !3133
+  %310 = icmp slt i32 %308, %309, !llfi_index !3134
+  br i1 %310, label %311, label %364, !llfi_index !3135
 
 ; <label>:311                                     ; preds = %307
-  store double 0.000000e+00, double* %dFixedLegValue, align 8, !llfi_index !3137
-  store i32 0, i32* %i, align 4, !llfi_index !3138
-  br label %312, !llfi_index !3139
+  store double 0.000000e+00, double* %dFixedLegValue, align 8, !llfi_index !3136
+  store i32 0, i32* %i, align 4, !llfi_index !3137
+  br label %312, !llfi_index !3138
 
 ; <label>:312                                     ; preds = %335, %311
-  %313 = load i32* %i, align 4, !llfi_index !3140
-  %314 = load i32* %iSwapVectorLength, align 4, !llfi_index !3141
-  %315 = sub nsw i32 %314, 1, !llfi_index !3142
-  %316 = icmp sle i32 %313, %315, !llfi_index !3143
-  br i1 %316, label %317, label %338, !llfi_index !3144
+  %313 = load i32* %i, align 4, !llfi_index !3139
+  %314 = load i32* %iSwapVectorLength, align 4, !llfi_index !3140
+  %315 = sub nsw i32 %314, 1, !llfi_index !3141
+  %316 = icmp sle i32 %313, %315, !llfi_index !3142
+  br i1 %316, label %317, label %338, !llfi_index !3143
 
 ; <label>:317                                     ; preds = %312
-  %318 = load i32* %i, align 4, !llfi_index !3145
-  %319 = sext i32 %318 to i64, !llfi_index !3146
-  %320 = load double** %pdSwapPayoffs, align 8, !llfi_index !3147
-  %321 = getelementptr inbounds double* %320, i64 %319, !llfi_index !3148
-  %322 = load double* %321, align 8, !llfi_index !3149
-  %323 = load i32* %i, align 4, !llfi_index !3150
-  %324 = load i32* %15, align 4, !llfi_index !3151
-  %325 = mul nsw i32 %323, %324, !llfi_index !3152
-  %326 = load i32* %b, align 4, !llfi_index !3153
-  %327 = add nsw i32 %325, %326, !llfi_index !3154
-  %328 = sext i32 %327 to i64, !llfi_index !3155
-  %329 = load double** %pdSwapDiscountFactors, align 8, !llfi_index !3156
-  %330 = getelementptr inbounds double* %329, i64 %328, !llfi_index !3157
-  %331 = load double* %330, align 8, !llfi_index !3158
-  %332 = fmul double %322, %331, !llfi_index !3159
-  %333 = load double* %dFixedLegValue, align 8, !llfi_index !3160
-  %334 = fadd double %333, %332, !llfi_index !3161
-  store double %334, double* %dFixedLegValue, align 8, !llfi_index !3162
-  br label %335, !llfi_index !3163
+  %318 = load i32* %i, align 4, !llfi_index !3144
+  %319 = sext i32 %318 to i64, !llfi_index !3145
+  %320 = load double** %pdSwapPayoffs, align 8, !llfi_index !3146
+  %321 = getelementptr inbounds double* %320, i64 %319, !llfi_index !3147
+  %322 = load double* %321, align 8, !llfi_index !3148
+  %323 = load i32* %i, align 4, !llfi_index !3149
+  %324 = load i32* %15, align 4, !llfi_index !3150
+  %325 = mul nsw i32 %323, %324, !llfi_index !3151
+  %326 = load i32* %b, align 4, !llfi_index !3152
+  %327 = add nsw i32 %325, %326, !llfi_index !3153
+  %328 = sext i32 %327 to i64, !llfi_index !3154
+  %329 = load double** %pdSwapDiscountFactors, align 8, !llfi_index !3155
+  %330 = getelementptr inbounds double* %329, i64 %328, !llfi_index !3156
+  %331 = load double* %330, align 8, !llfi_index !3157
+  %332 = fmul double %322, %331, !llfi_index !3158
+  %333 = load double* %dFixedLegValue, align 8, !llfi_index !3159
+  %334 = fadd double %333, %332, !llfi_index !3160
+  store double %334, double* %dFixedLegValue, align 8, !llfi_index !3161
+  br label %335, !llfi_index !3162
 
 ; <label>:335                                     ; preds = %317
-  %336 = load i32* %i, align 4, !llfi_index !3164
-  %337 = add nsw i32 %336, 1, !llfi_index !3165
-  store i32 %337, i32* %i, align 4, !llfi_index !3166
-  br label %312, !llfi_index !3167
+  %336 = load i32* %i, align 4, !llfi_index !3163
+  %337 = add nsw i32 %336, 1, !llfi_index !3164
+  store i32 %337, i32* %i, align 4, !llfi_index !3165
+  br label %312, !llfi_index !3166
 
 ; <label>:338                                     ; preds = %312
-  %339 = load double* %dFixedLegValue, align 8, !llfi_index !3168
-  %340 = fsub double %339, 1.000000e+00, !llfi_index !3169
-  %341 = call double @_Z4dMaxdd(double %340, double 0.000000e+00), !llfi_index !3170
-  store double %341, double* %dSwaptionPayoff, align 8, !llfi_index !3171
-  %342 = load double* %dSwaptionPayoff, align 8, !llfi_index !3172
-  %343 = load i32* %iSwapStartTimeIndex, align 4, !llfi_index !3173
-  %344 = load i32* %15, align 4, !llfi_index !3174
-  %345 = mul nsw i32 %343, %344, !llfi_index !3175
-  %346 = load i32* %b, align 4, !llfi_index !3176
-  %347 = add nsw i32 %345, %346, !llfi_index !3177
-  %348 = sext i32 %347 to i64, !llfi_index !3178
-  %349 = load double** %pdPayoffDiscountFactors, align 8, !llfi_index !3179
-  %350 = getelementptr inbounds double* %349, i64 %348, !llfi_index !3180
-  %351 = load double* %350, align 8, !llfi_index !3181
-  %352 = fmul double %342, %351, !llfi_index !3182
-  store double %352, double* %dDiscSwaptionPayoff, align 8, !llfi_index !3183
-  %353 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3184
-  %354 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3185
-  %355 = fadd double %354, %353, !llfi_index !3186
-  store double %355, double* %dSumSimSwaptionPrice, align 8, !llfi_index !3187
-  %356 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3188
-  %357 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3189
-  %358 = fmul double %356, %357, !llfi_index !3190
-  %359 = load double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3191
-  %360 = fadd double %359, %358, !llfi_index !3192
-  store double %360, double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3193
-  br label %361, !llfi_index !3194
+  %339 = load double* %dFixedLegValue, align 8, !llfi_index !3167
+  %340 = fsub double %339, 1.000000e+00, !llfi_index !3168
+  %341 = call double @_Z4dMaxdd(double %340, double 0.000000e+00), !llfi_index !3169
+  store double %341, double* %dSwaptionPayoff, align 8, !llfi_index !3170
+  %342 = load double* %dSwaptionPayoff, align 8, !llfi_index !3171
+  %343 = load i32* %iSwapStartTimeIndex, align 4, !llfi_index !3172
+  %344 = load i32* %15, align 4, !llfi_index !3173
+  %345 = mul nsw i32 %343, %344, !llfi_index !3174
+  %346 = load i32* %b, align 4, !llfi_index !3175
+  %347 = add nsw i32 %345, %346, !llfi_index !3176
+  %348 = sext i32 %347 to i64, !llfi_index !3177
+  %349 = load double** %pdPayoffDiscountFactors, align 8, !llfi_index !3178
+  %350 = getelementptr inbounds double* %349, i64 %348, !llfi_index !3179
+  %351 = load double* %350, align 8, !llfi_index !3180
+  %352 = fmul double %342, %351, !llfi_index !3181
+  store double %352, double* %dDiscSwaptionPayoff, align 8, !llfi_index !3182
+  %353 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3183
+  %354 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3184
+  %355 = fadd double %354, %353, !llfi_index !3185
+  store double %355, double* %dSumSimSwaptionPrice, align 8, !llfi_index !3186
+  %356 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3187
+  %357 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3188
+  %358 = fmul double %356, %357, !llfi_index !3189
+  %359 = load double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3190
+  %360 = fadd double %359, %358, !llfi_index !3191
+  store double %360, double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3192
+  br label %361, !llfi_index !3193
 
 ; <label>:361                                     ; preds = %338
-  %362 = load i32* %b, align 4, !llfi_index !3195
-  %363 = add nsw i32 %362, 1, !llfi_index !3196
-  store i32 %363, i32* %b, align 4, !llfi_index !3197
-  br label %307, !llfi_index !3198
+  %362 = load i32* %b, align 4, !llfi_index !3194
+  %363 = add nsw i32 %362, 1, !llfi_index !3195
+  store i32 %363, i32* %b, align 4, !llfi_index !3196
+  br label %307, !llfi_index !3197
 
 ; <label>:364                                     ; preds = %307
-  br label %365, !llfi_index !3199
+  br label %365, !llfi_index !3198
 
 ; <label>:365                                     ; preds = %364
-  %366 = load i32* %15, align 4, !llfi_index !3200
-  %367 = sext i32 %366 to i64, !llfi_index !3201
-  %368 = load i64* %l, align 8, !llfi_index !3202
-  %369 = add nsw i64 %368, %367, !llfi_index !3203
-  store i64 %369, i64* %l, align 8, !llfi_index !3204
-  br label %187, !llfi_index !3205
+  %366 = load i32* %15, align 4, !llfi_index !3199
+  %367 = sext i32 %366 to i64, !llfi_index !3200
+  %368 = load i64* %l, align 8, !llfi_index !3201
+  %369 = add nsw i64 %368, %367, !llfi_index !3202
+  store i64 %369, i64* %l, align 8, !llfi_index !3203
+  br label %187, !llfi_index !3204
 
 ; <label>:370                                     ; preds = %187
-  %371 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3206
-  %372 = load i64* %14, align 8, !llfi_index !3207
-  %373 = sitofp i64 %372 to double, !llfi_index !3208
-  %374 = fdiv double %371, %373, !llfi_index !3209
-  store double %374, double* %dSimSwaptionMeanPrice, align 8, !llfi_index !3210
-  %375 = load double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3211
-  %376 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3212
-  %377 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3213
-  %378 = fmul double %376, %377, !llfi_index !3214
-  %379 = load i64* %14, align 8, !llfi_index !3215
-  %380 = sitofp i64 %379 to double, !llfi_index !3216
-  %381 = fdiv double %378, %380, !llfi_index !3217
-  %382 = fsub double %375, %381, !llfi_index !3218
-  %383 = load i64* %14, align 8, !llfi_index !3219
-  %384 = sitofp i64 %383 to double, !llfi_index !3220
-  %385 = fsub double %384, 1.000000e+00, !llfi_index !3221
-  %386 = fdiv double %382, %385, !llfi_index !3222
-  %387 = call double @sqrt(double %386) #5, !llfi_index !3223
-  %388 = load i64* %14, align 8, !llfi_index !3224
-  %389 = sitofp i64 %388 to double, !llfi_index !3225
-  %390 = call double @sqrt(double %389) #5, !llfi_index !3226
-  %391 = fdiv double %387, %390, !llfi_index !3227
-  store double %391, double* %dSimSwaptionStdError, align 8, !llfi_index !3228
-  %392 = load double* %dSimSwaptionMeanPrice, align 8, !llfi_index !3229
-  %393 = load double** %2, align 8, !llfi_index !3230
-  %394 = getelementptr inbounds double* %393, i64 0, !llfi_index !3231
-  store double %392, double* %394, align 8, !llfi_index !3232
-  %395 = load double* %dSimSwaptionStdError, align 8, !llfi_index !3233
-  %396 = load double** %2, align 8, !llfi_index !3234
-  %397 = getelementptr inbounds double* %396, i64 1, !llfi_index !3235
-  store double %395, double* %397, align 8, !llfi_index !3236
-  store i32 1, i32* %iSuccess, align 4, !llfi_index !3237
-  %398 = load i32* %iSuccess, align 4, !llfi_index !3238
-  store i32 %398, i32* %1, !llfi_index !3239
-  br label %399, !llfi_index !3240
+  %371 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3205
+  %372 = load i64* %14, align 8, !llfi_index !3206
+  %373 = sitofp i64 %372 to double, !llfi_index !3207
+  %374 = fdiv double %371, %373, !llfi_index !3208
+  store double %374, double* %dSimSwaptionMeanPrice, align 8, !llfi_index !3209
+  %375 = load double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3210
+  %376 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3211
+  %377 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3212
+  %378 = fmul double %376, %377, !llfi_index !3213
+  %379 = load i64* %14, align 8, !llfi_index !3214
+  %380 = sitofp i64 %379 to double, !llfi_index !3215
+  %381 = fdiv double %378, %380, !llfi_index !3216
+  %382 = fsub double %375, %381, !llfi_index !3217
+  %383 = load i64* %14, align 8, !llfi_index !3218
+  %384 = sitofp i64 %383 to double, !llfi_index !3219
+  %385 = fsub double %384, 1.000000e+00, !llfi_index !3220
+  %386 = fdiv double %382, %385, !llfi_index !3221
+  %387 = call double @sqrt(double %386) #5, !llfi_index !3222
+  %388 = load i64* %14, align 8, !llfi_index !3223
+  %389 = sitofp i64 %388 to double, !llfi_index !3224
+  %390 = call double @sqrt(double %389) #5, !llfi_index !3225
+  %391 = fdiv double %387, %390, !llfi_index !3226
+  store double %391, double* %dSimSwaptionStdError, align 8, !llfi_index !3227
+  %392 = load double* %dSimSwaptionMeanPrice, align 8, !llfi_index !3228
+  %393 = load double** %2, align 8, !llfi_index !3229
+  %394 = getelementptr inbounds double* %393, i64 0, !llfi_index !3230
+  store double %392, double* %394, align 8, !llfi_index !3231
+  %395 = load double* %dSimSwaptionStdError, align 8, !llfi_index !3232
+  %396 = load double** %2, align 8, !llfi_index !3233
+  %397 = getelementptr inbounds double* %396, i64 1, !llfi_index !3234
+  store double %395, double* %397, align 8, !llfi_index !3235
+  store i32 1, i32* %iSuccess, align 4, !llfi_index !3236
+  %398 = load i32* %iSuccess, align 4, !llfi_index !3237
+  store i32 %398, i32* %1, !llfi_index !3238
+  br label %399, !llfi_index !3239
 
 ; <label>:399                                     ; preds = %370, %304, %253, %204, %184, %172
-  %400 = load i32* %1, !llfi_index !3241
-  ret i32 %400, !llfi_index !3242
+  %400 = load i32* %1, !llfi_index !3240
+  ret i32 %400, !llfi_index !3241
 }
 
 ; Function Attrs: nounwind uwtable
 define void @_Z13icdf_baselineiPdS_(i32 %N, double* %in, double* %out) #0 {
-  %1 = alloca i32, align 4, !llfi_index !3243
-  %2 = alloca double*, align 8, !llfi_index !3244
-  %3 = alloca double*, align 8, !llfi_index !3245
-  %z = alloca double, align 8, !llfi_index !3246
-  %r = alloca double, align 8, !llfi_index !3247
-  %a1 = alloca double, align 8, !llfi_index !3248
-  %a2 = alloca double, align 8, !llfi_index !3249
-  %a3 = alloca double, align 8, !llfi_index !3250
-  %a4 = alloca double, align 8, !llfi_index !3251
-  %a5 = alloca double, align 8, !llfi_index !3252
-  %a6 = alloca double, align 8, !llfi_index !3253
-  %b1 = alloca double, align 8, !llfi_index !3254
-  %b2 = alloca double, align 8, !llfi_index !3255
-  %b3 = alloca double, align 8, !llfi_index !3256
-  %b4 = alloca double, align 8, !llfi_index !3257
-  %b5 = alloca double, align 8, !llfi_index !3258
-  %c1 = alloca double, align 8, !llfi_index !3259
-  %c2 = alloca double, align 8, !llfi_index !3260
-  %c3 = alloca double, align 8, !llfi_index !3261
-  %c4 = alloca double, align 8, !llfi_index !3262
-  %c5 = alloca double, align 8, !llfi_index !3263
-  %c6 = alloca double, align 8, !llfi_index !3264
-  %d1 = alloca double, align 8, !llfi_index !3265
-  %d2 = alloca double, align 8, !llfi_index !3266
-  %d3 = alloca double, align 8, !llfi_index !3267
-  %d4 = alloca double, align 8, !llfi_index !3268
-  %u_low = alloca double, align 8, !llfi_index !3269
-  %u_high = alloca double, align 8, !llfi_index !3270
-  %i = alloca i32, align 4, !llfi_index !3271
-  %u = alloca double, align 8, !llfi_index !3272
-  store i32 %N, i32* %1, align 4, !llfi_index !3273
-  store double* %in, double** %2, align 8, !llfi_index !3274
-  store double* %out, double** %3, align 8, !llfi_index !3275
-  store double 0xC043D931BC1E0525, double* %a1, align 8, !llfi_index !3276
-  store double 0x406B9E467034039B, double* %a2, align 8, !llfi_index !3277
-  store double 0xC0713EDB2DC53B99, double* %a3, align 8, !llfi_index !3278
-  store double 0x40614B72B40B401B, double* %a4, align 8, !llfi_index !3279
-  store double 0xC03EAA3034C08BCD, double* %a5, align 8, !llfi_index !3280
-  store double 0x40040D9320575479, double* %a6, align 8, !llfi_index !3281
-  store double 0xC04B3CF0CE3004C4, double* %b1, align 8, !llfi_index !3282
-  store double 0x406432BF2CF04277, double* %b2, align 8, !llfi_index !3283
-  store double 0xC063765E0B02D8D2, double* %b3, align 8, !llfi_index !3284
-  store double 0x4050B348B1A7E9BE, double* %b4, align 8, !llfi_index !3285
-  store double 0xC02A8FB57E147826, double* %b5, align 8, !llfi_index !3286
-  store double 0xBF7FE30D924ACFE0, double* %c1, align 8, !llfi_index !3287
-  store double 0xBFD4A224C0E881B8, double* %c2, align 8, !llfi_index !3288
-  store double 0xC00334C0C1701758, double* %c3, align 8, !llfi_index !3289
-  store double 0xC00465DA2C703A1A, double* %c4, align 8, !llfi_index !3290
-  store double 0x40117FA7F4EA4DC7, double* %c5, align 8, !llfi_index !3291
-  store double 0x4007815C1E3FCFA2, double* %c6, align 8, !llfi_index !3292
-  store double 0x3F7FE2D857AC9FD4, double* %d1, align 8, !llfi_index !3293
-  store double 0x3FD4A34D2B590364, double* %d2, align 8, !llfi_index !3294
-  store double 0x40038FA27C8AE616, double* %d3, align 8, !llfi_index !3295
-  store double 0x400E09076895B119, double* %d4, align 8, !llfi_index !3296
-  store double 2.425000e-02, double* %u_low, align 8, !llfi_index !3297
-  store double 9.757500e-01, double* %u_high, align 8, !llfi_index !3298
-  store i32 0, i32* %i, align 4, !llfi_index !3299
-  br label %4, !llfi_index !3300
+  %1 = alloca i32, align 4, !llfi_index !3242
+  %2 = alloca double*, align 8, !llfi_index !3243
+  %3 = alloca double*, align 8, !llfi_index !3244
+  %z = alloca double, align 8, !llfi_index !3245
+  %r = alloca double, align 8, !llfi_index !3246
+  %a1 = alloca double, align 8, !llfi_index !3247
+  %a2 = alloca double, align 8, !llfi_index !3248
+  %a3 = alloca double, align 8, !llfi_index !3249
+  %a4 = alloca double, align 8, !llfi_index !3250
+  %a5 = alloca double, align 8, !llfi_index !3251
+  %a6 = alloca double, align 8, !llfi_index !3252
+  %b1 = alloca double, align 8, !llfi_index !3253
+  %b2 = alloca double, align 8, !llfi_index !3254
+  %b3 = alloca double, align 8, !llfi_index !3255
+  %b4 = alloca double, align 8, !llfi_index !3256
+  %b5 = alloca double, align 8, !llfi_index !3257
+  %c1 = alloca double, align 8, !llfi_index !3258
+  %c2 = alloca double, align 8, !llfi_index !3259
+  %c3 = alloca double, align 8, !llfi_index !3260
+  %c4 = alloca double, align 8, !llfi_index !3261
+  %c5 = alloca double, align 8, !llfi_index !3262
+  %c6 = alloca double, align 8, !llfi_index !3263
+  %d1 = alloca double, align 8, !llfi_index !3264
+  %d2 = alloca double, align 8, !llfi_index !3265
+  %d3 = alloca double, align 8, !llfi_index !3266
+  %d4 = alloca double, align 8, !llfi_index !3267
+  %u_low = alloca double, align 8, !llfi_index !3268
+  %u_high = alloca double, align 8, !llfi_index !3269
+  %i = alloca i32, align 4, !llfi_index !3270
+  %u = alloca double, align 8, !llfi_index !3271
+  store i32 %N, i32* %1, align 4, !llfi_index !3272
+  store double* %in, double** %2, align 8, !llfi_index !3273
+  store double* %out, double** %3, align 8, !llfi_index !3274
+  store double 0xC043D931BC1E0525, double* %a1, align 8, !llfi_index !3275
+  store double 0x406B9E467034039B, double* %a2, align 8, !llfi_index !3276
+  store double 0xC0713EDB2DC53B99, double* %a3, align 8, !llfi_index !3277
+  store double 0x40614B72B40B401B, double* %a4, align 8, !llfi_index !3278
+  store double 0xC03EAA3034C08BCD, double* %a5, align 8, !llfi_index !3279
+  store double 0x40040D9320575479, double* %a6, align 8, !llfi_index !3280
+  store double 0xC04B3CF0CE3004C4, double* %b1, align 8, !llfi_index !3281
+  store double 0x406432BF2CF04277, double* %b2, align 8, !llfi_index !3282
+  store double 0xC063765E0B02D8D2, double* %b3, align 8, !llfi_index !3283
+  store double 0x4050B348B1A7E9BE, double* %b4, align 8, !llfi_index !3284
+  store double 0xC02A8FB57E147826, double* %b5, align 8, !llfi_index !3285
+  store double 0xBF7FE30D924ACFE0, double* %c1, align 8, !llfi_index !3286
+  store double 0xBFD4A224C0E881B8, double* %c2, align 8, !llfi_index !3287
+  store double 0xC00334C0C1701758, double* %c3, align 8, !llfi_index !3288
+  store double 0xC00465DA2C703A1A, double* %c4, align 8, !llfi_index !3289
+  store double 0x40117FA7F4EA4DC7, double* %c5, align 8, !llfi_index !3290
+  store double 0x4007815C1E3FCFA2, double* %c6, align 8, !llfi_index !3291
+  store double 0x3F7FE2D857AC9FD4, double* %d1, align 8, !llfi_index !3292
+  store double 0x3FD4A34D2B590364, double* %d2, align 8, !llfi_index !3293
+  store double 0x40038FA27C8AE616, double* %d3, align 8, !llfi_index !3294
+  store double 0x400E09076895B119, double* %d4, align 8, !llfi_index !3295
+  store double 2.425000e-02, double* %u_low, align 8, !llfi_index !3296
+  store double 9.757500e-01, double* %u_high, align 8, !llfi_index !3297
+  store i32 0, i32* %i, align 4, !llfi_index !3298
+  br label %4, !llfi_index !3299
 
 ; <label>:4                                       ; preds = %133, %0
-  %5 = load i32* %i, align 4, !llfi_index !3301
-  %6 = load i32* %1, align 4, !llfi_index !3302
-  %7 = icmp slt i32 %5, %6, !llfi_index !3303
-  br i1 %7, label %8, label %136, !llfi_index !3304
+  %5 = load i32* %i, align 4, !llfi_index !3300
+  %6 = load i32* %1, align 4, !llfi_index !3301
+  %7 = icmp slt i32 %5, %6, !llfi_index !3302
+  br i1 %7, label %8, label %136, !llfi_index !3303
 
 ; <label>:8                                       ; preds = %4
-  %9 = load i32* %i, align 4, !llfi_index !3305
-  %10 = sext i32 %9 to i64, !llfi_index !3306
-  %11 = load double** %2, align 8, !llfi_index !3307
-  %12 = getelementptr inbounds double* %11, i64 %10, !llfi_index !3308
-  %13 = load double* %12, align 8, !llfi_index !3309
-  store double %13, double* %u, align 8, !llfi_index !3310
-  %14 = load double* %u, align 8, !llfi_index !3311
-  %15 = fcmp olt double %14, 2.425000e-02, !llfi_index !3312
-  br i1 %15, label %16, label %49, !llfi_index !3313
+  %9 = load i32* %i, align 4, !llfi_index !3304
+  %10 = sext i32 %9 to i64, !llfi_index !3305
+  %11 = load double** %2, align 8, !llfi_index !3306
+  %12 = getelementptr inbounds double* %11, i64 %10, !llfi_index !3307
+  %13 = load double* %12, align 8, !llfi_index !3308
+  store double %13, double* %u, align 8, !llfi_index !3309
+  %14 = load double* %u, align 8, !llfi_index !3310
+  %15 = fcmp olt double %14, 2.425000e-02, !llfi_index !3311
+  br i1 %15, label %16, label %49, !llfi_index !3312
 
 ; <label>:16                                      ; preds = %8
-  %17 = load double* %u, align 8, !llfi_index !3314
-  %18 = call double @log(double %17) #5, !llfi_index !3315
-  %19 = fmul double -2.000000e+00, %18, !llfi_index !3316
-  %20 = call double @sqrt(double %19) #5, !llfi_index !3317
-  store double %20, double* %z, align 8, !llfi_index !3318
-  %21 = load double* %z, align 8, !llfi_index !3319
-  %22 = fmul double 0xBF7FE30D924ACFE0, %21, !llfi_index !3320
-  %23 = fadd double %22, 0xBFD4A224C0E881B8, !llfi_index !3321
-  %24 = load double* %z, align 8, !llfi_index !3322
-  %25 = fmul double %23, %24, !llfi_index !3323
-  %26 = fadd double %25, 0xC00334C0C1701758, !llfi_index !3324
-  %27 = load double* %z, align 8, !llfi_index !3325
-  %28 = fmul double %26, %27, !llfi_index !3326
-  %29 = fadd double %28, 0xC00465DA2C703A1A, !llfi_index !3327
-  %30 = load double* %z, align 8, !llfi_index !3328
-  %31 = fmul double %29, %30, !llfi_index !3329
-  %32 = fadd double %31, 0x40117FA7F4EA4DC7, !llfi_index !3330
-  %33 = load double* %z, align 8, !llfi_index !3331
-  %34 = fmul double %32, %33, !llfi_index !3332
-  %35 = fadd double %34, 0x4007815C1E3FCFA2, !llfi_index !3333
-  %36 = load double* %z, align 8, !llfi_index !3334
-  %37 = fmul double 0x3F7FE2D857AC9FD4, %36, !llfi_index !3335
-  %38 = fadd double %37, 0x3FD4A34D2B590364, !llfi_index !3336
-  %39 = load double* %z, align 8, !llfi_index !3337
-  %40 = fmul double %38, %39, !llfi_index !3338
-  %41 = fadd double %40, 0x40038FA27C8AE616, !llfi_index !3339
-  %42 = load double* %z, align 8, !llfi_index !3340
-  %43 = fmul double %41, %42, !llfi_index !3341
-  %44 = fadd double %43, 0x400E09076895B119, !llfi_index !3342
-  %45 = load double* %z, align 8, !llfi_index !3343
-  %46 = fmul double %44, %45, !llfi_index !3344
-  %47 = fadd double %46, 1.000000e+00, !llfi_index !3345
-  %48 = fdiv double %35, %47, !llfi_index !3346
-  store double %48, double* %z, align 8, !llfi_index !3347
-  br label %127, !llfi_index !3348
+  %17 = load double* %u, align 8, !llfi_index !3313
+  %18 = call double @log(double %17) #5, !llfi_index !3314
+  %19 = fmul double -2.000000e+00, %18, !llfi_index !3315
+  %20 = call double @sqrt(double %19) #5, !llfi_index !3316
+  store double %20, double* %z, align 8, !llfi_index !3317
+  %21 = load double* %z, align 8, !llfi_index !3318
+  %22 = fmul double 0xBF7FE30D924ACFE0, %21, !llfi_index !3319
+  %23 = fadd double %22, 0xBFD4A224C0E881B8, !llfi_index !3320
+  %24 = load double* %z, align 8, !llfi_index !3321
+  %25 = fmul double %23, %24, !llfi_index !3322
+  %26 = fadd double %25, 0xC00334C0C1701758, !llfi_index !3323
+  %27 = load double* %z, align 8, !llfi_index !3324
+  %28 = fmul double %26, %27, !llfi_index !3325
+  %29 = fadd double %28, 0xC00465DA2C703A1A, !llfi_index !3326
+  %30 = load double* %z, align 8, !llfi_index !3327
+  %31 = fmul double %29, %30, !llfi_index !3328
+  %32 = fadd double %31, 0x40117FA7F4EA4DC7, !llfi_index !3329
+  %33 = load double* %z, align 8, !llfi_index !3330
+  %34 = fmul double %32, %33, !llfi_index !3331
+  %35 = fadd double %34, 0x4007815C1E3FCFA2, !llfi_index !3332
+  %36 = load double* %z, align 8, !llfi_index !3333
+  %37 = fmul double 0x3F7FE2D857AC9FD4, %36, !llfi_index !3334
+  %38 = fadd double %37, 0x3FD4A34D2B590364, !llfi_index !3335
+  %39 = load double* %z, align 8, !llfi_index !3336
+  %40 = fmul double %38, %39, !llfi_index !3337
+  %41 = fadd double %40, 0x40038FA27C8AE616, !llfi_index !3338
+  %42 = load double* %z, align 8, !llfi_index !3339
+  %43 = fmul double %41, %42, !llfi_index !3340
+  %44 = fadd double %43, 0x400E09076895B119, !llfi_index !3341
+  %45 = load double* %z, align 8, !llfi_index !3342
+  %46 = fmul double %44, %45, !llfi_index !3343
+  %47 = fadd double %46, 1.000000e+00, !llfi_index !3344
+  %48 = fdiv double %35, %47, !llfi_index !3345
+  store double %48, double* %z, align 8, !llfi_index !3346
+  br label %127, !llfi_index !3347
 
 ; <label>:49                                      ; preds = %8
-  %50 = load double* %u, align 8, !llfi_index !3349
-  %51 = fcmp ole double %50, 9.757500e-01, !llfi_index !3350
-  br i1 %51, label %52, label %91, !llfi_index !3351
+  %50 = load double* %u, align 8, !llfi_index !3348
+  %51 = fcmp ole double %50, 9.757500e-01, !llfi_index !3349
+  br i1 %51, label %52, label %91, !llfi_index !3350
 
 ; <label>:52                                      ; preds = %49
-  %53 = load double* %u, align 8, !llfi_index !3352
-  %54 = fsub double %53, 5.000000e-01, !llfi_index !3353
-  store double %54, double* %z, align 8, !llfi_index !3354
-  %55 = load double* %z, align 8, !llfi_index !3355
-  %56 = load double* %z, align 8, !llfi_index !3356
-  %57 = fmul double %55, %56, !llfi_index !3357
-  store double %57, double* %r, align 8, !llfi_index !3358
-  %58 = load double* %r, align 8, !llfi_index !3359
-  %59 = fmul double 0xC043D931BC1E0525, %58, !llfi_index !3360
-  %60 = fadd double %59, 0x406B9E467034039B, !llfi_index !3361
-  %61 = load double* %r, align 8, !llfi_index !3362
-  %62 = fmul double %60, %61, !llfi_index !3363
-  %63 = fadd double %62, 0xC0713EDB2DC53B99, !llfi_index !3364
-  %64 = load double* %r, align 8, !llfi_index !3365
-  %65 = fmul double %63, %64, !llfi_index !3366
-  %66 = fadd double %65, 0x40614B72B40B401B, !llfi_index !3367
-  %67 = load double* %r, align 8, !llfi_index !3368
-  %68 = fmul double %66, %67, !llfi_index !3369
-  %69 = fadd double %68, 0xC03EAA3034C08BCD, !llfi_index !3370
-  %70 = load double* %r, align 8, !llfi_index !3371
-  %71 = fmul double %69, %70, !llfi_index !3372
-  %72 = fadd double %71, 0x40040D9320575479, !llfi_index !3373
-  %73 = load double* %z, align 8, !llfi_index !3374
-  %74 = fmul double %72, %73, !llfi_index !3375
-  %75 = load double* %r, align 8, !llfi_index !3376
-  %76 = fmul double 0xC04B3CF0CE3004C4, %75, !llfi_index !3377
-  %77 = fadd double %76, 0x406432BF2CF04277, !llfi_index !3378
-  %78 = load double* %r, align 8, !llfi_index !3379
-  %79 = fmul double %77, %78, !llfi_index !3380
-  %80 = fadd double %79, 0xC063765E0B02D8D2, !llfi_index !3381
-  %81 = load double* %r, align 8, !llfi_index !3382
-  %82 = fmul double %80, %81, !llfi_index !3383
-  %83 = fadd double %82, 0x4050B348B1A7E9BE, !llfi_index !3384
-  %84 = load double* %r, align 8, !llfi_index !3385
-  %85 = fmul double %83, %84, !llfi_index !3386
-  %86 = fadd double %85, 0xC02A8FB57E147826, !llfi_index !3387
-  %87 = load double* %r, align 8, !llfi_index !3388
-  %88 = fmul double %86, %87, !llfi_index !3389
-  %89 = fadd double %88, 1.000000e+00, !llfi_index !3390
-  %90 = fdiv double %74, %89, !llfi_index !3391
-  store double %90, double* %z, align 8, !llfi_index !3392
-  br label %126, !llfi_index !3393
+  %53 = load double* %u, align 8, !llfi_index !3351
+  %54 = fsub double %53, 5.000000e-01, !llfi_index !3352
+  store double %54, double* %z, align 8, !llfi_index !3353
+  %55 = load double* %z, align 8, !llfi_index !3354
+  %56 = load double* %z, align 8, !llfi_index !3355
+  %57 = fmul double %55, %56, !llfi_index !3356
+  store double %57, double* %r, align 8, !llfi_index !3357
+  %58 = load double* %r, align 8, !llfi_index !3358
+  %59 = fmul double 0xC043D931BC1E0525, %58, !llfi_index !3359
+  %60 = fadd double %59, 0x406B9E467034039B, !llfi_index !3360
+  %61 = load double* %r, align 8, !llfi_index !3361
+  %62 = fmul double %60, %61, !llfi_index !3362
+  %63 = fadd double %62, 0xC0713EDB2DC53B99, !llfi_index !3363
+  %64 = load double* %r, align 8, !llfi_index !3364
+  %65 = fmul double %63, %64, !llfi_index !3365
+  %66 = fadd double %65, 0x40614B72B40B401B, !llfi_index !3366
+  %67 = load double* %r, align 8, !llfi_index !3367
+  %68 = fmul double %66, %67, !llfi_index !3368
+  %69 = fadd double %68, 0xC03EAA3034C08BCD, !llfi_index !3369
+  %70 = load double* %r, align 8, !llfi_index !3370
+  %71 = fmul double %69, %70, !llfi_index !3371
+  %72 = fadd double %71, 0x40040D9320575479, !llfi_index !3372
+  %73 = load double* %z, align 8, !llfi_index !3373
+  %74 = fmul double %72, %73, !llfi_index !3374
+  %75 = load double* %r, align 8, !llfi_index !3375
+  %76 = fmul double 0xC04B3CF0CE3004C4, %75, !llfi_index !3376
+  %77 = fadd double %76, 0x406432BF2CF04277, !llfi_index !3377
+  %78 = load double* %r, align 8, !llfi_index !3378
+  %79 = fmul double %77, %78, !llfi_index !3379
+  %80 = fadd double %79, 0xC063765E0B02D8D2, !llfi_index !3380
+  %81 = load double* %r, align 8, !llfi_index !3381
+  %82 = fmul double %80, %81, !llfi_index !3382
+  %83 = fadd double %82, 0x4050B348B1A7E9BE, !llfi_index !3383
+  %84 = load double* %r, align 8, !llfi_index !3384
+  %85 = fmul double %83, %84, !llfi_index !3385
+  %86 = fadd double %85, 0xC02A8FB57E147826, !llfi_index !3386
+  %87 = load double* %r, align 8, !llfi_index !3387
+  %88 = fmul double %86, %87, !llfi_index !3388
+  %89 = fadd double %88, 1.000000e+00, !llfi_index !3389
+  %90 = fdiv double %74, %89, !llfi_index !3390
+  store double %90, double* %z, align 8, !llfi_index !3391
+  br label %126, !llfi_index !3392
 
 ; <label>:91                                      ; preds = %49
-  %92 = load double* %u, align 8, !llfi_index !3394
-  %93 = fsub double 1.000000e+00, %92, !llfi_index !3395
-  %94 = call double @log(double %93) #5, !llfi_index !3396
-  %95 = fmul double -2.000000e+00, %94, !llfi_index !3397
-  %96 = call double @sqrt(double %95) #5, !llfi_index !3398
-  store double %96, double* %z, align 8, !llfi_index !3399
-  %97 = load double* %z, align 8, !llfi_index !3400
-  %98 = fmul double 0xBF7FE30D924ACFE0, %97, !llfi_index !3401
-  %99 = fadd double %98, 0xBFD4A224C0E881B8, !llfi_index !3402
-  %100 = load double* %z, align 8, !llfi_index !3403
-  %101 = fmul double %99, %100, !llfi_index !3404
-  %102 = fadd double %101, 0xC00334C0C1701758, !llfi_index !3405
-  %103 = load double* %z, align 8, !llfi_index !3406
-  %104 = fmul double %102, %103, !llfi_index !3407
-  %105 = fadd double %104, 0xC00465DA2C703A1A, !llfi_index !3408
-  %106 = load double* %z, align 8, !llfi_index !3409
-  %107 = fmul double %105, %106, !llfi_index !3410
-  %108 = fadd double %107, 0x40117FA7F4EA4DC7, !llfi_index !3411
-  %109 = load double* %z, align 8, !llfi_index !3412
-  %110 = fmul double %108, %109, !llfi_index !3413
-  %111 = fadd double %110, 0x4007815C1E3FCFA2, !llfi_index !3414
-  %112 = fsub double -0.000000e+00, %111, !llfi_index !3415
-  %113 = load double* %z, align 8, !llfi_index !3416
-  %114 = fmul double 0x3F7FE2D857AC9FD4, %113, !llfi_index !3417
-  %115 = fadd double %114, 0x3FD4A34D2B590364, !llfi_index !3418
-  %116 = load double* %z, align 8, !llfi_index !3419
-  %117 = fmul double %115, %116, !llfi_index !3420
-  %118 = fadd double %117, 0x40038FA27C8AE616, !llfi_index !3421
-  %119 = load double* %z, align 8, !llfi_index !3422
-  %120 = fmul double %118, %119, !llfi_index !3423
-  %121 = fadd double %120, 0x400E09076895B119, !llfi_index !3424
-  %122 = load double* %z, align 8, !llfi_index !3425
-  %123 = fmul double %121, %122, !llfi_index !3426
-  %124 = fadd double %123, 1.000000e+00, !llfi_index !3427
-  %125 = fdiv double %112, %124, !llfi_index !3428
-  store double %125, double* %z, align 8, !llfi_index !3429
-  br label %126, !llfi_index !3430
+  %92 = load double* %u, align 8, !llfi_index !3393
+  %93 = fsub double 1.000000e+00, %92, !llfi_index !3394
+  %94 = call double @log(double %93) #5, !llfi_index !3395
+  %95 = fmul double -2.000000e+00, %94, !llfi_index !3396
+  %96 = call double @sqrt(double %95) #5, !llfi_index !3397
+  store double %96, double* %z, align 8, !llfi_index !3398
+  %97 = load double* %z, align 8, !llfi_index !3399
+  %98 = fmul double 0xBF7FE30D924ACFE0, %97, !llfi_index !3400
+  %99 = fadd double %98, 0xBFD4A224C0E881B8, !llfi_index !3401
+  %100 = load double* %z, align 8, !llfi_index !3402
+  %101 = fmul double %99, %100, !llfi_index !3403
+  %102 = fadd double %101, 0xC00334C0C1701758, !llfi_index !3404
+  %103 = load double* %z, align 8, !llfi_index !3405
+  %104 = fmul double %102, %103, !llfi_index !3406
+  %105 = fadd double %104, 0xC00465DA2C703A1A, !llfi_index !3407
+  %106 = load double* %z, align 8, !llfi_index !3408
+  %107 = fmul double %105, %106, !llfi_index !3409
+  %108 = fadd double %107, 0x40117FA7F4EA4DC7, !llfi_index !3410
+  %109 = load double* %z, align 8, !llfi_index !3411
+  %110 = fmul double %108, %109, !llfi_index !3412
+  %111 = fadd double %110, 0x4007815C1E3FCFA2, !llfi_index !3413
+  %112 = fsub double -0.000000e+00, %111, !llfi_index !3414
+  %113 = load double* %z, align 8, !llfi_index !3415
+  %114 = fmul double 0x3F7FE2D857AC9FD4, %113, !llfi_index !3416
+  %115 = fadd double %114, 0x3FD4A34D2B590364, !llfi_index !3417
+  %116 = load double* %z, align 8, !llfi_index !3418
+  %117 = fmul double %115, %116, !llfi_index !3419
+  %118 = fadd double %117, 0x40038FA27C8AE616, !llfi_index !3420
+  %119 = load double* %z, align 8, !llfi_index !3421
+  %120 = fmul double %118, %119, !llfi_index !3422
+  %121 = fadd double %120, 0x400E09076895B119, !llfi_index !3423
+  %122 = load double* %z, align 8, !llfi_index !3424
+  %123 = fmul double %121, %122, !llfi_index !3425
+  %124 = fadd double %123, 1.000000e+00, !llfi_index !3426
+  %125 = fdiv double %112, %124, !llfi_index !3427
+  store double %125, double* %z, align 8, !llfi_index !3428
+  br label %126, !llfi_index !3429
 
 ; <label>:126                                     ; preds = %91, %52
-  br label %127, !llfi_index !3431
+  br label %127, !llfi_index !3430
 
 ; <label>:127                                     ; preds = %126, %16
-  %128 = load double* %z, align 8, !llfi_index !3432
-  %129 = load i32* %i, align 4, !llfi_index !3433
-  %130 = sext i32 %129 to i64, !llfi_index !3434
-  %131 = load double** %3, align 8, !llfi_index !3435
-  %132 = getelementptr inbounds double* %131, i64 %130, !llfi_index !3436
-  store double %128, double* %132, align 8, !llfi_index !3437
-  br label %133, !llfi_index !3438
+  %128 = load double* %z, align 8, !llfi_index !3431
+  %129 = load i32* %i, align 4, !llfi_index !3432
+  %130 = sext i32 %129 to i64, !llfi_index !3433
+  %131 = load double** %3, align 8, !llfi_index !3434
+  %132 = getelementptr inbounds double* %131, i64 %130, !llfi_index !3435
+  store double %128, double* %132, align 8, !llfi_index !3436
+  br label %133, !llfi_index !3437
 
 ; <label>:133                                     ; preds = %127
-  %134 = load i32* %i, align 4, !llfi_index !3439
-  %135 = add nsw i32 %134, 1, !llfi_index !3440
-  store i32 %135, i32* %i, align 4, !llfi_index !3441
-  br label %4, !llfi_index !3442
+  %134 = load i32* %i, align 4, !llfi_index !3438
+  %135 = add nsw i32 %134, 1, !llfi_index !3439
+  store i32 %135, i32* %i, align 4, !llfi_index !3440
+  br label %4, !llfi_index !3441
 
 ; <label>:136                                     ; preds = %4
-  ret void, !llfi_index !3443
+  ret void, !llfi_index !3442
 }
 
 ; Function Attrs: nounwind uwtable
 define double @_Z4dMaxdd(double %dA, double %dB) #0 {
-  %1 = alloca double, align 8, !llfi_index !3444
-  %2 = alloca double, align 8, !llfi_index !3445
-  store double %dA, double* %1, align 8, !llfi_index !3446
-  store double %dB, double* %2, align 8, !llfi_index !3447
-  %3 = load double* %1, align 8, !llfi_index !3448
-  %4 = load double* %2, align 8, !llfi_index !3449
-  %5 = fcmp ogt double %3, %4, !llfi_index !3450
-  br i1 %5, label %6, label %8, !llfi_index !3451
+  %1 = alloca double, align 8, !llfi_index !3443
+  %2 = alloca double, align 8, !llfi_index !3444
+  store double %dA, double* %1, align 8, !llfi_index !3445
+  store double %dB, double* %2, align 8, !llfi_index !3446
+  %3 = load double* %1, align 8, !llfi_index !3447
+  %4 = load double* %2, align 8, !llfi_index !3448
+  %5 = fcmp ogt double %3, %4, !llfi_index !3449
+  br i1 %5, label %6, label %8, !llfi_index !3450
 
 ; <label>:6                                       ; preds = %0
-  %7 = load double* %1, align 8, !llfi_index !3452
-  br label %10, !llfi_index !3453
+  %7 = load double* %1, align 8, !llfi_index !3451
+  br label %10, !llfi_index !3452
 
 ; <label>:8                                       ; preds = %0
-  %9 = load double* %2, align 8, !llfi_index !3454
-  br label %10, !llfi_index !3455
+  %9 = load double* %2, align 8, !llfi_index !3453
+  br label %10, !llfi_index !3454
 
 ; <label>:10                                      ; preds = %8, %6
-  %11 = phi double [ %7, %6 ], [ %9, %8 ], !llfi_index !3456
-  ret double %11, !llfi_index !3457
+  %11 = phi double [ %7, %6 ], [ %9, %8 ], !llfi_index !3455
+  ret double %11, !llfi_index !3456
 }
 
 ; Function Attrs: uwtable
 define void @_Z7nrerrorPKc(i8* %error_text) #3 {
-  %1 = alloca i8*, align 8, !llfi_index !3458
-  store i8* %error_text, i8** %1, align 8, !llfi_index !3459
-  %2 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3460
-  %3 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %2, i8* getelementptr inbounds ([37 x i8]* @.str18, i32 0, i32 0)), !llfi_index !3461
-  %4 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3462
-  %5 = load i8** %1, align 8, !llfi_index !3463
-  %6 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %4, i8* getelementptr inbounds ([4 x i8]* @.str119, i32 0, i32 0), i8* %5), !llfi_index !3464
-  %7 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3465
-  %8 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %7, i8* getelementptr inbounds ([29 x i8]* @.str220, i32 0, i32 0)), !llfi_index !3466
-  call void @exit(i32 1) #9, !llfi_index !3467
-  unreachable, !llfi_index !3468
+  %1 = alloca i8*, align 8, !llfi_index !3457
+  store i8* %error_text, i8** %1, align 8, !llfi_index !3458
+  %2 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3459
+  %3 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %2, i8* getelementptr inbounds ([37 x i8]* @.str18, i32 0, i32 0)), !llfi_index !3460
+  %4 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3461
+  %5 = load i8** %1, align 8, !llfi_index !3462
+  %6 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %4, i8* getelementptr inbounds ([4 x i8]* @.str119, i32 0, i32 0), i8* %5), !llfi_index !3463
+  %7 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3464
+  %8 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %7, i8* getelementptr inbounds ([29 x i8]* @.str220, i32 0, i32 0)), !llfi_index !3465
+  call void @exit(i32 1) #9, !llfi_index !3466
+  unreachable, !llfi_index !3467
                                                   ; No predecessors!
-  ret void, !llfi_index !3469
+  ret void, !llfi_index !3468
 }
 
 ; Function Attrs: nounwind uwtable
 define i32 @_Z6choldcPPdi(double** %a, i32 %n) #0 {
-  %1 = alloca i32, align 4, !llfi_index !3470
-  %2 = alloca double**, align 8, !llfi_index !3471
-  %3 = alloca i32, align 4, !llfi_index !3472
-  %i = alloca i32, align 4, !llfi_index !3473
-  %j = alloca i32, align 4, !llfi_index !3474
-  %k = alloca i32, align 4, !llfi_index !3475
-  %sum = alloca double, align 8, !llfi_index !3476
-  store double** %a, double*** %2, align 8, !llfi_index !3477
-  store i32 %n, i32* %3, align 4, !llfi_index !3478
-  store i32 1, i32* %i, align 4, !llfi_index !3479
-  br label %4, !llfi_index !3480
+  %1 = alloca i32, align 4, !llfi_index !3469
+  %2 = alloca double**, align 8, !llfi_index !3470
+  %3 = alloca i32, align 4, !llfi_index !3471
+  %i = alloca i32, align 4, !llfi_index !3472
+  %j = alloca i32, align 4, !llfi_index !3473
+  %k = alloca i32, align 4, !llfi_index !3474
+  %sum = alloca double, align 8, !llfi_index !3475
+  store double** %a, double*** %2, align 8, !llfi_index !3476
+  store i32 %n, i32* %3, align 4, !llfi_index !3477
+  store i32 1, i32* %i, align 4, !llfi_index !3478
+  br label %4, !llfi_index !3479
 
 ; <label>:4                                       ; preds = %98, %0
-  %5 = load i32* %i, align 4, !llfi_index !3481
-  %6 = load i32* %3, align 4, !llfi_index !3482
-  %7 = icmp sle i32 %5, %6, !llfi_index !3483
-  br i1 %7, label %8, label %101, !llfi_index !3484
+  %5 = load i32* %i, align 4, !llfi_index !3480
+  %6 = load i32* %3, align 4, !llfi_index !3481
+  %7 = icmp sle i32 %5, %6, !llfi_index !3482
+  br i1 %7, label %8, label %101, !llfi_index !3483
 
 ; <label>:8                                       ; preds = %4
-  %9 = load i32* %i, align 4, !llfi_index !3485
-  store i32 %9, i32* %j, align 4, !llfi_index !3486
-  br label %10, !llfi_index !3487
+  %9 = load i32* %i, align 4, !llfi_index !3484
+  store i32 %9, i32* %j, align 4, !llfi_index !3485
+  br label %10, !llfi_index !3486
 
 ; <label>:10                                      ; preds = %94, %8
-  %11 = load i32* %j, align 4, !llfi_index !3488
-  %12 = load i32* %3, align 4, !llfi_index !3489
-  %13 = icmp sle i32 %11, %12, !llfi_index !3490
-  br i1 %13, label %14, label %97, !llfi_index !3491
+  %11 = load i32* %j, align 4, !llfi_index !3487
+  %12 = load i32* %3, align 4, !llfi_index !3488
+  %13 = icmp sle i32 %11, %12, !llfi_index !3489
+  br i1 %13, label %14, label %97, !llfi_index !3490
 
 ; <label>:14                                      ; preds = %10
-  %15 = load i32* %j, align 4, !llfi_index !3492
-  %16 = sext i32 %15 to i64, !llfi_index !3493
-  %17 = load i32* %i, align 4, !llfi_index !3494
-  %18 = sext i32 %17 to i64, !llfi_index !3495
-  %19 = load double*** %2, align 8, !llfi_index !3496
-  %20 = getelementptr inbounds double** %19, i64 %18, !llfi_index !3497
-  %21 = load double** %20, align 8, !llfi_index !3498
-  %22 = getelementptr inbounds double* %21, i64 %16, !llfi_index !3499
-  %23 = load double* %22, align 8, !llfi_index !3500
-  store double %23, double* %sum, align 8, !llfi_index !3501
-  %24 = load i32* %i, align 4, !llfi_index !3502
-  %25 = sub nsw i32 %24, 1, !llfi_index !3503
-  store i32 %25, i32* %k, align 4, !llfi_index !3504
-  br label %26, !llfi_index !3505
+  %15 = load i32* %j, align 4, !llfi_index !3491
+  %16 = sext i32 %15 to i64, !llfi_index !3492
+  %17 = load i32* %i, align 4, !llfi_index !3493
+  %18 = sext i32 %17 to i64, !llfi_index !3494
+  %19 = load double*** %2, align 8, !llfi_index !3495
+  %20 = getelementptr inbounds double** %19, i64 %18, !llfi_index !3496
+  %21 = load double** %20, align 8, !llfi_index !3497
+  %22 = getelementptr inbounds double* %21, i64 %16, !llfi_index !3498
+  %23 = load double* %22, align 8, !llfi_index !3499
+  store double %23, double* %sum, align 8, !llfi_index !3500
+  %24 = load i32* %i, align 4, !llfi_index !3501
+  %25 = sub nsw i32 %24, 1, !llfi_index !3502
+  store i32 %25, i32* %k, align 4, !llfi_index !3503
+  br label %26, !llfi_index !3504
 
 ; <label>:26                                      ; preds = %51, %14
-  %27 = load i32* %k, align 4, !llfi_index !3506
-  %28 = icmp sge i32 %27, 1, !llfi_index !3507
-  br i1 %28, label %29, label %54, !llfi_index !3508
+  %27 = load i32* %k, align 4, !llfi_index !3505
+  %28 = icmp sge i32 %27, 1, !llfi_index !3506
+  br i1 %28, label %29, label %54, !llfi_index !3507
 
 ; <label>:29                                      ; preds = %26
-  %30 = load i32* %k, align 4, !llfi_index !3509
-  %31 = sext i32 %30 to i64, !llfi_index !3510
-  %32 = load i32* %i, align 4, !llfi_index !3511
-  %33 = sext i32 %32 to i64, !llfi_index !3512
-  %34 = load double*** %2, align 8, !llfi_index !3513
-  %35 = getelementptr inbounds double** %34, i64 %33, !llfi_index !3514
-  %36 = load double** %35, align 8, !llfi_index !3515
-  %37 = getelementptr inbounds double* %36, i64 %31, !llfi_index !3516
-  %38 = load double* %37, align 8, !llfi_index !3517
-  %39 = load i32* %k, align 4, !llfi_index !3518
-  %40 = sext i32 %39 to i64, !llfi_index !3519
-  %41 = load i32* %j, align 4, !llfi_index !3520
-  %42 = sext i32 %41 to i64, !llfi_index !3521
-  %43 = load double*** %2, align 8, !llfi_index !3522
-  %44 = getelementptr inbounds double** %43, i64 %42, !llfi_index !3523
-  %45 = load double** %44, align 8, !llfi_index !3524
-  %46 = getelementptr inbounds double* %45, i64 %40, !llfi_index !3525
-  %47 = load double* %46, align 8, !llfi_index !3526
-  %48 = fmul double %38, %47, !llfi_index !3527
-  %49 = load double* %sum, align 8, !llfi_index !3528
-  %50 = fsub double %49, %48, !llfi_index !3529
-  store double %50, double* %sum, align 8, !llfi_index !3530
-  br label %51, !llfi_index !3531
+  %30 = load i32* %k, align 4, !llfi_index !3508
+  %31 = sext i32 %30 to i64, !llfi_index !3509
+  %32 = load i32* %i, align 4, !llfi_index !3510
+  %33 = sext i32 %32 to i64, !llfi_index !3511
+  %34 = load double*** %2, align 8, !llfi_index !3512
+  %35 = getelementptr inbounds double** %34, i64 %33, !llfi_index !3513
+  %36 = load double** %35, align 8, !llfi_index !3514
+  %37 = getelementptr inbounds double* %36, i64 %31, !llfi_index !3515
+  %38 = load double* %37, align 8, !llfi_index !3516
+  %39 = load i32* %k, align 4, !llfi_index !3517
+  %40 = sext i32 %39 to i64, !llfi_index !3518
+  %41 = load i32* %j, align 4, !llfi_index !3519
+  %42 = sext i32 %41 to i64, !llfi_index !3520
+  %43 = load double*** %2, align 8, !llfi_index !3521
+  %44 = getelementptr inbounds double** %43, i64 %42, !llfi_index !3522
+  %45 = load double** %44, align 8, !llfi_index !3523
+  %46 = getelementptr inbounds double* %45, i64 %40, !llfi_index !3524
+  %47 = load double* %46, align 8, !llfi_index !3525
+  %48 = fmul double %38, %47, !llfi_index !3526
+  %49 = load double* %sum, align 8, !llfi_index !3527
+  %50 = fsub double %49, %48, !llfi_index !3528
+  store double %50, double* %sum, align 8, !llfi_index !3529
+  br label %51, !llfi_index !3530
 
 ; <label>:51                                      ; preds = %29
-  %52 = load i32* %k, align 4, !llfi_index !3532
-  %53 = add nsw i32 %52, -1, !llfi_index !3533
-  store i32 %53, i32* %k, align 4, !llfi_index !3534
-  br label %26, !llfi_index !3535
+  %52 = load i32* %k, align 4, !llfi_index !3531
+  %53 = add nsw i32 %52, -1, !llfi_index !3532
+  store i32 %53, i32* %k, align 4, !llfi_index !3533
+  br label %26, !llfi_index !3534
 
 ; <label>:54                                      ; preds = %26
-  %55 = load i32* %i, align 4, !llfi_index !3536
-  %56 = load i32* %j, align 4, !llfi_index !3537
-  %57 = icmp eq i32 %55, %56, !llfi_index !3538
-  br i1 %57, label %58, label %73, !llfi_index !3539
+  %55 = load i32* %i, align 4, !llfi_index !3535
+  %56 = load i32* %j, align 4, !llfi_index !3536
+  %57 = icmp eq i32 %55, %56, !llfi_index !3537
+  br i1 %57, label %58, label %73, !llfi_index !3538
 
 ; <label>:58                                      ; preds = %54
-  %59 = load double* %sum, align 8, !llfi_index !3540
-  %60 = fcmp ole double %59, 0.000000e+00, !llfi_index !3541
-  br i1 %60, label %61, label %62, !llfi_index !3542
+  %59 = load double* %sum, align 8, !llfi_index !3539
+  %60 = fcmp ole double %59, 0.000000e+00, !llfi_index !3540
+  br i1 %60, label %61, label %62, !llfi_index !3541
 
 ; <label>:61                                      ; preds = %58
-  store i32 0, i32* %1, !llfi_index !3543
-  br label %131, !llfi_index !3544
+  store i32 0, i32* %1, !llfi_index !3542
+  br label %131, !llfi_index !3543
 
 ; <label>:62                                      ; preds = %58
-  %63 = load double* %sum, align 8, !llfi_index !3545
-  %64 = call double @sqrt(double %63) #5, !llfi_index !3546
-  %65 = load i32* %i, align 4, !llfi_index !3547
-  %66 = sext i32 %65 to i64, !llfi_index !3548
-  %67 = load i32* %i, align 4, !llfi_index !3549
-  %68 = sext i32 %67 to i64, !llfi_index !3550
-  %69 = load double*** %2, align 8, !llfi_index !3551
-  %70 = getelementptr inbounds double** %69, i64 %68, !llfi_index !3552
-  %71 = load double** %70, align 8, !llfi_index !3553
-  %72 = getelementptr inbounds double* %71, i64 %66, !llfi_index !3554
-  store double %64, double* %72, align 8, !llfi_index !3555
-  br label %93, !llfi_index !3556
+  %63 = load double* %sum, align 8, !llfi_index !3544
+  %64 = call double @sqrt(double %63) #5, !llfi_index !3545
+  %65 = load i32* %i, align 4, !llfi_index !3546
+  %66 = sext i32 %65 to i64, !llfi_index !3547
+  %67 = load i32* %i, align 4, !llfi_index !3548
+  %68 = sext i32 %67 to i64, !llfi_index !3549
+  %69 = load double*** %2, align 8, !llfi_index !3550
+  %70 = getelementptr inbounds double** %69, i64 %68, !llfi_index !3551
+  %71 = load double** %70, align 8, !llfi_index !3552
+  %72 = getelementptr inbounds double* %71, i64 %66, !llfi_index !3553
+  store double %64, double* %72, align 8, !llfi_index !3554
+  br label %93, !llfi_index !3555
 
 ; <label>:73                                      ; preds = %54
-  %74 = load double* %sum, align 8, !llfi_index !3557
-  %75 = load i32* %i, align 4, !llfi_index !3558
-  %76 = sext i32 %75 to i64, !llfi_index !3559
-  %77 = load i32* %i, align 4, !llfi_index !3560
-  %78 = sext i32 %77 to i64, !llfi_index !3561
-  %79 = load double*** %2, align 8, !llfi_index !3562
-  %80 = getelementptr inbounds double** %79, i64 %78, !llfi_index !3563
-  %81 = load double** %80, align 8, !llfi_index !3564
-  %82 = getelementptr inbounds double* %81, i64 %76, !llfi_index !3565
-  %83 = load double* %82, align 8, !llfi_index !3566
-  %84 = fdiv double %74, %83, !llfi_index !3567
-  %85 = load i32* %i, align 4, !llfi_index !3568
-  %86 = sext i32 %85 to i64, !llfi_index !3569
-  %87 = load i32* %j, align 4, !llfi_index !3570
-  %88 = sext i32 %87 to i64, !llfi_index !3571
-  %89 = load double*** %2, align 8, !llfi_index !3572
-  %90 = getelementptr inbounds double** %89, i64 %88, !llfi_index !3573
-  %91 = load double** %90, align 8, !llfi_index !3574
-  %92 = getelementptr inbounds double* %91, i64 %86, !llfi_index !3575
-  store double %84, double* %92, align 8, !llfi_index !3576
-  br label %93, !llfi_index !3577
+  %74 = load double* %sum, align 8, !llfi_index !3556
+  %75 = load i32* %i, align 4, !llfi_index !3557
+  %76 = sext i32 %75 to i64, !llfi_index !3558
+  %77 = load i32* %i, align 4, !llfi_index !3559
+  %78 = sext i32 %77 to i64, !llfi_index !3560
+  %79 = load double*** %2, align 8, !llfi_index !3561
+  %80 = getelementptr inbounds double** %79, i64 %78, !llfi_index !3562
+  %81 = load double** %80, align 8, !llfi_index !3563
+  %82 = getelementptr inbounds double* %81, i64 %76, !llfi_index !3564
+  %83 = load double* %82, align 8, !llfi_index !3565
+  %84 = fdiv double %74, %83, !llfi_index !3566
+  %85 = load i32* %i, align 4, !llfi_index !3567
+  %86 = sext i32 %85 to i64, !llfi_index !3568
+  %87 = load i32* %j, align 4, !llfi_index !3569
+  %88 = sext i32 %87 to i64, !llfi_index !3570
+  %89 = load double*** %2, align 8, !llfi_index !3571
+  %90 = getelementptr inbounds double** %89, i64 %88, !llfi_index !3572
+  %91 = load double** %90, align 8, !llfi_index !3573
+  %92 = getelementptr inbounds double* %91, i64 %86, !llfi_index !3574
+  store double %84, double* %92, align 8, !llfi_index !3575
+  br label %93, !llfi_index !3576
 
 ; <label>:93                                      ; preds = %73, %62
-  br label %94, !llfi_index !3578
+  br label %94, !llfi_index !3577
 
 ; <label>:94                                      ; preds = %93
-  %95 = load i32* %j, align 4, !llfi_index !3579
-  %96 = add nsw i32 %95, 1, !llfi_index !3580
-  store i32 %96, i32* %j, align 4, !llfi_index !3581
-  br label %10, !llfi_index !3582
+  %95 = load i32* %j, align 4, !llfi_index !3578
+  %96 = add nsw i32 %95, 1, !llfi_index !3579
+  store i32 %96, i32* %j, align 4, !llfi_index !3580
+  br label %10, !llfi_index !3581
 
 ; <label>:97                                      ; preds = %10
-  br label %98, !llfi_index !3583
+  br label %98, !llfi_index !3582
 
 ; <label>:98                                      ; preds = %97
-  %99 = load i32* %i, align 4, !llfi_index !3584
-  %100 = add nsw i32 %99, 1, !llfi_index !3585
-  store i32 %100, i32* %i, align 4, !llfi_index !3586
-  br label %4, !llfi_index !3587
+  %99 = load i32* %i, align 4, !llfi_index !3583
+  %100 = add nsw i32 %99, 1, !llfi_index !3584
+  store i32 %100, i32* %i, align 4, !llfi_index !3585
+  br label %4, !llfi_index !3586
 
 ; <label>:101                                     ; preds = %4
-  store i32 1, i32* %i, align 4, !llfi_index !3588
-  br label %102, !llfi_index !3589
+  store i32 1, i32* %i, align 4, !llfi_index !3587
+  br label %102, !llfi_index !3588
 
 ; <label>:102                                     ; preds = %127, %101
-  %103 = load i32* %i, align 4, !llfi_index !3590
-  %104 = load i32* %3, align 4, !llfi_index !3591
-  %105 = sub nsw i32 %104, 1, !llfi_index !3592
-  %106 = icmp sle i32 %103, %105, !llfi_index !3593
-  br i1 %106, label %107, label %130, !llfi_index !3594
+  %103 = load i32* %i, align 4, !llfi_index !3589
+  %104 = load i32* %3, align 4, !llfi_index !3590
+  %105 = sub nsw i32 %104, 1, !llfi_index !3591
+  %106 = icmp sle i32 %103, %105, !llfi_index !3592
+  br i1 %106, label %107, label %130, !llfi_index !3593
 
 ; <label>:107                                     ; preds = %102
-  %108 = load i32* %i, align 4, !llfi_index !3595
-  %109 = add nsw i32 %108, 1, !llfi_index !3596
-  store i32 %109, i32* %j, align 4, !llfi_index !3597
-  br label %110, !llfi_index !3598
+  %108 = load i32* %i, align 4, !llfi_index !3594
+  %109 = add nsw i32 %108, 1, !llfi_index !3595
+  store i32 %109, i32* %j, align 4, !llfi_index !3596
+  br label %110, !llfi_index !3597
 
 ; <label>:110                                     ; preds = %123, %107
-  %111 = load i32* %j, align 4, !llfi_index !3599
-  %112 = load i32* %3, align 4, !llfi_index !3600
-  %113 = icmp sle i32 %111, %112, !llfi_index !3601
-  br i1 %113, label %114, label %126, !llfi_index !3602
+  %111 = load i32* %j, align 4, !llfi_index !3598
+  %112 = load i32* %3, align 4, !llfi_index !3599
+  %113 = icmp sle i32 %111, %112, !llfi_index !3600
+  br i1 %113, label %114, label %126, !llfi_index !3601
 
 ; <label>:114                                     ; preds = %110
-  %115 = load i32* %j, align 4, !llfi_index !3603
-  %116 = sext i32 %115 to i64, !llfi_index !3604
-  %117 = load i32* %i, align 4, !llfi_index !3605
-  %118 = sext i32 %117 to i64, !llfi_index !3606
-  %119 = load double*** %2, align 8, !llfi_index !3607
-  %120 = getelementptr inbounds double** %119, i64 %118, !llfi_index !3608
-  %121 = load double** %120, align 8, !llfi_index !3609
-  %122 = getelementptr inbounds double* %121, i64 %116, !llfi_index !3610
-  store double 0.000000e+00, double* %122, align 8, !llfi_index !3611
-  br label %123, !llfi_index !3612
+  %115 = load i32* %j, align 4, !llfi_index !3602
+  %116 = sext i32 %115 to i64, !llfi_index !3603
+  %117 = load i32* %i, align 4, !llfi_index !3604
+  %118 = sext i32 %117 to i64, !llfi_index !3605
+  %119 = load double*** %2, align 8, !llfi_index !3606
+  %120 = getelementptr inbounds double** %119, i64 %118, !llfi_index !3607
+  %121 = load double** %120, align 8, !llfi_index !3608
+  %122 = getelementptr inbounds double* %121, i64 %116, !llfi_index !3609
+  store double 0.000000e+00, double* %122, align 8, !llfi_index !3610
+  br label %123, !llfi_index !3611
 
 ; <label>:123                                     ; preds = %114
-  %124 = load i32* %j, align 4, !llfi_index !3613
-  %125 = add nsw i32 %124, 1, !llfi_index !3614
-  store i32 %125, i32* %j, align 4, !llfi_index !3615
-  br label %110, !llfi_index !3616
+  %124 = load i32* %j, align 4, !llfi_index !3612
+  %125 = add nsw i32 %124, 1, !llfi_index !3613
+  store i32 %125, i32* %j, align 4, !llfi_index !3614
+  br label %110, !llfi_index !3615
 
 ; <label>:126                                     ; preds = %110
-  br label %127, !llfi_index !3617
+  br label %127, !llfi_index !3616
 
 ; <label>:127                                     ; preds = %126
-  %128 = load i32* %i, align 4, !llfi_index !3618
-  %129 = add nsw i32 %128, 1, !llfi_index !3619
-  store i32 %129, i32* %i, align 4, !llfi_index !3620
-  br label %102, !llfi_index !3621
+  %128 = load i32* %i, align 4, !llfi_index !3617
+  %129 = add nsw i32 %128, 1, !llfi_index !3618
+  store i32 %129, i32* %i, align 4, !llfi_index !3619
+  br label %102, !llfi_index !3620
 
 ; <label>:130                                     ; preds = %102
-  store i32 1, i32* %1, !llfi_index !3622
-  br label %131, !llfi_index !3623
+  store i32 1, i32* %1, !llfi_index !3621
+  br label %131, !llfi_index !3622
 
 ; <label>:131                                     ; preds = %130, %61
-  %132 = load i32* %1, !llfi_index !3624
-  ret i32 %132, !llfi_index !3625
+  %132 = load i32* %1, !llfi_index !3623
+  ret i32 %132, !llfi_index !3624
 }
 
 ; Function Attrs: uwtable
 define void @_Z6gaussjPPdiS0_i(double** %a, i32 %n, double** %b, i32 %m) #3 {
-  %1 = alloca double**, align 8, !llfi_index !3626
-  %2 = alloca i32, align 4, !llfi_index !3627
-  %3 = alloca double**, align 8, !llfi_index !3628
-  %4 = alloca i32, align 4, !llfi_index !3629
-  %indxc = alloca i32*, align 8, !llfi_index !3630
-  %indxr = alloca i32*, align 8, !llfi_index !3631
-  %ipiv = alloca i32*, align 8, !llfi_index !3632
-  %i = alloca i32, align 4, !llfi_index !3633
-  %icol = alloca i32, align 4, !llfi_index !3634
-  %irow = alloca i32, align 4, !llfi_index !3635
-  %j = alloca i32, align 4, !llfi_index !3636
-  %k = alloca i32, align 4, !llfi_index !3637
-  %l = alloca i32, align 4, !llfi_index !3638
-  %ll = alloca i32, align 4, !llfi_index !3639
-  %big = alloca double, align 8, !llfi_index !3640
-  %dum = alloca double, align 8, !llfi_index !3641
-  %pivinv = alloca double, align 8, !llfi_index !3642
-  %temp = alloca double, align 8, !llfi_index !3643
-  store double** %a, double*** %1, align 8, !llfi_index !3644
-  store i32 %n, i32* %2, align 4, !llfi_index !3645
-  store double** %b, double*** %3, align 8, !llfi_index !3646
-  store i32 %m, i32* %4, align 4, !llfi_index !3647
-  %5 = load i32* %2, align 4, !llfi_index !3648
-  %6 = sext i32 %5 to i64, !llfi_index !3649
-  %7 = call i32* @_Z7ivectorll(i64 1, i64 %6), !llfi_index !3650
-  store i32* %7, i32** %indxc, align 8, !llfi_index !3651
-  %8 = load i32* %2, align 4, !llfi_index !3652
-  %9 = sext i32 %8 to i64, !llfi_index !3653
-  %10 = call i32* @_Z7ivectorll(i64 1, i64 %9), !llfi_index !3654
-  store i32* %10, i32** %indxr, align 8, !llfi_index !3655
-  %11 = load i32* %2, align 4, !llfi_index !3656
-  %12 = sext i32 %11 to i64, !llfi_index !3657
-  %13 = call i32* @_Z7ivectorll(i64 1, i64 %12), !llfi_index !3658
-  store i32* %13, i32** %ipiv, align 8, !llfi_index !3659
-  store i32 -1, i32* %icol, align 4, !llfi_index !3660
-  store i32 -1, i32* %irow, align 4, !llfi_index !3661
-  store i32 1, i32* %j, align 4, !llfi_index !3662
-  br label %14, !llfi_index !3663
+  %1 = alloca double**, align 8, !llfi_index !3625
+  %2 = alloca i32, align 4, !llfi_index !3626
+  %3 = alloca double**, align 8, !llfi_index !3627
+  %4 = alloca i32, align 4, !llfi_index !3628
+  %indxc = alloca i32*, align 8, !llfi_index !3629
+  %indxr = alloca i32*, align 8, !llfi_index !3630
+  %ipiv = alloca i32*, align 8, !llfi_index !3631
+  %i = alloca i32, align 4, !llfi_index !3632
+  %icol = alloca i32, align 4, !llfi_index !3633
+  %irow = alloca i32, align 4, !llfi_index !3634
+  %j = alloca i32, align 4, !llfi_index !3635
+  %k = alloca i32, align 4, !llfi_index !3636
+  %l = alloca i32, align 4, !llfi_index !3637
+  %ll = alloca i32, align 4, !llfi_index !3638
+  %big = alloca double, align 8, !llfi_index !3639
+  %dum = alloca double, align 8, !llfi_index !3640
+  %pivinv = alloca double, align 8, !llfi_index !3641
+  %temp = alloca double, align 8, !llfi_index !3642
+  store double** %a, double*** %1, align 8, !llfi_index !3643
+  store i32 %n, i32* %2, align 4, !llfi_index !3644
+  store double** %b, double*** %3, align 8, !llfi_index !3645
+  store i32 %m, i32* %4, align 4, !llfi_index !3646
+  %5 = load i32* %2, align 4, !llfi_index !3647
+  %6 = sext i32 %5 to i64, !llfi_index !3648
+  %7 = call i32* @_Z7ivectorll(i64 1, i64 %6), !llfi_index !3649
+  store i32* %7, i32** %indxc, align 8, !llfi_index !3650
+  %8 = load i32* %2, align 4, !llfi_index !3651
+  %9 = sext i32 %8 to i64, !llfi_index !3652
+  %10 = call i32* @_Z7ivectorll(i64 1, i64 %9), !llfi_index !3653
+  store i32* %10, i32** %indxr, align 8, !llfi_index !3654
+  %11 = load i32* %2, align 4, !llfi_index !3655
+  %12 = sext i32 %11 to i64, !llfi_index !3656
+  %13 = call i32* @_Z7ivectorll(i64 1, i64 %12), !llfi_index !3657
+  store i32* %13, i32** %ipiv, align 8, !llfi_index !3658
+  store i32 -1, i32* %icol, align 4, !llfi_index !3659
+  store i32 -1, i32* %irow, align 4, !llfi_index !3660
+  store i32 1, i32* %j, align 4, !llfi_index !3661
+  br label %14, !llfi_index !3662
 
 ; <label>:14                                      ; preds = %23, %0
-  %15 = load i32* %j, align 4, !llfi_index !3664
-  %16 = load i32* %2, align 4, !llfi_index !3665
-  %17 = icmp sle i32 %15, %16, !llfi_index !3666
-  br i1 %17, label %18, label %26, !llfi_index !3667
+  %15 = load i32* %j, align 4, !llfi_index !3663
+  %16 = load i32* %2, align 4, !llfi_index !3664
+  %17 = icmp sle i32 %15, %16, !llfi_index !3665
+  br i1 %17, label %18, label %26, !llfi_index !3666
 
 ; <label>:18                                      ; preds = %14
-  %19 = load i32* %j, align 4, !llfi_index !3668
-  %20 = sext i32 %19 to i64, !llfi_index !3669
-  %21 = load i32** %ipiv, align 8, !llfi_index !3670
-  %22 = getelementptr inbounds i32* %21, i64 %20, !llfi_index !3671
-  store i32 0, i32* %22, align 4, !llfi_index !3672
-  br label %23, !llfi_index !3673
+  %19 = load i32* %j, align 4, !llfi_index !3667
+  %20 = sext i32 %19 to i64, !llfi_index !3668
+  %21 = load i32** %ipiv, align 8, !llfi_index !3669
+  %22 = getelementptr inbounds i32* %21, i64 %20, !llfi_index !3670
+  store i32 0, i32* %22, align 4, !llfi_index !3671
+  br label %23, !llfi_index !3672
 
 ; <label>:23                                      ; preds = %18
-  %24 = load i32* %j, align 4, !llfi_index !3674
-  %25 = add nsw i32 %24, 1, !llfi_index !3675
-  store i32 %25, i32* %j, align 4, !llfi_index !3676
-  br label %14, !llfi_index !3677
+  %24 = load i32* %j, align 4, !llfi_index !3673
+  %25 = add nsw i32 %24, 1, !llfi_index !3674
+  store i32 %25, i32* %j, align 4, !llfi_index !3675
+  br label %14, !llfi_index !3676
 
 ; <label>:26                                      ; preds = %14
-  store i32 1, i32* %i, align 4, !llfi_index !3678
-  br label %27, !llfi_index !3679
+  store i32 1, i32* %i, align 4, !llfi_index !3677
+  br label %27, !llfi_index !3678
 
 ; <label>:27                                      ; preds = %371, %26
-  %28 = load i32* %i, align 4, !llfi_index !3680
-  %29 = load i32* %2, align 4, !llfi_index !3681
-  %30 = icmp sle i32 %28, %29, !llfi_index !3682
-  br i1 %30, label %31, label %374, !llfi_index !3683
+  %28 = load i32* %i, align 4, !llfi_index !3679
+  %29 = load i32* %2, align 4, !llfi_index !3680
+  %30 = icmp sle i32 %28, %29, !llfi_index !3681
+  br i1 %30, label %31, label %374, !llfi_index !3682
 
 ; <label>:31                                      ; preds = %27
-  store double 0.000000e+00, double* %big, align 8, !llfi_index !3684
-  store i32 1, i32* %j, align 4, !llfi_index !3685
-  br label %32, !llfi_index !3686
+  store double 0.000000e+00, double* %big, align 8, !llfi_index !3683
+  store i32 1, i32* %j, align 4, !llfi_index !3684
+  br label %32, !llfi_index !3685
 
 ; <label>:32                                      ; preds = %97, %31
-  %33 = load i32* %j, align 4, !llfi_index !3687
-  %34 = load i32* %2, align 4, !llfi_index !3688
-  %35 = icmp sle i32 %33, %34, !llfi_index !3689
-  br i1 %35, label %36, label %100, !llfi_index !3690
+  %33 = load i32* %j, align 4, !llfi_index !3686
+  %34 = load i32* %2, align 4, !llfi_index !3687
+  %35 = icmp sle i32 %33, %34, !llfi_index !3688
+  br i1 %35, label %36, label %100, !llfi_index !3689
 
 ; <label>:36                                      ; preds = %32
-  %37 = load i32* %j, align 4, !llfi_index !3691
-  %38 = sext i32 %37 to i64, !llfi_index !3692
-  %39 = load i32** %ipiv, align 8, !llfi_index !3693
-  %40 = getelementptr inbounds i32* %39, i64 %38, !llfi_index !3694
-  %41 = load i32* %40, align 4, !llfi_index !3695
-  %42 = icmp ne i32 %41, 1, !llfi_index !3696
-  br i1 %42, label %43, label %96, !llfi_index !3697
+  %37 = load i32* %j, align 4, !llfi_index !3690
+  %38 = sext i32 %37 to i64, !llfi_index !3691
+  %39 = load i32** %ipiv, align 8, !llfi_index !3692
+  %40 = getelementptr inbounds i32* %39, i64 %38, !llfi_index !3693
+  %41 = load i32* %40, align 4, !llfi_index !3694
+  %42 = icmp ne i32 %41, 1, !llfi_index !3695
+  br i1 %42, label %43, label %96, !llfi_index !3696
 
 ; <label>:43                                      ; preds = %36
-  store i32 1, i32* %k, align 4, !llfi_index !3698
-  br label %44, !llfi_index !3699
+  store i32 1, i32* %k, align 4, !llfi_index !3697
+  br label %44, !llfi_index !3698
 
 ; <label>:44                                      ; preds = %92, %43
-  %45 = load i32* %k, align 4, !llfi_index !3700
-  %46 = load i32* %2, align 4, !llfi_index !3701
-  %47 = icmp sle i32 %45, %46, !llfi_index !3702
-  br i1 %47, label %48, label %95, !llfi_index !3703
+  %45 = load i32* %k, align 4, !llfi_index !3699
+  %46 = load i32* %2, align 4, !llfi_index !3700
+  %47 = icmp sle i32 %45, %46, !llfi_index !3701
+  br i1 %47, label %48, label %95, !llfi_index !3702
 
 ; <label>:48                                      ; preds = %44
-  %49 = load i32* %k, align 4, !llfi_index !3704
-  %50 = sext i32 %49 to i64, !llfi_index !3705
-  %51 = load i32** %ipiv, align 8, !llfi_index !3706
-  %52 = getelementptr inbounds i32* %51, i64 %50, !llfi_index !3707
-  %53 = load i32* %52, align 4, !llfi_index !3708
-  %54 = icmp eq i32 %53, 0, !llfi_index !3709
-  br i1 %54, label %55, label %82, !llfi_index !3710
+  %49 = load i32* %k, align 4, !llfi_index !3703
+  %50 = sext i32 %49 to i64, !llfi_index !3704
+  %51 = load i32** %ipiv, align 8, !llfi_index !3705
+  %52 = getelementptr inbounds i32* %51, i64 %50, !llfi_index !3706
+  %53 = load i32* %52, align 4, !llfi_index !3707
+  %54 = icmp eq i32 %53, 0, !llfi_index !3708
+  br i1 %54, label %55, label %82, !llfi_index !3709
 
 ; <label>:55                                      ; preds = %48
-  %56 = load i32* %k, align 4, !llfi_index !3711
-  %57 = sext i32 %56 to i64, !llfi_index !3712
-  %58 = load i32* %j, align 4, !llfi_index !3713
-  %59 = sext i32 %58 to i64, !llfi_index !3714
-  %60 = load double*** %1, align 8, !llfi_index !3715
-  %61 = getelementptr inbounds double** %60, i64 %59, !llfi_index !3716
-  %62 = load double** %61, align 8, !llfi_index !3717
-  %63 = getelementptr inbounds double* %62, i64 %57, !llfi_index !3718
-  %64 = load double* %63, align 8, !llfi_index !3719
-  %65 = call double @fabs(double %64) #8, !llfi_index !3720
-  %66 = load double* %big, align 8, !llfi_index !3721
-  %67 = fcmp oge double %65, %66, !llfi_index !3722
-  br i1 %67, label %68, label %81, !llfi_index !3723
+  %56 = load i32* %k, align 4, !llfi_index !3710
+  %57 = sext i32 %56 to i64, !llfi_index !3711
+  %58 = load i32* %j, align 4, !llfi_index !3712
+  %59 = sext i32 %58 to i64, !llfi_index !3713
+  %60 = load double*** %1, align 8, !llfi_index !3714
+  %61 = getelementptr inbounds double** %60, i64 %59, !llfi_index !3715
+  %62 = load double** %61, align 8, !llfi_index !3716
+  %63 = getelementptr inbounds double* %62, i64 %57, !llfi_index !3717
+  %64 = load double* %63, align 8, !llfi_index !3718
+  %65 = call double @fabs(double %64) #8, !llfi_index !3719
+  %66 = load double* %big, align 8, !llfi_index !3720
+  %67 = fcmp oge double %65, %66, !llfi_index !3721
+  br i1 %67, label %68, label %81, !llfi_index !3722
 
 ; <label>:68                                      ; preds = %55
-  %69 = load i32* %k, align 4, !llfi_index !3724
-  %70 = sext i32 %69 to i64, !llfi_index !3725
-  %71 = load i32* %j, align 4, !llfi_index !3726
-  %72 = sext i32 %71 to i64, !llfi_index !3727
-  %73 = load double*** %1, align 8, !llfi_index !3728
-  %74 = getelementptr inbounds double** %73, i64 %72, !llfi_index !3729
-  %75 = load double** %74, align 8, !llfi_index !3730
-  %76 = getelementptr inbounds double* %75, i64 %70, !llfi_index !3731
-  %77 = load double* %76, align 8, !llfi_index !3732
-  %78 = call double @fabs(double %77) #8, !llfi_index !3733
-  store double %78, double* %big, align 8, !llfi_index !3734
-  %79 = load i32* %j, align 4, !llfi_index !3735
-  store i32 %79, i32* %irow, align 4, !llfi_index !3736
-  %80 = load i32* %k, align 4, !llfi_index !3737
-  store i32 %80, i32* %icol, align 4, !llfi_index !3738
-  br label %81, !llfi_index !3739
+  %69 = load i32* %k, align 4, !llfi_index !3723
+  %70 = sext i32 %69 to i64, !llfi_index !3724
+  %71 = load i32* %j, align 4, !llfi_index !3725
+  %72 = sext i32 %71 to i64, !llfi_index !3726
+  %73 = load double*** %1, align 8, !llfi_index !3727
+  %74 = getelementptr inbounds double** %73, i64 %72, !llfi_index !3728
+  %75 = load double** %74, align 8, !llfi_index !3729
+  %76 = getelementptr inbounds double* %75, i64 %70, !llfi_index !3730
+  %77 = load double* %76, align 8, !llfi_index !3731
+  %78 = call double @fabs(double %77) #8, !llfi_index !3732
+  store double %78, double* %big, align 8, !llfi_index !3733
+  %79 = load i32* %j, align 4, !llfi_index !3734
+  store i32 %79, i32* %irow, align 4, !llfi_index !3735
+  %80 = load i32* %k, align 4, !llfi_index !3736
+  store i32 %80, i32* %icol, align 4, !llfi_index !3737
+  br label %81, !llfi_index !3738
 
 ; <label>:81                                      ; preds = %68, %55
-  br label %91, !llfi_index !3740
+  br label %91, !llfi_index !3739
 
 ; <label>:82                                      ; preds = %48
-  %83 = load i32* %k, align 4, !llfi_index !3741
-  %84 = sext i32 %83 to i64, !llfi_index !3742
-  %85 = load i32** %ipiv, align 8, !llfi_index !3743
-  %86 = getelementptr inbounds i32* %85, i64 %84, !llfi_index !3744
-  %87 = load i32* %86, align 4, !llfi_index !3745
-  %88 = icmp sgt i32 %87, 1, !llfi_index !3746
-  br i1 %88, label %89, label %90, !llfi_index !3747
+  %83 = load i32* %k, align 4, !llfi_index !3740
+  %84 = sext i32 %83 to i64, !llfi_index !3741
+  %85 = load i32** %ipiv, align 8, !llfi_index !3742
+  %86 = getelementptr inbounds i32* %85, i64 %84, !llfi_index !3743
+  %87 = load i32* %86, align 4, !llfi_index !3744
+  %88 = icmp sgt i32 %87, 1, !llfi_index !3745
+  br i1 %88, label %89, label %90, !llfi_index !3746
 
 ; <label>:89                                      ; preds = %82
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([26 x i8]* @.str321, i32 0, i32 0)), !llfi_index !3748
-  br label %90, !llfi_index !3749
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([26 x i8]* @.str321, i32 0, i32 0)), !llfi_index !3747
+  br label %90, !llfi_index !3748
 
 ; <label>:90                                      ; preds = %89, %82
-  br label %91, !llfi_index !3750
+  br label %91, !llfi_index !3749
 
 ; <label>:91                                      ; preds = %90, %81
-  br label %92, !llfi_index !3751
+  br label %92, !llfi_index !3750
 
 ; <label>:92                                      ; preds = %91
-  %93 = load i32* %k, align 4, !llfi_index !3752
-  %94 = add nsw i32 %93, 1, !llfi_index !3753
-  store i32 %94, i32* %k, align 4, !llfi_index !3754
-  br label %44, !llfi_index !3755
+  %93 = load i32* %k, align 4, !llfi_index !3751
+  %94 = add nsw i32 %93, 1, !llfi_index !3752
+  store i32 %94, i32* %k, align 4, !llfi_index !3753
+  br label %44, !llfi_index !3754
 
 ; <label>:95                                      ; preds = %44
-  br label %96, !llfi_index !3756
+  br label %96, !llfi_index !3755
 
 ; <label>:96                                      ; preds = %95, %36
-  br label %97, !llfi_index !3757
+  br label %97, !llfi_index !3756
 
 ; <label>:97                                      ; preds = %96
-  %98 = load i32* %j, align 4, !llfi_index !3758
-  %99 = add nsw i32 %98, 1, !llfi_index !3759
-  store i32 %99, i32* %j, align 4, !llfi_index !3760
-  br label %32, !llfi_index !3761
+  %98 = load i32* %j, align 4, !llfi_index !3757
+  %99 = add nsw i32 %98, 1, !llfi_index !3758
+  store i32 %99, i32* %j, align 4, !llfi_index !3759
+  br label %32, !llfi_index !3760
 
 ; <label>:100                                     ; preds = %32
-  %101 = load i32* %icol, align 4, !llfi_index !3762
-  %102 = sext i32 %101 to i64, !llfi_index !3763
-  %103 = load i32** %ipiv, align 8, !llfi_index !3764
-  %104 = getelementptr inbounds i32* %103, i64 %102, !llfi_index !3765
-  %105 = load i32* %104, align 4, !llfi_index !3766
-  %106 = add nsw i32 %105, 1, !llfi_index !3767
-  store i32 %106, i32* %104, align 4, !llfi_index !3768
-  %107 = load i32* %irow, align 4, !llfi_index !3769
-  %108 = load i32* %icol, align 4, !llfi_index !3770
-  %109 = icmp ne i32 %107, %108, !llfi_index !3771
-  br i1 %109, label %110, label %199, !llfi_index !3772
+  %101 = load i32* %icol, align 4, !llfi_index !3761
+  %102 = sext i32 %101 to i64, !llfi_index !3762
+  %103 = load i32** %ipiv, align 8, !llfi_index !3763
+  %104 = getelementptr inbounds i32* %103, i64 %102, !llfi_index !3764
+  %105 = load i32* %104, align 4, !llfi_index !3765
+  %106 = add nsw i32 %105, 1, !llfi_index !3766
+  store i32 %106, i32* %104, align 4, !llfi_index !3767
+  %107 = load i32* %irow, align 4, !llfi_index !3768
+  %108 = load i32* %icol, align 4, !llfi_index !3769
+  %109 = icmp ne i32 %107, %108, !llfi_index !3770
+  br i1 %109, label %110, label %199, !llfi_index !3771
 
 ; <label>:110                                     ; preds = %100
-  store i32 1, i32* %l, align 4, !llfi_index !3773
-  br label %111, !llfi_index !3774
+  store i32 1, i32* %l, align 4, !llfi_index !3772
+  br label %111, !llfi_index !3773
 
 ; <label>:111                                     ; preds = %151, %110
-  %112 = load i32* %l, align 4, !llfi_index !3775
-  %113 = load i32* %2, align 4, !llfi_index !3776
-  %114 = icmp sle i32 %112, %113, !llfi_index !3777
-  br i1 %114, label %115, label %154, !llfi_index !3778
+  %112 = load i32* %l, align 4, !llfi_index !3774
+  %113 = load i32* %2, align 4, !llfi_index !3775
+  %114 = icmp sle i32 %112, %113, !llfi_index !3776
+  br i1 %114, label %115, label %154, !llfi_index !3777
 
 ; <label>:115                                     ; preds = %111
-  %116 = load i32* %l, align 4, !llfi_index !3779
-  %117 = sext i32 %116 to i64, !llfi_index !3780
-  %118 = load i32* %irow, align 4, !llfi_index !3781
-  %119 = sext i32 %118 to i64, !llfi_index !3782
-  %120 = load double*** %1, align 8, !llfi_index !3783
-  %121 = getelementptr inbounds double** %120, i64 %119, !llfi_index !3784
-  %122 = load double** %121, align 8, !llfi_index !3785
-  %123 = getelementptr inbounds double* %122, i64 %117, !llfi_index !3786
-  %124 = load double* %123, align 8, !llfi_index !3787
-  store double %124, double* %temp, align 8, !llfi_index !3788
-  %125 = load i32* %l, align 4, !llfi_index !3789
-  %126 = sext i32 %125 to i64, !llfi_index !3790
-  %127 = load i32* %icol, align 4, !llfi_index !3791
-  %128 = sext i32 %127 to i64, !llfi_index !3792
-  %129 = load double*** %1, align 8, !llfi_index !3793
-  %130 = getelementptr inbounds double** %129, i64 %128, !llfi_index !3794
-  %131 = load double** %130, align 8, !llfi_index !3795
-  %132 = getelementptr inbounds double* %131, i64 %126, !llfi_index !3796
-  %133 = load double* %132, align 8, !llfi_index !3797
-  %134 = load i32* %l, align 4, !llfi_index !3798
-  %135 = sext i32 %134 to i64, !llfi_index !3799
-  %136 = load i32* %irow, align 4, !llfi_index !3800
-  %137 = sext i32 %136 to i64, !llfi_index !3801
-  %138 = load double*** %1, align 8, !llfi_index !3802
-  %139 = getelementptr inbounds double** %138, i64 %137, !llfi_index !3803
-  %140 = load double** %139, align 8, !llfi_index !3804
-  %141 = getelementptr inbounds double* %140, i64 %135, !llfi_index !3805
-  store double %133, double* %141, align 8, !llfi_index !3806
-  %142 = load double* %temp, align 8, !llfi_index !3807
-  %143 = load i32* %l, align 4, !llfi_index !3808
-  %144 = sext i32 %143 to i64, !llfi_index !3809
-  %145 = load i32* %icol, align 4, !llfi_index !3810
-  %146 = sext i32 %145 to i64, !llfi_index !3811
-  %147 = load double*** %1, align 8, !llfi_index !3812
-  %148 = getelementptr inbounds double** %147, i64 %146, !llfi_index !3813
-  %149 = load double** %148, align 8, !llfi_index !3814
-  %150 = getelementptr inbounds double* %149, i64 %144, !llfi_index !3815
-  store double %142, double* %150, align 8, !llfi_index !3816
-  br label %151, !llfi_index !3817
+  %116 = load i32* %l, align 4, !llfi_index !3778
+  %117 = sext i32 %116 to i64, !llfi_index !3779
+  %118 = load i32* %irow, align 4, !llfi_index !3780
+  %119 = sext i32 %118 to i64, !llfi_index !3781
+  %120 = load double*** %1, align 8, !llfi_index !3782
+  %121 = getelementptr inbounds double** %120, i64 %119, !llfi_index !3783
+  %122 = load double** %121, align 8, !llfi_index !3784
+  %123 = getelementptr inbounds double* %122, i64 %117, !llfi_index !3785
+  %124 = load double* %123, align 8, !llfi_index !3786
+  store double %124, double* %temp, align 8, !llfi_index !3787
+  %125 = load i32* %l, align 4, !llfi_index !3788
+  %126 = sext i32 %125 to i64, !llfi_index !3789
+  %127 = load i32* %icol, align 4, !llfi_index !3790
+  %128 = sext i32 %127 to i64, !llfi_index !3791
+  %129 = load double*** %1, align 8, !llfi_index !3792
+  %130 = getelementptr inbounds double** %129, i64 %128, !llfi_index !3793
+  %131 = load double** %130, align 8, !llfi_index !3794
+  %132 = getelementptr inbounds double* %131, i64 %126, !llfi_index !3795
+  %133 = load double* %132, align 8, !llfi_index !3796
+  %134 = load i32* %l, align 4, !llfi_index !3797
+  %135 = sext i32 %134 to i64, !llfi_index !3798
+  %136 = load i32* %irow, align 4, !llfi_index !3799
+  %137 = sext i32 %136 to i64, !llfi_index !3800
+  %138 = load double*** %1, align 8, !llfi_index !3801
+  %139 = getelementptr inbounds double** %138, i64 %137, !llfi_index !3802
+  %140 = load double** %139, align 8, !llfi_index !3803
+  %141 = getelementptr inbounds double* %140, i64 %135, !llfi_index !3804
+  store double %133, double* %141, align 8, !llfi_index !3805
+  %142 = load double* %temp, align 8, !llfi_index !3806
+  %143 = load i32* %l, align 4, !llfi_index !3807
+  %144 = sext i32 %143 to i64, !llfi_index !3808
+  %145 = load i32* %icol, align 4, !llfi_index !3809
+  %146 = sext i32 %145 to i64, !llfi_index !3810
+  %147 = load double*** %1, align 8, !llfi_index !3811
+  %148 = getelementptr inbounds double** %147, i64 %146, !llfi_index !3812
+  %149 = load double** %148, align 8, !llfi_index !3813
+  %150 = getelementptr inbounds double* %149, i64 %144, !llfi_index !3814
+  store double %142, double* %150, align 8, !llfi_index !3815
+  br label %151, !llfi_index !3816
 
 ; <label>:151                                     ; preds = %115
-  %152 = load i32* %l, align 4, !llfi_index !3818
-  %153 = add nsw i32 %152, 1, !llfi_index !3819
-  store i32 %153, i32* %l, align 4, !llfi_index !3820
-  br label %111, !llfi_index !3821
+  %152 = load i32* %l, align 4, !llfi_index !3817
+  %153 = add nsw i32 %152, 1, !llfi_index !3818
+  store i32 %153, i32* %l, align 4, !llfi_index !3819
+  br label %111, !llfi_index !3820
 
 ; <label>:154                                     ; preds = %111
-  store i32 1, i32* %l, align 4, !llfi_index !3822
-  br label %155, !llfi_index !3823
+  store i32 1, i32* %l, align 4, !llfi_index !3821
+  br label %155, !llfi_index !3822
 
 ; <label>:155                                     ; preds = %195, %154
-  %156 = load i32* %l, align 4, !llfi_index !3824
-  %157 = load i32* %4, align 4, !llfi_index !3825
-  %158 = icmp sle i32 %156, %157, !llfi_index !3826
-  br i1 %158, label %159, label %198, !llfi_index !3827
+  %156 = load i32* %l, align 4, !llfi_index !3823
+  %157 = load i32* %4, align 4, !llfi_index !3824
+  %158 = icmp sle i32 %156, %157, !llfi_index !3825
+  br i1 %158, label %159, label %198, !llfi_index !3826
 
 ; <label>:159                                     ; preds = %155
-  %160 = load i32* %l, align 4, !llfi_index !3828
-  %161 = sext i32 %160 to i64, !llfi_index !3829
-  %162 = load i32* %irow, align 4, !llfi_index !3830
-  %163 = sext i32 %162 to i64, !llfi_index !3831
-  %164 = load double*** %3, align 8, !llfi_index !3832
-  %165 = getelementptr inbounds double** %164, i64 %163, !llfi_index !3833
-  %166 = load double** %165, align 8, !llfi_index !3834
-  %167 = getelementptr inbounds double* %166, i64 %161, !llfi_index !3835
-  %168 = load double* %167, align 8, !llfi_index !3836
-  store double %168, double* %temp, align 8, !llfi_index !3837
-  %169 = load i32* %l, align 4, !llfi_index !3838
-  %170 = sext i32 %169 to i64, !llfi_index !3839
-  %171 = load i32* %icol, align 4, !llfi_index !3840
-  %172 = sext i32 %171 to i64, !llfi_index !3841
-  %173 = load double*** %3, align 8, !llfi_index !3842
-  %174 = getelementptr inbounds double** %173, i64 %172, !llfi_index !3843
-  %175 = load double** %174, align 8, !llfi_index !3844
-  %176 = getelementptr inbounds double* %175, i64 %170, !llfi_index !3845
-  %177 = load double* %176, align 8, !llfi_index !3846
-  %178 = load i32* %l, align 4, !llfi_index !3847
-  %179 = sext i32 %178 to i64, !llfi_index !3848
-  %180 = load i32* %irow, align 4, !llfi_index !3849
-  %181 = sext i32 %180 to i64, !llfi_index !3850
-  %182 = load double*** %3, align 8, !llfi_index !3851
-  %183 = getelementptr inbounds double** %182, i64 %181, !llfi_index !3852
-  %184 = load double** %183, align 8, !llfi_index !3853
-  %185 = getelementptr inbounds double* %184, i64 %179, !llfi_index !3854
-  store double %177, double* %185, align 8, !llfi_index !3855
-  %186 = load double* %temp, align 8, !llfi_index !3856
-  %187 = load i32* %l, align 4, !llfi_index !3857
-  %188 = sext i32 %187 to i64, !llfi_index !3858
-  %189 = load i32* %icol, align 4, !llfi_index !3859
-  %190 = sext i32 %189 to i64, !llfi_index !3860
-  %191 = load double*** %3, align 8, !llfi_index !3861
-  %192 = getelementptr inbounds double** %191, i64 %190, !llfi_index !3862
-  %193 = load double** %192, align 8, !llfi_index !3863
-  %194 = getelementptr inbounds double* %193, i64 %188, !llfi_index !3864
-  store double %186, double* %194, align 8, !llfi_index !3865
-  br label %195, !llfi_index !3866
+  %160 = load i32* %l, align 4, !llfi_index !3827
+  %161 = sext i32 %160 to i64, !llfi_index !3828
+  %162 = load i32* %irow, align 4, !llfi_index !3829
+  %163 = sext i32 %162 to i64, !llfi_index !3830
+  %164 = load double*** %3, align 8, !llfi_index !3831
+  %165 = getelementptr inbounds double** %164, i64 %163, !llfi_index !3832
+  %166 = load double** %165, align 8, !llfi_index !3833
+  %167 = getelementptr inbounds double* %166, i64 %161, !llfi_index !3834
+  %168 = load double* %167, align 8, !llfi_index !3835
+  store double %168, double* %temp, align 8, !llfi_index !3836
+  %169 = load i32* %l, align 4, !llfi_index !3837
+  %170 = sext i32 %169 to i64, !llfi_index !3838
+  %171 = load i32* %icol, align 4, !llfi_index !3839
+  %172 = sext i32 %171 to i64, !llfi_index !3840
+  %173 = load double*** %3, align 8, !llfi_index !3841
+  %174 = getelementptr inbounds double** %173, i64 %172, !llfi_index !3842
+  %175 = load double** %174, align 8, !llfi_index !3843
+  %176 = getelementptr inbounds double* %175, i64 %170, !llfi_index !3844
+  %177 = load double* %176, align 8, !llfi_index !3845
+  %178 = load i32* %l, align 4, !llfi_index !3846
+  %179 = sext i32 %178 to i64, !llfi_index !3847
+  %180 = load i32* %irow, align 4, !llfi_index !3848
+  %181 = sext i32 %180 to i64, !llfi_index !3849
+  %182 = load double*** %3, align 8, !llfi_index !3850
+  %183 = getelementptr inbounds double** %182, i64 %181, !llfi_index !3851
+  %184 = load double** %183, align 8, !llfi_index !3852
+  %185 = getelementptr inbounds double* %184, i64 %179, !llfi_index !3853
+  store double %177, double* %185, align 8, !llfi_index !3854
+  %186 = load double* %temp, align 8, !llfi_index !3855
+  %187 = load i32* %l, align 4, !llfi_index !3856
+  %188 = sext i32 %187 to i64, !llfi_index !3857
+  %189 = load i32* %icol, align 4, !llfi_index !3858
+  %190 = sext i32 %189 to i64, !llfi_index !3859
+  %191 = load double*** %3, align 8, !llfi_index !3860
+  %192 = getelementptr inbounds double** %191, i64 %190, !llfi_index !3861
+  %193 = load double** %192, align 8, !llfi_index !3862
+  %194 = getelementptr inbounds double* %193, i64 %188, !llfi_index !3863
+  store double %186, double* %194, align 8, !llfi_index !3864
+  br label %195, !llfi_index !3865
 
 ; <label>:195                                     ; preds = %159
-  %196 = load i32* %l, align 4, !llfi_index !3867
-  %197 = add nsw i32 %196, 1, !llfi_index !3868
-  store i32 %197, i32* %l, align 4, !llfi_index !3869
-  br label %155, !llfi_index !3870
+  %196 = load i32* %l, align 4, !llfi_index !3866
+  %197 = add nsw i32 %196, 1, !llfi_index !3867
+  store i32 %197, i32* %l, align 4, !llfi_index !3868
+  br label %155, !llfi_index !3869
 
 ; <label>:198                                     ; preds = %155
-  br label %199, !llfi_index !3871
+  br label %199, !llfi_index !3870
 
 ; <label>:199                                     ; preds = %198, %100
-  %200 = load i32* %irow, align 4, !llfi_index !3872
-  %201 = load i32* %i, align 4, !llfi_index !3873
-  %202 = sext i32 %201 to i64, !llfi_index !3874
-  %203 = load i32** %indxr, align 8, !llfi_index !3875
-  %204 = getelementptr inbounds i32* %203, i64 %202, !llfi_index !3876
-  store i32 %200, i32* %204, align 4, !llfi_index !3877
-  %205 = load i32* %icol, align 4, !llfi_index !3878
-  %206 = load i32* %i, align 4, !llfi_index !3879
-  %207 = sext i32 %206 to i64, !llfi_index !3880
-  %208 = load i32** %indxc, align 8, !llfi_index !3881
-  %209 = getelementptr inbounds i32* %208, i64 %207, !llfi_index !3882
-  store i32 %205, i32* %209, align 4, !llfi_index !3883
-  %210 = load i32* %icol, align 4, !llfi_index !3884
-  %211 = sext i32 %210 to i64, !llfi_index !3885
-  %212 = load i32* %icol, align 4, !llfi_index !3886
-  %213 = sext i32 %212 to i64, !llfi_index !3887
-  %214 = load double*** %1, align 8, !llfi_index !3888
-  %215 = getelementptr inbounds double** %214, i64 %213, !llfi_index !3889
-  %216 = load double** %215, align 8, !llfi_index !3890
-  %217 = getelementptr inbounds double* %216, i64 %211, !llfi_index !3891
-  %218 = load double* %217, align 8, !llfi_index !3892
-  %219 = fcmp oeq double %218, 0.000000e+00, !llfi_index !3893
-  br i1 %219, label %220, label %221, !llfi_index !3894
+  %200 = load i32* %irow, align 4, !llfi_index !3871
+  %201 = load i32* %i, align 4, !llfi_index !3872
+  %202 = sext i32 %201 to i64, !llfi_index !3873
+  %203 = load i32** %indxr, align 8, !llfi_index !3874
+  %204 = getelementptr inbounds i32* %203, i64 %202, !llfi_index !3875
+  store i32 %200, i32* %204, align 4, !llfi_index !3876
+  %205 = load i32* %icol, align 4, !llfi_index !3877
+  %206 = load i32* %i, align 4, !llfi_index !3878
+  %207 = sext i32 %206 to i64, !llfi_index !3879
+  %208 = load i32** %indxc, align 8, !llfi_index !3880
+  %209 = getelementptr inbounds i32* %208, i64 %207, !llfi_index !3881
+  store i32 %205, i32* %209, align 4, !llfi_index !3882
+  %210 = load i32* %icol, align 4, !llfi_index !3883
+  %211 = sext i32 %210 to i64, !llfi_index !3884
+  %212 = load i32* %icol, align 4, !llfi_index !3885
+  %213 = sext i32 %212 to i64, !llfi_index !3886
+  %214 = load double*** %1, align 8, !llfi_index !3887
+  %215 = getelementptr inbounds double** %214, i64 %213, !llfi_index !3888
+  %216 = load double** %215, align 8, !llfi_index !3889
+  %217 = getelementptr inbounds double* %216, i64 %211, !llfi_index !3890
+  %218 = load double* %217, align 8, !llfi_index !3891
+  %219 = fcmp oeq double %218, 0.000000e+00, !llfi_index !3892
+  br i1 %219, label %220, label %221, !llfi_index !3893
 
 ; <label>:220                                     ; preds = %199
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([26 x i8]* @.str422, i32 0, i32 0)), !llfi_index !3895
-  br label %221, !llfi_index !3896
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([26 x i8]* @.str422, i32 0, i32 0)), !llfi_index !3894
+  br label %221, !llfi_index !3895
 
 ; <label>:221                                     ; preds = %220, %199
-  %222 = load i32* %icol, align 4, !llfi_index !3897
-  %223 = sext i32 %222 to i64, !llfi_index !3898
-  %224 = load i32* %icol, align 4, !llfi_index !3899
-  %225 = sext i32 %224 to i64, !llfi_index !3900
-  %226 = load double*** %1, align 8, !llfi_index !3901
-  %227 = getelementptr inbounds double** %226, i64 %225, !llfi_index !3902
-  %228 = load double** %227, align 8, !llfi_index !3903
-  %229 = getelementptr inbounds double* %228, i64 %223, !llfi_index !3904
-  %230 = load double* %229, align 8, !llfi_index !3905
-  %231 = fdiv double 1.000000e+00, %230, !llfi_index !3906
-  store double %231, double* %pivinv, align 8, !llfi_index !3907
-  %232 = load i32* %icol, align 4, !llfi_index !3908
-  %233 = sext i32 %232 to i64, !llfi_index !3909
-  %234 = load i32* %icol, align 4, !llfi_index !3910
-  %235 = sext i32 %234 to i64, !llfi_index !3911
-  %236 = load double*** %1, align 8, !llfi_index !3912
-  %237 = getelementptr inbounds double** %236, i64 %235, !llfi_index !3913
-  %238 = load double** %237, align 8, !llfi_index !3914
-  %239 = getelementptr inbounds double* %238, i64 %233, !llfi_index !3915
-  store double 1.000000e+00, double* %239, align 8, !llfi_index !3916
-  store i32 1, i32* %l, align 4, !llfi_index !3917
-  br label %240, !llfi_index !3918
+  %222 = load i32* %icol, align 4, !llfi_index !3896
+  %223 = sext i32 %222 to i64, !llfi_index !3897
+  %224 = load i32* %icol, align 4, !llfi_index !3898
+  %225 = sext i32 %224 to i64, !llfi_index !3899
+  %226 = load double*** %1, align 8, !llfi_index !3900
+  %227 = getelementptr inbounds double** %226, i64 %225, !llfi_index !3901
+  %228 = load double** %227, align 8, !llfi_index !3902
+  %229 = getelementptr inbounds double* %228, i64 %223, !llfi_index !3903
+  %230 = load double* %229, align 8, !llfi_index !3904
+  %231 = fdiv double 1.000000e+00, %230, !llfi_index !3905
+  store double %231, double* %pivinv, align 8, !llfi_index !3906
+  %232 = load i32* %icol, align 4, !llfi_index !3907
+  %233 = sext i32 %232 to i64, !llfi_index !3908
+  %234 = load i32* %icol, align 4, !llfi_index !3909
+  %235 = sext i32 %234 to i64, !llfi_index !3910
+  %236 = load double*** %1, align 8, !llfi_index !3911
+  %237 = getelementptr inbounds double** %236, i64 %235, !llfi_index !3912
+  %238 = load double** %237, align 8, !llfi_index !3913
+  %239 = getelementptr inbounds double* %238, i64 %233, !llfi_index !3914
+  store double 1.000000e+00, double* %239, align 8, !llfi_index !3915
+  store i32 1, i32* %l, align 4, !llfi_index !3916
+  br label %240, !llfi_index !3917
 
 ; <label>:240                                     ; preds = %256, %221
-  %241 = load i32* %l, align 4, !llfi_index !3919
-  %242 = load i32* %2, align 4, !llfi_index !3920
-  %243 = icmp sle i32 %241, %242, !llfi_index !3921
-  br i1 %243, label %244, label %259, !llfi_index !3922
+  %241 = load i32* %l, align 4, !llfi_index !3918
+  %242 = load i32* %2, align 4, !llfi_index !3919
+  %243 = icmp sle i32 %241, %242, !llfi_index !3920
+  br i1 %243, label %244, label %259, !llfi_index !3921
 
 ; <label>:244                                     ; preds = %240
-  %245 = load double* %pivinv, align 8, !llfi_index !3923
-  %246 = load i32* %l, align 4, !llfi_index !3924
-  %247 = sext i32 %246 to i64, !llfi_index !3925
-  %248 = load i32* %icol, align 4, !llfi_index !3926
-  %249 = sext i32 %248 to i64, !llfi_index !3927
-  %250 = load double*** %1, align 8, !llfi_index !3928
-  %251 = getelementptr inbounds double** %250, i64 %249, !llfi_index !3929
-  %252 = load double** %251, align 8, !llfi_index !3930
-  %253 = getelementptr inbounds double* %252, i64 %247, !llfi_index !3931
-  %254 = load double* %253, align 8, !llfi_index !3932
-  %255 = fmul double %254, %245, !llfi_index !3933
-  store double %255, double* %253, align 8, !llfi_index !3934
-  br label %256, !llfi_index !3935
+  %245 = load double* %pivinv, align 8, !llfi_index !3922
+  %246 = load i32* %l, align 4, !llfi_index !3923
+  %247 = sext i32 %246 to i64, !llfi_index !3924
+  %248 = load i32* %icol, align 4, !llfi_index !3925
+  %249 = sext i32 %248 to i64, !llfi_index !3926
+  %250 = load double*** %1, align 8, !llfi_index !3927
+  %251 = getelementptr inbounds double** %250, i64 %249, !llfi_index !3928
+  %252 = load double** %251, align 8, !llfi_index !3929
+  %253 = getelementptr inbounds double* %252, i64 %247, !llfi_index !3930
+  %254 = load double* %253, align 8, !llfi_index !3931
+  %255 = fmul double %254, %245, !llfi_index !3932
+  store double %255, double* %253, align 8, !llfi_index !3933
+  br label %256, !llfi_index !3934
 
 ; <label>:256                                     ; preds = %244
-  %257 = load i32* %l, align 4, !llfi_index !3936
-  %258 = add nsw i32 %257, 1, !llfi_index !3937
-  store i32 %258, i32* %l, align 4, !llfi_index !3938
-  br label %240, !llfi_index !3939
+  %257 = load i32* %l, align 4, !llfi_index !3935
+  %258 = add nsw i32 %257, 1, !llfi_index !3936
+  store i32 %258, i32* %l, align 4, !llfi_index !3937
+  br label %240, !llfi_index !3938
 
 ; <label>:259                                     ; preds = %240
-  store i32 1, i32* %l, align 4, !llfi_index !3940
-  br label %260, !llfi_index !3941
+  store i32 1, i32* %l, align 4, !llfi_index !3939
+  br label %260, !llfi_index !3940
 
 ; <label>:260                                     ; preds = %276, %259
-  %261 = load i32* %l, align 4, !llfi_index !3942
-  %262 = load i32* %4, align 4, !llfi_index !3943
-  %263 = icmp sle i32 %261, %262, !llfi_index !3944
-  br i1 %263, label %264, label %279, !llfi_index !3945
+  %261 = load i32* %l, align 4, !llfi_index !3941
+  %262 = load i32* %4, align 4, !llfi_index !3942
+  %263 = icmp sle i32 %261, %262, !llfi_index !3943
+  br i1 %263, label %264, label %279, !llfi_index !3944
 
 ; <label>:264                                     ; preds = %260
-  %265 = load double* %pivinv, align 8, !llfi_index !3946
-  %266 = load i32* %l, align 4, !llfi_index !3947
-  %267 = sext i32 %266 to i64, !llfi_index !3948
-  %268 = load i32* %icol, align 4, !llfi_index !3949
-  %269 = sext i32 %268 to i64, !llfi_index !3950
-  %270 = load double*** %3, align 8, !llfi_index !3951
-  %271 = getelementptr inbounds double** %270, i64 %269, !llfi_index !3952
-  %272 = load double** %271, align 8, !llfi_index !3953
-  %273 = getelementptr inbounds double* %272, i64 %267, !llfi_index !3954
-  %274 = load double* %273, align 8, !llfi_index !3955
-  %275 = fmul double %274, %265, !llfi_index !3956
-  store double %275, double* %273, align 8, !llfi_index !3957
-  br label %276, !llfi_index !3958
+  %265 = load double* %pivinv, align 8, !llfi_index !3945
+  %266 = load i32* %l, align 4, !llfi_index !3946
+  %267 = sext i32 %266 to i64, !llfi_index !3947
+  %268 = load i32* %icol, align 4, !llfi_index !3948
+  %269 = sext i32 %268 to i64, !llfi_index !3949
+  %270 = load double*** %3, align 8, !llfi_index !3950
+  %271 = getelementptr inbounds double** %270, i64 %269, !llfi_index !3951
+  %272 = load double** %271, align 8, !llfi_index !3952
+  %273 = getelementptr inbounds double* %272, i64 %267, !llfi_index !3953
+  %274 = load double* %273, align 8, !llfi_index !3954
+  %275 = fmul double %274, %265, !llfi_index !3955
+  store double %275, double* %273, align 8, !llfi_index !3956
+  br label %276, !llfi_index !3957
 
 ; <label>:276                                     ; preds = %264
-  %277 = load i32* %l, align 4, !llfi_index !3959
-  %278 = add nsw i32 %277, 1, !llfi_index !3960
-  store i32 %278, i32* %l, align 4, !llfi_index !3961
-  br label %260, !llfi_index !3962
+  %277 = load i32* %l, align 4, !llfi_index !3958
+  %278 = add nsw i32 %277, 1, !llfi_index !3959
+  store i32 %278, i32* %l, align 4, !llfi_index !3960
+  br label %260, !llfi_index !3961
 
 ; <label>:279                                     ; preds = %260
-  store i32 1, i32* %ll, align 4, !llfi_index !3963
-  br label %280, !llfi_index !3964
+  store i32 1, i32* %ll, align 4, !llfi_index !3962
+  br label %280, !llfi_index !3963
 
 ; <label>:280                                     ; preds = %367, %279
-  %281 = load i32* %ll, align 4, !llfi_index !3965
-  %282 = load i32* %2, align 4, !llfi_index !3966
-  %283 = icmp sle i32 %281, %282, !llfi_index !3967
-  br i1 %283, label %284, label %370, !llfi_index !3968
+  %281 = load i32* %ll, align 4, !llfi_index !3964
+  %282 = load i32* %2, align 4, !llfi_index !3965
+  %283 = icmp sle i32 %281, %282, !llfi_index !3966
+  br i1 %283, label %284, label %370, !llfi_index !3967
 
 ; <label>:284                                     ; preds = %280
-  %285 = load i32* %ll, align 4, !llfi_index !3969
-  %286 = load i32* %icol, align 4, !llfi_index !3970
-  %287 = icmp ne i32 %285, %286, !llfi_index !3971
-  br i1 %287, label %288, label %366, !llfi_index !3972
+  %285 = load i32* %ll, align 4, !llfi_index !3968
+  %286 = load i32* %icol, align 4, !llfi_index !3969
+  %287 = icmp ne i32 %285, %286, !llfi_index !3970
+  br i1 %287, label %288, label %366, !llfi_index !3971
 
 ; <label>:288                                     ; preds = %284
-  %289 = load i32* %icol, align 4, !llfi_index !3973
-  %290 = sext i32 %289 to i64, !llfi_index !3974
-  %291 = load i32* %ll, align 4, !llfi_index !3975
-  %292 = sext i32 %291 to i64, !llfi_index !3976
-  %293 = load double*** %1, align 8, !llfi_index !3977
-  %294 = getelementptr inbounds double** %293, i64 %292, !llfi_index !3978
-  %295 = load double** %294, align 8, !llfi_index !3979
-  %296 = getelementptr inbounds double* %295, i64 %290, !llfi_index !3980
-  %297 = load double* %296, align 8, !llfi_index !3981
-  store double %297, double* %dum, align 8, !llfi_index !3982
-  %298 = load i32* %icol, align 4, !llfi_index !3983
-  %299 = sext i32 %298 to i64, !llfi_index !3984
-  %300 = load i32* %ll, align 4, !llfi_index !3985
-  %301 = sext i32 %300 to i64, !llfi_index !3986
-  %302 = load double*** %1, align 8, !llfi_index !3987
-  %303 = getelementptr inbounds double** %302, i64 %301, !llfi_index !3988
-  %304 = load double** %303, align 8, !llfi_index !3989
-  %305 = getelementptr inbounds double* %304, i64 %299, !llfi_index !3990
-  store double 0.000000e+00, double* %305, align 8, !llfi_index !3991
-  store i32 1, i32* %l, align 4, !llfi_index !3992
-  br label %306, !llfi_index !3993
+  %289 = load i32* %icol, align 4, !llfi_index !3972
+  %290 = sext i32 %289 to i64, !llfi_index !3973
+  %291 = load i32* %ll, align 4, !llfi_index !3974
+  %292 = sext i32 %291 to i64, !llfi_index !3975
+  %293 = load double*** %1, align 8, !llfi_index !3976
+  %294 = getelementptr inbounds double** %293, i64 %292, !llfi_index !3977
+  %295 = load double** %294, align 8, !llfi_index !3978
+  %296 = getelementptr inbounds double* %295, i64 %290, !llfi_index !3979
+  %297 = load double* %296, align 8, !llfi_index !3980
+  store double %297, double* %dum, align 8, !llfi_index !3981
+  %298 = load i32* %icol, align 4, !llfi_index !3982
+  %299 = sext i32 %298 to i64, !llfi_index !3983
+  %300 = load i32* %ll, align 4, !llfi_index !3984
+  %301 = sext i32 %300 to i64, !llfi_index !3985
+  %302 = load double*** %1, align 8, !llfi_index !3986
+  %303 = getelementptr inbounds double** %302, i64 %301, !llfi_index !3987
+  %304 = load double** %303, align 8, !llfi_index !3988
+  %305 = getelementptr inbounds double* %304, i64 %299, !llfi_index !3989
+  store double 0.000000e+00, double* %305, align 8, !llfi_index !3990
+  store i32 1, i32* %l, align 4, !llfi_index !3991
+  br label %306, !llfi_index !3992
 
 ; <label>:306                                     ; preds = %332, %288
-  %307 = load i32* %l, align 4, !llfi_index !3994
-  %308 = load i32* %2, align 4, !llfi_index !3995
-  %309 = icmp sle i32 %307, %308, !llfi_index !3996
-  br i1 %309, label %310, label %335, !llfi_index !3997
+  %307 = load i32* %l, align 4, !llfi_index !3993
+  %308 = load i32* %2, align 4, !llfi_index !3994
+  %309 = icmp sle i32 %307, %308, !llfi_index !3995
+  br i1 %309, label %310, label %335, !llfi_index !3996
 
 ; <label>:310                                     ; preds = %306
-  %311 = load i32* %l, align 4, !llfi_index !3998
-  %312 = sext i32 %311 to i64, !llfi_index !3999
-  %313 = load i32* %icol, align 4, !llfi_index !4000
-  %314 = sext i32 %313 to i64, !llfi_index !4001
-  %315 = load double*** %1, align 8, !llfi_index !4002
-  %316 = getelementptr inbounds double** %315, i64 %314, !llfi_index !4003
-  %317 = load double** %316, align 8, !llfi_index !4004
-  %318 = getelementptr inbounds double* %317, i64 %312, !llfi_index !4005
-  %319 = load double* %318, align 8, !llfi_index !4006
-  %320 = load double* %dum, align 8, !llfi_index !4007
-  %321 = fmul double %319, %320, !llfi_index !4008
-  %322 = load i32* %l, align 4, !llfi_index !4009
-  %323 = sext i32 %322 to i64, !llfi_index !4010
-  %324 = load i32* %ll, align 4, !llfi_index !4011
-  %325 = sext i32 %324 to i64, !llfi_index !4012
-  %326 = load double*** %1, align 8, !llfi_index !4013
-  %327 = getelementptr inbounds double** %326, i64 %325, !llfi_index !4014
-  %328 = load double** %327, align 8, !llfi_index !4015
-  %329 = getelementptr inbounds double* %328, i64 %323, !llfi_index !4016
-  %330 = load double* %329, align 8, !llfi_index !4017
-  %331 = fsub double %330, %321, !llfi_index !4018
-  store double %331, double* %329, align 8, !llfi_index !4019
-  br label %332, !llfi_index !4020
+  %311 = load i32* %l, align 4, !llfi_index !3997
+  %312 = sext i32 %311 to i64, !llfi_index !3998
+  %313 = load i32* %icol, align 4, !llfi_index !3999
+  %314 = sext i32 %313 to i64, !llfi_index !4000
+  %315 = load double*** %1, align 8, !llfi_index !4001
+  %316 = getelementptr inbounds double** %315, i64 %314, !llfi_index !4002
+  %317 = load double** %316, align 8, !llfi_index !4003
+  %318 = getelementptr inbounds double* %317, i64 %312, !llfi_index !4004
+  %319 = load double* %318, align 8, !llfi_index !4005
+  %320 = load double* %dum, align 8, !llfi_index !4006
+  %321 = fmul double %319, %320, !llfi_index !4007
+  %322 = load i32* %l, align 4, !llfi_index !4008
+  %323 = sext i32 %322 to i64, !llfi_index !4009
+  %324 = load i32* %ll, align 4, !llfi_index !4010
+  %325 = sext i32 %324 to i64, !llfi_index !4011
+  %326 = load double*** %1, align 8, !llfi_index !4012
+  %327 = getelementptr inbounds double** %326, i64 %325, !llfi_index !4013
+  %328 = load double** %327, align 8, !llfi_index !4014
+  %329 = getelementptr inbounds double* %328, i64 %323, !llfi_index !4015
+  %330 = load double* %329, align 8, !llfi_index !4016
+  %331 = fsub double %330, %321, !llfi_index !4017
+  store double %331, double* %329, align 8, !llfi_index !4018
+  br label %332, !llfi_index !4019
 
 ; <label>:332                                     ; preds = %310
-  %333 = load i32* %l, align 4, !llfi_index !4021
-  %334 = add nsw i32 %333, 1, !llfi_index !4022
-  store i32 %334, i32* %l, align 4, !llfi_index !4023
-  br label %306, !llfi_index !4024
+  %333 = load i32* %l, align 4, !llfi_index !4020
+  %334 = add nsw i32 %333, 1, !llfi_index !4021
+  store i32 %334, i32* %l, align 4, !llfi_index !4022
+  br label %306, !llfi_index !4023
 
 ; <label>:335                                     ; preds = %306
-  store i32 1, i32* %l, align 4, !llfi_index !4025
-  br label %336, !llfi_index !4026
+  store i32 1, i32* %l, align 4, !llfi_index !4024
+  br label %336, !llfi_index !4025
 
 ; <label>:336                                     ; preds = %362, %335
-  %337 = load i32* %l, align 4, !llfi_index !4027
-  %338 = load i32* %4, align 4, !llfi_index !4028
-  %339 = icmp sle i32 %337, %338, !llfi_index !4029
-  br i1 %339, label %340, label %365, !llfi_index !4030
+  %337 = load i32* %l, align 4, !llfi_index !4026
+  %338 = load i32* %4, align 4, !llfi_index !4027
+  %339 = icmp sle i32 %337, %338, !llfi_index !4028
+  br i1 %339, label %340, label %365, !llfi_index !4029
 
 ; <label>:340                                     ; preds = %336
-  %341 = load i32* %l, align 4, !llfi_index !4031
-  %342 = sext i32 %341 to i64, !llfi_index !4032
-  %343 = load i32* %icol, align 4, !llfi_index !4033
-  %344 = sext i32 %343 to i64, !llfi_index !4034
-  %345 = load double*** %3, align 8, !llfi_index !4035
-  %346 = getelementptr inbounds double** %345, i64 %344, !llfi_index !4036
-  %347 = load double** %346, align 8, !llfi_index !4037
-  %348 = getelementptr inbounds double* %347, i64 %342, !llfi_index !4038
-  %349 = load double* %348, align 8, !llfi_index !4039
-  %350 = load double* %dum, align 8, !llfi_index !4040
-  %351 = fmul double %349, %350, !llfi_index !4041
-  %352 = load i32* %l, align 4, !llfi_index !4042
-  %353 = sext i32 %352 to i64, !llfi_index !4043
-  %354 = load i32* %ll, align 4, !llfi_index !4044
-  %355 = sext i32 %354 to i64, !llfi_index !4045
-  %356 = load double*** %3, align 8, !llfi_index !4046
-  %357 = getelementptr inbounds double** %356, i64 %355, !llfi_index !4047
-  %358 = load double** %357, align 8, !llfi_index !4048
-  %359 = getelementptr inbounds double* %358, i64 %353, !llfi_index !4049
-  %360 = load double* %359, align 8, !llfi_index !4050
-  %361 = fsub double %360, %351, !llfi_index !4051
-  store double %361, double* %359, align 8, !llfi_index !4052
-  br label %362, !llfi_index !4053
+  %341 = load i32* %l, align 4, !llfi_index !4030
+  %342 = sext i32 %341 to i64, !llfi_index !4031
+  %343 = load i32* %icol, align 4, !llfi_index !4032
+  %344 = sext i32 %343 to i64, !llfi_index !4033
+  %345 = load double*** %3, align 8, !llfi_index !4034
+  %346 = getelementptr inbounds double** %345, i64 %344, !llfi_index !4035
+  %347 = load double** %346, align 8, !llfi_index !4036
+  %348 = getelementptr inbounds double* %347, i64 %342, !llfi_index !4037
+  %349 = load double* %348, align 8, !llfi_index !4038
+  %350 = load double* %dum, align 8, !llfi_index !4039
+  %351 = fmul double %349, %350, !llfi_index !4040
+  %352 = load i32* %l, align 4, !llfi_index !4041
+  %353 = sext i32 %352 to i64, !llfi_index !4042
+  %354 = load i32* %ll, align 4, !llfi_index !4043
+  %355 = sext i32 %354 to i64, !llfi_index !4044
+  %356 = load double*** %3, align 8, !llfi_index !4045
+  %357 = getelementptr inbounds double** %356, i64 %355, !llfi_index !4046
+  %358 = load double** %357, align 8, !llfi_index !4047
+  %359 = getelementptr inbounds double* %358, i64 %353, !llfi_index !4048
+  %360 = load double* %359, align 8, !llfi_index !4049
+  %361 = fsub double %360, %351, !llfi_index !4050
+  store double %361, double* %359, align 8, !llfi_index !4051
+  br label %362, !llfi_index !4052
 
 ; <label>:362                                     ; preds = %340
-  %363 = load i32* %l, align 4, !llfi_index !4054
-  %364 = add nsw i32 %363, 1, !llfi_index !4055
-  store i32 %364, i32* %l, align 4, !llfi_index !4056
-  br label %336, !llfi_index !4057
+  %363 = load i32* %l, align 4, !llfi_index !4053
+  %364 = add nsw i32 %363, 1, !llfi_index !4054
+  store i32 %364, i32* %l, align 4, !llfi_index !4055
+  br label %336, !llfi_index !4056
 
 ; <label>:365                                     ; preds = %336
-  br label %366, !llfi_index !4058
+  br label %366, !llfi_index !4057
 
 ; <label>:366                                     ; preds = %365, %284
-  br label %367, !llfi_index !4059
+  br label %367, !llfi_index !4058
 
 ; <label>:367                                     ; preds = %366
-  %368 = load i32* %ll, align 4, !llfi_index !4060
-  %369 = add nsw i32 %368, 1, !llfi_index !4061
-  store i32 %369, i32* %ll, align 4, !llfi_index !4062
-  br label %280, !llfi_index !4063
+  %368 = load i32* %ll, align 4, !llfi_index !4059
+  %369 = add nsw i32 %368, 1, !llfi_index !4060
+  store i32 %369, i32* %ll, align 4, !llfi_index !4061
+  br label %280, !llfi_index !4062
 
 ; <label>:370                                     ; preds = %280
-  br label %371, !llfi_index !4064
+  br label %371, !llfi_index !4063
 
 ; <label>:371                                     ; preds = %370
-  %372 = load i32* %i, align 4, !llfi_index !4065
-  %373 = add nsw i32 %372, 1, !llfi_index !4066
-  store i32 %373, i32* %i, align 4, !llfi_index !4067
-  br label %27, !llfi_index !4068
+  %372 = load i32* %i, align 4, !llfi_index !4064
+  %373 = add nsw i32 %372, 1, !llfi_index !4065
+  store i32 %373, i32* %i, align 4, !llfi_index !4066
+  br label %27, !llfi_index !4067
 
 ; <label>:374                                     ; preds = %27
-  %375 = load i32* %2, align 4, !llfi_index !4069
-  store i32 %375, i32* %l, align 4, !llfi_index !4070
-  br label %376, !llfi_index !4071
+  %375 = load i32* %2, align 4, !llfi_index !4068
+  store i32 %375, i32* %l, align 4, !llfi_index !4069
+  br label %376, !llfi_index !4070
 
 ; <label>:376                                     ; preds = %453, %374
-  %377 = load i32* %l, align 4, !llfi_index !4072
-  %378 = icmp sge i32 %377, 1, !llfi_index !4073
-  br i1 %378, label %379, label %456, !llfi_index !4074
+  %377 = load i32* %l, align 4, !llfi_index !4071
+  %378 = icmp sge i32 %377, 1, !llfi_index !4072
+  br i1 %378, label %379, label %456, !llfi_index !4073
 
 ; <label>:379                                     ; preds = %376
-  %380 = load i32* %l, align 4, !llfi_index !4075
-  %381 = sext i32 %380 to i64, !llfi_index !4076
-  %382 = load i32** %indxr, align 8, !llfi_index !4077
-  %383 = getelementptr inbounds i32* %382, i64 %381, !llfi_index !4078
-  %384 = load i32* %383, align 4, !llfi_index !4079
-  %385 = load i32* %l, align 4, !llfi_index !4080
-  %386 = sext i32 %385 to i64, !llfi_index !4081
-  %387 = load i32** %indxc, align 8, !llfi_index !4082
-  %388 = getelementptr inbounds i32* %387, i64 %386, !llfi_index !4083
-  %389 = load i32* %388, align 4, !llfi_index !4084
-  %390 = icmp ne i32 %384, %389, !llfi_index !4085
-  br i1 %390, label %391, label %452, !llfi_index !4086
+  %380 = load i32* %l, align 4, !llfi_index !4074
+  %381 = sext i32 %380 to i64, !llfi_index !4075
+  %382 = load i32** %indxr, align 8, !llfi_index !4076
+  %383 = getelementptr inbounds i32* %382, i64 %381, !llfi_index !4077
+  %384 = load i32* %383, align 4, !llfi_index !4078
+  %385 = load i32* %l, align 4, !llfi_index !4079
+  %386 = sext i32 %385 to i64, !llfi_index !4080
+  %387 = load i32** %indxc, align 8, !llfi_index !4081
+  %388 = getelementptr inbounds i32* %387, i64 %386, !llfi_index !4082
+  %389 = load i32* %388, align 4, !llfi_index !4083
+  %390 = icmp ne i32 %384, %389, !llfi_index !4084
+  br i1 %390, label %391, label %452, !llfi_index !4085
 
 ; <label>:391                                     ; preds = %379
-  store i32 1, i32* %k, align 4, !llfi_index !4087
-  br label %392, !llfi_index !4088
+  store i32 1, i32* %k, align 4, !llfi_index !4086
+  br label %392, !llfi_index !4087
 
 ; <label>:392                                     ; preds = %448, %391
-  %393 = load i32* %k, align 4, !llfi_index !4089
-  %394 = load i32* %2, align 4, !llfi_index !4090
-  %395 = icmp sle i32 %393, %394, !llfi_index !4091
-  br i1 %395, label %396, label %451, !llfi_index !4092
+  %393 = load i32* %k, align 4, !llfi_index !4088
+  %394 = load i32* %2, align 4, !llfi_index !4089
+  %395 = icmp sle i32 %393, %394, !llfi_index !4090
+  br i1 %395, label %396, label %451, !llfi_index !4091
 
 ; <label>:396                                     ; preds = %392
-  %397 = load i32* %l, align 4, !llfi_index !4093
-  %398 = sext i32 %397 to i64, !llfi_index !4094
-  %399 = load i32** %indxr, align 8, !llfi_index !4095
-  %400 = getelementptr inbounds i32* %399, i64 %398, !llfi_index !4096
-  %401 = load i32* %400, align 4, !llfi_index !4097
-  %402 = sext i32 %401 to i64, !llfi_index !4098
-  %403 = load i32* %k, align 4, !llfi_index !4099
-  %404 = sext i32 %403 to i64, !llfi_index !4100
-  %405 = load double*** %1, align 8, !llfi_index !4101
-  %406 = getelementptr inbounds double** %405, i64 %404, !llfi_index !4102
-  %407 = load double** %406, align 8, !llfi_index !4103
-  %408 = getelementptr inbounds double* %407, i64 %402, !llfi_index !4104
-  %409 = load double* %408, align 8, !llfi_index !4105
-  store double %409, double* %temp, align 8, !llfi_index !4106
-  %410 = load i32* %l, align 4, !llfi_index !4107
-  %411 = sext i32 %410 to i64, !llfi_index !4108
-  %412 = load i32** %indxc, align 8, !llfi_index !4109
-  %413 = getelementptr inbounds i32* %412, i64 %411, !llfi_index !4110
-  %414 = load i32* %413, align 4, !llfi_index !4111
-  %415 = sext i32 %414 to i64, !llfi_index !4112
-  %416 = load i32* %k, align 4, !llfi_index !4113
-  %417 = sext i32 %416 to i64, !llfi_index !4114
-  %418 = load double*** %1, align 8, !llfi_index !4115
-  %419 = getelementptr inbounds double** %418, i64 %417, !llfi_index !4116
-  %420 = load double** %419, align 8, !llfi_index !4117
-  %421 = getelementptr inbounds double* %420, i64 %415, !llfi_index !4118
-  %422 = load double* %421, align 8, !llfi_index !4119
-  %423 = load i32* %l, align 4, !llfi_index !4120
-  %424 = sext i32 %423 to i64, !llfi_index !4121
-  %425 = load i32** %indxr, align 8, !llfi_index !4122
-  %426 = getelementptr inbounds i32* %425, i64 %424, !llfi_index !4123
-  %427 = load i32* %426, align 4, !llfi_index !4124
-  %428 = sext i32 %427 to i64, !llfi_index !4125
-  %429 = load i32* %k, align 4, !llfi_index !4126
-  %430 = sext i32 %429 to i64, !llfi_index !4127
-  %431 = load double*** %1, align 8, !llfi_index !4128
-  %432 = getelementptr inbounds double** %431, i64 %430, !llfi_index !4129
-  %433 = load double** %432, align 8, !llfi_index !4130
-  %434 = getelementptr inbounds double* %433, i64 %428, !llfi_index !4131
-  store double %422, double* %434, align 8, !llfi_index !4132
-  %435 = load double* %temp, align 8, !llfi_index !4133
-  %436 = load i32* %l, align 4, !llfi_index !4134
-  %437 = sext i32 %436 to i64, !llfi_index !4135
-  %438 = load i32** %indxc, align 8, !llfi_index !4136
-  %439 = getelementptr inbounds i32* %438, i64 %437, !llfi_index !4137
-  %440 = load i32* %439, align 4, !llfi_index !4138
-  %441 = sext i32 %440 to i64, !llfi_index !4139
-  %442 = load i32* %k, align 4, !llfi_index !4140
-  %443 = sext i32 %442 to i64, !llfi_index !4141
-  %444 = load double*** %1, align 8, !llfi_index !4142
-  %445 = getelementptr inbounds double** %444, i64 %443, !llfi_index !4143
-  %446 = load double** %445, align 8, !llfi_index !4144
-  %447 = getelementptr inbounds double* %446, i64 %441, !llfi_index !4145
-  store double %435, double* %447, align 8, !llfi_index !4146
-  br label %448, !llfi_index !4147
+  %397 = load i32* %l, align 4, !llfi_index !4092
+  %398 = sext i32 %397 to i64, !llfi_index !4093
+  %399 = load i32** %indxr, align 8, !llfi_index !4094
+  %400 = getelementptr inbounds i32* %399, i64 %398, !llfi_index !4095
+  %401 = load i32* %400, align 4, !llfi_index !4096
+  %402 = sext i32 %401 to i64, !llfi_index !4097
+  %403 = load i32* %k, align 4, !llfi_index !4098
+  %404 = sext i32 %403 to i64, !llfi_index !4099
+  %405 = load double*** %1, align 8, !llfi_index !4100
+  %406 = getelementptr inbounds double** %405, i64 %404, !llfi_index !4101
+  %407 = load double** %406, align 8, !llfi_index !4102
+  %408 = getelementptr inbounds double* %407, i64 %402, !llfi_index !4103
+  %409 = load double* %408, align 8, !llfi_index !4104
+  store double %409, double* %temp, align 8, !llfi_index !4105
+  %410 = load i32* %l, align 4, !llfi_index !4106
+  %411 = sext i32 %410 to i64, !llfi_index !4107
+  %412 = load i32** %indxc, align 8, !llfi_index !4108
+  %413 = getelementptr inbounds i32* %412, i64 %411, !llfi_index !4109
+  %414 = load i32* %413, align 4, !llfi_index !4110
+  %415 = sext i32 %414 to i64, !llfi_index !4111
+  %416 = load i32* %k, align 4, !llfi_index !4112
+  %417 = sext i32 %416 to i64, !llfi_index !4113
+  %418 = load double*** %1, align 8, !llfi_index !4114
+  %419 = getelementptr inbounds double** %418, i64 %417, !llfi_index !4115
+  %420 = load double** %419, align 8, !llfi_index !4116
+  %421 = getelementptr inbounds double* %420, i64 %415, !llfi_index !4117
+  %422 = load double* %421, align 8, !llfi_index !4118
+  %423 = load i32* %l, align 4, !llfi_index !4119
+  %424 = sext i32 %423 to i64, !llfi_index !4120
+  %425 = load i32** %indxr, align 8, !llfi_index !4121
+  %426 = getelementptr inbounds i32* %425, i64 %424, !llfi_index !4122
+  %427 = load i32* %426, align 4, !llfi_index !4123
+  %428 = sext i32 %427 to i64, !llfi_index !4124
+  %429 = load i32* %k, align 4, !llfi_index !4125
+  %430 = sext i32 %429 to i64, !llfi_index !4126
+  %431 = load double*** %1, align 8, !llfi_index !4127
+  %432 = getelementptr inbounds double** %431, i64 %430, !llfi_index !4128
+  %433 = load double** %432, align 8, !llfi_index !4129
+  %434 = getelementptr inbounds double* %433, i64 %428, !llfi_index !4130
+  store double %422, double* %434, align 8, !llfi_index !4131
+  %435 = load double* %temp, align 8, !llfi_index !4132
+  %436 = load i32* %l, align 4, !llfi_index !4133
+  %437 = sext i32 %436 to i64, !llfi_index !4134
+  %438 = load i32** %indxc, align 8, !llfi_index !4135
+  %439 = getelementptr inbounds i32* %438, i64 %437, !llfi_index !4136
+  %440 = load i32* %439, align 4, !llfi_index !4137
+  %441 = sext i32 %440 to i64, !llfi_index !4138
+  %442 = load i32* %k, align 4, !llfi_index !4139
+  %443 = sext i32 %442 to i64, !llfi_index !4140
+  %444 = load double*** %1, align 8, !llfi_index !4141
+  %445 = getelementptr inbounds double** %444, i64 %443, !llfi_index !4142
+  %446 = load double** %445, align 8, !llfi_index !4143
+  %447 = getelementptr inbounds double* %446, i64 %441, !llfi_index !4144
+  store double %435, double* %447, align 8, !llfi_index !4145
+  br label %448, !llfi_index !4146
 
 ; <label>:448                                     ; preds = %396
-  %449 = load i32* %k, align 4, !llfi_index !4148
-  %450 = add nsw i32 %449, 1, !llfi_index !4149
-  store i32 %450, i32* %k, align 4, !llfi_index !4150
-  br label %392, !llfi_index !4151
+  %449 = load i32* %k, align 4, !llfi_index !4147
+  %450 = add nsw i32 %449, 1, !llfi_index !4148
+  store i32 %450, i32* %k, align 4, !llfi_index !4149
+  br label %392, !llfi_index !4150
 
 ; <label>:451                                     ; preds = %392
-  br label %452, !llfi_index !4152
+  br label %452, !llfi_index !4151
 
 ; <label>:452                                     ; preds = %451, %379
-  br label %453, !llfi_index !4153
+  br label %453, !llfi_index !4152
 
 ; <label>:453                                     ; preds = %452
-  %454 = load i32* %l, align 4, !llfi_index !4154
-  %455 = add nsw i32 %454, -1, !llfi_index !4155
-  store i32 %455, i32* %l, align 4, !llfi_index !4156
-  br label %376, !llfi_index !4157
+  %454 = load i32* %l, align 4, !llfi_index !4153
+  %455 = add nsw i32 %454, -1, !llfi_index !4154
+  store i32 %455, i32* %l, align 4, !llfi_index !4155
+  br label %376, !llfi_index !4156
 
 ; <label>:456                                     ; preds = %376
-  %457 = load i32** %ipiv, align 8, !llfi_index !4158
-  %458 = load i32* %2, align 4, !llfi_index !4159
-  %459 = sext i32 %458 to i64, !llfi_index !4160
-  call void @_Z12free_ivectorPill(i32* %457, i64 1, i64 %459), !llfi_index !4161
-  %460 = load i32** %indxr, align 8, !llfi_index !4162
-  %461 = load i32* %2, align 4, !llfi_index !4163
-  %462 = sext i32 %461 to i64, !llfi_index !4164
-  call void @_Z12free_ivectorPill(i32* %460, i64 1, i64 %462), !llfi_index !4165
-  %463 = load i32** %indxc, align 8, !llfi_index !4166
-  %464 = load i32* %2, align 4, !llfi_index !4167
-  %465 = sext i32 %464 to i64, !llfi_index !4168
-  call void @_Z12free_ivectorPill(i32* %463, i64 1, i64 %465), !llfi_index !4169
-  ret void, !llfi_index !4170
+  %457 = load i32** %ipiv, align 8, !llfi_index !4157
+  %458 = load i32* %2, align 4, !llfi_index !4158
+  %459 = sext i32 %458 to i64, !llfi_index !4159
+  call void @_Z12free_ivectorPill(i32* %457, i64 1, i64 %459), !llfi_index !4160
+  %460 = load i32** %indxr, align 8, !llfi_index !4161
+  %461 = load i32* %2, align 4, !llfi_index !4162
+  %462 = sext i32 %461 to i64, !llfi_index !4163
+  call void @_Z12free_ivectorPill(i32* %460, i64 1, i64 %462), !llfi_index !4164
+  %463 = load i32** %indxc, align 8, !llfi_index !4165
+  %464 = load i32* %2, align 4, !llfi_index !4166
+  %465 = sext i32 %464 to i64, !llfi_index !4167
+  call void @_Z12free_ivectorPill(i32* %463, i64 1, i64 %465), !llfi_index !4168
+  ret void, !llfi_index !4169
 }
 
 ; Function Attrs: uwtable
 define i32* @_Z7ivectorll(i64 %nl, i64 %nh) #3 {
-  %1 = alloca i64, align 8, !llfi_index !4171
-  %2 = alloca i64, align 8, !llfi_index !4172
-  %v = alloca i32*, align 8, !llfi_index !4173
-  store i64 %nl, i64* %1, align 8, !llfi_index !4174
-  store i64 %nh, i64* %2, align 8, !llfi_index !4175
-  %3 = load i64* %2, align 8, !llfi_index !4176
-  %4 = load i64* %1, align 8, !llfi_index !4177
-  %5 = sub nsw i64 %3, %4, !llfi_index !4178
-  %6 = add nsw i64 %5, 2, !llfi_index !4179
-  %7 = mul i64 %6, 4, !llfi_index !4180
-  %8 = call noalias i8* @malloc(i64 %7) #5, !llfi_index !4181
-  %9 = bitcast i8* %8 to i32*, !llfi_index !4182
-  store i32* %9, i32** %v, align 8, !llfi_index !4183
-  %10 = load i32** %v, align 8, !llfi_index !4184
-  %11 = icmp ne i32* %10, null, !llfi_index !4185
-  br i1 %11, label %13, label %12, !llfi_index !4186
+  %1 = alloca i64, align 8, !llfi_index !4170
+  %2 = alloca i64, align 8, !llfi_index !4171
+  %v = alloca i32*, align 8, !llfi_index !4172
+  store i64 %nl, i64* %1, align 8, !llfi_index !4173
+  store i64 %nh, i64* %2, align 8, !llfi_index !4174
+  %3 = load i64* %2, align 8, !llfi_index !4175
+  %4 = load i64* %1, align 8, !llfi_index !4176
+  %5 = sub nsw i64 %3, %4, !llfi_index !4177
+  %6 = add nsw i64 %5, 2, !llfi_index !4178
+  %7 = mul i64 %6, 4, !llfi_index !4179
+  %8 = call noalias i8* @malloc(i64 %7) #5, !llfi_index !4180
+  %9 = bitcast i8* %8 to i32*, !llfi_index !4181
+  store i32* %9, i32** %v, align 8, !llfi_index !4182
+  %10 = load i32** %v, align 8, !llfi_index !4183
+  %11 = icmp ne i32* %10, null, !llfi_index !4184
+  br i1 %11, label %13, label %12, !llfi_index !4185
 
 ; <label>:12                                      ; preds = %0
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([32 x i8]* @.str523, i32 0, i32 0)), !llfi_index !4187
-  br label %13, !llfi_index !4188
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([32 x i8]* @.str523, i32 0, i32 0)), !llfi_index !4186
+  br label %13, !llfi_index !4187
 
 ; <label>:13                                      ; preds = %12, %0
-  %14 = load i32** %v, align 8, !llfi_index !4189
-  %15 = load i64* %1, align 8, !llfi_index !4190
-  %16 = sub i64 0, %15, !llfi_index !4191
-  %17 = getelementptr inbounds i32* %14, i64 %16, !llfi_index !4192
-  %18 = getelementptr inbounds i32* %17, i64 1, !llfi_index !4193
-  ret i32* %18, !llfi_index !4194
+  %14 = load i32** %v, align 8, !llfi_index !4188
+  %15 = load i64* %1, align 8, !llfi_index !4189
+  %16 = sub i64 0, %15, !llfi_index !4190
+  %17 = getelementptr inbounds i32* %14, i64 %16, !llfi_index !4191
+  %18 = getelementptr inbounds i32* %17, i64 1, !llfi_index !4192
+  ret i32* %18, !llfi_index !4193
 }
 
 ; Function Attrs: nounwind uwtable
 define void @_Z12free_ivectorPill(i32* %v, i64 %nl, i64 %nh) #0 {
-  %1 = alloca i32*, align 8, !llfi_index !4195
-  %2 = alloca i64, align 8, !llfi_index !4196
-  %3 = alloca i64, align 8, !llfi_index !4197
-  store i32* %v, i32** %1, align 8, !llfi_index !4198
-  store i64 %nl, i64* %2, align 8, !llfi_index !4199
-  store i64 %nh, i64* %3, align 8, !llfi_index !4200
-  %4 = load i32** %1, align 8, !llfi_index !4201
-  %5 = load i64* %2, align 8, !llfi_index !4202
-  %6 = getelementptr inbounds i32* %4, i64 %5, !llfi_index !4203
-  %7 = getelementptr inbounds i32* %6, i64 -1, !llfi_index !4204
-  %8 = bitcast i32* %7 to i8*, !llfi_index !4205
-  call void @free(i8* %8) #5, !llfi_index !4206
-  ret void, !llfi_index !4207
+  %1 = alloca i32*, align 8, !llfi_index !4194
+  %2 = alloca i64, align 8, !llfi_index !4195
+  %3 = alloca i64, align 8, !llfi_index !4196
+  store i32* %v, i32** %1, align 8, !llfi_index !4197
+  store i64 %nl, i64* %2, align 8, !llfi_index !4198
+  store i64 %nh, i64* %3, align 8, !llfi_index !4199
+  %4 = load i32** %1, align 8, !llfi_index !4200
+  %5 = load i64* %2, align 8, !llfi_index !4201
+  %6 = getelementptr inbounds i32* %4, i64 %5, !llfi_index !4202
+  %7 = getelementptr inbounds i32* %6, i64 -1, !llfi_index !4203
+  %8 = bitcast i32* %7 to i8*, !llfi_index !4204
+  call void @free(i8* %8) #5, !llfi_index !4205
+  ret void, !llfi_index !4206
 }
 
 ; Function Attrs: uwtable
 define double* @_Z7dvectorll(i64 %nl, i64 %nh) #3 {
-  %1 = alloca i64, align 8, !llfi_index !4208
-  %2 = alloca i64, align 8, !llfi_index !4209
-  %v = alloca double*, align 8, !llfi_index !4210
-  store i64 %nl, i64* %1, align 8, !llfi_index !4211
-  store i64 %nh, i64* %2, align 8, !llfi_index !4212
-  %3 = load i64* %2, align 8, !llfi_index !4213
-  %4 = load i64* %1, align 8, !llfi_index !4214
-  %5 = sub nsw i64 %3, %4, !llfi_index !4215
-  %6 = add nsw i64 %5, 2, !llfi_index !4216
-  %7 = mul i64 %6, 8, !llfi_index !4217
-  %8 = call noalias i8* @malloc(i64 %7) #5, !llfi_index !4218
-  %9 = bitcast i8* %8 to double*, !llfi_index !4219
-  store double* %9, double** %v, align 8, !llfi_index !4220
-  %10 = load double** %v, align 8, !llfi_index !4221
-  %11 = icmp ne double* %10, null, !llfi_index !4222
-  br i1 %11, label %13, label %12, !llfi_index !4223
+  %1 = alloca i64, align 8, !llfi_index !4207
+  %2 = alloca i64, align 8, !llfi_index !4208
+  %v = alloca double*, align 8, !llfi_index !4209
+  store i64 %nl, i64* %1, align 8, !llfi_index !4210
+  store i64 %nh, i64* %2, align 8, !llfi_index !4211
+  %3 = load i64* %2, align 8, !llfi_index !4212
+  %4 = load i64* %1, align 8, !llfi_index !4213
+  %5 = sub nsw i64 %3, %4, !llfi_index !4214
+  %6 = add nsw i64 %5, 2, !llfi_index !4215
+  %7 = mul i64 %6, 8, !llfi_index !4216
+  %8 = call noalias i8* @malloc(i64 %7) #5, !llfi_index !4217
+  %9 = bitcast i8* %8 to double*, !llfi_index !4218
+  store double* %9, double** %v, align 8, !llfi_index !4219
+  %10 = load double** %v, align 8, !llfi_index !4220
+  %11 = icmp ne double* %10, null, !llfi_index !4221
+  br i1 %11, label %13, label %12, !llfi_index !4222
 
 ; <label>:12                                      ; preds = %0
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([32 x i8]* @.str624, i32 0, i32 0)), !llfi_index !4224
-  br label %13, !llfi_index !4225
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([32 x i8]* @.str624, i32 0, i32 0)), !llfi_index !4223
+  br label %13, !llfi_index !4224
 
 ; <label>:13                                      ; preds = %12, %0
-  %14 = load double** %v, align 8, !llfi_index !4226
-  %15 = load i64* %1, align 8, !llfi_index !4227
-  %16 = sub i64 0, %15, !llfi_index !4228
-  %17 = getelementptr inbounds double* %14, i64 %16, !llfi_index !4229
-  %18 = getelementptr inbounds double* %17, i64 1, !llfi_index !4230
-  ret double* %18, !llfi_index !4231
+  %14 = load double** %v, align 8, !llfi_index !4225
+  %15 = load i64* %1, align 8, !llfi_index !4226
+  %16 = sub i64 0, %15, !llfi_index !4227
+  %17 = getelementptr inbounds double* %14, i64 %16, !llfi_index !4228
+  %18 = getelementptr inbounds double* %17, i64 1, !llfi_index !4229
+  ret double* %18, !llfi_index !4230
 }
 
 ; Function Attrs: nounwind uwtable
 define void @_Z12free_dvectorPdll(double* %v, i64 %nl, i64 %nh) #0 {
-  %1 = alloca double*, align 8, !llfi_index !4232
-  %2 = alloca i64, align 8, !llfi_index !4233
-  %3 = alloca i64, align 8, !llfi_index !4234
-  store double* %v, double** %1, align 8, !llfi_index !4235
-  store i64 %nl, i64* %2, align 8, !llfi_index !4236
-  store i64 %nh, i64* %3, align 8, !llfi_index !4237
-  %4 = load double** %1, align 8, !llfi_index !4238
-  %5 = load i64* %2, align 8, !llfi_index !4239
-  %6 = getelementptr inbounds double* %4, i64 %5, !llfi_index !4240
-  %7 = getelementptr inbounds double* %6, i64 -1, !llfi_index !4241
-  %8 = bitcast double* %7 to i8*, !llfi_index !4242
-  call void @free(i8* %8) #5, !llfi_index !4243
-  ret void, !llfi_index !4244
+  %1 = alloca double*, align 8, !llfi_index !4231
+  %2 = alloca i64, align 8, !llfi_index !4232
+  %3 = alloca i64, align 8, !llfi_index !4233
+  store double* %v, double** %1, align 8, !llfi_index !4234
+  store i64 %nl, i64* %2, align 8, !llfi_index !4235
+  store i64 %nh, i64* %3, align 8, !llfi_index !4236
+  %4 = load double** %1, align 8, !llfi_index !4237
+  %5 = load i64* %2, align 8, !llfi_index !4238
+  %6 = getelementptr inbounds double* %4, i64 %5, !llfi_index !4239
+  %7 = getelementptr inbounds double* %6, i64 -1, !llfi_index !4240
+  %8 = bitcast double* %7 to i8*, !llfi_index !4241
+  call void @free(i8* %8) #5, !llfi_index !4242
+  ret void, !llfi_index !4243
 }
 
 ; Function Attrs: uwtable
 define double** @_Z7dmatrixllll(i64 %nrl, i64 %nrh, i64 %ncl, i64 %nch) #3 {
-  %1 = alloca i64, align 8, !llfi_index !4245
-  %2 = alloca i64, align 8, !llfi_index !4246
-  %3 = alloca i64, align 8, !llfi_index !4247
-  %4 = alloca i64, align 8, !llfi_index !4248
-  %i = alloca i64, align 8, !llfi_index !4249
-  %nrow = alloca i64, align 8, !llfi_index !4250
-  %ncol = alloca i64, align 8, !llfi_index !4251
-  %m = alloca double**, align 8, !llfi_index !4252
-  store i64 %nrl, i64* %1, align 8, !llfi_index !4253
-  store i64 %nrh, i64* %2, align 8, !llfi_index !4254
-  store i64 %ncl, i64* %3, align 8, !llfi_index !4255
-  store i64 %nch, i64* %4, align 8, !llfi_index !4256
-  %5 = load i64* %2, align 8, !llfi_index !4257
-  %6 = load i64* %1, align 8, !llfi_index !4258
-  %7 = sub nsw i64 %5, %6, !llfi_index !4259
-  %8 = add nsw i64 %7, 1, !llfi_index !4260
-  store i64 %8, i64* %nrow, align 8, !llfi_index !4261
-  %9 = load i64* %4, align 8, !llfi_index !4262
-  %10 = load i64* %3, align 8, !llfi_index !4263
-  %11 = sub nsw i64 %9, %10, !llfi_index !4264
-  %12 = add nsw i64 %11, 1, !llfi_index !4265
-  store i64 %12, i64* %ncol, align 8, !llfi_index !4266
-  %13 = load i64* %nrow, align 8, !llfi_index !4267
-  %14 = add nsw i64 %13, 1, !llfi_index !4268
-  %15 = mul i64 %14, 8, !llfi_index !4269
-  %16 = call noalias i8* @malloc(i64 %15) #5, !llfi_index !4270
-  %17 = bitcast i8* %16 to double**, !llfi_index !4271
-  store double** %17, double*** %m, align 8, !llfi_index !4272
-  %18 = load double*** %m, align 8, !llfi_index !4273
-  %19 = icmp ne double** %18, null, !llfi_index !4274
-  br i1 %19, label %21, label %20, !llfi_index !4275
+  %1 = alloca i64, align 8, !llfi_index !4244
+  %2 = alloca i64, align 8, !llfi_index !4245
+  %3 = alloca i64, align 8, !llfi_index !4246
+  %4 = alloca i64, align 8, !llfi_index !4247
+  %i = alloca i64, align 8, !llfi_index !4248
+  %nrow = alloca i64, align 8, !llfi_index !4249
+  %ncol = alloca i64, align 8, !llfi_index !4250
+  %m = alloca double**, align 8, !llfi_index !4251
+  store i64 %nrl, i64* %1, align 8, !llfi_index !4252
+  store i64 %nrh, i64* %2, align 8, !llfi_index !4253
+  store i64 %ncl, i64* %3, align 8, !llfi_index !4254
+  store i64 %nch, i64* %4, align 8, !llfi_index !4255
+  %5 = load i64* %2, align 8, !llfi_index !4256
+  %6 = load i64* %1, align 8, !llfi_index !4257
+  %7 = sub nsw i64 %5, %6, !llfi_index !4258
+  %8 = add nsw i64 %7, 1, !llfi_index !4259
+  store i64 %8, i64* %nrow, align 8, !llfi_index !4260
+  %9 = load i64* %4, align 8, !llfi_index !4261
+  %10 = load i64* %3, align 8, !llfi_index !4262
+  %11 = sub nsw i64 %9, %10, !llfi_index !4263
+  %12 = add nsw i64 %11, 1, !llfi_index !4264
+  store i64 %12, i64* %ncol, align 8, !llfi_index !4265
+  %13 = load i64* %nrow, align 8, !llfi_index !4266
+  %14 = add nsw i64 %13, 1, !llfi_index !4267
+  %15 = mul i64 %14, 8, !llfi_index !4268
+  %16 = call noalias i8* @malloc(i64 %15) #5, !llfi_index !4269
+  %17 = bitcast i8* %16 to double**, !llfi_index !4270
+  store double** %17, double*** %m, align 8, !llfi_index !4271
+  %18 = load double*** %m, align 8, !llfi_index !4272
+  %19 = icmp ne double** %18, null, !llfi_index !4273
+  br i1 %19, label %21, label %20, !llfi_index !4274
 
 ; <label>:20                                      ; preds = %0
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([34 x i8]* @.str725, i32 0, i32 0)), !llfi_index !4276
-  br label %21, !llfi_index !4277
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([34 x i8]* @.str725, i32 0, i32 0)), !llfi_index !4275
+  br label %21, !llfi_index !4276
 
 ; <label>:21                                      ; preds = %20, %0
-  %22 = load double*** %m, align 8, !llfi_index !4278
-  %23 = getelementptr inbounds double** %22, i64 1, !llfi_index !4279
-  store double** %23, double*** %m, align 8, !llfi_index !4280
-  %24 = load i64* %1, align 8, !llfi_index !4281
-  %25 = load double*** %m, align 8, !llfi_index !4282
-  %26 = sub i64 0, %24, !llfi_index !4283
-  %27 = getelementptr inbounds double** %25, i64 %26, !llfi_index !4284
-  store double** %27, double*** %m, align 8, !llfi_index !4285
-  %28 = load i64* %nrow, align 8, !llfi_index !4286
-  %29 = load i64* %ncol, align 8, !llfi_index !4287
-  %30 = mul nsw i64 %28, %29, !llfi_index !4288
-  %31 = add nsw i64 %30, 1, !llfi_index !4289
-  %32 = mul i64 %31, 8, !llfi_index !4290
-  %33 = call noalias i8* @malloc(i64 %32) #5, !llfi_index !4291
-  %34 = bitcast i8* %33 to double*, !llfi_index !4292
-  %35 = load i64* %1, align 8, !llfi_index !4293
-  %36 = load double*** %m, align 8, !llfi_index !4294
-  %37 = getelementptr inbounds double** %36, i64 %35, !llfi_index !4295
-  store double* %34, double** %37, align 8, !llfi_index !4296
-  %38 = load i64* %1, align 8, !llfi_index !4297
-  %39 = load double*** %m, align 8, !llfi_index !4298
-  %40 = getelementptr inbounds double** %39, i64 %38, !llfi_index !4299
-  %41 = load double** %40, align 8, !llfi_index !4300
-  %42 = icmp ne double* %41, null, !llfi_index !4301
-  br i1 %42, label %44, label %43, !llfi_index !4302
+  %22 = load double*** %m, align 8, !llfi_index !4277
+  %23 = getelementptr inbounds double** %22, i64 1, !llfi_index !4278
+  store double** %23, double*** %m, align 8, !llfi_index !4279
+  %24 = load i64* %1, align 8, !llfi_index !4280
+  %25 = load double*** %m, align 8, !llfi_index !4281
+  %26 = sub i64 0, %24, !llfi_index !4282
+  %27 = getelementptr inbounds double** %25, i64 %26, !llfi_index !4283
+  store double** %27, double*** %m, align 8, !llfi_index !4284
+  %28 = load i64* %nrow, align 8, !llfi_index !4285
+  %29 = load i64* %ncol, align 8, !llfi_index !4286
+  %30 = mul nsw i64 %28, %29, !llfi_index !4287
+  %31 = add nsw i64 %30, 1, !llfi_index !4288
+  %32 = mul i64 %31, 8, !llfi_index !4289
+  %33 = call noalias i8* @malloc(i64 %32) #5, !llfi_index !4290
+  %34 = bitcast i8* %33 to double*, !llfi_index !4291
+  %35 = load i64* %1, align 8, !llfi_index !4292
+  %36 = load double*** %m, align 8, !llfi_index !4293
+  %37 = getelementptr inbounds double** %36, i64 %35, !llfi_index !4294
+  store double* %34, double** %37, align 8, !llfi_index !4295
+  %38 = load i64* %1, align 8, !llfi_index !4296
+  %39 = load double*** %m, align 8, !llfi_index !4297
+  %40 = getelementptr inbounds double** %39, i64 %38, !llfi_index !4298
+  %41 = load double** %40, align 8, !llfi_index !4299
+  %42 = icmp ne double* %41, null, !llfi_index !4300
+  br i1 %42, label %44, label %43, !llfi_index !4301
 
 ; <label>:43                                      ; preds = %21
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([34 x i8]* @.str826, i32 0, i32 0)), !llfi_index !4303
-  br label %44, !llfi_index !4304
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([34 x i8]* @.str826, i32 0, i32 0)), !llfi_index !4302
+  br label %44, !llfi_index !4303
 
 ; <label>:44                                      ; preds = %43, %21
-  %45 = load i64* %1, align 8, !llfi_index !4305
-  %46 = load double*** %m, align 8, !llfi_index !4306
-  %47 = getelementptr inbounds double** %46, i64 %45, !llfi_index !4307
-  %48 = load double** %47, align 8, !llfi_index !4308
-  %49 = getelementptr inbounds double* %48, i64 1, !llfi_index !4309
-  store double* %49, double** %47, align 8, !llfi_index !4310
-  %50 = load i64* %3, align 8, !llfi_index !4311
-  %51 = load i64* %1, align 8, !llfi_index !4312
-  %52 = load double*** %m, align 8, !llfi_index !4313
-  %53 = getelementptr inbounds double** %52, i64 %51, !llfi_index !4314
-  %54 = load double** %53, align 8, !llfi_index !4315
-  %55 = sub i64 0, %50, !llfi_index !4316
-  %56 = getelementptr inbounds double* %54, i64 %55, !llfi_index !4317
-  store double* %56, double** %53, align 8, !llfi_index !4318
-  %57 = load i64* %1, align 8, !llfi_index !4319
-  %58 = add nsw i64 %57, 1, !llfi_index !4320
-  store i64 %58, i64* %i, align 8, !llfi_index !4321
-  br label %59, !llfi_index !4322
+  %45 = load i64* %1, align 8, !llfi_index !4304
+  %46 = load double*** %m, align 8, !llfi_index !4305
+  %47 = getelementptr inbounds double** %46, i64 %45, !llfi_index !4306
+  %48 = load double** %47, align 8, !llfi_index !4307
+  %49 = getelementptr inbounds double* %48, i64 1, !llfi_index !4308
+  store double* %49, double** %47, align 8, !llfi_index !4309
+  %50 = load i64* %3, align 8, !llfi_index !4310
+  %51 = load i64* %1, align 8, !llfi_index !4311
+  %52 = load double*** %m, align 8, !llfi_index !4312
+  %53 = getelementptr inbounds double** %52, i64 %51, !llfi_index !4313
+  %54 = load double** %53, align 8, !llfi_index !4314
+  %55 = sub i64 0, %50, !llfi_index !4315
+  %56 = getelementptr inbounds double* %54, i64 %55, !llfi_index !4316
+  store double* %56, double** %53, align 8, !llfi_index !4317
+  %57 = load i64* %1, align 8, !llfi_index !4318
+  %58 = add nsw i64 %57, 1, !llfi_index !4319
+  store i64 %58, i64* %i, align 8, !llfi_index !4320
+  br label %59, !llfi_index !4321
 
 ; <label>:59                                      ; preds = %74, %44
-  %60 = load i64* %i, align 8, !llfi_index !4323
-  %61 = load i64* %2, align 8, !llfi_index !4324
-  %62 = icmp sle i64 %60, %61, !llfi_index !4325
-  br i1 %62, label %63, label %77, !llfi_index !4326
+  %60 = load i64* %i, align 8, !llfi_index !4322
+  %61 = load i64* %2, align 8, !llfi_index !4323
+  %62 = icmp sle i64 %60, %61, !llfi_index !4324
+  br i1 %62, label %63, label %77, !llfi_index !4325
 
 ; <label>:63                                      ; preds = %59
-  %64 = load i64* %i, align 8, !llfi_index !4327
-  %65 = sub nsw i64 %64, 1, !llfi_index !4328
-  %66 = load double*** %m, align 8, !llfi_index !4329
-  %67 = getelementptr inbounds double** %66, i64 %65, !llfi_index !4330
-  %68 = load double** %67, align 8, !llfi_index !4331
-  %69 = load i64* %ncol, align 8, !llfi_index !4332
-  %70 = getelementptr inbounds double* %68, i64 %69, !llfi_index !4333
-  %71 = load i64* %i, align 8, !llfi_index !4334
-  %72 = load double*** %m, align 8, !llfi_index !4335
-  %73 = getelementptr inbounds double** %72, i64 %71, !llfi_index !4336
-  store double* %70, double** %73, align 8, !llfi_index !4337
-  br label %74, !llfi_index !4338
+  %64 = load i64* %i, align 8, !llfi_index !4326
+  %65 = sub nsw i64 %64, 1, !llfi_index !4327
+  %66 = load double*** %m, align 8, !llfi_index !4328
+  %67 = getelementptr inbounds double** %66, i64 %65, !llfi_index !4329
+  %68 = load double** %67, align 8, !llfi_index !4330
+  %69 = load i64* %ncol, align 8, !llfi_index !4331
+  %70 = getelementptr inbounds double* %68, i64 %69, !llfi_index !4332
+  %71 = load i64* %i, align 8, !llfi_index !4333
+  %72 = load double*** %m, align 8, !llfi_index !4334
+  %73 = getelementptr inbounds double** %72, i64 %71, !llfi_index !4335
+  store double* %70, double** %73, align 8, !llfi_index !4336
+  br label %74, !llfi_index !4337
 
 ; <label>:74                                      ; preds = %63
-  %75 = load i64* %i, align 8, !llfi_index !4339
-  %76 = add nsw i64 %75, 1, !llfi_index !4340
-  store i64 %76, i64* %i, align 8, !llfi_index !4341
-  br label %59, !llfi_index !4342
+  %75 = load i64* %i, align 8, !llfi_index !4338
+  %76 = add nsw i64 %75, 1, !llfi_index !4339
+  store i64 %76, i64* %i, align 8, !llfi_index !4340
+  br label %59, !llfi_index !4341
 
 ; <label>:77                                      ; preds = %59
-  %78 = load double*** %m, align 8, !llfi_index !4343
-  ret double** %78, !llfi_index !4344
+  %78 = load double*** %m, align 8, !llfi_index !4342
+  ret double** %78, !llfi_index !4343
 }
 
 ; Function Attrs: nounwind uwtable
 define void @_Z12free_dmatrixPPdllll(double** %m, i64 %nrl, i64 %nrh, i64 %ncl, i64 %nch) #0 {
-  %1 = alloca double**, align 8, !llfi_index !4345
-  %2 = alloca i64, align 8, !llfi_index !4346
-  %3 = alloca i64, align 8, !llfi_index !4347
-  %4 = alloca i64, align 8, !llfi_index !4348
-  %5 = alloca i64, align 8, !llfi_index !4349
-  store double** %m, double*** %1, align 8, !llfi_index !4350
-  store i64 %nrl, i64* %2, align 8, !llfi_index !4351
-  store i64 %nrh, i64* %3, align 8, !llfi_index !4352
-  store i64 %ncl, i64* %4, align 8, !llfi_index !4353
-  store i64 %nch, i64* %5, align 8, !llfi_index !4354
-  %6 = load i64* %2, align 8, !llfi_index !4355
-  %7 = load double*** %1, align 8, !llfi_index !4356
-  %8 = getelementptr inbounds double** %7, i64 %6, !llfi_index !4357
-  %9 = load double** %8, align 8, !llfi_index !4358
-  %10 = load i64* %4, align 8, !llfi_index !4359
-  %11 = getelementptr inbounds double* %9, i64 %10, !llfi_index !4360
-  %12 = getelementptr inbounds double* %11, i64 -1, !llfi_index !4361
-  %13 = bitcast double* %12 to i8*, !llfi_index !4362
-  call void @free(i8* %13) #5, !llfi_index !4363
-  %14 = load double*** %1, align 8, !llfi_index !4364
-  %15 = load i64* %2, align 8, !llfi_index !4365
-  %16 = getelementptr inbounds double** %14, i64 %15, !llfi_index !4366
-  %17 = getelementptr inbounds double** %16, i64 -1, !llfi_index !4367
-  %18 = bitcast double** %17 to i8*, !llfi_index !4368
-  call void @free(i8* %18) #5, !llfi_index !4369
-  ret void, !llfi_index !4370
+  %1 = alloca double**, align 8, !llfi_index !4344
+  %2 = alloca i64, align 8, !llfi_index !4345
+  %3 = alloca i64, align 8, !llfi_index !4346
+  %4 = alloca i64, align 8, !llfi_index !4347
+  %5 = alloca i64, align 8, !llfi_index !4348
+  store double** %m, double*** %1, align 8, !llfi_index !4349
+  store i64 %nrl, i64* %2, align 8, !llfi_index !4350
+  store i64 %nrh, i64* %3, align 8, !llfi_index !4351
+  store i64 %ncl, i64* %4, align 8, !llfi_index !4352
+  store i64 %nch, i64* %5, align 8, !llfi_index !4353
+  %6 = load i64* %2, align 8, !llfi_index !4354
+  %7 = load double*** %1, align 8, !llfi_index !4355
+  %8 = getelementptr inbounds double** %7, i64 %6, !llfi_index !4356
+  %9 = load double** %8, align 8, !llfi_index !4357
+  %10 = load i64* %4, align 8, !llfi_index !4358
+  %11 = getelementptr inbounds double* %9, i64 %10, !llfi_index !4359
+  %12 = getelementptr inbounds double* %11, i64 -1, !llfi_index !4360
+  %13 = bitcast double* %12 to i8*, !llfi_index !4361
+  call void @free(i8* %13) #5, !llfi_index !4362
+  %14 = load double*** %1, align 8, !llfi_index !4363
+  %15 = load i64* %2, align 8, !llfi_index !4364
+  %16 = getelementptr inbounds double** %14, i64 %15, !llfi_index !4365
+  %17 = getelementptr inbounds double** %16, i64 -1, !llfi_index !4366
+  %18 = bitcast double** %17 to i8*, !llfi_index !4367
+  call void @free(i8* %18) #5, !llfi_index !4368
+  ret void, !llfi_index !4369
 }
 
 ; Function Attrs: nounwind uwtable
 define double @_Z7RanUnifPl(i64* %s) #0 {
-  %1 = alloca i64*, align 8, !llfi_index !4371
-  %ix = alloca i64, align 8, !llfi_index !4372
-  %k1 = alloca i64, align 8, !llfi_index !4373
-  %dRes = alloca double, align 8, !llfi_index !4374
-  store i64* %s, i64** %1, align 8, !llfi_index !4375
-  %2 = load i64** %1, align 8, !llfi_index !4376
-  %3 = load i64* %2, align 8, !llfi_index !4377
-  store i64 %3, i64* %ix, align 8, !llfi_index !4378
-  %4 = load i64* %ix, align 8, !llfi_index !4379
-  %5 = sdiv i64 %4, 127773, !llfi_index !4380
-  store i64 %5, i64* %k1, align 8, !llfi_index !4381
-  %6 = load i64* %ix, align 8, !llfi_index !4382
-  %7 = load i64* %k1, align 8, !llfi_index !4383
-  %8 = mul nsw i64 %7, 127773, !llfi_index !4384
-  %9 = sub nsw i64 %6, %8, !llfi_index !4385
-  %10 = mul nsw i64 16807, %9, !llfi_index !4386
-  %11 = load i64* %k1, align 8, !llfi_index !4387
-  %12 = mul nsw i64 %11, 2836, !llfi_index !4388
-  %13 = sub nsw i64 %10, %12, !llfi_index !4389
-  store i64 %13, i64* %ix, align 8, !llfi_index !4390
-  %14 = load i64* %ix, align 8, !llfi_index !4391
-  %15 = icmp slt i64 %14, 0, !llfi_index !4392
-  br i1 %15, label %16, label %19, !llfi_index !4393
+  %1 = alloca i64*, align 8, !llfi_index !4370
+  %ix = alloca i64, align 8, !llfi_index !4371
+  %k1 = alloca i64, align 8, !llfi_index !4372
+  %dRes = alloca double, align 8, !llfi_index !4373
+  store i64* %s, i64** %1, align 8, !llfi_index !4374
+  %2 = load i64** %1, align 8, !llfi_index !4375
+  %3 = load i64* %2, align 8, !llfi_index !4376
+  store i64 %3, i64* %ix, align 8, !llfi_index !4377
+  %4 = load i64* %ix, align 8, !llfi_index !4378
+  %5 = sdiv i64 %4, 127773, !llfi_index !4379
+  store i64 %5, i64* %k1, align 8, !llfi_index !4380
+  %6 = load i64* %ix, align 8, !llfi_index !4381
+  %7 = load i64* %k1, align 8, !llfi_index !4382
+  %8 = mul nsw i64 %7, 127773, !llfi_index !4383
+  %9 = sub nsw i64 %6, %8, !llfi_index !4384
+  %10 = mul nsw i64 16807, %9, !llfi_index !4385
+  %11 = load i64* %k1, align 8, !llfi_index !4386
+  %12 = mul nsw i64 %11, 2836, !llfi_index !4387
+  %13 = sub nsw i64 %10, %12, !llfi_index !4388
+  store i64 %13, i64* %ix, align 8, !llfi_index !4389
+  %14 = load i64* %ix, align 8, !llfi_index !4390
+  %15 = icmp slt i64 %14, 0, !llfi_index !4391
+  br i1 %15, label %16, label %19, !llfi_index !4392
 
 ; <label>:16                                      ; preds = %0
-  %17 = load i64* %ix, align 8, !llfi_index !4394
-  %18 = add nsw i64 %17, 2147483647, !llfi_index !4395
-  store i64 %18, i64* %ix, align 8, !llfi_index !4396
-  br label %19, !llfi_index !4397
+  %17 = load i64* %ix, align 8, !llfi_index !4393
+  %18 = add nsw i64 %17, 2147483647, !llfi_index !4394
+  store i64 %18, i64* %ix, align 8, !llfi_index !4395
+  br label %19, !llfi_index !4396
 
 ; <label>:19                                      ; preds = %16, %0
-  %20 = load i64* %ix, align 8, !llfi_index !4398
-  %21 = load i64** %1, align 8, !llfi_index !4399
-  store i64 %20, i64* %21, align 8, !llfi_index !4400
-  %22 = load i64* %ix, align 8, !llfi_index !4401
-  %23 = sitofp i64 %22 to double, !llfi_index !4402
-  %24 = fmul double %23, 0x3E000000001C5F68, !llfi_index !4403
-  store double %24, double* %dRes, align 8, !llfi_index !4404
-  %25 = load double* %dRes, align 8, !llfi_index !4405
-  ret double %25, !llfi_index !4406
+  %20 = load i64* %ix, align 8, !llfi_index !4397
+  %21 = load i64** %1, align 8, !llfi_index !4398
+  store i64 %20, i64* %21, align 8, !llfi_index !4399
+  %22 = load i64* %ix, align 8, !llfi_index !4400
+  %23 = sitofp i64 %22 to double, !llfi_index !4401
+  %24 = fmul double %23, 0x3E000000001C5F68, !llfi_index !4402
+  store double %24, double* %dRes, align 8, !llfi_index !4403
+  %25 = load double* %dRes, align 8, !llfi_index !4404
+  ret double %25, !llfi_index !4405
 }
 
 attributes #0 = { nounwind uwtable "less-precise-fpmad"="false" "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "no-infs-fp-math"="false" "no-nans-fp-math"="false" "stack-protector-buffer-size"="8" "unsafe-fp-math"="false" "use-soft-float"="false" }
@@ -9985,4 +9984,3 @@ attributes #10 = { nounwind readonly }
 !4403 = metadata !{i64 4403}
 !4404 = metadata !{i64 4404}
 !4405 = metadata !{i64 4405}
-!4406 = metadata !{i64 4406}

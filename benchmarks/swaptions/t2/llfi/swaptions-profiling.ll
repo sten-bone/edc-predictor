@@ -4506,164 +4506,162 @@ define i32 @main(i32 %argc, i8** %argv) #3 {
   store i32 0, i32* %i, align 4, !llfi_index !2241
   br label %453, !llfi_index !2242
 
-; <label>:453                                     ; preds = %473, %450
+; <label>:453                                     ; preds = %472, %450
   %454 = load i32* %i, align 4, !llfi_index !2243
   call void @doProfiling(i32 27)
   %455 = load i32* @nSwaptions, align 4, !llfi_index !2244
   call void @doProfiling(i32 27)
   %456 = icmp slt i32 %454, %455, !llfi_index !2245
   call void @doProfiling(i32 46)
-  br i1 %456, label %457, label %476, !llfi_index !2246
+  br i1 %456, label %457, label %475, !llfi_index !2246
 
 ; <label>:457                                     ; preds = %453
-  %458 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !2247
+  %458 = load i32* %i, align 4, !llfi_index !2247
   call void @doProfiling(i32 27)
   %459 = load i32* %i, align 4, !llfi_index !2248
   call void @doProfiling(i32 27)
-  %460 = load i32* %i, align 4, !llfi_index !2249
-  call void @doProfiling(i32 27)
-  %461 = sext i32 %460 to i64, !llfi_index !2250
+  %460 = sext i32 %459 to i64, !llfi_index !2249
   call void @doProfiling(i32 35)
-  %462 = load %struct.parm** @swaptions, align 8, !llfi_index !2251
+  %461 = load %struct.parm** @swaptions, align 8, !llfi_index !2250
   call void @doProfiling(i32 27)
-  %463 = getelementptr inbounds %struct.parm* %462, i64 %461, !llfi_index !2252
+  %462 = getelementptr inbounds %struct.parm* %461, i64 %460, !llfi_index !2251
   call void @doProfiling(i32 29)
-  %464 = getelementptr inbounds %struct.parm* %463, i32 0, i32 1, !llfi_index !2253
+  %463 = getelementptr inbounds %struct.parm* %462, i32 0, i32 1, !llfi_index !2252
   call void @doProfiling(i32 29)
-  %465 = load double* %464, align 8, !llfi_index !2254
+  %464 = load double* %463, align 8, !llfi_index !2253
   call void @doProfiling(i32 27)
-  %466 = load i32* %i, align 4, !llfi_index !2255
+  %465 = load i32* %i, align 4, !llfi_index !2254
   call void @doProfiling(i32 27)
-  %467 = sext i32 %466 to i64, !llfi_index !2256
+  %466 = sext i32 %465 to i64, !llfi_index !2255
   call void @doProfiling(i32 35)
-  %468 = load %struct.parm** @swaptions, align 8, !llfi_index !2257
+  %467 = load %struct.parm** @swaptions, align 8, !llfi_index !2256
   call void @doProfiling(i32 27)
-  %469 = getelementptr inbounds %struct.parm* %468, i64 %467, !llfi_index !2258
+  %468 = getelementptr inbounds %struct.parm* %467, i64 %466, !llfi_index !2257
   call void @doProfiling(i32 29)
-  %470 = getelementptr inbounds %struct.parm* %469, i32 0, i32 2, !llfi_index !2259
+  %469 = getelementptr inbounds %struct.parm* %468, i32 0, i32 2, !llfi_index !2258
   call void @doProfiling(i32 29)
-  %471 = load double* %470, align 8, !llfi_index !2260
+  %470 = load double* %469, align 8, !llfi_index !2259
   call void @doProfiling(i32 27)
-  %472 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %458, i8* getelementptr inbounds ([56 x i8]* @.str17, i32 0, i32 0), i32 %459, double %465, double %471), !llfi_index !2261
+  %471 = call i32 (i8*, ...)* @printf(i8* getelementptr inbounds ([56 x i8]* @.str17, i32 0, i32 0), i32 %458, double %464, double %470), !llfi_index !2260
   call void @doProfiling(i32 49)
-  br label %473, !llfi_index !2262
+  br label %472, !llfi_index !2261
 
-; <label>:473                                     ; preds = %457
-  %474 = load i32* %i, align 4, !llfi_index !2263
+; <label>:472                                     ; preds = %457
+  %473 = load i32* %i, align 4, !llfi_index !2262
   call void @doProfiling(i32 27)
-  %475 = add nsw i32 %474, 1, !llfi_index !2264
+  %474 = add nsw i32 %473, 1, !llfi_index !2263
   call void @doProfiling(i32 8)
-  store i32 %475, i32* %i, align 4, !llfi_index !2265
-  br label %453, !llfi_index !2266
+  store i32 %474, i32* %i, align 4, !llfi_index !2264
+  br label %453, !llfi_index !2265
 
-; <label>:476                                     ; preds = %453
-  store i32 0, i32* %i, align 4, !llfi_index !2267
-  br label %477, !llfi_index !2268
+; <label>:475                                     ; preds = %453
+  store i32 0, i32* %i, align 4, !llfi_index !2266
+  br label %476, !llfi_index !2267
 
-; <label>:477                                     ; preds = %518, %476
-  %478 = load i32* %i, align 4, !llfi_index !2269
+; <label>:476                                     ; preds = %517, %475
+  %477 = load i32* %i, align 4, !llfi_index !2268
   call void @doProfiling(i32 27)
-  %479 = load i32* @nSwaptions, align 4, !llfi_index !2270
+  %478 = load i32* @nSwaptions, align 4, !llfi_index !2269
   call void @doProfiling(i32 27)
-  %480 = icmp slt i32 %478, %479, !llfi_index !2271
+  %479 = icmp slt i32 %477, %478, !llfi_index !2270
   call void @doProfiling(i32 46)
-  br i1 %480, label %481, label %521, !llfi_index !2272
+  br i1 %479, label %480, label %520, !llfi_index !2271
 
-; <label>:481                                     ; preds = %477
-  %482 = load i32* %i, align 4, !llfi_index !2273
+; <label>:480                                     ; preds = %476
+  %481 = load i32* %i, align 4, !llfi_index !2272
   call void @doProfiling(i32 27)
-  %483 = sext i32 %482 to i64, !llfi_index !2274
+  %482 = sext i32 %481 to i64, !llfi_index !2273
   call void @doProfiling(i32 35)
-  %484 = load %struct.parm** @swaptions, align 8, !llfi_index !2275
+  %483 = load %struct.parm** @swaptions, align 8, !llfi_index !2274
   call void @doProfiling(i32 27)
-  %485 = getelementptr inbounds %struct.parm* %484, i64 %483, !llfi_index !2276
+  %484 = getelementptr inbounds %struct.parm* %483, i64 %482, !llfi_index !2275
   call void @doProfiling(i32 29)
-  %486 = getelementptr inbounds %struct.parm* %485, i32 0, i32 11, !llfi_index !2277
+  %485 = getelementptr inbounds %struct.parm* %484, i32 0, i32 11, !llfi_index !2276
   call void @doProfiling(i32 29)
-  %487 = load double** %486, align 8, !llfi_index !2278
+  %486 = load double** %485, align 8, !llfi_index !2277
   call void @doProfiling(i32 27)
-  %488 = load i32* %i, align 4, !llfi_index !2279
+  %487 = load i32* %i, align 4, !llfi_index !2278
   call void @doProfiling(i32 27)
-  %489 = sext i32 %488 to i64, !llfi_index !2280
+  %488 = sext i32 %487 to i64, !llfi_index !2279
   call void @doProfiling(i32 35)
-  %490 = load %struct.parm** @swaptions, align 8, !llfi_index !2281
+  %489 = load %struct.parm** @swaptions, align 8, !llfi_index !2280
   call void @doProfiling(i32 27)
-  %491 = getelementptr inbounds %struct.parm* %490, i64 %489, !llfi_index !2282
+  %490 = getelementptr inbounds %struct.parm* %489, i64 %488, !llfi_index !2281
   call void @doProfiling(i32 29)
-  %492 = getelementptr inbounds %struct.parm* %491, i32 0, i32 8, !llfi_index !2283
+  %491 = getelementptr inbounds %struct.parm* %490, i32 0, i32 8, !llfi_index !2282
   call void @doProfiling(i32 29)
-  %493 = load i32* %492, align 4, !llfi_index !2284
+  %492 = load i32* %491, align 4, !llfi_index !2283
   call void @doProfiling(i32 27)
-  %494 = sub nsw i32 %493, 1, !llfi_index !2285
+  %493 = sub nsw i32 %492, 1, !llfi_index !2284
   call void @doProfiling(i32 10)
-  %495 = sext i32 %494 to i64, !llfi_index !2286
+  %494 = sext i32 %493 to i64, !llfi_index !2285
   call void @doProfiling(i32 35)
-  call void @_Z12free_dvectorPdll(double* %487, i64 0, i64 %495), !llfi_index !2287
-  %496 = load i32* %i, align 4, !llfi_index !2288
+  call void @_Z12free_dvectorPdll(double* %486, i64 0, i64 %494), !llfi_index !2286
+  %495 = load i32* %i, align 4, !llfi_index !2287
   call void @doProfiling(i32 27)
-  %497 = sext i32 %496 to i64, !llfi_index !2289
+  %496 = sext i32 %495 to i64, !llfi_index !2288
   call void @doProfiling(i32 35)
-  %498 = load %struct.parm** @swaptions, align 8, !llfi_index !2290
+  %497 = load %struct.parm** @swaptions, align 8, !llfi_index !2289
   call void @doProfiling(i32 27)
-  %499 = getelementptr inbounds %struct.parm* %498, i64 %497, !llfi_index !2291
+  %498 = getelementptr inbounds %struct.parm* %497, i64 %496, !llfi_index !2290
   call void @doProfiling(i32 29)
-  %500 = getelementptr inbounds %struct.parm* %499, i32 0, i32 12, !llfi_index !2292
+  %499 = getelementptr inbounds %struct.parm* %498, i32 0, i32 12, !llfi_index !2291
   call void @doProfiling(i32 29)
-  %501 = load double*** %500, align 8, !llfi_index !2293
+  %500 = load double*** %499, align 8, !llfi_index !2292
   call void @doProfiling(i32 27)
-  %502 = load i32* %i, align 4, !llfi_index !2294
+  %501 = load i32* %i, align 4, !llfi_index !2293
   call void @doProfiling(i32 27)
-  %503 = sext i32 %502 to i64, !llfi_index !2295
+  %502 = sext i32 %501 to i64, !llfi_index !2294
   call void @doProfiling(i32 35)
-  %504 = load %struct.parm** @swaptions, align 8, !llfi_index !2296
+  %503 = load %struct.parm** @swaptions, align 8, !llfi_index !2295
   call void @doProfiling(i32 27)
-  %505 = getelementptr inbounds %struct.parm* %504, i64 %503, !llfi_index !2297
+  %504 = getelementptr inbounds %struct.parm* %503, i64 %502, !llfi_index !2296
   call void @doProfiling(i32 29)
-  %506 = getelementptr inbounds %struct.parm* %505, i32 0, i32 10, !llfi_index !2298
+  %505 = getelementptr inbounds %struct.parm* %504, i32 0, i32 10, !llfi_index !2297
   call void @doProfiling(i32 29)
-  %507 = load i32* %506, align 4, !llfi_index !2299
+  %506 = load i32* %505, align 4, !llfi_index !2298
   call void @doProfiling(i32 27)
-  %508 = sub nsw i32 %507, 1, !llfi_index !2300
+  %507 = sub nsw i32 %506, 1, !llfi_index !2299
   call void @doProfiling(i32 10)
-  %509 = sext i32 %508 to i64, !llfi_index !2301
+  %508 = sext i32 %507 to i64, !llfi_index !2300
   call void @doProfiling(i32 35)
-  %510 = load i32* %i, align 4, !llfi_index !2302
+  %509 = load i32* %i, align 4, !llfi_index !2301
   call void @doProfiling(i32 27)
-  %511 = sext i32 %510 to i64, !llfi_index !2303
+  %510 = sext i32 %509 to i64, !llfi_index !2302
   call void @doProfiling(i32 35)
-  %512 = load %struct.parm** @swaptions, align 8, !llfi_index !2304
+  %511 = load %struct.parm** @swaptions, align 8, !llfi_index !2303
   call void @doProfiling(i32 27)
-  %513 = getelementptr inbounds %struct.parm* %512, i64 %511, !llfi_index !2305
+  %512 = getelementptr inbounds %struct.parm* %511, i64 %510, !llfi_index !2304
   call void @doProfiling(i32 29)
-  %514 = getelementptr inbounds %struct.parm* %513, i32 0, i32 8, !llfi_index !2306
+  %513 = getelementptr inbounds %struct.parm* %512, i32 0, i32 8, !llfi_index !2305
   call void @doProfiling(i32 29)
-  %515 = load i32* %514, align 4, !llfi_index !2307
+  %514 = load i32* %513, align 4, !llfi_index !2306
   call void @doProfiling(i32 27)
-  %516 = sub nsw i32 %515, 2, !llfi_index !2308
+  %515 = sub nsw i32 %514, 2, !llfi_index !2307
   call void @doProfiling(i32 10)
-  %517 = sext i32 %516 to i64, !llfi_index !2309
+  %516 = sext i32 %515 to i64, !llfi_index !2308
   call void @doProfiling(i32 35)
-  call void @_Z12free_dmatrixPPdllll(double** %501, i64 0, i64 %509, i64 0, i64 %517), !llfi_index !2310
-  br label %518, !llfi_index !2311
+  call void @_Z12free_dmatrixPPdllll(double** %500, i64 0, i64 %508, i64 0, i64 %516), !llfi_index !2309
+  br label %517, !llfi_index !2310
 
-; <label>:518                                     ; preds = %481
-  %519 = load i32* %i, align 4, !llfi_index !2312
+; <label>:517                                     ; preds = %480
+  %518 = load i32* %i, align 4, !llfi_index !2311
   call void @doProfiling(i32 27)
-  %520 = add nsw i32 %519, 1, !llfi_index !2313
+  %519 = add nsw i32 %518, 1, !llfi_index !2312
   call void @doProfiling(i32 8)
-  store i32 %520, i32* %i, align 4, !llfi_index !2314
-  br label %477, !llfi_index !2315
+  store i32 %519, i32* %i, align 4, !llfi_index !2313
+  br label %476, !llfi_index !2314
 
-; <label>:521                                     ; preds = %477
-  %522 = load %struct.parm** @swaptions, align 8, !llfi_index !2316
+; <label>:520                                     ; preds = %476
+  %521 = load %struct.parm** @swaptions, align 8, !llfi_index !2315
   call void @doProfiling(i32 27)
-  %523 = bitcast %struct.parm* %522 to i8*, !llfi_index !2317
+  %522 = bitcast %struct.parm* %521 to i8*, !llfi_index !2316
   call void @doProfiling(i32 44)
-  call void @free(i8* %523) #5, !llfi_index !2318
-  %524 = load i32* %iSuccess, align 4, !llfi_index !2319
+  call void @free(i8* %522) #5, !llfi_index !2317
+  %523 = load i32* %iSuccess, align 4, !llfi_index !2318
   call void @doProfiling(i32 27)
   call void @endProfiling()
-  ret i32 %524, !llfi_index !2320
+  ret i32 %523, !llfi_index !2319
 }
 
 declare i32 @printf(i8*, ...) #4
@@ -4686,4146 +4684,4146 @@ declare noalias i8* @malloc(i64) #2
 declare void @free(i8*) #2
 
 define internal void @_GLOBAL__I_a() section ".text.startup" {
-  call void @__cxx_global_var_init(), !llfi_index !2321
-  ret void, !llfi_index !2322
+  call void @__cxx_global_var_init(), !llfi_index !2320
+  ret void, !llfi_index !2321
 }
 
 define internal void @__cxx_global_var_init() section ".text.startup" {
-  call void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit), !llfi_index !2323
-  %1 = call i32 @atexit(void ()* @__dtor__ZStL8__ioinit) #5, !llfi_index !2324
+  call void @_ZNSt8ios_base4InitC1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit), !llfi_index !2322
+  %1 = call i32 @atexit(void ()* @__dtor__ZStL8__ioinit) #5, !llfi_index !2323
   call void @doProfiling(i32 49)
-  ret void, !llfi_index !2325
+  ret void, !llfi_index !2324
 }
 
 define internal void @__dtor__ZStL8__ioinit() section ".text.startup" {
-  call void @_ZNSt8ios_base4InitD1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit), !llfi_index !2326
-  ret void, !llfi_index !2327
+  call void @_ZNSt8ios_base4InitD1Ev(%"class.std::ios_base::Init"* @_ZStL8__ioinit), !llfi_index !2325
+  ret void, !llfi_index !2326
 }
 
 ; Function Attrs: uwtable
 define void @_Z7serialBPPdS0_iii(double** %pdZ, double** %randZ, i32 %BLOCKSIZE, i32 %iN, i32 %iFactors) #3 {
-  %1 = alloca double**, align 8, !llfi_index !2328
+  %1 = alloca double**, align 8, !llfi_index !2327
   call void @doProfiling(i32 26)
-  %2 = alloca double**, align 8, !llfi_index !2329
+  %2 = alloca double**, align 8, !llfi_index !2328
   call void @doProfiling(i32 26)
-  %3 = alloca i32, align 4, !llfi_index !2330
+  %3 = alloca i32, align 4, !llfi_index !2329
   call void @doProfiling(i32 26)
-  %4 = alloca i32, align 4, !llfi_index !2331
+  %4 = alloca i32, align 4, !llfi_index !2330
   call void @doProfiling(i32 26)
-  %5 = alloca i32, align 4, !llfi_index !2332
+  %5 = alloca i32, align 4, !llfi_index !2331
   call void @doProfiling(i32 26)
-  %l = alloca i32, align 4, !llfi_index !2333
+  %l = alloca i32, align 4, !llfi_index !2332
   call void @doProfiling(i32 26)
-  %b = alloca i32, align 4, !llfi_index !2334
+  %b = alloca i32, align 4, !llfi_index !2333
   call void @doProfiling(i32 26)
-  %j = alloca i32, align 4, !llfi_index !2335
+  %j = alloca i32, align 4, !llfi_index !2334
   call void @doProfiling(i32 26)
-  store double** %pdZ, double*** %1, align 8, !llfi_index !2336
-  store double** %randZ, double*** %2, align 8, !llfi_index !2337
-  store i32 %BLOCKSIZE, i32* %3, align 4, !llfi_index !2338
-  store i32 %iN, i32* %4, align 4, !llfi_index !2339
-  store i32 %iFactors, i32* %5, align 4, !llfi_index !2340
-  store i32 0, i32* %l, align 4, !llfi_index !2341
-  br label %6, !llfi_index !2342
+  store double** %pdZ, double*** %1, align 8, !llfi_index !2335
+  store double** %randZ, double*** %2, align 8, !llfi_index !2336
+  store i32 %BLOCKSIZE, i32* %3, align 4, !llfi_index !2337
+  store i32 %iN, i32* %4, align 4, !llfi_index !2338
+  store i32 %iFactors, i32* %5, align 4, !llfi_index !2339
+  store i32 0, i32* %l, align 4, !llfi_index !2340
+  br label %6, !llfi_index !2341
 
 ; <label>:6                                       ; preds = %57, %0
-  %7 = load i32* %l, align 4, !llfi_index !2343
+  %7 = load i32* %l, align 4, !llfi_index !2342
   call void @doProfiling(i32 27)
-  %8 = load i32* %5, align 4, !llfi_index !2344
+  %8 = load i32* %5, align 4, !llfi_index !2343
   call void @doProfiling(i32 27)
-  %9 = sub nsw i32 %8, 1, !llfi_index !2345
+  %9 = sub nsw i32 %8, 1, !llfi_index !2344
   call void @doProfiling(i32 10)
-  %10 = icmp sle i32 %7, %9, !llfi_index !2346
+  %10 = icmp sle i32 %7, %9, !llfi_index !2345
   call void @doProfiling(i32 46)
-  br i1 %10, label %11, label %60, !llfi_index !2347
+  br i1 %10, label %11, label %60, !llfi_index !2346
 
 ; <label>:11                                      ; preds = %6
-  store i32 0, i32* %b, align 4, !llfi_index !2348
-  br label %12, !llfi_index !2349
+  store i32 0, i32* %b, align 4, !llfi_index !2347
+  br label %12, !llfi_index !2348
 
 ; <label>:12                                      ; preds = %53, %11
-  %13 = load i32* %b, align 4, !llfi_index !2350
+  %13 = load i32* %b, align 4, !llfi_index !2349
   call void @doProfiling(i32 27)
-  %14 = load i32* %3, align 4, !llfi_index !2351
+  %14 = load i32* %3, align 4, !llfi_index !2350
   call void @doProfiling(i32 27)
-  %15 = icmp slt i32 %13, %14, !llfi_index !2352
+  %15 = icmp slt i32 %13, %14, !llfi_index !2351
   call void @doProfiling(i32 46)
-  br i1 %15, label %16, label %56, !llfi_index !2353
+  br i1 %15, label %16, label %56, !llfi_index !2352
 
 ; <label>:16                                      ; preds = %12
-  store i32 1, i32* %j, align 4, !llfi_index !2354
-  br label %17, !llfi_index !2355
+  store i32 1, i32* %j, align 4, !llfi_index !2353
+  br label %17, !llfi_index !2354
 
 ; <label>:17                                      ; preds = %49, %16
-  %18 = load i32* %j, align 4, !llfi_index !2356
+  %18 = load i32* %j, align 4, !llfi_index !2355
   call void @doProfiling(i32 27)
-  %19 = load i32* %4, align 4, !llfi_index !2357
+  %19 = load i32* %4, align 4, !llfi_index !2356
   call void @doProfiling(i32 27)
-  %20 = sub nsw i32 %19, 1, !llfi_index !2358
+  %20 = sub nsw i32 %19, 1, !llfi_index !2357
   call void @doProfiling(i32 10)
-  %21 = icmp sle i32 %18, %20, !llfi_index !2359
+  %21 = icmp sle i32 %18, %20, !llfi_index !2358
   call void @doProfiling(i32 46)
-  br i1 %21, label %22, label %52, !llfi_index !2360
+  br i1 %21, label %22, label %52, !llfi_index !2359
 
 ; <label>:22                                      ; preds = %17
-  %23 = load i32* %3, align 4, !llfi_index !2361
+  %23 = load i32* %3, align 4, !llfi_index !2360
   call void @doProfiling(i32 27)
-  %24 = load i32* %j, align 4, !llfi_index !2362
+  %24 = load i32* %j, align 4, !llfi_index !2361
   call void @doProfiling(i32 27)
-  %25 = mul nsw i32 %23, %24, !llfi_index !2363
+  %25 = mul nsw i32 %23, %24, !llfi_index !2362
   call void @doProfiling(i32 12)
-  %26 = load i32* %b, align 4, !llfi_index !2364
+  %26 = load i32* %b, align 4, !llfi_index !2363
   call void @doProfiling(i32 27)
-  %27 = add nsw i32 %25, %26, !llfi_index !2365
+  %27 = add nsw i32 %25, %26, !llfi_index !2364
   call void @doProfiling(i32 8)
-  %28 = sext i32 %27 to i64, !llfi_index !2366
+  %28 = sext i32 %27 to i64, !llfi_index !2365
   call void @doProfiling(i32 35)
-  %29 = load i32* %l, align 4, !llfi_index !2367
+  %29 = load i32* %l, align 4, !llfi_index !2366
   call void @doProfiling(i32 27)
-  %30 = sext i32 %29 to i64, !llfi_index !2368
+  %30 = sext i32 %29 to i64, !llfi_index !2367
   call void @doProfiling(i32 35)
-  %31 = load double*** %2, align 8, !llfi_index !2369
+  %31 = load double*** %2, align 8, !llfi_index !2368
   call void @doProfiling(i32 27)
-  %32 = getelementptr inbounds double** %31, i64 %30, !llfi_index !2370
+  %32 = getelementptr inbounds double** %31, i64 %30, !llfi_index !2369
   call void @doProfiling(i32 29)
-  %33 = load double** %32, align 8, !llfi_index !2371
+  %33 = load double** %32, align 8, !llfi_index !2370
   call void @doProfiling(i32 27)
-  %34 = getelementptr inbounds double* %33, i64 %28, !llfi_index !2372
+  %34 = getelementptr inbounds double* %33, i64 %28, !llfi_index !2371
   call void @doProfiling(i32 29)
-  %35 = load double* %34, align 8, !llfi_index !2373
+  %35 = load double* %34, align 8, !llfi_index !2372
   call void @doProfiling(i32 27)
-  %36 = call double @_Z12CumNormalInvd(double %35), !llfi_index !2374
+  %36 = call double @_Z12CumNormalInvd(double %35), !llfi_index !2373
   call void @doProfiling(i32 49)
-  %37 = load i32* %3, align 4, !llfi_index !2375
+  %37 = load i32* %3, align 4, !llfi_index !2374
   call void @doProfiling(i32 27)
-  %38 = load i32* %j, align 4, !llfi_index !2376
+  %38 = load i32* %j, align 4, !llfi_index !2375
   call void @doProfiling(i32 27)
-  %39 = mul nsw i32 %37, %38, !llfi_index !2377
+  %39 = mul nsw i32 %37, %38, !llfi_index !2376
   call void @doProfiling(i32 12)
-  %40 = load i32* %b, align 4, !llfi_index !2378
+  %40 = load i32* %b, align 4, !llfi_index !2377
   call void @doProfiling(i32 27)
-  %41 = add nsw i32 %39, %40, !llfi_index !2379
+  %41 = add nsw i32 %39, %40, !llfi_index !2378
   call void @doProfiling(i32 8)
-  %42 = sext i32 %41 to i64, !llfi_index !2380
+  %42 = sext i32 %41 to i64, !llfi_index !2379
   call void @doProfiling(i32 35)
-  %43 = load i32* %l, align 4, !llfi_index !2381
+  %43 = load i32* %l, align 4, !llfi_index !2380
   call void @doProfiling(i32 27)
-  %44 = sext i32 %43 to i64, !llfi_index !2382
+  %44 = sext i32 %43 to i64, !llfi_index !2381
   call void @doProfiling(i32 35)
-  %45 = load double*** %1, align 8, !llfi_index !2383
+  %45 = load double*** %1, align 8, !llfi_index !2382
   call void @doProfiling(i32 27)
-  %46 = getelementptr inbounds double** %45, i64 %44, !llfi_index !2384
+  %46 = getelementptr inbounds double** %45, i64 %44, !llfi_index !2383
   call void @doProfiling(i32 29)
-  %47 = load double** %46, align 8, !llfi_index !2385
+  %47 = load double** %46, align 8, !llfi_index !2384
   call void @doProfiling(i32 27)
-  %48 = getelementptr inbounds double* %47, i64 %42, !llfi_index !2386
+  %48 = getelementptr inbounds double* %47, i64 %42, !llfi_index !2385
   call void @doProfiling(i32 29)
-  store double %36, double* %48, align 8, !llfi_index !2387
-  br label %49, !llfi_index !2388
+  store double %36, double* %48, align 8, !llfi_index !2386
+  br label %49, !llfi_index !2387
 
 ; <label>:49                                      ; preds = %22
-  %50 = load i32* %j, align 4, !llfi_index !2389
+  %50 = load i32* %j, align 4, !llfi_index !2388
   call void @doProfiling(i32 27)
-  %51 = add nsw i32 %50, 1, !llfi_index !2390
+  %51 = add nsw i32 %50, 1, !llfi_index !2389
   call void @doProfiling(i32 8)
-  store i32 %51, i32* %j, align 4, !llfi_index !2391
-  br label %17, !llfi_index !2392
+  store i32 %51, i32* %j, align 4, !llfi_index !2390
+  br label %17, !llfi_index !2391
 
 ; <label>:52                                      ; preds = %17
-  br label %53, !llfi_index !2393
+  br label %53, !llfi_index !2392
 
 ; <label>:53                                      ; preds = %52
-  %54 = load i32* %b, align 4, !llfi_index !2394
+  %54 = load i32* %b, align 4, !llfi_index !2393
   call void @doProfiling(i32 27)
-  %55 = add nsw i32 %54, 1, !llfi_index !2395
+  %55 = add nsw i32 %54, 1, !llfi_index !2394
   call void @doProfiling(i32 8)
-  store i32 %55, i32* %b, align 4, !llfi_index !2396
-  br label %12, !llfi_index !2397
+  store i32 %55, i32* %b, align 4, !llfi_index !2395
+  br label %12, !llfi_index !2396
 
 ; <label>:56                                      ; preds = %12
-  br label %57, !llfi_index !2398
+  br label %57, !llfi_index !2397
 
 ; <label>:57                                      ; preds = %56
-  %58 = load i32* %l, align 4, !llfi_index !2399
+  %58 = load i32* %l, align 4, !llfi_index !2398
   call void @doProfiling(i32 27)
-  %59 = add nsw i32 %58, 1, !llfi_index !2400
+  %59 = add nsw i32 %58, 1, !llfi_index !2399
   call void @doProfiling(i32 8)
-  store i32 %59, i32* %l, align 4, !llfi_index !2401
-  br label %6, !llfi_index !2402
+  store i32 %59, i32* %l, align 4, !llfi_index !2400
+  br label %6, !llfi_index !2401
 
 ; <label>:60                                      ; preds = %6
-  ret void, !llfi_index !2403
+  ret void, !llfi_index !2402
 }
 
 ; Function Attrs: uwtable
 define i32 @_Z28HJM_SimPath_Forward_BlockingPPdiidS_S_S0_Pli(double** %ppdHJMPath, i32 %iN, i32 %iFactors, double %dYears, double* %pdForward, double* %pdTotalDrift, double** %ppdFactors, i64* %lRndSeed, i32 %BLOCKSIZE) #3 {
-  %1 = alloca double**, align 8, !llfi_index !2404
+  %1 = alloca double**, align 8, !llfi_index !2403
   call void @doProfiling(i32 26)
-  %2 = alloca i32, align 4, !llfi_index !2405
+  %2 = alloca i32, align 4, !llfi_index !2404
   call void @doProfiling(i32 26)
-  %3 = alloca i32, align 4, !llfi_index !2406
+  %3 = alloca i32, align 4, !llfi_index !2405
   call void @doProfiling(i32 26)
-  %4 = alloca double, align 8, !llfi_index !2407
+  %4 = alloca double, align 8, !llfi_index !2406
   call void @doProfiling(i32 26)
-  %5 = alloca double*, align 8, !llfi_index !2408
+  %5 = alloca double*, align 8, !llfi_index !2407
   call void @doProfiling(i32 26)
-  %6 = alloca double*, align 8, !llfi_index !2409
+  %6 = alloca double*, align 8, !llfi_index !2408
   call void @doProfiling(i32 26)
-  %7 = alloca double**, align 8, !llfi_index !2410
+  %7 = alloca double**, align 8, !llfi_index !2409
   call void @doProfiling(i32 26)
-  %8 = alloca i64*, align 8, !llfi_index !2411
+  %8 = alloca i64*, align 8, !llfi_index !2410
   call void @doProfiling(i32 26)
-  %9 = alloca i32, align 4, !llfi_index !2412
+  %9 = alloca i32, align 4, !llfi_index !2411
   call void @doProfiling(i32 26)
-  %iSuccess = alloca i32, align 4, !llfi_index !2413
+  %iSuccess = alloca i32, align 4, !llfi_index !2412
   call void @doProfiling(i32 26)
-  %i = alloca i32, align 4, !llfi_index !2414
+  %i = alloca i32, align 4, !llfi_index !2413
   call void @doProfiling(i32 26)
-  %j = alloca i32, align 4, !llfi_index !2415
+  %j = alloca i32, align 4, !llfi_index !2414
   call void @doProfiling(i32 26)
-  %l = alloca i32, align 4, !llfi_index !2416
+  %l = alloca i32, align 4, !llfi_index !2415
   call void @doProfiling(i32 26)
-  %pdZ = alloca double**, align 8, !llfi_index !2417
+  %pdZ = alloca double**, align 8, !llfi_index !2416
   call void @doProfiling(i32 26)
-  %randZ = alloca double**, align 8, !llfi_index !2418
+  %randZ = alloca double**, align 8, !llfi_index !2417
   call void @doProfiling(i32 26)
-  %dTotalShock = alloca double, align 8, !llfi_index !2419
+  %dTotalShock = alloca double, align 8, !llfi_index !2418
   call void @doProfiling(i32 26)
-  %ddelt = alloca double, align 8, !llfi_index !2420
+  %ddelt = alloca double, align 8, !llfi_index !2419
   call void @doProfiling(i32 26)
-  %sqrt_ddelt = alloca double, align 8, !llfi_index !2421
+  %sqrt_ddelt = alloca double, align 8, !llfi_index !2420
   call void @doProfiling(i32 26)
-  %b = alloca i32, align 4, !llfi_index !2422
+  %b = alloca i32, align 4, !llfi_index !2421
   call void @doProfiling(i32 26)
-  %b1 = alloca i32, align 4, !llfi_index !2423
+  %b1 = alloca i32, align 4, !llfi_index !2422
   call void @doProfiling(i32 26)
-  %s = alloca i32, align 4, !llfi_index !2424
+  %s = alloca i32, align 4, !llfi_index !2423
   call void @doProfiling(i32 26)
-  %b2 = alloca i32, align 4, !llfi_index !2425
+  %b2 = alloca i32, align 4, !llfi_index !2424
   call void @doProfiling(i32 26)
-  store double** %ppdHJMPath, double*** %1, align 8, !llfi_index !2426
-  store i32 %iN, i32* %2, align 4, !llfi_index !2427
-  store i32 %iFactors, i32* %3, align 4, !llfi_index !2428
-  store double %dYears, double* %4, align 8, !llfi_index !2429
-  store double* %pdForward, double** %5, align 8, !llfi_index !2430
-  store double* %pdTotalDrift, double** %6, align 8, !llfi_index !2431
-  store double** %ppdFactors, double*** %7, align 8, !llfi_index !2432
-  store i64* %lRndSeed, i64** %8, align 8, !llfi_index !2433
-  store i32 %BLOCKSIZE, i32* %9, align 4, !llfi_index !2434
-  store i32 0, i32* %iSuccess, align 4, !llfi_index !2435
-  %10 = load double* %4, align 8, !llfi_index !2436
+  store double** %ppdHJMPath, double*** %1, align 8, !llfi_index !2425
+  store i32 %iN, i32* %2, align 4, !llfi_index !2426
+  store i32 %iFactors, i32* %3, align 4, !llfi_index !2427
+  store double %dYears, double* %4, align 8, !llfi_index !2428
+  store double* %pdForward, double** %5, align 8, !llfi_index !2429
+  store double* %pdTotalDrift, double** %6, align 8, !llfi_index !2430
+  store double** %ppdFactors, double*** %7, align 8, !llfi_index !2431
+  store i64* %lRndSeed, i64** %8, align 8, !llfi_index !2432
+  store i32 %BLOCKSIZE, i32* %9, align 4, !llfi_index !2433
+  store i32 0, i32* %iSuccess, align 4, !llfi_index !2434
+  %10 = load double* %4, align 8, !llfi_index !2435
   call void @doProfiling(i32 27)
-  %11 = load i32* %2, align 4, !llfi_index !2437
+  %11 = load i32* %2, align 4, !llfi_index !2436
   call void @doProfiling(i32 27)
-  %12 = sitofp i32 %11 to double, !llfi_index !2438
+  %12 = sitofp i32 %11 to double, !llfi_index !2437
   call void @doProfiling(i32 39)
-  %13 = fdiv double %10, %12, !llfi_index !2439
+  %13 = fdiv double %10, %12, !llfi_index !2438
   call void @doProfiling(i32 16)
-  store double %13, double* %ddelt, align 8, !llfi_index !2440
-  %14 = load double* %ddelt, align 8, !llfi_index !2441
+  store double %13, double* %ddelt, align 8, !llfi_index !2439
+  %14 = load double* %ddelt, align 8, !llfi_index !2440
   call void @doProfiling(i32 27)
-  %15 = call double @sqrt(double %14) #5, !llfi_index !2442
+  %15 = call double @sqrt(double %14) #5, !llfi_index !2441
   call void @doProfiling(i32 49)
-  store double %15, double* %sqrt_ddelt, align 8, !llfi_index !2443
-  %16 = load i32* %3, align 4, !llfi_index !2444
+  store double %15, double* %sqrt_ddelt, align 8, !llfi_index !2442
+  %16 = load i32* %3, align 4, !llfi_index !2443
   call void @doProfiling(i32 27)
-  %17 = sub nsw i32 %16, 1, !llfi_index !2445
+  %17 = sub nsw i32 %16, 1, !llfi_index !2444
   call void @doProfiling(i32 10)
-  %18 = sext i32 %17 to i64, !llfi_index !2446
+  %18 = sext i32 %17 to i64, !llfi_index !2445
   call void @doProfiling(i32 35)
-  %19 = load i32* %2, align 4, !llfi_index !2447
+  %19 = load i32* %2, align 4, !llfi_index !2446
   call void @doProfiling(i32 27)
-  %20 = load i32* %9, align 4, !llfi_index !2448
+  %20 = load i32* %9, align 4, !llfi_index !2447
   call void @doProfiling(i32 27)
-  %21 = mul nsw i32 %19, %20, !llfi_index !2449
+  %21 = mul nsw i32 %19, %20, !llfi_index !2448
   call void @doProfiling(i32 12)
-  %22 = sub nsw i32 %21, 1, !llfi_index !2450
+  %22 = sub nsw i32 %21, 1, !llfi_index !2449
   call void @doProfiling(i32 10)
-  %23 = sext i32 %22 to i64, !llfi_index !2451
+  %23 = sext i32 %22 to i64, !llfi_index !2450
   call void @doProfiling(i32 35)
-  %24 = call double** @_Z7dmatrixllll(i64 0, i64 %18, i64 0, i64 %23), !llfi_index !2452
+  %24 = call double** @_Z7dmatrixllll(i64 0, i64 %18, i64 0, i64 %23), !llfi_index !2451
   call void @doProfiling(i32 49)
-  store double** %24, double*** %pdZ, align 8, !llfi_index !2453
-  %25 = load i32* %3, align 4, !llfi_index !2454
+  store double** %24, double*** %pdZ, align 8, !llfi_index !2452
+  %25 = load i32* %3, align 4, !llfi_index !2453
   call void @doProfiling(i32 27)
-  %26 = sub nsw i32 %25, 1, !llfi_index !2455
+  %26 = sub nsw i32 %25, 1, !llfi_index !2454
   call void @doProfiling(i32 10)
-  %27 = sext i32 %26 to i64, !llfi_index !2456
+  %27 = sext i32 %26 to i64, !llfi_index !2455
   call void @doProfiling(i32 35)
-  %28 = load i32* %2, align 4, !llfi_index !2457
+  %28 = load i32* %2, align 4, !llfi_index !2456
   call void @doProfiling(i32 27)
-  %29 = load i32* %9, align 4, !llfi_index !2458
+  %29 = load i32* %9, align 4, !llfi_index !2457
   call void @doProfiling(i32 27)
-  %30 = mul nsw i32 %28, %29, !llfi_index !2459
+  %30 = mul nsw i32 %28, %29, !llfi_index !2458
   call void @doProfiling(i32 12)
-  %31 = sub nsw i32 %30, 1, !llfi_index !2460
+  %31 = sub nsw i32 %30, 1, !llfi_index !2459
   call void @doProfiling(i32 10)
-  %32 = sext i32 %31 to i64, !llfi_index !2461
+  %32 = sext i32 %31 to i64, !llfi_index !2460
   call void @doProfiling(i32 35)
-  %33 = call double** @_Z7dmatrixllll(i64 0, i64 %27, i64 0, i64 %32), !llfi_index !2462
+  %33 = call double** @_Z7dmatrixllll(i64 0, i64 %27, i64 0, i64 %32), !llfi_index !2461
   call void @doProfiling(i32 49)
-  store double** %33, double*** %randZ, align 8, !llfi_index !2463
-  store i32 0, i32* %b, align 4, !llfi_index !2464
-  br label %34, !llfi_index !2465
+  store double** %33, double*** %randZ, align 8, !llfi_index !2462
+  store i32 0, i32* %b, align 4, !llfi_index !2463
+  br label %34, !llfi_index !2464
 
 ; <label>:34                                      ; preds = %86, %0
-  %35 = load i32* %b, align 4, !llfi_index !2466
+  %35 = load i32* %b, align 4, !llfi_index !2465
   call void @doProfiling(i32 27)
-  %36 = load i32* %9, align 4, !llfi_index !2467
+  %36 = load i32* %9, align 4, !llfi_index !2466
   call void @doProfiling(i32 27)
-  %37 = icmp slt i32 %35, %36, !llfi_index !2468
+  %37 = icmp slt i32 %35, %36, !llfi_index !2467
   call void @doProfiling(i32 46)
-  br i1 %37, label %38, label %89, !llfi_index !2469
+  br i1 %37, label %38, label %89, !llfi_index !2468
 
 ; <label>:38                                      ; preds = %34
-  store i32 0, i32* %j, align 4, !llfi_index !2470
-  br label %39, !llfi_index !2471
+  store i32 0, i32* %j, align 4, !llfi_index !2469
+  br label %39, !llfi_index !2470
 
 ; <label>:39                                      ; preds = %82, %38
-  %40 = load i32* %j, align 4, !llfi_index !2472
+  %40 = load i32* %j, align 4, !llfi_index !2471
   call void @doProfiling(i32 27)
-  %41 = load i32* %2, align 4, !llfi_index !2473
+  %41 = load i32* %2, align 4, !llfi_index !2472
   call void @doProfiling(i32 27)
-  %42 = sub nsw i32 %41, 1, !llfi_index !2474
+  %42 = sub nsw i32 %41, 1, !llfi_index !2473
   call void @doProfiling(i32 10)
-  %43 = icmp sle i32 %40, %42, !llfi_index !2475
+  %43 = icmp sle i32 %40, %42, !llfi_index !2474
   call void @doProfiling(i32 46)
-  br i1 %43, label %44, label %85, !llfi_index !2476
+  br i1 %43, label %44, label %85, !llfi_index !2475
 
 ; <label>:44                                      ; preds = %39
-  %45 = load i32* %j, align 4, !llfi_index !2477
+  %45 = load i32* %j, align 4, !llfi_index !2476
   call void @doProfiling(i32 27)
-  %46 = sext i32 %45 to i64, !llfi_index !2478
+  %46 = sext i32 %45 to i64, !llfi_index !2477
   call void @doProfiling(i32 35)
-  %47 = load double** %5, align 8, !llfi_index !2479
+  %47 = load double** %5, align 8, !llfi_index !2478
   call void @doProfiling(i32 27)
-  %48 = getelementptr inbounds double* %47, i64 %46, !llfi_index !2480
+  %48 = getelementptr inbounds double* %47, i64 %46, !llfi_index !2479
   call void @doProfiling(i32 29)
-  %49 = load double* %48, align 8, !llfi_index !2481
+  %49 = load double* %48, align 8, !llfi_index !2480
   call void @doProfiling(i32 27)
-  %50 = load i32* %9, align 4, !llfi_index !2482
+  %50 = load i32* %9, align 4, !llfi_index !2481
   call void @doProfiling(i32 27)
-  %51 = load i32* %j, align 4, !llfi_index !2483
+  %51 = load i32* %j, align 4, !llfi_index !2482
   call void @doProfiling(i32 27)
-  %52 = mul nsw i32 %50, %51, !llfi_index !2484
+  %52 = mul nsw i32 %50, %51, !llfi_index !2483
   call void @doProfiling(i32 12)
-  %53 = load i32* %b, align 4, !llfi_index !2485
+  %53 = load i32* %b, align 4, !llfi_index !2484
   call void @doProfiling(i32 27)
-  %54 = add nsw i32 %52, %53, !llfi_index !2486
+  %54 = add nsw i32 %52, %53, !llfi_index !2485
   call void @doProfiling(i32 8)
-  %55 = sext i32 %54 to i64, !llfi_index !2487
+  %55 = sext i32 %54 to i64, !llfi_index !2486
   call void @doProfiling(i32 35)
-  %56 = load double*** %1, align 8, !llfi_index !2488
+  %56 = load double*** %1, align 8, !llfi_index !2487
   call void @doProfiling(i32 27)
-  %57 = getelementptr inbounds double** %56, i64 0, !llfi_index !2489
+  %57 = getelementptr inbounds double** %56, i64 0, !llfi_index !2488
   call void @doProfiling(i32 29)
-  %58 = load double** %57, align 8, !llfi_index !2490
+  %58 = load double** %57, align 8, !llfi_index !2489
   call void @doProfiling(i32 27)
-  %59 = getelementptr inbounds double* %58, i64 %55, !llfi_index !2491
+  %59 = getelementptr inbounds double* %58, i64 %55, !llfi_index !2490
   call void @doProfiling(i32 29)
-  store double %49, double* %59, align 8, !llfi_index !2492
-  store i32 1, i32* %i, align 4, !llfi_index !2493
-  br label %60, !llfi_index !2494
+  store double %49, double* %59, align 8, !llfi_index !2491
+  store i32 1, i32* %i, align 4, !llfi_index !2492
+  br label %60, !llfi_index !2493
 
 ; <label>:60                                      ; preds = %78, %44
-  %61 = load i32* %i, align 4, !llfi_index !2495
+  %61 = load i32* %i, align 4, !llfi_index !2494
   call void @doProfiling(i32 27)
-  %62 = load i32* %2, align 4, !llfi_index !2496
+  %62 = load i32* %2, align 4, !llfi_index !2495
   call void @doProfiling(i32 27)
-  %63 = sub nsw i32 %62, 1, !llfi_index !2497
+  %63 = sub nsw i32 %62, 1, !llfi_index !2496
   call void @doProfiling(i32 10)
-  %64 = icmp sle i32 %61, %63, !llfi_index !2498
+  %64 = icmp sle i32 %61, %63, !llfi_index !2497
   call void @doProfiling(i32 46)
-  br i1 %64, label %65, label %81, !llfi_index !2499
+  br i1 %64, label %65, label %81, !llfi_index !2498
 
 ; <label>:65                                      ; preds = %60
-  %66 = load i32* %9, align 4, !llfi_index !2500
+  %66 = load i32* %9, align 4, !llfi_index !2499
   call void @doProfiling(i32 27)
-  %67 = load i32* %j, align 4, !llfi_index !2501
+  %67 = load i32* %j, align 4, !llfi_index !2500
   call void @doProfiling(i32 27)
-  %68 = mul nsw i32 %66, %67, !llfi_index !2502
+  %68 = mul nsw i32 %66, %67, !llfi_index !2501
   call void @doProfiling(i32 12)
-  %69 = load i32* %b, align 4, !llfi_index !2503
+  %69 = load i32* %b, align 4, !llfi_index !2502
   call void @doProfiling(i32 27)
-  %70 = add nsw i32 %68, %69, !llfi_index !2504
+  %70 = add nsw i32 %68, %69, !llfi_index !2503
   call void @doProfiling(i32 8)
-  %71 = sext i32 %70 to i64, !llfi_index !2505
+  %71 = sext i32 %70 to i64, !llfi_index !2504
   call void @doProfiling(i32 35)
-  %72 = load i32* %i, align 4, !llfi_index !2506
+  %72 = load i32* %i, align 4, !llfi_index !2505
   call void @doProfiling(i32 27)
-  %73 = sext i32 %72 to i64, !llfi_index !2507
+  %73 = sext i32 %72 to i64, !llfi_index !2506
   call void @doProfiling(i32 35)
-  %74 = load double*** %1, align 8, !llfi_index !2508
+  %74 = load double*** %1, align 8, !llfi_index !2507
   call void @doProfiling(i32 27)
-  %75 = getelementptr inbounds double** %74, i64 %73, !llfi_index !2509
+  %75 = getelementptr inbounds double** %74, i64 %73, !llfi_index !2508
   call void @doProfiling(i32 29)
-  %76 = load double** %75, align 8, !llfi_index !2510
+  %76 = load double** %75, align 8, !llfi_index !2509
   call void @doProfiling(i32 27)
-  %77 = getelementptr inbounds double* %76, i64 %71, !llfi_index !2511
+  %77 = getelementptr inbounds double* %76, i64 %71, !llfi_index !2510
   call void @doProfiling(i32 29)
-  store double 0.000000e+00, double* %77, align 8, !llfi_index !2512
-  br label %78, !llfi_index !2513
+  store double 0.000000e+00, double* %77, align 8, !llfi_index !2511
+  br label %78, !llfi_index !2512
 
 ; <label>:78                                      ; preds = %65
-  %79 = load i32* %i, align 4, !llfi_index !2514
+  %79 = load i32* %i, align 4, !llfi_index !2513
   call void @doProfiling(i32 27)
-  %80 = add nsw i32 %79, 1, !llfi_index !2515
+  %80 = add nsw i32 %79, 1, !llfi_index !2514
   call void @doProfiling(i32 8)
-  store i32 %80, i32* %i, align 4, !llfi_index !2516
-  br label %60, !llfi_index !2517
+  store i32 %80, i32* %i, align 4, !llfi_index !2515
+  br label %60, !llfi_index !2516
 
 ; <label>:81                                      ; preds = %60
-  br label %82, !llfi_index !2518
+  br label %82, !llfi_index !2517
 
 ; <label>:82                                      ; preds = %81
-  %83 = load i32* %j, align 4, !llfi_index !2519
+  %83 = load i32* %j, align 4, !llfi_index !2518
   call void @doProfiling(i32 27)
-  %84 = add nsw i32 %83, 1, !llfi_index !2520
+  %84 = add nsw i32 %83, 1, !llfi_index !2519
   call void @doProfiling(i32 8)
-  store i32 %84, i32* %j, align 4, !llfi_index !2521
-  br label %39, !llfi_index !2522
+  store i32 %84, i32* %j, align 4, !llfi_index !2520
+  br label %39, !llfi_index !2521
 
 ; <label>:85                                      ; preds = %39
-  br label %86, !llfi_index !2523
+  br label %86, !llfi_index !2522
 
 ; <label>:86                                      ; preds = %85
-  %87 = load i32* %b, align 4, !llfi_index !2524
+  %87 = load i32* %b, align 4, !llfi_index !2523
   call void @doProfiling(i32 27)
-  %88 = add nsw i32 %87, 1, !llfi_index !2525
+  %88 = add nsw i32 %87, 1, !llfi_index !2524
   call void @doProfiling(i32 8)
-  store i32 %88, i32* %b, align 4, !llfi_index !2526
-  br label %34, !llfi_index !2527
+  store i32 %88, i32* %b, align 4, !llfi_index !2525
+  br label %34, !llfi_index !2526
 
 ; <label>:89                                      ; preds = %34
-  store i32 0, i32* %b1, align 4, !llfi_index !2528
-  br label %90, !llfi_index !2529
+  store i32 0, i32* %b1, align 4, !llfi_index !2527
+  br label %90, !llfi_index !2528
 
 ; <label>:90                                      ; preds = %139, %89
-  %91 = load i32* %b1, align 4, !llfi_index !2530
+  %91 = load i32* %b1, align 4, !llfi_index !2529
   call void @doProfiling(i32 27)
-  %92 = load i32* %9, align 4, !llfi_index !2531
+  %92 = load i32* %9, align 4, !llfi_index !2530
   call void @doProfiling(i32 27)
-  %93 = icmp slt i32 %91, %92, !llfi_index !2532
+  %93 = icmp slt i32 %91, %92, !llfi_index !2531
   call void @doProfiling(i32 46)
-  br i1 %93, label %94, label %142, !llfi_index !2533
+  br i1 %93, label %94, label %142, !llfi_index !2532
 
 ; <label>:94                                      ; preds = %90
-  store i32 0, i32* %s, align 4, !llfi_index !2534
-  br label %95, !llfi_index !2535
+  store i32 0, i32* %s, align 4, !llfi_index !2533
+  br label %95, !llfi_index !2534
 
 ; <label>:95                                      ; preds = %135, %94
-  %96 = load i32* %s, align 4, !llfi_index !2536
+  %96 = load i32* %s, align 4, !llfi_index !2535
   call void @doProfiling(i32 27)
-  %97 = icmp slt i32 %96, 1, !llfi_index !2537
+  %97 = icmp slt i32 %96, 1, !llfi_index !2536
   call void @doProfiling(i32 46)
-  br i1 %97, label %98, label %138, !llfi_index !2538
+  br i1 %97, label %98, label %138, !llfi_index !2537
 
 ; <label>:98                                      ; preds = %95
-  store i32 1, i32* %j, align 4, !llfi_index !2539
-  br label %99, !llfi_index !2540
+  store i32 1, i32* %j, align 4, !llfi_index !2538
+  br label %99, !llfi_index !2539
 
 ; <label>:99                                      ; preds = %131, %98
-  %100 = load i32* %j, align 4, !llfi_index !2541
+  %100 = load i32* %j, align 4, !llfi_index !2540
   call void @doProfiling(i32 27)
-  %101 = load i32* %2, align 4, !llfi_index !2542
+  %101 = load i32* %2, align 4, !llfi_index !2541
   call void @doProfiling(i32 27)
-  %102 = sub nsw i32 %101, 1, !llfi_index !2543
+  %102 = sub nsw i32 %101, 1, !llfi_index !2542
   call void @doProfiling(i32 10)
-  %103 = icmp sle i32 %100, %102, !llfi_index !2544
+  %103 = icmp sle i32 %100, %102, !llfi_index !2543
   call void @doProfiling(i32 46)
-  br i1 %103, label %104, label %134, !llfi_index !2545
+  br i1 %103, label %104, label %134, !llfi_index !2544
 
 ; <label>:104                                     ; preds = %99
-  store i32 0, i32* %l, align 4, !llfi_index !2546
-  br label %105, !llfi_index !2547
+  store i32 0, i32* %l, align 4, !llfi_index !2545
+  br label %105, !llfi_index !2546
 
 ; <label>:105                                     ; preds = %127, %104
-  %106 = load i32* %l, align 4, !llfi_index !2548
+  %106 = load i32* %l, align 4, !llfi_index !2547
   call void @doProfiling(i32 27)
-  %107 = load i32* %3, align 4, !llfi_index !2549
+  %107 = load i32* %3, align 4, !llfi_index !2548
   call void @doProfiling(i32 27)
-  %108 = sub nsw i32 %107, 1, !llfi_index !2550
+  %108 = sub nsw i32 %107, 1, !llfi_index !2549
   call void @doProfiling(i32 10)
-  %109 = icmp sle i32 %106, %108, !llfi_index !2551
+  %109 = icmp sle i32 %106, %108, !llfi_index !2550
   call void @doProfiling(i32 46)
-  br i1 %109, label %110, label %130, !llfi_index !2552
+  br i1 %109, label %110, label %130, !llfi_index !2551
 
 ; <label>:110                                     ; preds = %105
-  %111 = load i64** %8, align 8, !llfi_index !2553
+  %111 = load i64** %8, align 8, !llfi_index !2552
   call void @doProfiling(i32 27)
-  %112 = call double @_Z7RanUnifPl(i64* %111), !llfi_index !2554
+  %112 = call double @_Z7RanUnifPl(i64* %111), !llfi_index !2553
   call void @doProfiling(i32 49)
-  %113 = load i32* %9, align 4, !llfi_index !2555
+  %113 = load i32* %9, align 4, !llfi_index !2554
   call void @doProfiling(i32 27)
-  %114 = load i32* %j, align 4, !llfi_index !2556
+  %114 = load i32* %j, align 4, !llfi_index !2555
   call void @doProfiling(i32 27)
-  %115 = mul nsw i32 %113, %114, !llfi_index !2557
+  %115 = mul nsw i32 %113, %114, !llfi_index !2556
   call void @doProfiling(i32 12)
-  %116 = load i32* %b1, align 4, !llfi_index !2558
+  %116 = load i32* %b1, align 4, !llfi_index !2557
   call void @doProfiling(i32 27)
-  %117 = add nsw i32 %115, %116, !llfi_index !2559
+  %117 = add nsw i32 %115, %116, !llfi_index !2558
   call void @doProfiling(i32 8)
-  %118 = load i32* %s, align 4, !llfi_index !2560
+  %118 = load i32* %s, align 4, !llfi_index !2559
   call void @doProfiling(i32 27)
-  %119 = add nsw i32 %117, %118, !llfi_index !2561
+  %119 = add nsw i32 %117, %118, !llfi_index !2560
   call void @doProfiling(i32 8)
-  %120 = sext i32 %119 to i64, !llfi_index !2562
+  %120 = sext i32 %119 to i64, !llfi_index !2561
   call void @doProfiling(i32 35)
-  %121 = load i32* %l, align 4, !llfi_index !2563
+  %121 = load i32* %l, align 4, !llfi_index !2562
   call void @doProfiling(i32 27)
-  %122 = sext i32 %121 to i64, !llfi_index !2564
+  %122 = sext i32 %121 to i64, !llfi_index !2563
   call void @doProfiling(i32 35)
-  %123 = load double*** %randZ, align 8, !llfi_index !2565
+  %123 = load double*** %randZ, align 8, !llfi_index !2564
   call void @doProfiling(i32 27)
-  %124 = getelementptr inbounds double** %123, i64 %122, !llfi_index !2566
+  %124 = getelementptr inbounds double** %123, i64 %122, !llfi_index !2565
   call void @doProfiling(i32 29)
-  %125 = load double** %124, align 8, !llfi_index !2567
+  %125 = load double** %124, align 8, !llfi_index !2566
   call void @doProfiling(i32 27)
-  %126 = getelementptr inbounds double* %125, i64 %120, !llfi_index !2568
+  %126 = getelementptr inbounds double* %125, i64 %120, !llfi_index !2567
   call void @doProfiling(i32 29)
-  store double %112, double* %126, align 8, !llfi_index !2569
-  br label %127, !llfi_index !2570
+  store double %112, double* %126, align 8, !llfi_index !2568
+  br label %127, !llfi_index !2569
 
 ; <label>:127                                     ; preds = %110
-  %128 = load i32* %l, align 4, !llfi_index !2571
+  %128 = load i32* %l, align 4, !llfi_index !2570
   call void @doProfiling(i32 27)
-  %129 = add nsw i32 %128, 1, !llfi_index !2572
+  %129 = add nsw i32 %128, 1, !llfi_index !2571
   call void @doProfiling(i32 8)
-  store i32 %129, i32* %l, align 4, !llfi_index !2573
-  br label %105, !llfi_index !2574
+  store i32 %129, i32* %l, align 4, !llfi_index !2572
+  br label %105, !llfi_index !2573
 
 ; <label>:130                                     ; preds = %105
-  br label %131, !llfi_index !2575
+  br label %131, !llfi_index !2574
 
 ; <label>:131                                     ; preds = %130
-  %132 = load i32* %j, align 4, !llfi_index !2576
+  %132 = load i32* %j, align 4, !llfi_index !2575
   call void @doProfiling(i32 27)
-  %133 = add nsw i32 %132, 1, !llfi_index !2577
+  %133 = add nsw i32 %132, 1, !llfi_index !2576
   call void @doProfiling(i32 8)
-  store i32 %133, i32* %j, align 4, !llfi_index !2578
-  br label %99, !llfi_index !2579
+  store i32 %133, i32* %j, align 4, !llfi_index !2577
+  br label %99, !llfi_index !2578
 
 ; <label>:134                                     ; preds = %99
-  br label %135, !llfi_index !2580
+  br label %135, !llfi_index !2579
 
 ; <label>:135                                     ; preds = %134
-  %136 = load i32* %s, align 4, !llfi_index !2581
+  %136 = load i32* %s, align 4, !llfi_index !2580
   call void @doProfiling(i32 27)
-  %137 = add nsw i32 %136, 1, !llfi_index !2582
+  %137 = add nsw i32 %136, 1, !llfi_index !2581
   call void @doProfiling(i32 8)
-  store i32 %137, i32* %s, align 4, !llfi_index !2583
-  br label %95, !llfi_index !2584
+  store i32 %137, i32* %s, align 4, !llfi_index !2582
+  br label %95, !llfi_index !2583
 
 ; <label>:138                                     ; preds = %95
-  br label %139, !llfi_index !2585
+  br label %139, !llfi_index !2584
 
 ; <label>:139                                     ; preds = %138
-  %140 = load i32* %b1, align 4, !llfi_index !2586
+  %140 = load i32* %b1, align 4, !llfi_index !2585
   call void @doProfiling(i32 27)
-  %141 = add nsw i32 %140, 1, !llfi_index !2587
+  %141 = add nsw i32 %140, 1, !llfi_index !2586
   call void @doProfiling(i32 8)
-  store i32 %141, i32* %b1, align 4, !llfi_index !2588
-  br label %90, !llfi_index !2589
+  store i32 %141, i32* %b1, align 4, !llfi_index !2587
+  br label %90, !llfi_index !2588
 
 ; <label>:142                                     ; preds = %90
-  %143 = load double*** %pdZ, align 8, !llfi_index !2590
+  %143 = load double*** %pdZ, align 8, !llfi_index !2589
   call void @doProfiling(i32 27)
-  %144 = load double*** %randZ, align 8, !llfi_index !2591
+  %144 = load double*** %randZ, align 8, !llfi_index !2590
   call void @doProfiling(i32 27)
-  %145 = load i32* %9, align 4, !llfi_index !2592
+  %145 = load i32* %9, align 4, !llfi_index !2591
   call void @doProfiling(i32 27)
-  %146 = load i32* %2, align 4, !llfi_index !2593
+  %146 = load i32* %2, align 4, !llfi_index !2592
   call void @doProfiling(i32 27)
-  %147 = load i32* %3, align 4, !llfi_index !2594
+  %147 = load i32* %3, align 4, !llfi_index !2593
   call void @doProfiling(i32 27)
-  call void @_Z7serialBPPdS0_iii(double** %143, double** %144, i32 %145, i32 %146, i32 %147), !llfi_index !2595
-  store i32 0, i32* %b2, align 4, !llfi_index !2596
-  br label %148, !llfi_index !2597
+  call void @_Z7serialBPPdS0_iii(double** %143, double** %144, i32 %145, i32 %146, i32 %147), !llfi_index !2594
+  store i32 0, i32* %b2, align 4, !llfi_index !2595
+  br label %148, !llfi_index !2596
 
 ; <label>:148                                     ; preds = %249, %142
-  %149 = load i32* %b2, align 4, !llfi_index !2598
+  %149 = load i32* %b2, align 4, !llfi_index !2597
   call void @doProfiling(i32 27)
-  %150 = load i32* %9, align 4, !llfi_index !2599
+  %150 = load i32* %9, align 4, !llfi_index !2598
   call void @doProfiling(i32 27)
-  %151 = icmp slt i32 %149, %150, !llfi_index !2600
+  %151 = icmp slt i32 %149, %150, !llfi_index !2599
   call void @doProfiling(i32 46)
-  br i1 %151, label %152, label %252, !llfi_index !2601
+  br i1 %151, label %152, label %252, !llfi_index !2600
 
 ; <label>:152                                     ; preds = %148
-  store i32 1, i32* %j, align 4, !llfi_index !2602
-  br label %153, !llfi_index !2603
+  store i32 1, i32* %j, align 4, !llfi_index !2601
+  br label %153, !llfi_index !2602
 
 ; <label>:153                                     ; preds = %245, %152
-  %154 = load i32* %j, align 4, !llfi_index !2604
+  %154 = load i32* %j, align 4, !llfi_index !2603
   call void @doProfiling(i32 27)
-  %155 = load i32* %2, align 4, !llfi_index !2605
+  %155 = load i32* %2, align 4, !llfi_index !2604
   call void @doProfiling(i32 27)
-  %156 = sub nsw i32 %155, 1, !llfi_index !2606
+  %156 = sub nsw i32 %155, 1, !llfi_index !2605
   call void @doProfiling(i32 10)
-  %157 = icmp sle i32 %154, %156, !llfi_index !2607
+  %157 = icmp sle i32 %154, %156, !llfi_index !2606
   call void @doProfiling(i32 46)
-  br i1 %157, label %158, label %248, !llfi_index !2608
+  br i1 %157, label %158, label %248, !llfi_index !2607
 
 ; <label>:158                                     ; preds = %153
-  store i32 0, i32* %l, align 4, !llfi_index !2609
-  br label %159, !llfi_index !2610
+  store i32 0, i32* %l, align 4, !llfi_index !2608
+  br label %159, !llfi_index !2609
 
 ; <label>:159                                     ; preds = %241, %158
-  %160 = load i32* %l, align 4, !llfi_index !2611
+  %160 = load i32* %l, align 4, !llfi_index !2610
   call void @doProfiling(i32 27)
-  %161 = load i32* %2, align 4, !llfi_index !2612
+  %161 = load i32* %2, align 4, !llfi_index !2611
   call void @doProfiling(i32 27)
-  %162 = load i32* %j, align 4, !llfi_index !2613
+  %162 = load i32* %j, align 4, !llfi_index !2612
   call void @doProfiling(i32 27)
-  %163 = add nsw i32 %162, 1, !llfi_index !2614
+  %163 = add nsw i32 %162, 1, !llfi_index !2613
   call void @doProfiling(i32 8)
-  %164 = sub nsw i32 %161, %163, !llfi_index !2615
+  %164 = sub nsw i32 %161, %163, !llfi_index !2614
   call void @doProfiling(i32 10)
-  %165 = icmp sle i32 %160, %164, !llfi_index !2616
+  %165 = icmp sle i32 %160, %164, !llfi_index !2615
   call void @doProfiling(i32 46)
-  br i1 %165, label %166, label %244, !llfi_index !2617
+  br i1 %165, label %166, label %244, !llfi_index !2616
 
 ; <label>:166                                     ; preds = %159
-  store double 0.000000e+00, double* %dTotalShock, align 8, !llfi_index !2618
-  store i32 0, i32* %i, align 4, !llfi_index !2619
-  br label %167, !llfi_index !2620
+  store double 0.000000e+00, double* %dTotalShock, align 8, !llfi_index !2617
+  store i32 0, i32* %i, align 4, !llfi_index !2618
+  br label %167, !llfi_index !2619
 
 ; <label>:167                                     ; preds = %198, %166
-  %168 = load i32* %i, align 4, !llfi_index !2621
+  %168 = load i32* %i, align 4, !llfi_index !2620
   call void @doProfiling(i32 27)
-  %169 = load i32* %3, align 4, !llfi_index !2622
+  %169 = load i32* %3, align 4, !llfi_index !2621
   call void @doProfiling(i32 27)
-  %170 = sub nsw i32 %169, 1, !llfi_index !2623
+  %170 = sub nsw i32 %169, 1, !llfi_index !2622
   call void @doProfiling(i32 10)
-  %171 = icmp sle i32 %168, %170, !llfi_index !2624
+  %171 = icmp sle i32 %168, %170, !llfi_index !2623
   call void @doProfiling(i32 46)
-  br i1 %171, label %172, label %201, !llfi_index !2625
+  br i1 %171, label %172, label %201, !llfi_index !2624
 
 ; <label>:172                                     ; preds = %167
-  %173 = load i32* %l, align 4, !llfi_index !2626
+  %173 = load i32* %l, align 4, !llfi_index !2625
   call void @doProfiling(i32 27)
-  %174 = sext i32 %173 to i64, !llfi_index !2627
+  %174 = sext i32 %173 to i64, !llfi_index !2626
   call void @doProfiling(i32 35)
-  %175 = load i32* %i, align 4, !llfi_index !2628
+  %175 = load i32* %i, align 4, !llfi_index !2627
   call void @doProfiling(i32 27)
-  %176 = sext i32 %175 to i64, !llfi_index !2629
+  %176 = sext i32 %175 to i64, !llfi_index !2628
   call void @doProfiling(i32 35)
-  %177 = load double*** %7, align 8, !llfi_index !2630
+  %177 = load double*** %7, align 8, !llfi_index !2629
   call void @doProfiling(i32 27)
-  %178 = getelementptr inbounds double** %177, i64 %176, !llfi_index !2631
+  %178 = getelementptr inbounds double** %177, i64 %176, !llfi_index !2630
   call void @doProfiling(i32 29)
-  %179 = load double** %178, align 8, !llfi_index !2632
+  %179 = load double** %178, align 8, !llfi_index !2631
   call void @doProfiling(i32 27)
-  %180 = getelementptr inbounds double* %179, i64 %174, !llfi_index !2633
+  %180 = getelementptr inbounds double* %179, i64 %174, !llfi_index !2632
   call void @doProfiling(i32 29)
-  %181 = load double* %180, align 8, !llfi_index !2634
+  %181 = load double* %180, align 8, !llfi_index !2633
   call void @doProfiling(i32 27)
-  %182 = load i32* %9, align 4, !llfi_index !2635
+  %182 = load i32* %9, align 4, !llfi_index !2634
   call void @doProfiling(i32 27)
-  %183 = load i32* %j, align 4, !llfi_index !2636
+  %183 = load i32* %j, align 4, !llfi_index !2635
   call void @doProfiling(i32 27)
-  %184 = mul nsw i32 %182, %183, !llfi_index !2637
+  %184 = mul nsw i32 %182, %183, !llfi_index !2636
   call void @doProfiling(i32 12)
-  %185 = load i32* %b2, align 4, !llfi_index !2638
+  %185 = load i32* %b2, align 4, !llfi_index !2637
   call void @doProfiling(i32 27)
-  %186 = add nsw i32 %184, %185, !llfi_index !2639
+  %186 = add nsw i32 %184, %185, !llfi_index !2638
   call void @doProfiling(i32 8)
-  %187 = sext i32 %186 to i64, !llfi_index !2640
+  %187 = sext i32 %186 to i64, !llfi_index !2639
   call void @doProfiling(i32 35)
-  %188 = load i32* %i, align 4, !llfi_index !2641
+  %188 = load i32* %i, align 4, !llfi_index !2640
   call void @doProfiling(i32 27)
-  %189 = sext i32 %188 to i64, !llfi_index !2642
+  %189 = sext i32 %188 to i64, !llfi_index !2641
   call void @doProfiling(i32 35)
-  %190 = load double*** %pdZ, align 8, !llfi_index !2643
+  %190 = load double*** %pdZ, align 8, !llfi_index !2642
   call void @doProfiling(i32 27)
-  %191 = getelementptr inbounds double** %190, i64 %189, !llfi_index !2644
+  %191 = getelementptr inbounds double** %190, i64 %189, !llfi_index !2643
   call void @doProfiling(i32 29)
-  %192 = load double** %191, align 8, !llfi_index !2645
+  %192 = load double** %191, align 8, !llfi_index !2644
   call void @doProfiling(i32 27)
-  %193 = getelementptr inbounds double* %192, i64 %187, !llfi_index !2646
+  %193 = getelementptr inbounds double* %192, i64 %187, !llfi_index !2645
   call void @doProfiling(i32 29)
-  %194 = load double* %193, align 8, !llfi_index !2647
+  %194 = load double* %193, align 8, !llfi_index !2646
   call void @doProfiling(i32 27)
-  %195 = fmul double %181, %194, !llfi_index !2648
+  %195 = fmul double %181, %194, !llfi_index !2647
   call void @doProfiling(i32 13)
-  %196 = load double* %dTotalShock, align 8, !llfi_index !2649
+  %196 = load double* %dTotalShock, align 8, !llfi_index !2648
   call void @doProfiling(i32 27)
-  %197 = fadd double %196, %195, !llfi_index !2650
+  %197 = fadd double %196, %195, !llfi_index !2649
   call void @doProfiling(i32 9)
-  store double %197, double* %dTotalShock, align 8, !llfi_index !2651
-  br label %198, !llfi_index !2652
+  store double %197, double* %dTotalShock, align 8, !llfi_index !2650
+  br label %198, !llfi_index !2651
 
 ; <label>:198                                     ; preds = %172
-  %199 = load i32* %i, align 4, !llfi_index !2653
+  %199 = load i32* %i, align 4, !llfi_index !2652
   call void @doProfiling(i32 27)
-  %200 = add nsw i32 %199, 1, !llfi_index !2654
+  %200 = add nsw i32 %199, 1, !llfi_index !2653
   call void @doProfiling(i32 8)
-  store i32 %200, i32* %i, align 4, !llfi_index !2655
-  br label %167, !llfi_index !2656
+  store i32 %200, i32* %i, align 4, !llfi_index !2654
+  br label %167, !llfi_index !2655
 
 ; <label>:201                                     ; preds = %167
-  %202 = load i32* %9, align 4, !llfi_index !2657
+  %202 = load i32* %9, align 4, !llfi_index !2656
   call void @doProfiling(i32 27)
-  %203 = load i32* %l, align 4, !llfi_index !2658
+  %203 = load i32* %l, align 4, !llfi_index !2657
   call void @doProfiling(i32 27)
-  %204 = add nsw i32 %203, 1, !llfi_index !2659
+  %204 = add nsw i32 %203, 1, !llfi_index !2658
   call void @doProfiling(i32 8)
-  %205 = mul nsw i32 %202, %204, !llfi_index !2660
+  %205 = mul nsw i32 %202, %204, !llfi_index !2659
   call void @doProfiling(i32 12)
-  %206 = load i32* %b2, align 4, !llfi_index !2661
+  %206 = load i32* %b2, align 4, !llfi_index !2660
   call void @doProfiling(i32 27)
-  %207 = add nsw i32 %205, %206, !llfi_index !2662
+  %207 = add nsw i32 %205, %206, !llfi_index !2661
   call void @doProfiling(i32 8)
-  %208 = sext i32 %207 to i64, !llfi_index !2663
+  %208 = sext i32 %207 to i64, !llfi_index !2662
   call void @doProfiling(i32 35)
-  %209 = load i32* %j, align 4, !llfi_index !2664
+  %209 = load i32* %j, align 4, !llfi_index !2663
   call void @doProfiling(i32 27)
-  %210 = sub nsw i32 %209, 1, !llfi_index !2665
+  %210 = sub nsw i32 %209, 1, !llfi_index !2664
   call void @doProfiling(i32 10)
-  %211 = sext i32 %210 to i64, !llfi_index !2666
+  %211 = sext i32 %210 to i64, !llfi_index !2665
   call void @doProfiling(i32 35)
-  %212 = load double*** %1, align 8, !llfi_index !2667
+  %212 = load double*** %1, align 8, !llfi_index !2666
   call void @doProfiling(i32 27)
-  %213 = getelementptr inbounds double** %212, i64 %211, !llfi_index !2668
+  %213 = getelementptr inbounds double** %212, i64 %211, !llfi_index !2667
   call void @doProfiling(i32 29)
-  %214 = load double** %213, align 8, !llfi_index !2669
+  %214 = load double** %213, align 8, !llfi_index !2668
   call void @doProfiling(i32 27)
-  %215 = getelementptr inbounds double* %214, i64 %208, !llfi_index !2670
+  %215 = getelementptr inbounds double* %214, i64 %208, !llfi_index !2669
   call void @doProfiling(i32 29)
-  %216 = load double* %215, align 8, !llfi_index !2671
+  %216 = load double* %215, align 8, !llfi_index !2670
   call void @doProfiling(i32 27)
-  %217 = load i32* %l, align 4, !llfi_index !2672
+  %217 = load i32* %l, align 4, !llfi_index !2671
   call void @doProfiling(i32 27)
-  %218 = sext i32 %217 to i64, !llfi_index !2673
+  %218 = sext i32 %217 to i64, !llfi_index !2672
   call void @doProfiling(i32 35)
-  %219 = load double** %6, align 8, !llfi_index !2674
+  %219 = load double** %6, align 8, !llfi_index !2673
   call void @doProfiling(i32 27)
-  %220 = getelementptr inbounds double* %219, i64 %218, !llfi_index !2675
+  %220 = getelementptr inbounds double* %219, i64 %218, !llfi_index !2674
   call void @doProfiling(i32 29)
-  %221 = load double* %220, align 8, !llfi_index !2676
+  %221 = load double* %220, align 8, !llfi_index !2675
   call void @doProfiling(i32 27)
-  %222 = load double* %ddelt, align 8, !llfi_index !2677
+  %222 = load double* %ddelt, align 8, !llfi_index !2676
   call void @doProfiling(i32 27)
-  %223 = fmul double %221, %222, !llfi_index !2678
+  %223 = fmul double %221, %222, !llfi_index !2677
   call void @doProfiling(i32 13)
-  %224 = fadd double %216, %223, !llfi_index !2679
+  %224 = fadd double %216, %223, !llfi_index !2678
   call void @doProfiling(i32 9)
-  %225 = load double* %sqrt_ddelt, align 8, !llfi_index !2680
+  %225 = load double* %sqrt_ddelt, align 8, !llfi_index !2679
   call void @doProfiling(i32 27)
-  %226 = load double* %dTotalShock, align 8, !llfi_index !2681
+  %226 = load double* %dTotalShock, align 8, !llfi_index !2680
   call void @doProfiling(i32 27)
-  %227 = fmul double %225, %226, !llfi_index !2682
+  %227 = fmul double %225, %226, !llfi_index !2681
   call void @doProfiling(i32 13)
-  %228 = fadd double %224, %227, !llfi_index !2683
+  %228 = fadd double %224, %227, !llfi_index !2682
   call void @doProfiling(i32 9)
-  %229 = load i32* %9, align 4, !llfi_index !2684
+  %229 = load i32* %9, align 4, !llfi_index !2683
   call void @doProfiling(i32 27)
-  %230 = load i32* %l, align 4, !llfi_index !2685
+  %230 = load i32* %l, align 4, !llfi_index !2684
   call void @doProfiling(i32 27)
-  %231 = mul nsw i32 %229, %230, !llfi_index !2686
+  %231 = mul nsw i32 %229, %230, !llfi_index !2685
   call void @doProfiling(i32 12)
-  %232 = load i32* %b2, align 4, !llfi_index !2687
+  %232 = load i32* %b2, align 4, !llfi_index !2686
   call void @doProfiling(i32 27)
-  %233 = add nsw i32 %231, %232, !llfi_index !2688
+  %233 = add nsw i32 %231, %232, !llfi_index !2687
   call void @doProfiling(i32 8)
-  %234 = sext i32 %233 to i64, !llfi_index !2689
+  %234 = sext i32 %233 to i64, !llfi_index !2688
   call void @doProfiling(i32 35)
-  %235 = load i32* %j, align 4, !llfi_index !2690
+  %235 = load i32* %j, align 4, !llfi_index !2689
   call void @doProfiling(i32 27)
-  %236 = sext i32 %235 to i64, !llfi_index !2691
+  %236 = sext i32 %235 to i64, !llfi_index !2690
   call void @doProfiling(i32 35)
-  %237 = load double*** %1, align 8, !llfi_index !2692
+  %237 = load double*** %1, align 8, !llfi_index !2691
   call void @doProfiling(i32 27)
-  %238 = getelementptr inbounds double** %237, i64 %236, !llfi_index !2693
+  %238 = getelementptr inbounds double** %237, i64 %236, !llfi_index !2692
   call void @doProfiling(i32 29)
-  %239 = load double** %238, align 8, !llfi_index !2694
+  %239 = load double** %238, align 8, !llfi_index !2693
   call void @doProfiling(i32 27)
-  %240 = getelementptr inbounds double* %239, i64 %234, !llfi_index !2695
+  %240 = getelementptr inbounds double* %239, i64 %234, !llfi_index !2694
   call void @doProfiling(i32 29)
-  store double %228, double* %240, align 8, !llfi_index !2696
-  br label %241, !llfi_index !2697
+  store double %228, double* %240, align 8, !llfi_index !2695
+  br label %241, !llfi_index !2696
 
 ; <label>:241                                     ; preds = %201
-  %242 = load i32* %l, align 4, !llfi_index !2698
+  %242 = load i32* %l, align 4, !llfi_index !2697
   call void @doProfiling(i32 27)
-  %243 = add nsw i32 %242, 1, !llfi_index !2699
+  %243 = add nsw i32 %242, 1, !llfi_index !2698
   call void @doProfiling(i32 8)
-  store i32 %243, i32* %l, align 4, !llfi_index !2700
-  br label %159, !llfi_index !2701
+  store i32 %243, i32* %l, align 4, !llfi_index !2699
+  br label %159, !llfi_index !2700
 
 ; <label>:244                                     ; preds = %159
-  br label %245, !llfi_index !2702
+  br label %245, !llfi_index !2701
 
 ; <label>:245                                     ; preds = %244
-  %246 = load i32* %j, align 4, !llfi_index !2703
+  %246 = load i32* %j, align 4, !llfi_index !2702
   call void @doProfiling(i32 27)
-  %247 = add nsw i32 %246, 1, !llfi_index !2704
+  %247 = add nsw i32 %246, 1, !llfi_index !2703
   call void @doProfiling(i32 8)
-  store i32 %247, i32* %j, align 4, !llfi_index !2705
-  br label %153, !llfi_index !2706
+  store i32 %247, i32* %j, align 4, !llfi_index !2704
+  br label %153, !llfi_index !2705
 
 ; <label>:248                                     ; preds = %153
-  br label %249, !llfi_index !2707
+  br label %249, !llfi_index !2706
 
 ; <label>:249                                     ; preds = %248
-  %250 = load i32* %b2, align 4, !llfi_index !2708
+  %250 = load i32* %b2, align 4, !llfi_index !2707
   call void @doProfiling(i32 27)
-  %251 = add nsw i32 %250, 1, !llfi_index !2709
+  %251 = add nsw i32 %250, 1, !llfi_index !2708
   call void @doProfiling(i32 8)
-  store i32 %251, i32* %b2, align 4, !llfi_index !2710
-  br label %148, !llfi_index !2711
+  store i32 %251, i32* %b2, align 4, !llfi_index !2709
+  br label %148, !llfi_index !2710
 
 ; <label>:252                                     ; preds = %148
-  %253 = load double*** %pdZ, align 8, !llfi_index !2712
+  %253 = load double*** %pdZ, align 8, !llfi_index !2711
   call void @doProfiling(i32 27)
-  %254 = load i32* %3, align 4, !llfi_index !2713
+  %254 = load i32* %3, align 4, !llfi_index !2712
   call void @doProfiling(i32 27)
-  %255 = sub nsw i32 %254, 1, !llfi_index !2714
+  %255 = sub nsw i32 %254, 1, !llfi_index !2713
   call void @doProfiling(i32 10)
-  %256 = sext i32 %255 to i64, !llfi_index !2715
+  %256 = sext i32 %255 to i64, !llfi_index !2714
   call void @doProfiling(i32 35)
-  %257 = load i32* %2, align 4, !llfi_index !2716
+  %257 = load i32* %2, align 4, !llfi_index !2715
   call void @doProfiling(i32 27)
-  %258 = load i32* %9, align 4, !llfi_index !2717
+  %258 = load i32* %9, align 4, !llfi_index !2716
   call void @doProfiling(i32 27)
-  %259 = mul nsw i32 %257, %258, !llfi_index !2718
+  %259 = mul nsw i32 %257, %258, !llfi_index !2717
   call void @doProfiling(i32 12)
-  %260 = sub nsw i32 %259, 1, !llfi_index !2719
+  %260 = sub nsw i32 %259, 1, !llfi_index !2718
   call void @doProfiling(i32 10)
-  %261 = sext i32 %260 to i64, !llfi_index !2720
+  %261 = sext i32 %260 to i64, !llfi_index !2719
   call void @doProfiling(i32 35)
-  call void @_Z12free_dmatrixPPdllll(double** %253, i64 0, i64 %256, i64 0, i64 %261), !llfi_index !2721
-  %262 = load double*** %randZ, align 8, !llfi_index !2722
+  call void @_Z12free_dmatrixPPdllll(double** %253, i64 0, i64 %256, i64 0, i64 %261), !llfi_index !2720
+  %262 = load double*** %randZ, align 8, !llfi_index !2721
   call void @doProfiling(i32 27)
-  %263 = load i32* %3, align 4, !llfi_index !2723
+  %263 = load i32* %3, align 4, !llfi_index !2722
   call void @doProfiling(i32 27)
-  %264 = sub nsw i32 %263, 1, !llfi_index !2724
+  %264 = sub nsw i32 %263, 1, !llfi_index !2723
   call void @doProfiling(i32 10)
-  %265 = sext i32 %264 to i64, !llfi_index !2725
+  %265 = sext i32 %264 to i64, !llfi_index !2724
   call void @doProfiling(i32 35)
-  %266 = load i32* %2, align 4, !llfi_index !2726
+  %266 = load i32* %2, align 4, !llfi_index !2725
   call void @doProfiling(i32 27)
-  %267 = load i32* %9, align 4, !llfi_index !2727
+  %267 = load i32* %9, align 4, !llfi_index !2726
   call void @doProfiling(i32 27)
-  %268 = mul nsw i32 %266, %267, !llfi_index !2728
+  %268 = mul nsw i32 %266, %267, !llfi_index !2727
   call void @doProfiling(i32 12)
-  %269 = sub nsw i32 %268, 1, !llfi_index !2729
+  %269 = sub nsw i32 %268, 1, !llfi_index !2728
   call void @doProfiling(i32 10)
-  %270 = sext i32 %269 to i64, !llfi_index !2730
+  %270 = sext i32 %269 to i64, !llfi_index !2729
   call void @doProfiling(i32 35)
-  call void @_Z12free_dmatrixPPdllll(double** %262, i64 0, i64 %265, i64 0, i64 %270), !llfi_index !2731
-  store i32 1, i32* %iSuccess, align 4, !llfi_index !2732
-  %271 = load i32* %iSuccess, align 4, !llfi_index !2733
+  call void @_Z12free_dmatrixPPdllll(double** %262, i64 0, i64 %265, i64 0, i64 %270), !llfi_index !2730
+  store i32 1, i32* %iSuccess, align 4, !llfi_index !2731
+  %271 = load i32* %iSuccess, align 4, !llfi_index !2732
   call void @doProfiling(i32 27)
-  ret i32 %271, !llfi_index !2734
+  ret i32 %271, !llfi_index !2733
 }
 
 ; Function Attrs: uwtable
 define i32 @_Z21HJM_Swaption_BlockingPddddddiidS_PS_llii(double* %pdSwaptionPrice, double %dStrike, double %dCompounding, double %dMaturity, double %dTenor, double %dPaymentInterval, i32 %iN, i32 %iFactors, double %dYears, double* %pdYield, double** %ppdFactors, i64 %iRndSeed, i64 %lTrials, i32 %BLOCKSIZE, i32 %tid) #3 {
-  %1 = alloca i32, align 4, !llfi_index !2735
+  %1 = alloca i32, align 4, !llfi_index !2734
   call void @doProfiling(i32 26)
-  %2 = alloca double*, align 8, !llfi_index !2736
+  %2 = alloca double*, align 8, !llfi_index !2735
   call void @doProfiling(i32 26)
-  %3 = alloca double, align 8, !llfi_index !2737
+  %3 = alloca double, align 8, !llfi_index !2736
   call void @doProfiling(i32 26)
-  %4 = alloca double, align 8, !llfi_index !2738
+  %4 = alloca double, align 8, !llfi_index !2737
   call void @doProfiling(i32 26)
-  %5 = alloca double, align 8, !llfi_index !2739
+  %5 = alloca double, align 8, !llfi_index !2738
   call void @doProfiling(i32 26)
-  %6 = alloca double, align 8, !llfi_index !2740
+  %6 = alloca double, align 8, !llfi_index !2739
   call void @doProfiling(i32 26)
-  %7 = alloca double, align 8, !llfi_index !2741
+  %7 = alloca double, align 8, !llfi_index !2740
   call void @doProfiling(i32 26)
-  %8 = alloca i32, align 4, !llfi_index !2742
+  %8 = alloca i32, align 4, !llfi_index !2741
   call void @doProfiling(i32 26)
-  %9 = alloca i32, align 4, !llfi_index !2743
+  %9 = alloca i32, align 4, !llfi_index !2742
   call void @doProfiling(i32 26)
-  %10 = alloca double, align 8, !llfi_index !2744
+  %10 = alloca double, align 8, !llfi_index !2743
   call void @doProfiling(i32 26)
-  %11 = alloca double*, align 8, !llfi_index !2745
+  %11 = alloca double*, align 8, !llfi_index !2744
   call void @doProfiling(i32 26)
-  %12 = alloca double**, align 8, !llfi_index !2746
+  %12 = alloca double**, align 8, !llfi_index !2745
   call void @doProfiling(i32 26)
-  %13 = alloca i64, align 8, !llfi_index !2747
+  %13 = alloca i64, align 8, !llfi_index !2746
   call void @doProfiling(i32 26)
-  %14 = alloca i64, align 8, !llfi_index !2748
+  %14 = alloca i64, align 8, !llfi_index !2747
   call void @doProfiling(i32 26)
-  %15 = alloca i32, align 4, !llfi_index !2749
+  %15 = alloca i32, align 4, !llfi_index !2748
   call void @doProfiling(i32 26)
-  %16 = alloca i32, align 4, !llfi_index !2750
+  %16 = alloca i32, align 4, !llfi_index !2749
   call void @doProfiling(i32 26)
-  %iSuccess = alloca i32, align 4, !llfi_index !2751
+  %iSuccess = alloca i32, align 4, !llfi_index !2750
   call void @doProfiling(i32 26)
-  %i = alloca i32, align 4, !llfi_index !2752
+  %i = alloca i32, align 4, !llfi_index !2751
   call void @doProfiling(i32 26)
-  %b = alloca i32, align 4, !llfi_index !2753
+  %b = alloca i32, align 4, !llfi_index !2752
   call void @doProfiling(i32 26)
-  %l = alloca i64, align 8, !llfi_index !2754
+  %l = alloca i64, align 8, !llfi_index !2753
   call void @doProfiling(i32 26)
-  %ddelt = alloca double, align 8, !llfi_index !2755
+  %ddelt = alloca double, align 8, !llfi_index !2754
   call void @doProfiling(i32 26)
-  %iFreqRatio = alloca i32, align 4, !llfi_index !2756
+  %iFreqRatio = alloca i32, align 4, !llfi_index !2755
   call void @doProfiling(i32 26)
-  %dStrikeCont = alloca double, align 8, !llfi_index !2757
+  %dStrikeCont = alloca double, align 8, !llfi_index !2756
   call void @doProfiling(i32 26)
-  %iSwapVectorLength = alloca i32, align 4, !llfi_index !2758
+  %iSwapVectorLength = alloca i32, align 4, !llfi_index !2757
   call void @doProfiling(i32 26)
-  %ppdHJMPath = alloca double**, align 8, !llfi_index !2759
+  %ppdHJMPath = alloca double**, align 8, !llfi_index !2758
   call void @doProfiling(i32 26)
-  %pdForward = alloca double*, align 8, !llfi_index !2760
+  %pdForward = alloca double*, align 8, !llfi_index !2759
   call void @doProfiling(i32 26)
-  %ppdDrifts = alloca double**, align 8, !llfi_index !2761
+  %ppdDrifts = alloca double**, align 8, !llfi_index !2760
   call void @doProfiling(i32 26)
-  %pdTotalDrift = alloca double*, align 8, !llfi_index !2762
+  %pdTotalDrift = alloca double*, align 8, !llfi_index !2761
   call void @doProfiling(i32 26)
-  %pdDiscountingRatePath = alloca double*, align 8, !llfi_index !2763
+  %pdDiscountingRatePath = alloca double*, align 8, !llfi_index !2762
   call void @doProfiling(i32 26)
-  %pdPayoffDiscountFactors = alloca double*, align 8, !llfi_index !2764
+  %pdPayoffDiscountFactors = alloca double*, align 8, !llfi_index !2763
   call void @doProfiling(i32 26)
-  %pdSwapRatePath = alloca double*, align 8, !llfi_index !2765
+  %pdSwapRatePath = alloca double*, align 8, !llfi_index !2764
   call void @doProfiling(i32 26)
-  %pdSwapDiscountFactors = alloca double*, align 8, !llfi_index !2766
+  %pdSwapDiscountFactors = alloca double*, align 8, !llfi_index !2765
   call void @doProfiling(i32 26)
-  %pdSwapPayoffs = alloca double*, align 8, !llfi_index !2767
+  %pdSwapPayoffs = alloca double*, align 8, !llfi_index !2766
   call void @doProfiling(i32 26)
-  %iSwapStartTimeIndex = alloca i32, align 4, !llfi_index !2768
+  %iSwapStartTimeIndex = alloca i32, align 4, !llfi_index !2767
   call void @doProfiling(i32 26)
-  %iSwapTimePoints = alloca i32, align 4, !llfi_index !2769
+  %iSwapTimePoints = alloca i32, align 4, !llfi_index !2768
   call void @doProfiling(i32 26)
-  %dSwapVectorYears = alloca double, align 8, !llfi_index !2770
+  %dSwapVectorYears = alloca double, align 8, !llfi_index !2769
   call void @doProfiling(i32 26)
-  %dSwaptionPayoff = alloca double, align 8, !llfi_index !2771
+  %dSwaptionPayoff = alloca double, align 8, !llfi_index !2770
   call void @doProfiling(i32 26)
-  %dDiscSwaptionPayoff = alloca double, align 8, !llfi_index !2772
+  %dDiscSwaptionPayoff = alloca double, align 8, !llfi_index !2771
   call void @doProfiling(i32 26)
-  %dFixedLegValue = alloca double, align 8, !llfi_index !2773
+  %dFixedLegValue = alloca double, align 8, !llfi_index !2772
   call void @doProfiling(i32 26)
-  %dSumSimSwaptionPrice = alloca double, align 8, !llfi_index !2774
+  %dSumSimSwaptionPrice = alloca double, align 8, !llfi_index !2773
   call void @doProfiling(i32 26)
-  %dSumSquareSimSwaptionPrice = alloca double, align 8, !llfi_index !2775
+  %dSumSquareSimSwaptionPrice = alloca double, align 8, !llfi_index !2774
   call void @doProfiling(i32 26)
-  %dSimSwaptionMeanPrice = alloca double, align 8, !llfi_index !2776
+  %dSimSwaptionMeanPrice = alloca double, align 8, !llfi_index !2775
   call void @doProfiling(i32 26)
-  %dSimSwaptionStdError = alloca double, align 8, !llfi_index !2777
+  %dSimSwaptionStdError = alloca double, align 8, !llfi_index !2776
   call void @doProfiling(i32 26)
-  store double* %pdSwaptionPrice, double** %2, align 8, !llfi_index !2778
-  store double %dStrike, double* %3, align 8, !llfi_index !2779
-  store double %dCompounding, double* %4, align 8, !llfi_index !2780
-  store double %dMaturity, double* %5, align 8, !llfi_index !2781
-  store double %dTenor, double* %6, align 8, !llfi_index !2782
-  store double %dPaymentInterval, double* %7, align 8, !llfi_index !2783
-  store i32 %iN, i32* %8, align 4, !llfi_index !2784
-  store i32 %iFactors, i32* %9, align 4, !llfi_index !2785
-  store double %dYears, double* %10, align 8, !llfi_index !2786
-  store double* %pdYield, double** %11, align 8, !llfi_index !2787
-  store double** %ppdFactors, double*** %12, align 8, !llfi_index !2788
-  store i64 %iRndSeed, i64* %13, align 8, !llfi_index !2789
-  store i64 %lTrials, i64* %14, align 8, !llfi_index !2790
-  store i32 %BLOCKSIZE, i32* %15, align 4, !llfi_index !2791
-  store i32 %tid, i32* %16, align 4, !llfi_index !2792
-  store i32 0, i32* %iSuccess, align 4, !llfi_index !2793
-  %17 = load double* %10, align 8, !llfi_index !2794
+  store double* %pdSwaptionPrice, double** %2, align 8, !llfi_index !2777
+  store double %dStrike, double* %3, align 8, !llfi_index !2778
+  store double %dCompounding, double* %4, align 8, !llfi_index !2779
+  store double %dMaturity, double* %5, align 8, !llfi_index !2780
+  store double %dTenor, double* %6, align 8, !llfi_index !2781
+  store double %dPaymentInterval, double* %7, align 8, !llfi_index !2782
+  store i32 %iN, i32* %8, align 4, !llfi_index !2783
+  store i32 %iFactors, i32* %9, align 4, !llfi_index !2784
+  store double %dYears, double* %10, align 8, !llfi_index !2785
+  store double* %pdYield, double** %11, align 8, !llfi_index !2786
+  store double** %ppdFactors, double*** %12, align 8, !llfi_index !2787
+  store i64 %iRndSeed, i64* %13, align 8, !llfi_index !2788
+  store i64 %lTrials, i64* %14, align 8, !llfi_index !2789
+  store i32 %BLOCKSIZE, i32* %15, align 4, !llfi_index !2790
+  store i32 %tid, i32* %16, align 4, !llfi_index !2791
+  store i32 0, i32* %iSuccess, align 4, !llfi_index !2792
+  %17 = load double* %10, align 8, !llfi_index !2793
   call void @doProfiling(i32 27)
-  %18 = load i32* %8, align 4, !llfi_index !2795
+  %18 = load i32* %8, align 4, !llfi_index !2794
   call void @doProfiling(i32 27)
-  %19 = sitofp i32 %18 to double, !llfi_index !2796
+  %19 = sitofp i32 %18 to double, !llfi_index !2795
   call void @doProfiling(i32 39)
-  %20 = fdiv double %17, %19, !llfi_index !2797
+  %20 = fdiv double %17, %19, !llfi_index !2796
   call void @doProfiling(i32 16)
-  store double %20, double* %ddelt, align 8, !llfi_index !2798
-  %21 = load double* %7, align 8, !llfi_index !2799
+  store double %20, double* %ddelt, align 8, !llfi_index !2797
+  %21 = load double* %7, align 8, !llfi_index !2798
   call void @doProfiling(i32 27)
-  %22 = load double* %ddelt, align 8, !llfi_index !2800
+  %22 = load double* %ddelt, align 8, !llfi_index !2799
   call void @doProfiling(i32 27)
-  %23 = fdiv double %21, %22, !llfi_index !2801
+  %23 = fdiv double %21, %22, !llfi_index !2800
   call void @doProfiling(i32 16)
-  %24 = fadd double %23, 5.000000e-01, !llfi_index !2802
+  %24 = fadd double %23, 5.000000e-01, !llfi_index !2801
   call void @doProfiling(i32 9)
-  %25 = fptosi double %24 to i32, !llfi_index !2803
+  %25 = fptosi double %24 to i32, !llfi_index !2802
   call void @doProfiling(i32 37)
-  store i32 %25, i32* %iFreqRatio, align 4, !llfi_index !2804
-  %26 = load double* %4, align 8, !llfi_index !2805
+  store i32 %25, i32* %iFreqRatio, align 4, !llfi_index !2803
+  %26 = load double* %4, align 8, !llfi_index !2804
   call void @doProfiling(i32 27)
-  %27 = fcmp oeq double %26, 0.000000e+00, !llfi_index !2806
+  %27 = fcmp oeq double %26, 0.000000e+00, !llfi_index !2805
   call void @doProfiling(i32 47)
-  br i1 %27, label %28, label %30, !llfi_index !2807
+  br i1 %27, label %28, label %30, !llfi_index !2806
 
 ; <label>:28                                      ; preds = %0
-  %29 = load double* %3, align 8, !llfi_index !2808
+  %29 = load double* %3, align 8, !llfi_index !2807
   call void @doProfiling(i32 27)
-  store double %29, double* %dStrikeCont, align 8, !llfi_index !2809
-  br label %39, !llfi_index !2810
+  store double %29, double* %dStrikeCont, align 8, !llfi_index !2808
+  br label %39, !llfi_index !2809
 
 ; <label>:30                                      ; preds = %0
-  %31 = load double* %4, align 8, !llfi_index !2811
+  %31 = load double* %4, align 8, !llfi_index !2810
   call void @doProfiling(i32 27)
-  %32 = fdiv double 1.000000e+00, %31, !llfi_index !2812
+  %32 = fdiv double 1.000000e+00, %31, !llfi_index !2811
   call void @doProfiling(i32 16)
-  %33 = load double* %3, align 8, !llfi_index !2813
+  %33 = load double* %3, align 8, !llfi_index !2812
   call void @doProfiling(i32 27)
-  %34 = load double* %4, align 8, !llfi_index !2814
+  %34 = load double* %4, align 8, !llfi_index !2813
   call void @doProfiling(i32 27)
-  %35 = fmul double %33, %34, !llfi_index !2815
+  %35 = fmul double %33, %34, !llfi_index !2814
   call void @doProfiling(i32 13)
-  %36 = fadd double 1.000000e+00, %35, !llfi_index !2816
+  %36 = fadd double 1.000000e+00, %35, !llfi_index !2815
   call void @doProfiling(i32 9)
-  %37 = call double @log(double %36) #5, !llfi_index !2817
+  %37 = call double @log(double %36) #5, !llfi_index !2816
   call void @doProfiling(i32 49)
-  %38 = fmul double %32, %37, !llfi_index !2818
+  %38 = fmul double %32, %37, !llfi_index !2817
   call void @doProfiling(i32 13)
-  store double %38, double* %dStrikeCont, align 8, !llfi_index !2819
-  br label %39, !llfi_index !2820
+  store double %38, double* %dStrikeCont, align 8, !llfi_index !2818
+  br label %39, !llfi_index !2819
 
 ; <label>:39                                      ; preds = %30, %28
-  %40 = load i32* %8, align 4, !llfi_index !2821
+  %40 = load i32* %8, align 4, !llfi_index !2820
   call void @doProfiling(i32 27)
-  %41 = sub nsw i32 %40, 1, !llfi_index !2822
+  %41 = sub nsw i32 %40, 1, !llfi_index !2821
   call void @doProfiling(i32 10)
-  %42 = sext i32 %41 to i64, !llfi_index !2823
+  %42 = sext i32 %41 to i64, !llfi_index !2822
   call void @doProfiling(i32 35)
-  %43 = load i32* %8, align 4, !llfi_index !2824
+  %43 = load i32* %8, align 4, !llfi_index !2823
   call void @doProfiling(i32 27)
-  %44 = load i32* %15, align 4, !llfi_index !2825
+  %44 = load i32* %15, align 4, !llfi_index !2824
   call void @doProfiling(i32 27)
-  %45 = mul nsw i32 %43, %44, !llfi_index !2826
+  %45 = mul nsw i32 %43, %44, !llfi_index !2825
   call void @doProfiling(i32 12)
-  %46 = sub nsw i32 %45, 1, !llfi_index !2827
+  %46 = sub nsw i32 %45, 1, !llfi_index !2826
   call void @doProfiling(i32 10)
-  %47 = sext i32 %46 to i64, !llfi_index !2828
+  %47 = sext i32 %46 to i64, !llfi_index !2827
   call void @doProfiling(i32 35)
-  %48 = call double** @_Z7dmatrixllll(i64 0, i64 %42, i64 0, i64 %47), !llfi_index !2829
+  %48 = call double** @_Z7dmatrixllll(i64 0, i64 %42, i64 0, i64 %47), !llfi_index !2828
   call void @doProfiling(i32 49)
-  store double** %48, double*** %ppdHJMPath, align 8, !llfi_index !2830
-  %49 = load i32* %8, align 4, !llfi_index !2831
+  store double** %48, double*** %ppdHJMPath, align 8, !llfi_index !2829
+  %49 = load i32* %8, align 4, !llfi_index !2830
   call void @doProfiling(i32 27)
-  %50 = sub nsw i32 %49, 1, !llfi_index !2832
+  %50 = sub nsw i32 %49, 1, !llfi_index !2831
   call void @doProfiling(i32 10)
-  %51 = sext i32 %50 to i64, !llfi_index !2833
+  %51 = sext i32 %50 to i64, !llfi_index !2832
   call void @doProfiling(i32 35)
-  %52 = call double* @_Z7dvectorll(i64 0, i64 %51), !llfi_index !2834
+  %52 = call double* @_Z7dvectorll(i64 0, i64 %51), !llfi_index !2833
   call void @doProfiling(i32 49)
-  store double* %52, double** %pdForward, align 8, !llfi_index !2835
-  %53 = load i32* %9, align 4, !llfi_index !2836
+  store double* %52, double** %pdForward, align 8, !llfi_index !2834
+  %53 = load i32* %9, align 4, !llfi_index !2835
   call void @doProfiling(i32 27)
-  %54 = sub nsw i32 %53, 1, !llfi_index !2837
+  %54 = sub nsw i32 %53, 1, !llfi_index !2836
   call void @doProfiling(i32 10)
-  %55 = sext i32 %54 to i64, !llfi_index !2838
+  %55 = sext i32 %54 to i64, !llfi_index !2837
   call void @doProfiling(i32 35)
-  %56 = load i32* %8, align 4, !llfi_index !2839
+  %56 = load i32* %8, align 4, !llfi_index !2838
   call void @doProfiling(i32 27)
-  %57 = sub nsw i32 %56, 2, !llfi_index !2840
+  %57 = sub nsw i32 %56, 2, !llfi_index !2839
   call void @doProfiling(i32 10)
-  %58 = sext i32 %57 to i64, !llfi_index !2841
+  %58 = sext i32 %57 to i64, !llfi_index !2840
   call void @doProfiling(i32 35)
-  %59 = call double** @_Z7dmatrixllll(i64 0, i64 %55, i64 0, i64 %58), !llfi_index !2842
+  %59 = call double** @_Z7dmatrixllll(i64 0, i64 %55, i64 0, i64 %58), !llfi_index !2841
   call void @doProfiling(i32 49)
-  store double** %59, double*** %ppdDrifts, align 8, !llfi_index !2843
-  %60 = load i32* %8, align 4, !llfi_index !2844
+  store double** %59, double*** %ppdDrifts, align 8, !llfi_index !2842
+  %60 = load i32* %8, align 4, !llfi_index !2843
   call void @doProfiling(i32 27)
-  %61 = sub nsw i32 %60, 2, !llfi_index !2845
+  %61 = sub nsw i32 %60, 2, !llfi_index !2844
   call void @doProfiling(i32 10)
-  %62 = sext i32 %61 to i64, !llfi_index !2846
+  %62 = sext i32 %61 to i64, !llfi_index !2845
   call void @doProfiling(i32 35)
-  %63 = call double* @_Z7dvectorll(i64 0, i64 %62), !llfi_index !2847
+  %63 = call double* @_Z7dvectorll(i64 0, i64 %62), !llfi_index !2846
   call void @doProfiling(i32 49)
-  store double* %63, double** %pdTotalDrift, align 8, !llfi_index !2848
-  %64 = load i32* %8, align 4, !llfi_index !2849
+  store double* %63, double** %pdTotalDrift, align 8, !llfi_index !2847
+  %64 = load i32* %8, align 4, !llfi_index !2848
   call void @doProfiling(i32 27)
-  %65 = load i32* %15, align 4, !llfi_index !2850
+  %65 = load i32* %15, align 4, !llfi_index !2849
   call void @doProfiling(i32 27)
-  %66 = mul nsw i32 %64, %65, !llfi_index !2851
+  %66 = mul nsw i32 %64, %65, !llfi_index !2850
   call void @doProfiling(i32 12)
-  %67 = sub nsw i32 %66, 1, !llfi_index !2852
+  %67 = sub nsw i32 %66, 1, !llfi_index !2851
   call void @doProfiling(i32 10)
-  %68 = sext i32 %67 to i64, !llfi_index !2853
+  %68 = sext i32 %67 to i64, !llfi_index !2852
   call void @doProfiling(i32 35)
-  %69 = call double* @_Z7dvectorll(i64 0, i64 %68), !llfi_index !2854
+  %69 = call double* @_Z7dvectorll(i64 0, i64 %68), !llfi_index !2853
   call void @doProfiling(i32 49)
-  store double* %69, double** %pdPayoffDiscountFactors, align 8, !llfi_index !2855
-  %70 = load i32* %8, align 4, !llfi_index !2856
+  store double* %69, double** %pdPayoffDiscountFactors, align 8, !llfi_index !2854
+  %70 = load i32* %8, align 4, !llfi_index !2855
   call void @doProfiling(i32 27)
-  %71 = load i32* %15, align 4, !llfi_index !2857
+  %71 = load i32* %15, align 4, !llfi_index !2856
   call void @doProfiling(i32 27)
-  %72 = mul nsw i32 %70, %71, !llfi_index !2858
+  %72 = mul nsw i32 %70, %71, !llfi_index !2857
   call void @doProfiling(i32 12)
-  %73 = sub nsw i32 %72, 1, !llfi_index !2859
+  %73 = sub nsw i32 %72, 1, !llfi_index !2858
   call void @doProfiling(i32 10)
-  %74 = sext i32 %73 to i64, !llfi_index !2860
+  %74 = sext i32 %73 to i64, !llfi_index !2859
   call void @doProfiling(i32 35)
-  %75 = call double* @_Z7dvectorll(i64 0, i64 %74), !llfi_index !2861
+  %75 = call double* @_Z7dvectorll(i64 0, i64 %74), !llfi_index !2860
   call void @doProfiling(i32 49)
-  store double* %75, double** %pdDiscountingRatePath, align 8, !llfi_index !2862
-  %76 = load i32* %8, align 4, !llfi_index !2863
+  store double* %75, double** %pdDiscountingRatePath, align 8, !llfi_index !2861
+  %76 = load i32* %8, align 4, !llfi_index !2862
   call void @doProfiling(i32 27)
-  %77 = sitofp i32 %76 to double, !llfi_index !2864
+  %77 = sitofp i32 %76 to double, !llfi_index !2863
   call void @doProfiling(i32 39)
-  %78 = load double* %5, align 8, !llfi_index !2865
+  %78 = load double* %5, align 8, !llfi_index !2864
   call void @doProfiling(i32 27)
-  %79 = load double* %ddelt, align 8, !llfi_index !2866
+  %79 = load double* %ddelt, align 8, !llfi_index !2865
   call void @doProfiling(i32 27)
-  %80 = fdiv double %78, %79, !llfi_index !2867
+  %80 = fdiv double %78, %79, !llfi_index !2866
   call void @doProfiling(i32 16)
-  %81 = fsub double %77, %80, !llfi_index !2868
+  %81 = fsub double %77, %80, !llfi_index !2867
   call void @doProfiling(i32 11)
-  %82 = fadd double %81, 5.000000e-01, !llfi_index !2869
+  %82 = fadd double %81, 5.000000e-01, !llfi_index !2868
   call void @doProfiling(i32 9)
-  %83 = fptosi double %82 to i32, !llfi_index !2870
+  %83 = fptosi double %82 to i32, !llfi_index !2869
   call void @doProfiling(i32 37)
-  store i32 %83, i32* %iSwapVectorLength, align 4, !llfi_index !2871
-  %84 = load i32* %iSwapVectorLength, align 4, !llfi_index !2872
+  store i32 %83, i32* %iSwapVectorLength, align 4, !llfi_index !2870
+  %84 = load i32* %iSwapVectorLength, align 4, !llfi_index !2871
   call void @doProfiling(i32 27)
-  %85 = load i32* %15, align 4, !llfi_index !2873
+  %85 = load i32* %15, align 4, !llfi_index !2872
   call void @doProfiling(i32 27)
-  %86 = mul nsw i32 %84, %85, !llfi_index !2874
+  %86 = mul nsw i32 %84, %85, !llfi_index !2873
   call void @doProfiling(i32 12)
-  %87 = sub nsw i32 %86, 1, !llfi_index !2875
+  %87 = sub nsw i32 %86, 1, !llfi_index !2874
   call void @doProfiling(i32 10)
-  %88 = sext i32 %87 to i64, !llfi_index !2876
+  %88 = sext i32 %87 to i64, !llfi_index !2875
   call void @doProfiling(i32 35)
-  %89 = call double* @_Z7dvectorll(i64 0, i64 %88), !llfi_index !2877
+  %89 = call double* @_Z7dvectorll(i64 0, i64 %88), !llfi_index !2876
   call void @doProfiling(i32 49)
-  store double* %89, double** %pdSwapRatePath, align 8, !llfi_index !2878
-  %90 = load i32* %iSwapVectorLength, align 4, !llfi_index !2879
+  store double* %89, double** %pdSwapRatePath, align 8, !llfi_index !2877
+  %90 = load i32* %iSwapVectorLength, align 4, !llfi_index !2878
   call void @doProfiling(i32 27)
-  %91 = load i32* %15, align 4, !llfi_index !2880
+  %91 = load i32* %15, align 4, !llfi_index !2879
   call void @doProfiling(i32 27)
-  %92 = mul nsw i32 %90, %91, !llfi_index !2881
+  %92 = mul nsw i32 %90, %91, !llfi_index !2880
   call void @doProfiling(i32 12)
-  %93 = sub nsw i32 %92, 1, !llfi_index !2882
+  %93 = sub nsw i32 %92, 1, !llfi_index !2881
   call void @doProfiling(i32 10)
-  %94 = sext i32 %93 to i64, !llfi_index !2883
+  %94 = sext i32 %93 to i64, !llfi_index !2882
   call void @doProfiling(i32 35)
-  %95 = call double* @_Z7dvectorll(i64 0, i64 %94), !llfi_index !2884
+  %95 = call double* @_Z7dvectorll(i64 0, i64 %94), !llfi_index !2883
   call void @doProfiling(i32 49)
-  store double* %95, double** %pdSwapDiscountFactors, align 8, !llfi_index !2885
-  %96 = load i32* %iSwapVectorLength, align 4, !llfi_index !2886
+  store double* %95, double** %pdSwapDiscountFactors, align 8, !llfi_index !2884
+  %96 = load i32* %iSwapVectorLength, align 4, !llfi_index !2885
   call void @doProfiling(i32 27)
-  %97 = sub nsw i32 %96, 1, !llfi_index !2887
+  %97 = sub nsw i32 %96, 1, !llfi_index !2886
   call void @doProfiling(i32 10)
-  %98 = sext i32 %97 to i64, !llfi_index !2888
+  %98 = sext i32 %97 to i64, !llfi_index !2887
   call void @doProfiling(i32 35)
-  %99 = call double* @_Z7dvectorll(i64 0, i64 %98), !llfi_index !2889
+  %99 = call double* @_Z7dvectorll(i64 0, i64 %98), !llfi_index !2888
   call void @doProfiling(i32 49)
-  store double* %99, double** %pdSwapPayoffs, align 8, !llfi_index !2890
-  %100 = load double* %5, align 8, !llfi_index !2891
+  store double* %99, double** %pdSwapPayoffs, align 8, !llfi_index !2889
+  %100 = load double* %5, align 8, !llfi_index !2890
   call void @doProfiling(i32 27)
-  %101 = load double* %ddelt, align 8, !llfi_index !2892
+  %101 = load double* %ddelt, align 8, !llfi_index !2891
   call void @doProfiling(i32 27)
-  %102 = fdiv double %100, %101, !llfi_index !2893
+  %102 = fdiv double %100, %101, !llfi_index !2892
   call void @doProfiling(i32 16)
-  %103 = fadd double %102, 5.000000e-01, !llfi_index !2894
+  %103 = fadd double %102, 5.000000e-01, !llfi_index !2893
   call void @doProfiling(i32 9)
-  %104 = fptosi double %103 to i32, !llfi_index !2895
+  %104 = fptosi double %103 to i32, !llfi_index !2894
   call void @doProfiling(i32 37)
-  store i32 %104, i32* %iSwapStartTimeIndex, align 4, !llfi_index !2896
-  %105 = load double* %6, align 8, !llfi_index !2897
+  store i32 %104, i32* %iSwapStartTimeIndex, align 4, !llfi_index !2895
+  %105 = load double* %6, align 8, !llfi_index !2896
   call void @doProfiling(i32 27)
-  %106 = load double* %ddelt, align 8, !llfi_index !2898
+  %106 = load double* %ddelt, align 8, !llfi_index !2897
   call void @doProfiling(i32 27)
-  %107 = fdiv double %105, %106, !llfi_index !2899
+  %107 = fdiv double %105, %106, !llfi_index !2898
   call void @doProfiling(i32 16)
-  %108 = fadd double %107, 5.000000e-01, !llfi_index !2900
+  %108 = fadd double %107, 5.000000e-01, !llfi_index !2899
   call void @doProfiling(i32 9)
-  %109 = fptosi double %108 to i32, !llfi_index !2901
+  %109 = fptosi double %108 to i32, !llfi_index !2900
   call void @doProfiling(i32 37)
-  store i32 %109, i32* %iSwapTimePoints, align 4, !llfi_index !2902
-  %110 = load i32* %iSwapVectorLength, align 4, !llfi_index !2903
+  store i32 %109, i32* %iSwapTimePoints, align 4, !llfi_index !2901
+  %110 = load i32* %iSwapVectorLength, align 4, !llfi_index !2902
   call void @doProfiling(i32 27)
-  %111 = sitofp i32 %110 to double, !llfi_index !2904
+  %111 = sitofp i32 %110 to double, !llfi_index !2903
   call void @doProfiling(i32 39)
-  %112 = load double* %ddelt, align 8, !llfi_index !2905
+  %112 = load double* %ddelt, align 8, !llfi_index !2904
   call void @doProfiling(i32 27)
-  %113 = fmul double %111, %112, !llfi_index !2906
+  %113 = fmul double %111, %112, !llfi_index !2905
   call void @doProfiling(i32 13)
-  store double %113, double* %dSwapVectorYears, align 8, !llfi_index !2907
-  store i32 0, i32* %i, align 4, !llfi_index !2908
-  br label %114, !llfi_index !2909
+  store double %113, double* %dSwapVectorYears, align 8, !llfi_index !2906
+  store i32 0, i32* %i, align 4, !llfi_index !2907
+  br label %114, !llfi_index !2908
 
 ; <label>:114                                     ; preds = %124, %39
-  %115 = load i32* %i, align 4, !llfi_index !2910
+  %115 = load i32* %i, align 4, !llfi_index !2909
   call void @doProfiling(i32 27)
-  %116 = load i32* %iSwapVectorLength, align 4, !llfi_index !2911
+  %116 = load i32* %iSwapVectorLength, align 4, !llfi_index !2910
   call void @doProfiling(i32 27)
-  %117 = sub nsw i32 %116, 1, !llfi_index !2912
+  %117 = sub nsw i32 %116, 1, !llfi_index !2911
   call void @doProfiling(i32 10)
-  %118 = icmp sle i32 %115, %117, !llfi_index !2913
+  %118 = icmp sle i32 %115, %117, !llfi_index !2912
   call void @doProfiling(i32 46)
-  br i1 %118, label %119, label %127, !llfi_index !2914
+  br i1 %118, label %119, label %127, !llfi_index !2913
 
 ; <label>:119                                     ; preds = %114
-  %120 = load i32* %i, align 4, !llfi_index !2915
+  %120 = load i32* %i, align 4, !llfi_index !2914
   call void @doProfiling(i32 27)
-  %121 = sext i32 %120 to i64, !llfi_index !2916
+  %121 = sext i32 %120 to i64, !llfi_index !2915
   call void @doProfiling(i32 35)
-  %122 = load double** %pdSwapPayoffs, align 8, !llfi_index !2917
+  %122 = load double** %pdSwapPayoffs, align 8, !llfi_index !2916
   call void @doProfiling(i32 27)
-  %123 = getelementptr inbounds double* %122, i64 %121, !llfi_index !2918
+  %123 = getelementptr inbounds double* %122, i64 %121, !llfi_index !2917
   call void @doProfiling(i32 29)
-  store double 0.000000e+00, double* %123, align 8, !llfi_index !2919
-  br label %124, !llfi_index !2920
+  store double 0.000000e+00, double* %123, align 8, !llfi_index !2918
+  br label %124, !llfi_index !2919
 
 ; <label>:124                                     ; preds = %119
-  %125 = load i32* %i, align 4, !llfi_index !2921
+  %125 = load i32* %i, align 4, !llfi_index !2920
   call void @doProfiling(i32 27)
-  %126 = add nsw i32 %125, 1, !llfi_index !2922
+  %126 = add nsw i32 %125, 1, !llfi_index !2921
   call void @doProfiling(i32 8)
-  store i32 %126, i32* %i, align 4, !llfi_index !2923
-  br label %114, !llfi_index !2924
+  store i32 %126, i32* %i, align 4, !llfi_index !2922
+  br label %114, !llfi_index !2923
 
 ; <label>:127                                     ; preds = %114
-  %128 = load i32* %iFreqRatio, align 4, !llfi_index !2925
+  %128 = load i32* %iFreqRatio, align 4, !llfi_index !2924
   call void @doProfiling(i32 27)
-  store i32 %128, i32* %i, align 4, !llfi_index !2926
-  br label %129, !llfi_index !2927
+  store i32 %128, i32* %i, align 4, !llfi_index !2925
+  br label %129, !llfi_index !2926
 
 ; <label>:129                                     ; preds = %161, %127
-  %130 = load i32* %i, align 4, !llfi_index !2928
+  %130 = load i32* %i, align 4, !llfi_index !2927
   call void @doProfiling(i32 27)
-  %131 = load i32* %iSwapTimePoints, align 4, !llfi_index !2929
+  %131 = load i32* %iSwapTimePoints, align 4, !llfi_index !2928
   call void @doProfiling(i32 27)
-  %132 = icmp sle i32 %130, %131, !llfi_index !2930
+  %132 = icmp sle i32 %130, %131, !llfi_index !2929
   call void @doProfiling(i32 46)
-  br i1 %132, label %133, label %165, !llfi_index !2931
+  br i1 %132, label %133, label %165, !llfi_index !2930
 
 ; <label>:133                                     ; preds = %129
-  %134 = load i32* %i, align 4, !llfi_index !2932
+  %134 = load i32* %i, align 4, !llfi_index !2931
   call void @doProfiling(i32 27)
-  %135 = load i32* %iSwapTimePoints, align 4, !llfi_index !2933
+  %135 = load i32* %iSwapTimePoints, align 4, !llfi_index !2932
   call void @doProfiling(i32 27)
-  %136 = icmp ne i32 %134, %135, !llfi_index !2934
+  %136 = icmp ne i32 %134, %135, !llfi_index !2933
   call void @doProfiling(i32 46)
-  br i1 %136, label %137, label %147, !llfi_index !2935
+  br i1 %136, label %137, label %147, !llfi_index !2934
 
 ; <label>:137                                     ; preds = %133
-  %138 = load double* %dStrikeCont, align 8, !llfi_index !2936
+  %138 = load double* %dStrikeCont, align 8, !llfi_index !2935
   call void @doProfiling(i32 27)
-  %139 = load double* %7, align 8, !llfi_index !2937
+  %139 = load double* %7, align 8, !llfi_index !2936
   call void @doProfiling(i32 27)
-  %140 = fmul double %138, %139, !llfi_index !2938
+  %140 = fmul double %138, %139, !llfi_index !2937
   call void @doProfiling(i32 13)
-  %141 = call double @exp(double %140) #5, !llfi_index !2939
+  %141 = call double @exp(double %140) #5, !llfi_index !2938
   call void @doProfiling(i32 49)
-  %142 = fsub double %141, 1.000000e+00, !llfi_index !2940
+  %142 = fsub double %141, 1.000000e+00, !llfi_index !2939
   call void @doProfiling(i32 11)
-  %143 = load i32* %i, align 4, !llfi_index !2941
+  %143 = load i32* %i, align 4, !llfi_index !2940
   call void @doProfiling(i32 27)
-  %144 = sext i32 %143 to i64, !llfi_index !2942
+  %144 = sext i32 %143 to i64, !llfi_index !2941
   call void @doProfiling(i32 35)
-  %145 = load double** %pdSwapPayoffs, align 8, !llfi_index !2943
+  %145 = load double** %pdSwapPayoffs, align 8, !llfi_index !2942
   call void @doProfiling(i32 27)
-  %146 = getelementptr inbounds double* %145, i64 %144, !llfi_index !2944
+  %146 = getelementptr inbounds double* %145, i64 %144, !llfi_index !2943
   call void @doProfiling(i32 29)
-  store double %142, double* %146, align 8, !llfi_index !2945
-  br label %147, !llfi_index !2946
+  store double %142, double* %146, align 8, !llfi_index !2944
+  br label %147, !llfi_index !2945
 
 ; <label>:147                                     ; preds = %137, %133
-  %148 = load i32* %i, align 4, !llfi_index !2947
+  %148 = load i32* %i, align 4, !llfi_index !2946
   call void @doProfiling(i32 27)
-  %149 = load i32* %iSwapTimePoints, align 4, !llfi_index !2948
+  %149 = load i32* %iSwapTimePoints, align 4, !llfi_index !2947
   call void @doProfiling(i32 27)
-  %150 = icmp eq i32 %148, %149, !llfi_index !2949
+  %150 = icmp eq i32 %148, %149, !llfi_index !2948
   call void @doProfiling(i32 46)
-  br i1 %150, label %151, label %160, !llfi_index !2950
+  br i1 %150, label %151, label %160, !llfi_index !2949
 
 ; <label>:151                                     ; preds = %147
-  %152 = load double* %dStrikeCont, align 8, !llfi_index !2951
+  %152 = load double* %dStrikeCont, align 8, !llfi_index !2950
   call void @doProfiling(i32 27)
-  %153 = load double* %7, align 8, !llfi_index !2952
+  %153 = load double* %7, align 8, !llfi_index !2951
   call void @doProfiling(i32 27)
-  %154 = fmul double %152, %153, !llfi_index !2953
+  %154 = fmul double %152, %153, !llfi_index !2952
   call void @doProfiling(i32 13)
-  %155 = call double @exp(double %154) #5, !llfi_index !2954
+  %155 = call double @exp(double %154) #5, !llfi_index !2953
   call void @doProfiling(i32 49)
-  %156 = load i32* %i, align 4, !llfi_index !2955
+  %156 = load i32* %i, align 4, !llfi_index !2954
   call void @doProfiling(i32 27)
-  %157 = sext i32 %156 to i64, !llfi_index !2956
+  %157 = sext i32 %156 to i64, !llfi_index !2955
   call void @doProfiling(i32 35)
-  %158 = load double** %pdSwapPayoffs, align 8, !llfi_index !2957
+  %158 = load double** %pdSwapPayoffs, align 8, !llfi_index !2956
   call void @doProfiling(i32 27)
-  %159 = getelementptr inbounds double* %158, i64 %157, !llfi_index !2958
+  %159 = getelementptr inbounds double* %158, i64 %157, !llfi_index !2957
   call void @doProfiling(i32 29)
-  store double %155, double* %159, align 8, !llfi_index !2959
-  br label %160, !llfi_index !2960
+  store double %155, double* %159, align 8, !llfi_index !2958
+  br label %160, !llfi_index !2959
 
 ; <label>:160                                     ; preds = %151, %147
-  br label %161, !llfi_index !2961
+  br label %161, !llfi_index !2960
 
 ; <label>:161                                     ; preds = %160
-  %162 = load i32* %iFreqRatio, align 4, !llfi_index !2962
+  %162 = load i32* %iFreqRatio, align 4, !llfi_index !2961
   call void @doProfiling(i32 27)
-  %163 = load i32* %i, align 4, !llfi_index !2963
+  %163 = load i32* %i, align 4, !llfi_index !2962
   call void @doProfiling(i32 27)
-  %164 = add nsw i32 %163, %162, !llfi_index !2964
+  %164 = add nsw i32 %163, %162, !llfi_index !2963
   call void @doProfiling(i32 8)
-  store i32 %164, i32* %i, align 4, !llfi_index !2965
-  br label %129, !llfi_index !2966
+  store i32 %164, i32* %i, align 4, !llfi_index !2964
+  br label %129, !llfi_index !2965
 
 ; <label>:165                                     ; preds = %129
-  %166 = load double** %pdForward, align 8, !llfi_index !2967
+  %166 = load double** %pdForward, align 8, !llfi_index !2966
   call void @doProfiling(i32 27)
-  %167 = load i32* %8, align 4, !llfi_index !2968
+  %167 = load i32* %8, align 4, !llfi_index !2967
   call void @doProfiling(i32 27)
-  %168 = load double** %11, align 8, !llfi_index !2969
+  %168 = load double** %11, align 8, !llfi_index !2968
   call void @doProfiling(i32 27)
-  %169 = call i32 @_Z20HJM_Yield_to_ForwardPdiS_(double* %166, i32 %167, double* %168), !llfi_index !2970
+  %169 = call i32 @_Z20HJM_Yield_to_ForwardPdiS_(double* %166, i32 %167, double* %168), !llfi_index !2969
   call void @doProfiling(i32 49)
-  store i32 %169, i32* %iSuccess, align 4, !llfi_index !2971
-  %170 = load i32* %iSuccess, align 4, !llfi_index !2972
+  store i32 %169, i32* %iSuccess, align 4, !llfi_index !2970
+  %170 = load i32* %iSuccess, align 4, !llfi_index !2971
   call void @doProfiling(i32 27)
-  %171 = icmp ne i32 %170, 1, !llfi_index !2973
+  %171 = icmp ne i32 %170, 1, !llfi_index !2972
   call void @doProfiling(i32 46)
-  br i1 %171, label %172, label %174, !llfi_index !2974
+  br i1 %171, label %172, label %174, !llfi_index !2973
 
 ; <label>:172                                     ; preds = %165
-  %173 = load i32* %iSuccess, align 4, !llfi_index !2975
+  %173 = load i32* %iSuccess, align 4, !llfi_index !2974
   call void @doProfiling(i32 27)
-  store i32 %173, i32* %1, !llfi_index !2976
-  br label %399, !llfi_index !2977
+  store i32 %173, i32* %1, !llfi_index !2975
+  br label %399, !llfi_index !2976
 
 ; <label>:174                                     ; preds = %165
-  %175 = load double** %pdTotalDrift, align 8, !llfi_index !2978
+  %175 = load double** %pdTotalDrift, align 8, !llfi_index !2977
   call void @doProfiling(i32 27)
-  %176 = load double*** %ppdDrifts, align 8, !llfi_index !2979
+  %176 = load double*** %ppdDrifts, align 8, !llfi_index !2978
   call void @doProfiling(i32 27)
-  %177 = load i32* %8, align 4, !llfi_index !2980
+  %177 = load i32* %8, align 4, !llfi_index !2979
   call void @doProfiling(i32 27)
-  %178 = load i32* %9, align 4, !llfi_index !2981
+  %178 = load i32* %9, align 4, !llfi_index !2980
   call void @doProfiling(i32 27)
-  %179 = load double* %10, align 8, !llfi_index !2982
+  %179 = load double* %10, align 8, !llfi_index !2981
   call void @doProfiling(i32 27)
-  %180 = load double*** %12, align 8, !llfi_index !2983
+  %180 = load double*** %12, align 8, !llfi_index !2982
   call void @doProfiling(i32 27)
-  %181 = call i32 @_Z10HJM_DriftsPdPS_iidS0_(double* %175, double** %176, i32 %177, i32 %178, double %179, double** %180), !llfi_index !2984
+  %181 = call i32 @_Z10HJM_DriftsPdPS_iidS0_(double* %175, double** %176, i32 %177, i32 %178, double %179, double** %180), !llfi_index !2983
   call void @doProfiling(i32 49)
-  store i32 %181, i32* %iSuccess, align 4, !llfi_index !2985
-  %182 = load i32* %iSuccess, align 4, !llfi_index !2986
+  store i32 %181, i32* %iSuccess, align 4, !llfi_index !2984
+  %182 = load i32* %iSuccess, align 4, !llfi_index !2985
   call void @doProfiling(i32 27)
-  %183 = icmp ne i32 %182, 1, !llfi_index !2987
+  %183 = icmp ne i32 %182, 1, !llfi_index !2986
   call void @doProfiling(i32 46)
-  br i1 %183, label %184, label %186, !llfi_index !2988
+  br i1 %183, label %184, label %186, !llfi_index !2987
 
 ; <label>:184                                     ; preds = %174
-  %185 = load i32* %iSuccess, align 4, !llfi_index !2989
+  %185 = load i32* %iSuccess, align 4, !llfi_index !2988
   call void @doProfiling(i32 27)
-  store i32 %185, i32* %1, !llfi_index !2990
-  br label %399, !llfi_index !2991
+  store i32 %185, i32* %1, !llfi_index !2989
+  br label %399, !llfi_index !2990
 
 ; <label>:186                                     ; preds = %174
-  store double 0.000000e+00, double* %dSumSimSwaptionPrice, align 8, !llfi_index !2992
-  store double 0.000000e+00, double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !2993
-  store i64 0, i64* %l, align 8, !llfi_index !2994
-  br label %187, !llfi_index !2995
+  store double 0.000000e+00, double* %dSumSimSwaptionPrice, align 8, !llfi_index !2991
+  store double 0.000000e+00, double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !2992
+  store i64 0, i64* %l, align 8, !llfi_index !2993
+  br label %187, !llfi_index !2994
 
 ; <label>:187                                     ; preds = %365, %186
-  %188 = load i64* %l, align 8, !llfi_index !2996
+  %188 = load i64* %l, align 8, !llfi_index !2995
   call void @doProfiling(i32 27)
-  %189 = load i64* %14, align 8, !llfi_index !2997
+  %189 = load i64* %14, align 8, !llfi_index !2996
   call void @doProfiling(i32 27)
-  %190 = sub nsw i64 %189, 1, !llfi_index !2998
+  %190 = sub nsw i64 %189, 1, !llfi_index !2997
   call void @doProfiling(i32 10)
-  %191 = icmp sle i64 %188, %190, !llfi_index !2999
+  %191 = icmp sle i64 %188, %190, !llfi_index !2998
   call void @doProfiling(i32 46)
-  br i1 %191, label %192, label %370, !llfi_index !3000
+  br i1 %191, label %192, label %370, !llfi_index !2999
 
 ; <label>:192                                     ; preds = %187
-  %193 = load double*** %ppdHJMPath, align 8, !llfi_index !3001
+  %193 = load double*** %ppdHJMPath, align 8, !llfi_index !3000
   call void @doProfiling(i32 27)
-  %194 = load i32* %8, align 4, !llfi_index !3002
+  %194 = load i32* %8, align 4, !llfi_index !3001
   call void @doProfiling(i32 27)
-  %195 = load i32* %9, align 4, !llfi_index !3003
+  %195 = load i32* %9, align 4, !llfi_index !3002
   call void @doProfiling(i32 27)
-  %196 = load double* %10, align 8, !llfi_index !3004
+  %196 = load double* %10, align 8, !llfi_index !3003
   call void @doProfiling(i32 27)
-  %197 = load double** %pdForward, align 8, !llfi_index !3005
+  %197 = load double** %pdForward, align 8, !llfi_index !3004
   call void @doProfiling(i32 27)
-  %198 = load double** %pdTotalDrift, align 8, !llfi_index !3006
+  %198 = load double** %pdTotalDrift, align 8, !llfi_index !3005
   call void @doProfiling(i32 27)
-  %199 = load double*** %12, align 8, !llfi_index !3007
+  %199 = load double*** %12, align 8, !llfi_index !3006
   call void @doProfiling(i32 27)
-  %200 = load i32* %15, align 4, !llfi_index !3008
+  %200 = load i32* %15, align 4, !llfi_index !3007
   call void @doProfiling(i32 27)
-  %201 = call i32 @_Z28HJM_SimPath_Forward_BlockingPPdiidS_S_S0_Pli(double** %193, i32 %194, i32 %195, double %196, double* %197, double* %198, double** %199, i64* %13, i32 %200), !llfi_index !3009
+  %201 = call i32 @_Z28HJM_SimPath_Forward_BlockingPPdiidS_S_S0_Pli(double** %193, i32 %194, i32 %195, double %196, double* %197, double* %198, double** %199, i64* %13, i32 %200), !llfi_index !3008
   call void @doProfiling(i32 49)
-  store i32 %201, i32* %iSuccess, align 4, !llfi_index !3010
-  %202 = load i32* %iSuccess, align 4, !llfi_index !3011
+  store i32 %201, i32* %iSuccess, align 4, !llfi_index !3009
+  %202 = load i32* %iSuccess, align 4, !llfi_index !3010
   call void @doProfiling(i32 27)
-  %203 = icmp ne i32 %202, 1, !llfi_index !3012
+  %203 = icmp ne i32 %202, 1, !llfi_index !3011
   call void @doProfiling(i32 46)
-  br i1 %203, label %204, label %206, !llfi_index !3013
+  br i1 %203, label %204, label %206, !llfi_index !3012
 
 ; <label>:204                                     ; preds = %192
-  %205 = load i32* %iSuccess, align 4, !llfi_index !3014
+  %205 = load i32* %iSuccess, align 4, !llfi_index !3013
   call void @doProfiling(i32 27)
-  store i32 %205, i32* %1, !llfi_index !3015
-  br label %399, !llfi_index !3016
+  store i32 %205, i32* %1, !llfi_index !3014
+  br label %399, !llfi_index !3015
 
 ; <label>:206                                     ; preds = %192
-  store i32 0, i32* %i, align 4, !llfi_index !3017
-  br label %207, !llfi_index !3018
+  store i32 0, i32* %i, align 4, !llfi_index !3016
+  br label %207, !llfi_index !3017
 
 ; <label>:207                                     ; preds = %241, %206
-  %208 = load i32* %i, align 4, !llfi_index !3019
+  %208 = load i32* %i, align 4, !llfi_index !3018
   call void @doProfiling(i32 27)
-  %209 = load i32* %8, align 4, !llfi_index !3020
+  %209 = load i32* %8, align 4, !llfi_index !3019
   call void @doProfiling(i32 27)
-  %210 = sub nsw i32 %209, 1, !llfi_index !3021
+  %210 = sub nsw i32 %209, 1, !llfi_index !3020
   call void @doProfiling(i32 10)
-  %211 = icmp sle i32 %208, %210, !llfi_index !3022
+  %211 = icmp sle i32 %208, %210, !llfi_index !3021
   call void @doProfiling(i32 46)
-  br i1 %211, label %212, label %244, !llfi_index !3023
+  br i1 %211, label %212, label %244, !llfi_index !3022
 
 ; <label>:212                                     ; preds = %207
-  store i32 0, i32* %b, align 4, !llfi_index !3024
-  br label %213, !llfi_index !3025
+  store i32 0, i32* %b, align 4, !llfi_index !3023
+  br label %213, !llfi_index !3024
 
 ; <label>:213                                     ; preds = %237, %212
-  %214 = load i32* %b, align 4, !llfi_index !3026
+  %214 = load i32* %b, align 4, !llfi_index !3025
   call void @doProfiling(i32 27)
-  %215 = load i32* %15, align 4, !llfi_index !3027
+  %215 = load i32* %15, align 4, !llfi_index !3026
   call void @doProfiling(i32 27)
-  %216 = sub nsw i32 %215, 1, !llfi_index !3028
+  %216 = sub nsw i32 %215, 1, !llfi_index !3027
   call void @doProfiling(i32 10)
-  %217 = icmp sle i32 %214, %216, !llfi_index !3029
+  %217 = icmp sle i32 %214, %216, !llfi_index !3028
   call void @doProfiling(i32 46)
-  br i1 %217, label %218, label %240, !llfi_index !3030
+  br i1 %217, label %218, label %240, !llfi_index !3029
 
 ; <label>:218                                     ; preds = %213
-  %219 = load i32* %b, align 4, !llfi_index !3031
+  %219 = load i32* %b, align 4, !llfi_index !3030
   call void @doProfiling(i32 27)
-  %220 = add nsw i32 0, %219, !llfi_index !3032
+  %220 = add nsw i32 0, %219, !llfi_index !3031
   call void @doProfiling(i32 8)
-  %221 = sext i32 %220 to i64, !llfi_index !3033
+  %221 = sext i32 %220 to i64, !llfi_index !3032
   call void @doProfiling(i32 35)
-  %222 = load i32* %i, align 4, !llfi_index !3034
+  %222 = load i32* %i, align 4, !llfi_index !3033
   call void @doProfiling(i32 27)
-  %223 = sext i32 %222 to i64, !llfi_index !3035
+  %223 = sext i32 %222 to i64, !llfi_index !3034
   call void @doProfiling(i32 35)
-  %224 = load double*** %ppdHJMPath, align 8, !llfi_index !3036
+  %224 = load double*** %ppdHJMPath, align 8, !llfi_index !3035
   call void @doProfiling(i32 27)
-  %225 = getelementptr inbounds double** %224, i64 %223, !llfi_index !3037
+  %225 = getelementptr inbounds double** %224, i64 %223, !llfi_index !3036
   call void @doProfiling(i32 29)
-  %226 = load double** %225, align 8, !llfi_index !3038
+  %226 = load double** %225, align 8, !llfi_index !3037
   call void @doProfiling(i32 27)
-  %227 = getelementptr inbounds double* %226, i64 %221, !llfi_index !3039
+  %227 = getelementptr inbounds double* %226, i64 %221, !llfi_index !3038
   call void @doProfiling(i32 29)
-  %228 = load double* %227, align 8, !llfi_index !3040
+  %228 = load double* %227, align 8, !llfi_index !3039
   call void @doProfiling(i32 27)
-  %229 = load i32* %15, align 4, !llfi_index !3041
+  %229 = load i32* %15, align 4, !llfi_index !3040
   call void @doProfiling(i32 27)
-  %230 = load i32* %i, align 4, !llfi_index !3042
+  %230 = load i32* %i, align 4, !llfi_index !3041
   call void @doProfiling(i32 27)
-  %231 = mul nsw i32 %229, %230, !llfi_index !3043
+  %231 = mul nsw i32 %229, %230, !llfi_index !3042
   call void @doProfiling(i32 12)
-  %232 = load i32* %b, align 4, !llfi_index !3044
+  %232 = load i32* %b, align 4, !llfi_index !3043
   call void @doProfiling(i32 27)
-  %233 = add nsw i32 %231, %232, !llfi_index !3045
+  %233 = add nsw i32 %231, %232, !llfi_index !3044
   call void @doProfiling(i32 8)
-  %234 = sext i32 %233 to i64, !llfi_index !3046
+  %234 = sext i32 %233 to i64, !llfi_index !3045
   call void @doProfiling(i32 35)
-  %235 = load double** %pdDiscountingRatePath, align 8, !llfi_index !3047
+  %235 = load double** %pdDiscountingRatePath, align 8, !llfi_index !3046
   call void @doProfiling(i32 27)
-  %236 = getelementptr inbounds double* %235, i64 %234, !llfi_index !3048
+  %236 = getelementptr inbounds double* %235, i64 %234, !llfi_index !3047
   call void @doProfiling(i32 29)
-  store double %228, double* %236, align 8, !llfi_index !3049
-  br label %237, !llfi_index !3050
+  store double %228, double* %236, align 8, !llfi_index !3048
+  br label %237, !llfi_index !3049
 
 ; <label>:237                                     ; preds = %218
-  %238 = load i32* %b, align 4, !llfi_index !3051
+  %238 = load i32* %b, align 4, !llfi_index !3050
   call void @doProfiling(i32 27)
-  %239 = add nsw i32 %238, 1, !llfi_index !3052
+  %239 = add nsw i32 %238, 1, !llfi_index !3051
   call void @doProfiling(i32 8)
-  store i32 %239, i32* %b, align 4, !llfi_index !3053
-  br label %213, !llfi_index !3054
+  store i32 %239, i32* %b, align 4, !llfi_index !3052
+  br label %213, !llfi_index !3053
 
 ; <label>:240                                     ; preds = %213
-  br label %241, !llfi_index !3055
+  br label %241, !llfi_index !3054
 
 ; <label>:241                                     ; preds = %240
-  %242 = load i32* %i, align 4, !llfi_index !3056
+  %242 = load i32* %i, align 4, !llfi_index !3055
   call void @doProfiling(i32 27)
-  %243 = add nsw i32 %242, 1, !llfi_index !3057
+  %243 = add nsw i32 %242, 1, !llfi_index !3056
   call void @doProfiling(i32 8)
-  store i32 %243, i32* %i, align 4, !llfi_index !3058
-  br label %207, !llfi_index !3059
+  store i32 %243, i32* %i, align 4, !llfi_index !3057
+  br label %207, !llfi_index !3058
 
 ; <label>:244                                     ; preds = %207
-  %245 = load double** %pdPayoffDiscountFactors, align 8, !llfi_index !3060
+  %245 = load double** %pdPayoffDiscountFactors, align 8, !llfi_index !3059
   call void @doProfiling(i32 27)
-  %246 = load i32* %8, align 4, !llfi_index !3061
+  %246 = load i32* %8, align 4, !llfi_index !3060
   call void @doProfiling(i32 27)
-  %247 = load double* %10, align 8, !llfi_index !3062
+  %247 = load double* %10, align 8, !llfi_index !3061
   call void @doProfiling(i32 27)
-  %248 = load double** %pdDiscountingRatePath, align 8, !llfi_index !3063
+  %248 = load double** %pdDiscountingRatePath, align 8, !llfi_index !3062
   call void @doProfiling(i32 27)
-  %249 = load i32* %15, align 4, !llfi_index !3064
+  %249 = load i32* %15, align 4, !llfi_index !3063
   call void @doProfiling(i32 27)
-  %250 = call i32 @_Z25Discount_Factors_BlockingPdidS_i(double* %245, i32 %246, double %247, double* %248, i32 %249), !llfi_index !3065
+  %250 = call i32 @_Z25Discount_Factors_BlockingPdidS_i(double* %245, i32 %246, double %247, double* %248, i32 %249), !llfi_index !3064
   call void @doProfiling(i32 49)
-  store i32 %250, i32* %iSuccess, align 4, !llfi_index !3066
-  %251 = load i32* %iSuccess, align 4, !llfi_index !3067
+  store i32 %250, i32* %iSuccess, align 4, !llfi_index !3065
+  %251 = load i32* %iSuccess, align 4, !llfi_index !3066
   call void @doProfiling(i32 27)
-  %252 = icmp ne i32 %251, 1, !llfi_index !3068
+  %252 = icmp ne i32 %251, 1, !llfi_index !3067
   call void @doProfiling(i32 46)
-  br i1 %252, label %253, label %255, !llfi_index !3069
+  br i1 %252, label %253, label %255, !llfi_index !3068
 
 ; <label>:253                                     ; preds = %244
-  %254 = load i32* %iSuccess, align 4, !llfi_index !3070
+  %254 = load i32* %iSuccess, align 4, !llfi_index !3069
   call void @doProfiling(i32 27)
-  store i32 %254, i32* %1, !llfi_index !3071
-  br label %399, !llfi_index !3072
+  store i32 %254, i32* %1, !llfi_index !3070
+  br label %399, !llfi_index !3071
 
 ; <label>:255                                     ; preds = %244
-  store i32 0, i32* %i, align 4, !llfi_index !3073
-  br label %256, !llfi_index !3074
+  store i32 0, i32* %i, align 4, !llfi_index !3072
+  br label %256, !llfi_index !3073
 
 ; <label>:256                                     ; preds = %292, %255
-  %257 = load i32* %i, align 4, !llfi_index !3075
+  %257 = load i32* %i, align 4, !llfi_index !3074
   call void @doProfiling(i32 27)
-  %258 = load i32* %iSwapVectorLength, align 4, !llfi_index !3076
+  %258 = load i32* %iSwapVectorLength, align 4, !llfi_index !3075
   call void @doProfiling(i32 27)
-  %259 = sub nsw i32 %258, 1, !llfi_index !3077
+  %259 = sub nsw i32 %258, 1, !llfi_index !3076
   call void @doProfiling(i32 10)
-  %260 = icmp sle i32 %257, %259, !llfi_index !3078
+  %260 = icmp sle i32 %257, %259, !llfi_index !3077
   call void @doProfiling(i32 46)
-  br i1 %260, label %261, label %295, !llfi_index !3079
+  br i1 %260, label %261, label %295, !llfi_index !3078
 
 ; <label>:261                                     ; preds = %256
-  store i32 0, i32* %b, align 4, !llfi_index !3080
-  br label %262, !llfi_index !3081
+  store i32 0, i32* %b, align 4, !llfi_index !3079
+  br label %262, !llfi_index !3080
 
 ; <label>:262                                     ; preds = %288, %261
-  %263 = load i32* %b, align 4, !llfi_index !3082
+  %263 = load i32* %b, align 4, !llfi_index !3081
   call void @doProfiling(i32 27)
-  %264 = load i32* %15, align 4, !llfi_index !3083
+  %264 = load i32* %15, align 4, !llfi_index !3082
   call void @doProfiling(i32 27)
-  %265 = icmp slt i32 %263, %264, !llfi_index !3084
+  %265 = icmp slt i32 %263, %264, !llfi_index !3083
   call void @doProfiling(i32 46)
-  br i1 %265, label %266, label %291, !llfi_index !3085
+  br i1 %265, label %266, label %291, !llfi_index !3084
 
 ; <label>:266                                     ; preds = %262
-  %267 = load i32* %i, align 4, !llfi_index !3086
+  %267 = load i32* %i, align 4, !llfi_index !3085
   call void @doProfiling(i32 27)
-  %268 = load i32* %15, align 4, !llfi_index !3087
+  %268 = load i32* %15, align 4, !llfi_index !3086
   call void @doProfiling(i32 27)
-  %269 = mul nsw i32 %267, %268, !llfi_index !3088
+  %269 = mul nsw i32 %267, %268, !llfi_index !3087
   call void @doProfiling(i32 12)
-  %270 = load i32* %b, align 4, !llfi_index !3089
+  %270 = load i32* %b, align 4, !llfi_index !3088
   call void @doProfiling(i32 27)
-  %271 = add nsw i32 %269, %270, !llfi_index !3090
+  %271 = add nsw i32 %269, %270, !llfi_index !3089
   call void @doProfiling(i32 8)
-  %272 = sext i32 %271 to i64, !llfi_index !3091
+  %272 = sext i32 %271 to i64, !llfi_index !3090
   call void @doProfiling(i32 35)
-  %273 = load i32* %iSwapStartTimeIndex, align 4, !llfi_index !3092
+  %273 = load i32* %iSwapStartTimeIndex, align 4, !llfi_index !3091
   call void @doProfiling(i32 27)
-  %274 = sext i32 %273 to i64, !llfi_index !3093
+  %274 = sext i32 %273 to i64, !llfi_index !3092
   call void @doProfiling(i32 35)
-  %275 = load double*** %ppdHJMPath, align 8, !llfi_index !3094
+  %275 = load double*** %ppdHJMPath, align 8, !llfi_index !3093
   call void @doProfiling(i32 27)
-  %276 = getelementptr inbounds double** %275, i64 %274, !llfi_index !3095
+  %276 = getelementptr inbounds double** %275, i64 %274, !llfi_index !3094
   call void @doProfiling(i32 29)
-  %277 = load double** %276, align 8, !llfi_index !3096
+  %277 = load double** %276, align 8, !llfi_index !3095
   call void @doProfiling(i32 27)
-  %278 = getelementptr inbounds double* %277, i64 %272, !llfi_index !3097
+  %278 = getelementptr inbounds double* %277, i64 %272, !llfi_index !3096
   call void @doProfiling(i32 29)
-  %279 = load double* %278, align 8, !llfi_index !3098
+  %279 = load double* %278, align 8, !llfi_index !3097
   call void @doProfiling(i32 27)
-  %280 = load i32* %i, align 4, !llfi_index !3099
+  %280 = load i32* %i, align 4, !llfi_index !3098
   call void @doProfiling(i32 27)
-  %281 = load i32* %15, align 4, !llfi_index !3100
+  %281 = load i32* %15, align 4, !llfi_index !3099
   call void @doProfiling(i32 27)
-  %282 = mul nsw i32 %280, %281, !llfi_index !3101
+  %282 = mul nsw i32 %280, %281, !llfi_index !3100
   call void @doProfiling(i32 12)
-  %283 = load i32* %b, align 4, !llfi_index !3102
+  %283 = load i32* %b, align 4, !llfi_index !3101
   call void @doProfiling(i32 27)
-  %284 = add nsw i32 %282, %283, !llfi_index !3103
+  %284 = add nsw i32 %282, %283, !llfi_index !3102
   call void @doProfiling(i32 8)
-  %285 = sext i32 %284 to i64, !llfi_index !3104
+  %285 = sext i32 %284 to i64, !llfi_index !3103
   call void @doProfiling(i32 35)
-  %286 = load double** %pdSwapRatePath, align 8, !llfi_index !3105
+  %286 = load double** %pdSwapRatePath, align 8, !llfi_index !3104
   call void @doProfiling(i32 27)
-  %287 = getelementptr inbounds double* %286, i64 %285, !llfi_index !3106
+  %287 = getelementptr inbounds double* %286, i64 %285, !llfi_index !3105
   call void @doProfiling(i32 29)
-  store double %279, double* %287, align 8, !llfi_index !3107
-  br label %288, !llfi_index !3108
+  store double %279, double* %287, align 8, !llfi_index !3106
+  br label %288, !llfi_index !3107
 
 ; <label>:288                                     ; preds = %266
-  %289 = load i32* %b, align 4, !llfi_index !3109
+  %289 = load i32* %b, align 4, !llfi_index !3108
   call void @doProfiling(i32 27)
-  %290 = add nsw i32 %289, 1, !llfi_index !3110
+  %290 = add nsw i32 %289, 1, !llfi_index !3109
   call void @doProfiling(i32 8)
-  store i32 %290, i32* %b, align 4, !llfi_index !3111
-  br label %262, !llfi_index !3112
+  store i32 %290, i32* %b, align 4, !llfi_index !3110
+  br label %262, !llfi_index !3111
 
 ; <label>:291                                     ; preds = %262
-  br label %292, !llfi_index !3113
+  br label %292, !llfi_index !3112
 
 ; <label>:292                                     ; preds = %291
-  %293 = load i32* %i, align 4, !llfi_index !3114
+  %293 = load i32* %i, align 4, !llfi_index !3113
   call void @doProfiling(i32 27)
-  %294 = add nsw i32 %293, 1, !llfi_index !3115
+  %294 = add nsw i32 %293, 1, !llfi_index !3114
   call void @doProfiling(i32 8)
-  store i32 %294, i32* %i, align 4, !llfi_index !3116
-  br label %256, !llfi_index !3117
+  store i32 %294, i32* %i, align 4, !llfi_index !3115
+  br label %256, !llfi_index !3116
 
 ; <label>:295                                     ; preds = %256
-  %296 = load double** %pdSwapDiscountFactors, align 8, !llfi_index !3118
+  %296 = load double** %pdSwapDiscountFactors, align 8, !llfi_index !3117
   call void @doProfiling(i32 27)
-  %297 = load i32* %iSwapVectorLength, align 4, !llfi_index !3119
+  %297 = load i32* %iSwapVectorLength, align 4, !llfi_index !3118
   call void @doProfiling(i32 27)
-  %298 = load double* %dSwapVectorYears, align 8, !llfi_index !3120
+  %298 = load double* %dSwapVectorYears, align 8, !llfi_index !3119
   call void @doProfiling(i32 27)
-  %299 = load double** %pdSwapRatePath, align 8, !llfi_index !3121
+  %299 = load double** %pdSwapRatePath, align 8, !llfi_index !3120
   call void @doProfiling(i32 27)
-  %300 = load i32* %15, align 4, !llfi_index !3122
+  %300 = load i32* %15, align 4, !llfi_index !3121
   call void @doProfiling(i32 27)
-  %301 = call i32 @_Z25Discount_Factors_BlockingPdidS_i(double* %296, i32 %297, double %298, double* %299, i32 %300), !llfi_index !3123
+  %301 = call i32 @_Z25Discount_Factors_BlockingPdidS_i(double* %296, i32 %297, double %298, double* %299, i32 %300), !llfi_index !3122
   call void @doProfiling(i32 49)
-  store i32 %301, i32* %iSuccess, align 4, !llfi_index !3124
-  %302 = load i32* %iSuccess, align 4, !llfi_index !3125
+  store i32 %301, i32* %iSuccess, align 4, !llfi_index !3123
+  %302 = load i32* %iSuccess, align 4, !llfi_index !3124
   call void @doProfiling(i32 27)
-  %303 = icmp ne i32 %302, 1, !llfi_index !3126
+  %303 = icmp ne i32 %302, 1, !llfi_index !3125
   call void @doProfiling(i32 46)
-  br i1 %303, label %304, label %306, !llfi_index !3127
+  br i1 %303, label %304, label %306, !llfi_index !3126
 
 ; <label>:304                                     ; preds = %295
-  %305 = load i32* %iSuccess, align 4, !llfi_index !3128
+  %305 = load i32* %iSuccess, align 4, !llfi_index !3127
   call void @doProfiling(i32 27)
-  store i32 %305, i32* %1, !llfi_index !3129
-  br label %399, !llfi_index !3130
+  store i32 %305, i32* %1, !llfi_index !3128
+  br label %399, !llfi_index !3129
 
 ; <label>:306                                     ; preds = %295
-  store i32 0, i32* %b, align 4, !llfi_index !3131
-  br label %307, !llfi_index !3132
+  store i32 0, i32* %b, align 4, !llfi_index !3130
+  br label %307, !llfi_index !3131
 
 ; <label>:307                                     ; preds = %361, %306
-  %308 = load i32* %b, align 4, !llfi_index !3133
+  %308 = load i32* %b, align 4, !llfi_index !3132
   call void @doProfiling(i32 27)
-  %309 = load i32* %15, align 4, !llfi_index !3134
+  %309 = load i32* %15, align 4, !llfi_index !3133
   call void @doProfiling(i32 27)
-  %310 = icmp slt i32 %308, %309, !llfi_index !3135
+  %310 = icmp slt i32 %308, %309, !llfi_index !3134
   call void @doProfiling(i32 46)
-  br i1 %310, label %311, label %364, !llfi_index !3136
+  br i1 %310, label %311, label %364, !llfi_index !3135
 
 ; <label>:311                                     ; preds = %307
-  store double 0.000000e+00, double* %dFixedLegValue, align 8, !llfi_index !3137
-  store i32 0, i32* %i, align 4, !llfi_index !3138
-  br label %312, !llfi_index !3139
+  store double 0.000000e+00, double* %dFixedLegValue, align 8, !llfi_index !3136
+  store i32 0, i32* %i, align 4, !llfi_index !3137
+  br label %312, !llfi_index !3138
 
 ; <label>:312                                     ; preds = %335, %311
-  %313 = load i32* %i, align 4, !llfi_index !3140
+  %313 = load i32* %i, align 4, !llfi_index !3139
   call void @doProfiling(i32 27)
-  %314 = load i32* %iSwapVectorLength, align 4, !llfi_index !3141
+  %314 = load i32* %iSwapVectorLength, align 4, !llfi_index !3140
   call void @doProfiling(i32 27)
-  %315 = sub nsw i32 %314, 1, !llfi_index !3142
+  %315 = sub nsw i32 %314, 1, !llfi_index !3141
   call void @doProfiling(i32 10)
-  %316 = icmp sle i32 %313, %315, !llfi_index !3143
+  %316 = icmp sle i32 %313, %315, !llfi_index !3142
   call void @doProfiling(i32 46)
-  br i1 %316, label %317, label %338, !llfi_index !3144
+  br i1 %316, label %317, label %338, !llfi_index !3143
 
 ; <label>:317                                     ; preds = %312
-  %318 = load i32* %i, align 4, !llfi_index !3145
+  %318 = load i32* %i, align 4, !llfi_index !3144
   call void @doProfiling(i32 27)
-  %319 = sext i32 %318 to i64, !llfi_index !3146
+  %319 = sext i32 %318 to i64, !llfi_index !3145
   call void @doProfiling(i32 35)
-  %320 = load double** %pdSwapPayoffs, align 8, !llfi_index !3147
+  %320 = load double** %pdSwapPayoffs, align 8, !llfi_index !3146
   call void @doProfiling(i32 27)
-  %321 = getelementptr inbounds double* %320, i64 %319, !llfi_index !3148
+  %321 = getelementptr inbounds double* %320, i64 %319, !llfi_index !3147
   call void @doProfiling(i32 29)
-  %322 = load double* %321, align 8, !llfi_index !3149
+  %322 = load double* %321, align 8, !llfi_index !3148
   call void @doProfiling(i32 27)
-  %323 = load i32* %i, align 4, !llfi_index !3150
+  %323 = load i32* %i, align 4, !llfi_index !3149
   call void @doProfiling(i32 27)
-  %324 = load i32* %15, align 4, !llfi_index !3151
+  %324 = load i32* %15, align 4, !llfi_index !3150
   call void @doProfiling(i32 27)
-  %325 = mul nsw i32 %323, %324, !llfi_index !3152
+  %325 = mul nsw i32 %323, %324, !llfi_index !3151
   call void @doProfiling(i32 12)
-  %326 = load i32* %b, align 4, !llfi_index !3153
+  %326 = load i32* %b, align 4, !llfi_index !3152
   call void @doProfiling(i32 27)
-  %327 = add nsw i32 %325, %326, !llfi_index !3154
+  %327 = add nsw i32 %325, %326, !llfi_index !3153
   call void @doProfiling(i32 8)
-  %328 = sext i32 %327 to i64, !llfi_index !3155
+  %328 = sext i32 %327 to i64, !llfi_index !3154
   call void @doProfiling(i32 35)
-  %329 = load double** %pdSwapDiscountFactors, align 8, !llfi_index !3156
+  %329 = load double** %pdSwapDiscountFactors, align 8, !llfi_index !3155
   call void @doProfiling(i32 27)
-  %330 = getelementptr inbounds double* %329, i64 %328, !llfi_index !3157
+  %330 = getelementptr inbounds double* %329, i64 %328, !llfi_index !3156
   call void @doProfiling(i32 29)
-  %331 = load double* %330, align 8, !llfi_index !3158
+  %331 = load double* %330, align 8, !llfi_index !3157
   call void @doProfiling(i32 27)
-  %332 = fmul double %322, %331, !llfi_index !3159
+  %332 = fmul double %322, %331, !llfi_index !3158
   call void @doProfiling(i32 13)
-  %333 = load double* %dFixedLegValue, align 8, !llfi_index !3160
+  %333 = load double* %dFixedLegValue, align 8, !llfi_index !3159
   call void @doProfiling(i32 27)
-  %334 = fadd double %333, %332, !llfi_index !3161
+  %334 = fadd double %333, %332, !llfi_index !3160
   call void @doProfiling(i32 9)
-  store double %334, double* %dFixedLegValue, align 8, !llfi_index !3162
-  br label %335, !llfi_index !3163
+  store double %334, double* %dFixedLegValue, align 8, !llfi_index !3161
+  br label %335, !llfi_index !3162
 
 ; <label>:335                                     ; preds = %317
-  %336 = load i32* %i, align 4, !llfi_index !3164
+  %336 = load i32* %i, align 4, !llfi_index !3163
   call void @doProfiling(i32 27)
-  %337 = add nsw i32 %336, 1, !llfi_index !3165
+  %337 = add nsw i32 %336, 1, !llfi_index !3164
   call void @doProfiling(i32 8)
-  store i32 %337, i32* %i, align 4, !llfi_index !3166
-  br label %312, !llfi_index !3167
+  store i32 %337, i32* %i, align 4, !llfi_index !3165
+  br label %312, !llfi_index !3166
 
 ; <label>:338                                     ; preds = %312
-  %339 = load double* %dFixedLegValue, align 8, !llfi_index !3168
+  %339 = load double* %dFixedLegValue, align 8, !llfi_index !3167
   call void @doProfiling(i32 27)
-  %340 = fsub double %339, 1.000000e+00, !llfi_index !3169
+  %340 = fsub double %339, 1.000000e+00, !llfi_index !3168
   call void @doProfiling(i32 11)
-  %341 = call double @_Z4dMaxdd(double %340, double 0.000000e+00), !llfi_index !3170
+  %341 = call double @_Z4dMaxdd(double %340, double 0.000000e+00), !llfi_index !3169
   call void @doProfiling(i32 49)
-  store double %341, double* %dSwaptionPayoff, align 8, !llfi_index !3171
-  %342 = load double* %dSwaptionPayoff, align 8, !llfi_index !3172
+  store double %341, double* %dSwaptionPayoff, align 8, !llfi_index !3170
+  %342 = load double* %dSwaptionPayoff, align 8, !llfi_index !3171
   call void @doProfiling(i32 27)
-  %343 = load i32* %iSwapStartTimeIndex, align 4, !llfi_index !3173
+  %343 = load i32* %iSwapStartTimeIndex, align 4, !llfi_index !3172
   call void @doProfiling(i32 27)
-  %344 = load i32* %15, align 4, !llfi_index !3174
+  %344 = load i32* %15, align 4, !llfi_index !3173
   call void @doProfiling(i32 27)
-  %345 = mul nsw i32 %343, %344, !llfi_index !3175
+  %345 = mul nsw i32 %343, %344, !llfi_index !3174
   call void @doProfiling(i32 12)
-  %346 = load i32* %b, align 4, !llfi_index !3176
+  %346 = load i32* %b, align 4, !llfi_index !3175
   call void @doProfiling(i32 27)
-  %347 = add nsw i32 %345, %346, !llfi_index !3177
+  %347 = add nsw i32 %345, %346, !llfi_index !3176
   call void @doProfiling(i32 8)
-  %348 = sext i32 %347 to i64, !llfi_index !3178
+  %348 = sext i32 %347 to i64, !llfi_index !3177
   call void @doProfiling(i32 35)
-  %349 = load double** %pdPayoffDiscountFactors, align 8, !llfi_index !3179
+  %349 = load double** %pdPayoffDiscountFactors, align 8, !llfi_index !3178
   call void @doProfiling(i32 27)
-  %350 = getelementptr inbounds double* %349, i64 %348, !llfi_index !3180
+  %350 = getelementptr inbounds double* %349, i64 %348, !llfi_index !3179
   call void @doProfiling(i32 29)
-  %351 = load double* %350, align 8, !llfi_index !3181
+  %351 = load double* %350, align 8, !llfi_index !3180
   call void @doProfiling(i32 27)
-  %352 = fmul double %342, %351, !llfi_index !3182
+  %352 = fmul double %342, %351, !llfi_index !3181
   call void @doProfiling(i32 13)
-  store double %352, double* %dDiscSwaptionPayoff, align 8, !llfi_index !3183
-  %353 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3184
+  store double %352, double* %dDiscSwaptionPayoff, align 8, !llfi_index !3182
+  %353 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3183
   call void @doProfiling(i32 27)
-  %354 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3185
+  %354 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3184
   call void @doProfiling(i32 27)
-  %355 = fadd double %354, %353, !llfi_index !3186
+  %355 = fadd double %354, %353, !llfi_index !3185
   call void @doProfiling(i32 9)
-  store double %355, double* %dSumSimSwaptionPrice, align 8, !llfi_index !3187
-  %356 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3188
+  store double %355, double* %dSumSimSwaptionPrice, align 8, !llfi_index !3186
+  %356 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3187
   call void @doProfiling(i32 27)
-  %357 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3189
+  %357 = load double* %dDiscSwaptionPayoff, align 8, !llfi_index !3188
   call void @doProfiling(i32 27)
-  %358 = fmul double %356, %357, !llfi_index !3190
+  %358 = fmul double %356, %357, !llfi_index !3189
   call void @doProfiling(i32 13)
-  %359 = load double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3191
+  %359 = load double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3190
   call void @doProfiling(i32 27)
-  %360 = fadd double %359, %358, !llfi_index !3192
+  %360 = fadd double %359, %358, !llfi_index !3191
   call void @doProfiling(i32 9)
-  store double %360, double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3193
-  br label %361, !llfi_index !3194
+  store double %360, double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3192
+  br label %361, !llfi_index !3193
 
 ; <label>:361                                     ; preds = %338
-  %362 = load i32* %b, align 4, !llfi_index !3195
+  %362 = load i32* %b, align 4, !llfi_index !3194
   call void @doProfiling(i32 27)
-  %363 = add nsw i32 %362, 1, !llfi_index !3196
+  %363 = add nsw i32 %362, 1, !llfi_index !3195
   call void @doProfiling(i32 8)
-  store i32 %363, i32* %b, align 4, !llfi_index !3197
-  br label %307, !llfi_index !3198
+  store i32 %363, i32* %b, align 4, !llfi_index !3196
+  br label %307, !llfi_index !3197
 
 ; <label>:364                                     ; preds = %307
-  br label %365, !llfi_index !3199
+  br label %365, !llfi_index !3198
 
 ; <label>:365                                     ; preds = %364
-  %366 = load i32* %15, align 4, !llfi_index !3200
+  %366 = load i32* %15, align 4, !llfi_index !3199
   call void @doProfiling(i32 27)
-  %367 = sext i32 %366 to i64, !llfi_index !3201
+  %367 = sext i32 %366 to i64, !llfi_index !3200
   call void @doProfiling(i32 35)
-  %368 = load i64* %l, align 8, !llfi_index !3202
+  %368 = load i64* %l, align 8, !llfi_index !3201
   call void @doProfiling(i32 27)
-  %369 = add nsw i64 %368, %367, !llfi_index !3203
+  %369 = add nsw i64 %368, %367, !llfi_index !3202
   call void @doProfiling(i32 8)
-  store i64 %369, i64* %l, align 8, !llfi_index !3204
-  br label %187, !llfi_index !3205
+  store i64 %369, i64* %l, align 8, !llfi_index !3203
+  br label %187, !llfi_index !3204
 
 ; <label>:370                                     ; preds = %187
-  %371 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3206
+  %371 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3205
   call void @doProfiling(i32 27)
-  %372 = load i64* %14, align 8, !llfi_index !3207
+  %372 = load i64* %14, align 8, !llfi_index !3206
   call void @doProfiling(i32 27)
-  %373 = sitofp i64 %372 to double, !llfi_index !3208
+  %373 = sitofp i64 %372 to double, !llfi_index !3207
   call void @doProfiling(i32 39)
-  %374 = fdiv double %371, %373, !llfi_index !3209
+  %374 = fdiv double %371, %373, !llfi_index !3208
   call void @doProfiling(i32 16)
-  store double %374, double* %dSimSwaptionMeanPrice, align 8, !llfi_index !3210
-  %375 = load double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3211
+  store double %374, double* %dSimSwaptionMeanPrice, align 8, !llfi_index !3209
+  %375 = load double* %dSumSquareSimSwaptionPrice, align 8, !llfi_index !3210
   call void @doProfiling(i32 27)
-  %376 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3212
+  %376 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3211
   call void @doProfiling(i32 27)
-  %377 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3213
+  %377 = load double* %dSumSimSwaptionPrice, align 8, !llfi_index !3212
   call void @doProfiling(i32 27)
-  %378 = fmul double %376, %377, !llfi_index !3214
+  %378 = fmul double %376, %377, !llfi_index !3213
   call void @doProfiling(i32 13)
-  %379 = load i64* %14, align 8, !llfi_index !3215
+  %379 = load i64* %14, align 8, !llfi_index !3214
   call void @doProfiling(i32 27)
-  %380 = sitofp i64 %379 to double, !llfi_index !3216
+  %380 = sitofp i64 %379 to double, !llfi_index !3215
   call void @doProfiling(i32 39)
-  %381 = fdiv double %378, %380, !llfi_index !3217
+  %381 = fdiv double %378, %380, !llfi_index !3216
   call void @doProfiling(i32 16)
-  %382 = fsub double %375, %381, !llfi_index !3218
+  %382 = fsub double %375, %381, !llfi_index !3217
   call void @doProfiling(i32 11)
-  %383 = load i64* %14, align 8, !llfi_index !3219
+  %383 = load i64* %14, align 8, !llfi_index !3218
   call void @doProfiling(i32 27)
-  %384 = sitofp i64 %383 to double, !llfi_index !3220
+  %384 = sitofp i64 %383 to double, !llfi_index !3219
   call void @doProfiling(i32 39)
-  %385 = fsub double %384, 1.000000e+00, !llfi_index !3221
+  %385 = fsub double %384, 1.000000e+00, !llfi_index !3220
   call void @doProfiling(i32 11)
-  %386 = fdiv double %382, %385, !llfi_index !3222
+  %386 = fdiv double %382, %385, !llfi_index !3221
   call void @doProfiling(i32 16)
-  %387 = call double @sqrt(double %386) #5, !llfi_index !3223
+  %387 = call double @sqrt(double %386) #5, !llfi_index !3222
   call void @doProfiling(i32 49)
-  %388 = load i64* %14, align 8, !llfi_index !3224
+  %388 = load i64* %14, align 8, !llfi_index !3223
   call void @doProfiling(i32 27)
-  %389 = sitofp i64 %388 to double, !llfi_index !3225
+  %389 = sitofp i64 %388 to double, !llfi_index !3224
   call void @doProfiling(i32 39)
-  %390 = call double @sqrt(double %389) #5, !llfi_index !3226
+  %390 = call double @sqrt(double %389) #5, !llfi_index !3225
   call void @doProfiling(i32 49)
-  %391 = fdiv double %387, %390, !llfi_index !3227
+  %391 = fdiv double %387, %390, !llfi_index !3226
   call void @doProfiling(i32 16)
-  store double %391, double* %dSimSwaptionStdError, align 8, !llfi_index !3228
-  %392 = load double* %dSimSwaptionMeanPrice, align 8, !llfi_index !3229
+  store double %391, double* %dSimSwaptionStdError, align 8, !llfi_index !3227
+  %392 = load double* %dSimSwaptionMeanPrice, align 8, !llfi_index !3228
   call void @doProfiling(i32 27)
-  %393 = load double** %2, align 8, !llfi_index !3230
+  %393 = load double** %2, align 8, !llfi_index !3229
   call void @doProfiling(i32 27)
-  %394 = getelementptr inbounds double* %393, i64 0, !llfi_index !3231
+  %394 = getelementptr inbounds double* %393, i64 0, !llfi_index !3230
   call void @doProfiling(i32 29)
-  store double %392, double* %394, align 8, !llfi_index !3232
-  %395 = load double* %dSimSwaptionStdError, align 8, !llfi_index !3233
+  store double %392, double* %394, align 8, !llfi_index !3231
+  %395 = load double* %dSimSwaptionStdError, align 8, !llfi_index !3232
   call void @doProfiling(i32 27)
-  %396 = load double** %2, align 8, !llfi_index !3234
+  %396 = load double** %2, align 8, !llfi_index !3233
   call void @doProfiling(i32 27)
-  %397 = getelementptr inbounds double* %396, i64 1, !llfi_index !3235
+  %397 = getelementptr inbounds double* %396, i64 1, !llfi_index !3234
   call void @doProfiling(i32 29)
-  store double %395, double* %397, align 8, !llfi_index !3236
-  store i32 1, i32* %iSuccess, align 4, !llfi_index !3237
-  %398 = load i32* %iSuccess, align 4, !llfi_index !3238
+  store double %395, double* %397, align 8, !llfi_index !3235
+  store i32 1, i32* %iSuccess, align 4, !llfi_index !3236
+  %398 = load i32* %iSuccess, align 4, !llfi_index !3237
   call void @doProfiling(i32 27)
-  store i32 %398, i32* %1, !llfi_index !3239
-  br label %399, !llfi_index !3240
+  store i32 %398, i32* %1, !llfi_index !3238
+  br label %399, !llfi_index !3239
 
 ; <label>:399                                     ; preds = %370, %304, %253, %204, %184, %172
-  %400 = load i32* %1, !llfi_index !3241
+  %400 = load i32* %1, !llfi_index !3240
   call void @doProfiling(i32 27)
-  ret i32 %400, !llfi_index !3242
+  ret i32 %400, !llfi_index !3241
 }
 
 ; Function Attrs: nounwind uwtable
 define void @_Z13icdf_baselineiPdS_(i32 %N, double* %in, double* %out) #0 {
-  %1 = alloca i32, align 4, !llfi_index !3243
+  %1 = alloca i32, align 4, !llfi_index !3242
   call void @doProfiling(i32 26)
-  %2 = alloca double*, align 8, !llfi_index !3244
+  %2 = alloca double*, align 8, !llfi_index !3243
   call void @doProfiling(i32 26)
-  %3 = alloca double*, align 8, !llfi_index !3245
+  %3 = alloca double*, align 8, !llfi_index !3244
   call void @doProfiling(i32 26)
-  %z = alloca double, align 8, !llfi_index !3246
+  %z = alloca double, align 8, !llfi_index !3245
   call void @doProfiling(i32 26)
-  %r = alloca double, align 8, !llfi_index !3247
+  %r = alloca double, align 8, !llfi_index !3246
   call void @doProfiling(i32 26)
-  %a1 = alloca double, align 8, !llfi_index !3248
+  %a1 = alloca double, align 8, !llfi_index !3247
   call void @doProfiling(i32 26)
-  %a2 = alloca double, align 8, !llfi_index !3249
+  %a2 = alloca double, align 8, !llfi_index !3248
   call void @doProfiling(i32 26)
-  %a3 = alloca double, align 8, !llfi_index !3250
+  %a3 = alloca double, align 8, !llfi_index !3249
   call void @doProfiling(i32 26)
-  %a4 = alloca double, align 8, !llfi_index !3251
+  %a4 = alloca double, align 8, !llfi_index !3250
   call void @doProfiling(i32 26)
-  %a5 = alloca double, align 8, !llfi_index !3252
+  %a5 = alloca double, align 8, !llfi_index !3251
   call void @doProfiling(i32 26)
-  %a6 = alloca double, align 8, !llfi_index !3253
+  %a6 = alloca double, align 8, !llfi_index !3252
   call void @doProfiling(i32 26)
-  %b1 = alloca double, align 8, !llfi_index !3254
+  %b1 = alloca double, align 8, !llfi_index !3253
   call void @doProfiling(i32 26)
-  %b2 = alloca double, align 8, !llfi_index !3255
+  %b2 = alloca double, align 8, !llfi_index !3254
   call void @doProfiling(i32 26)
-  %b3 = alloca double, align 8, !llfi_index !3256
+  %b3 = alloca double, align 8, !llfi_index !3255
   call void @doProfiling(i32 26)
-  %b4 = alloca double, align 8, !llfi_index !3257
+  %b4 = alloca double, align 8, !llfi_index !3256
   call void @doProfiling(i32 26)
-  %b5 = alloca double, align 8, !llfi_index !3258
+  %b5 = alloca double, align 8, !llfi_index !3257
   call void @doProfiling(i32 26)
-  %c1 = alloca double, align 8, !llfi_index !3259
+  %c1 = alloca double, align 8, !llfi_index !3258
   call void @doProfiling(i32 26)
-  %c2 = alloca double, align 8, !llfi_index !3260
+  %c2 = alloca double, align 8, !llfi_index !3259
   call void @doProfiling(i32 26)
-  %c3 = alloca double, align 8, !llfi_index !3261
+  %c3 = alloca double, align 8, !llfi_index !3260
   call void @doProfiling(i32 26)
-  %c4 = alloca double, align 8, !llfi_index !3262
+  %c4 = alloca double, align 8, !llfi_index !3261
   call void @doProfiling(i32 26)
-  %c5 = alloca double, align 8, !llfi_index !3263
+  %c5 = alloca double, align 8, !llfi_index !3262
   call void @doProfiling(i32 26)
-  %c6 = alloca double, align 8, !llfi_index !3264
+  %c6 = alloca double, align 8, !llfi_index !3263
   call void @doProfiling(i32 26)
-  %d1 = alloca double, align 8, !llfi_index !3265
+  %d1 = alloca double, align 8, !llfi_index !3264
   call void @doProfiling(i32 26)
-  %d2 = alloca double, align 8, !llfi_index !3266
+  %d2 = alloca double, align 8, !llfi_index !3265
   call void @doProfiling(i32 26)
-  %d3 = alloca double, align 8, !llfi_index !3267
+  %d3 = alloca double, align 8, !llfi_index !3266
   call void @doProfiling(i32 26)
-  %d4 = alloca double, align 8, !llfi_index !3268
+  %d4 = alloca double, align 8, !llfi_index !3267
   call void @doProfiling(i32 26)
-  %u_low = alloca double, align 8, !llfi_index !3269
+  %u_low = alloca double, align 8, !llfi_index !3268
   call void @doProfiling(i32 26)
-  %u_high = alloca double, align 8, !llfi_index !3270
+  %u_high = alloca double, align 8, !llfi_index !3269
   call void @doProfiling(i32 26)
-  %i = alloca i32, align 4, !llfi_index !3271
+  %i = alloca i32, align 4, !llfi_index !3270
   call void @doProfiling(i32 26)
-  %u = alloca double, align 8, !llfi_index !3272
+  %u = alloca double, align 8, !llfi_index !3271
   call void @doProfiling(i32 26)
-  store i32 %N, i32* %1, align 4, !llfi_index !3273
-  store double* %in, double** %2, align 8, !llfi_index !3274
-  store double* %out, double** %3, align 8, !llfi_index !3275
-  store double 0xC043D931BC1E0525, double* %a1, align 8, !llfi_index !3276
-  store double 0x406B9E467034039B, double* %a2, align 8, !llfi_index !3277
-  store double 0xC0713EDB2DC53B99, double* %a3, align 8, !llfi_index !3278
-  store double 0x40614B72B40B401B, double* %a4, align 8, !llfi_index !3279
-  store double 0xC03EAA3034C08BCD, double* %a5, align 8, !llfi_index !3280
-  store double 0x40040D9320575479, double* %a6, align 8, !llfi_index !3281
-  store double 0xC04B3CF0CE3004C4, double* %b1, align 8, !llfi_index !3282
-  store double 0x406432BF2CF04277, double* %b2, align 8, !llfi_index !3283
-  store double 0xC063765E0B02D8D2, double* %b3, align 8, !llfi_index !3284
-  store double 0x4050B348B1A7E9BE, double* %b4, align 8, !llfi_index !3285
-  store double 0xC02A8FB57E147826, double* %b5, align 8, !llfi_index !3286
-  store double 0xBF7FE30D924ACFE0, double* %c1, align 8, !llfi_index !3287
-  store double 0xBFD4A224C0E881B8, double* %c2, align 8, !llfi_index !3288
-  store double 0xC00334C0C1701758, double* %c3, align 8, !llfi_index !3289
-  store double 0xC00465DA2C703A1A, double* %c4, align 8, !llfi_index !3290
-  store double 0x40117FA7F4EA4DC7, double* %c5, align 8, !llfi_index !3291
-  store double 0x4007815C1E3FCFA2, double* %c6, align 8, !llfi_index !3292
-  store double 0x3F7FE2D857AC9FD4, double* %d1, align 8, !llfi_index !3293
-  store double 0x3FD4A34D2B590364, double* %d2, align 8, !llfi_index !3294
-  store double 0x40038FA27C8AE616, double* %d3, align 8, !llfi_index !3295
-  store double 0x400E09076895B119, double* %d4, align 8, !llfi_index !3296
-  store double 2.425000e-02, double* %u_low, align 8, !llfi_index !3297
-  store double 9.757500e-01, double* %u_high, align 8, !llfi_index !3298
-  store i32 0, i32* %i, align 4, !llfi_index !3299
-  br label %4, !llfi_index !3300
+  store i32 %N, i32* %1, align 4, !llfi_index !3272
+  store double* %in, double** %2, align 8, !llfi_index !3273
+  store double* %out, double** %3, align 8, !llfi_index !3274
+  store double 0xC043D931BC1E0525, double* %a1, align 8, !llfi_index !3275
+  store double 0x406B9E467034039B, double* %a2, align 8, !llfi_index !3276
+  store double 0xC0713EDB2DC53B99, double* %a3, align 8, !llfi_index !3277
+  store double 0x40614B72B40B401B, double* %a4, align 8, !llfi_index !3278
+  store double 0xC03EAA3034C08BCD, double* %a5, align 8, !llfi_index !3279
+  store double 0x40040D9320575479, double* %a6, align 8, !llfi_index !3280
+  store double 0xC04B3CF0CE3004C4, double* %b1, align 8, !llfi_index !3281
+  store double 0x406432BF2CF04277, double* %b2, align 8, !llfi_index !3282
+  store double 0xC063765E0B02D8D2, double* %b3, align 8, !llfi_index !3283
+  store double 0x4050B348B1A7E9BE, double* %b4, align 8, !llfi_index !3284
+  store double 0xC02A8FB57E147826, double* %b5, align 8, !llfi_index !3285
+  store double 0xBF7FE30D924ACFE0, double* %c1, align 8, !llfi_index !3286
+  store double 0xBFD4A224C0E881B8, double* %c2, align 8, !llfi_index !3287
+  store double 0xC00334C0C1701758, double* %c3, align 8, !llfi_index !3288
+  store double 0xC00465DA2C703A1A, double* %c4, align 8, !llfi_index !3289
+  store double 0x40117FA7F4EA4DC7, double* %c5, align 8, !llfi_index !3290
+  store double 0x4007815C1E3FCFA2, double* %c6, align 8, !llfi_index !3291
+  store double 0x3F7FE2D857AC9FD4, double* %d1, align 8, !llfi_index !3292
+  store double 0x3FD4A34D2B590364, double* %d2, align 8, !llfi_index !3293
+  store double 0x40038FA27C8AE616, double* %d3, align 8, !llfi_index !3294
+  store double 0x400E09076895B119, double* %d4, align 8, !llfi_index !3295
+  store double 2.425000e-02, double* %u_low, align 8, !llfi_index !3296
+  store double 9.757500e-01, double* %u_high, align 8, !llfi_index !3297
+  store i32 0, i32* %i, align 4, !llfi_index !3298
+  br label %4, !llfi_index !3299
 
 ; <label>:4                                       ; preds = %133, %0
-  %5 = load i32* %i, align 4, !llfi_index !3301
+  %5 = load i32* %i, align 4, !llfi_index !3300
   call void @doProfiling(i32 27)
-  %6 = load i32* %1, align 4, !llfi_index !3302
+  %6 = load i32* %1, align 4, !llfi_index !3301
   call void @doProfiling(i32 27)
-  %7 = icmp slt i32 %5, %6, !llfi_index !3303
+  %7 = icmp slt i32 %5, %6, !llfi_index !3302
   call void @doProfiling(i32 46)
-  br i1 %7, label %8, label %136, !llfi_index !3304
+  br i1 %7, label %8, label %136, !llfi_index !3303
 
 ; <label>:8                                       ; preds = %4
-  %9 = load i32* %i, align 4, !llfi_index !3305
+  %9 = load i32* %i, align 4, !llfi_index !3304
   call void @doProfiling(i32 27)
-  %10 = sext i32 %9 to i64, !llfi_index !3306
+  %10 = sext i32 %9 to i64, !llfi_index !3305
   call void @doProfiling(i32 35)
-  %11 = load double** %2, align 8, !llfi_index !3307
+  %11 = load double** %2, align 8, !llfi_index !3306
   call void @doProfiling(i32 27)
-  %12 = getelementptr inbounds double* %11, i64 %10, !llfi_index !3308
+  %12 = getelementptr inbounds double* %11, i64 %10, !llfi_index !3307
   call void @doProfiling(i32 29)
-  %13 = load double* %12, align 8, !llfi_index !3309
+  %13 = load double* %12, align 8, !llfi_index !3308
   call void @doProfiling(i32 27)
-  store double %13, double* %u, align 8, !llfi_index !3310
-  %14 = load double* %u, align 8, !llfi_index !3311
+  store double %13, double* %u, align 8, !llfi_index !3309
+  %14 = load double* %u, align 8, !llfi_index !3310
   call void @doProfiling(i32 27)
-  %15 = fcmp olt double %14, 2.425000e-02, !llfi_index !3312
+  %15 = fcmp olt double %14, 2.425000e-02, !llfi_index !3311
   call void @doProfiling(i32 47)
-  br i1 %15, label %16, label %49, !llfi_index !3313
+  br i1 %15, label %16, label %49, !llfi_index !3312
 
 ; <label>:16                                      ; preds = %8
-  %17 = load double* %u, align 8, !llfi_index !3314
+  %17 = load double* %u, align 8, !llfi_index !3313
   call void @doProfiling(i32 27)
-  %18 = call double @log(double %17) #5, !llfi_index !3315
+  %18 = call double @log(double %17) #5, !llfi_index !3314
   call void @doProfiling(i32 49)
-  %19 = fmul double -2.000000e+00, %18, !llfi_index !3316
+  %19 = fmul double -2.000000e+00, %18, !llfi_index !3315
   call void @doProfiling(i32 13)
-  %20 = call double @sqrt(double %19) #5, !llfi_index !3317
+  %20 = call double @sqrt(double %19) #5, !llfi_index !3316
   call void @doProfiling(i32 49)
-  store double %20, double* %z, align 8, !llfi_index !3318
-  %21 = load double* %z, align 8, !llfi_index !3319
+  store double %20, double* %z, align 8, !llfi_index !3317
+  %21 = load double* %z, align 8, !llfi_index !3318
   call void @doProfiling(i32 27)
-  %22 = fmul double 0xBF7FE30D924ACFE0, %21, !llfi_index !3320
+  %22 = fmul double 0xBF7FE30D924ACFE0, %21, !llfi_index !3319
   call void @doProfiling(i32 13)
-  %23 = fadd double %22, 0xBFD4A224C0E881B8, !llfi_index !3321
+  %23 = fadd double %22, 0xBFD4A224C0E881B8, !llfi_index !3320
   call void @doProfiling(i32 9)
-  %24 = load double* %z, align 8, !llfi_index !3322
+  %24 = load double* %z, align 8, !llfi_index !3321
   call void @doProfiling(i32 27)
-  %25 = fmul double %23, %24, !llfi_index !3323
+  %25 = fmul double %23, %24, !llfi_index !3322
   call void @doProfiling(i32 13)
-  %26 = fadd double %25, 0xC00334C0C1701758, !llfi_index !3324
+  %26 = fadd double %25, 0xC00334C0C1701758, !llfi_index !3323
   call void @doProfiling(i32 9)
-  %27 = load double* %z, align 8, !llfi_index !3325
+  %27 = load double* %z, align 8, !llfi_index !3324
   call void @doProfiling(i32 27)
-  %28 = fmul double %26, %27, !llfi_index !3326
+  %28 = fmul double %26, %27, !llfi_index !3325
   call void @doProfiling(i32 13)
-  %29 = fadd double %28, 0xC00465DA2C703A1A, !llfi_index !3327
+  %29 = fadd double %28, 0xC00465DA2C703A1A, !llfi_index !3326
   call void @doProfiling(i32 9)
-  %30 = load double* %z, align 8, !llfi_index !3328
+  %30 = load double* %z, align 8, !llfi_index !3327
   call void @doProfiling(i32 27)
-  %31 = fmul double %29, %30, !llfi_index !3329
+  %31 = fmul double %29, %30, !llfi_index !3328
   call void @doProfiling(i32 13)
-  %32 = fadd double %31, 0x40117FA7F4EA4DC7, !llfi_index !3330
+  %32 = fadd double %31, 0x40117FA7F4EA4DC7, !llfi_index !3329
   call void @doProfiling(i32 9)
-  %33 = load double* %z, align 8, !llfi_index !3331
+  %33 = load double* %z, align 8, !llfi_index !3330
   call void @doProfiling(i32 27)
-  %34 = fmul double %32, %33, !llfi_index !3332
+  %34 = fmul double %32, %33, !llfi_index !3331
   call void @doProfiling(i32 13)
-  %35 = fadd double %34, 0x4007815C1E3FCFA2, !llfi_index !3333
+  %35 = fadd double %34, 0x4007815C1E3FCFA2, !llfi_index !3332
   call void @doProfiling(i32 9)
-  %36 = load double* %z, align 8, !llfi_index !3334
+  %36 = load double* %z, align 8, !llfi_index !3333
   call void @doProfiling(i32 27)
-  %37 = fmul double 0x3F7FE2D857AC9FD4, %36, !llfi_index !3335
+  %37 = fmul double 0x3F7FE2D857AC9FD4, %36, !llfi_index !3334
   call void @doProfiling(i32 13)
-  %38 = fadd double %37, 0x3FD4A34D2B590364, !llfi_index !3336
+  %38 = fadd double %37, 0x3FD4A34D2B590364, !llfi_index !3335
   call void @doProfiling(i32 9)
-  %39 = load double* %z, align 8, !llfi_index !3337
+  %39 = load double* %z, align 8, !llfi_index !3336
   call void @doProfiling(i32 27)
-  %40 = fmul double %38, %39, !llfi_index !3338
+  %40 = fmul double %38, %39, !llfi_index !3337
   call void @doProfiling(i32 13)
-  %41 = fadd double %40, 0x40038FA27C8AE616, !llfi_index !3339
+  %41 = fadd double %40, 0x40038FA27C8AE616, !llfi_index !3338
   call void @doProfiling(i32 9)
-  %42 = load double* %z, align 8, !llfi_index !3340
+  %42 = load double* %z, align 8, !llfi_index !3339
   call void @doProfiling(i32 27)
-  %43 = fmul double %41, %42, !llfi_index !3341
+  %43 = fmul double %41, %42, !llfi_index !3340
   call void @doProfiling(i32 13)
-  %44 = fadd double %43, 0x400E09076895B119, !llfi_index !3342
+  %44 = fadd double %43, 0x400E09076895B119, !llfi_index !3341
   call void @doProfiling(i32 9)
-  %45 = load double* %z, align 8, !llfi_index !3343
+  %45 = load double* %z, align 8, !llfi_index !3342
   call void @doProfiling(i32 27)
-  %46 = fmul double %44, %45, !llfi_index !3344
+  %46 = fmul double %44, %45, !llfi_index !3343
   call void @doProfiling(i32 13)
-  %47 = fadd double %46, 1.000000e+00, !llfi_index !3345
+  %47 = fadd double %46, 1.000000e+00, !llfi_index !3344
   call void @doProfiling(i32 9)
-  %48 = fdiv double %35, %47, !llfi_index !3346
+  %48 = fdiv double %35, %47, !llfi_index !3345
   call void @doProfiling(i32 16)
-  store double %48, double* %z, align 8, !llfi_index !3347
-  br label %127, !llfi_index !3348
+  store double %48, double* %z, align 8, !llfi_index !3346
+  br label %127, !llfi_index !3347
 
 ; <label>:49                                      ; preds = %8
-  %50 = load double* %u, align 8, !llfi_index !3349
+  %50 = load double* %u, align 8, !llfi_index !3348
   call void @doProfiling(i32 27)
-  %51 = fcmp ole double %50, 9.757500e-01, !llfi_index !3350
+  %51 = fcmp ole double %50, 9.757500e-01, !llfi_index !3349
   call void @doProfiling(i32 47)
-  br i1 %51, label %52, label %91, !llfi_index !3351
+  br i1 %51, label %52, label %91, !llfi_index !3350
 
 ; <label>:52                                      ; preds = %49
-  %53 = load double* %u, align 8, !llfi_index !3352
+  %53 = load double* %u, align 8, !llfi_index !3351
   call void @doProfiling(i32 27)
-  %54 = fsub double %53, 5.000000e-01, !llfi_index !3353
+  %54 = fsub double %53, 5.000000e-01, !llfi_index !3352
   call void @doProfiling(i32 11)
-  store double %54, double* %z, align 8, !llfi_index !3354
-  %55 = load double* %z, align 8, !llfi_index !3355
+  store double %54, double* %z, align 8, !llfi_index !3353
+  %55 = load double* %z, align 8, !llfi_index !3354
   call void @doProfiling(i32 27)
-  %56 = load double* %z, align 8, !llfi_index !3356
+  %56 = load double* %z, align 8, !llfi_index !3355
   call void @doProfiling(i32 27)
-  %57 = fmul double %55, %56, !llfi_index !3357
+  %57 = fmul double %55, %56, !llfi_index !3356
   call void @doProfiling(i32 13)
-  store double %57, double* %r, align 8, !llfi_index !3358
-  %58 = load double* %r, align 8, !llfi_index !3359
+  store double %57, double* %r, align 8, !llfi_index !3357
+  %58 = load double* %r, align 8, !llfi_index !3358
   call void @doProfiling(i32 27)
-  %59 = fmul double 0xC043D931BC1E0525, %58, !llfi_index !3360
+  %59 = fmul double 0xC043D931BC1E0525, %58, !llfi_index !3359
   call void @doProfiling(i32 13)
-  %60 = fadd double %59, 0x406B9E467034039B, !llfi_index !3361
+  %60 = fadd double %59, 0x406B9E467034039B, !llfi_index !3360
   call void @doProfiling(i32 9)
-  %61 = load double* %r, align 8, !llfi_index !3362
+  %61 = load double* %r, align 8, !llfi_index !3361
   call void @doProfiling(i32 27)
-  %62 = fmul double %60, %61, !llfi_index !3363
+  %62 = fmul double %60, %61, !llfi_index !3362
   call void @doProfiling(i32 13)
-  %63 = fadd double %62, 0xC0713EDB2DC53B99, !llfi_index !3364
+  %63 = fadd double %62, 0xC0713EDB2DC53B99, !llfi_index !3363
   call void @doProfiling(i32 9)
-  %64 = load double* %r, align 8, !llfi_index !3365
+  %64 = load double* %r, align 8, !llfi_index !3364
   call void @doProfiling(i32 27)
-  %65 = fmul double %63, %64, !llfi_index !3366
+  %65 = fmul double %63, %64, !llfi_index !3365
   call void @doProfiling(i32 13)
-  %66 = fadd double %65, 0x40614B72B40B401B, !llfi_index !3367
+  %66 = fadd double %65, 0x40614B72B40B401B, !llfi_index !3366
   call void @doProfiling(i32 9)
-  %67 = load double* %r, align 8, !llfi_index !3368
+  %67 = load double* %r, align 8, !llfi_index !3367
   call void @doProfiling(i32 27)
-  %68 = fmul double %66, %67, !llfi_index !3369
+  %68 = fmul double %66, %67, !llfi_index !3368
   call void @doProfiling(i32 13)
-  %69 = fadd double %68, 0xC03EAA3034C08BCD, !llfi_index !3370
+  %69 = fadd double %68, 0xC03EAA3034C08BCD, !llfi_index !3369
   call void @doProfiling(i32 9)
-  %70 = load double* %r, align 8, !llfi_index !3371
+  %70 = load double* %r, align 8, !llfi_index !3370
   call void @doProfiling(i32 27)
-  %71 = fmul double %69, %70, !llfi_index !3372
+  %71 = fmul double %69, %70, !llfi_index !3371
   call void @doProfiling(i32 13)
-  %72 = fadd double %71, 0x40040D9320575479, !llfi_index !3373
+  %72 = fadd double %71, 0x40040D9320575479, !llfi_index !3372
   call void @doProfiling(i32 9)
-  %73 = load double* %z, align 8, !llfi_index !3374
+  %73 = load double* %z, align 8, !llfi_index !3373
   call void @doProfiling(i32 27)
-  %74 = fmul double %72, %73, !llfi_index !3375
+  %74 = fmul double %72, %73, !llfi_index !3374
   call void @doProfiling(i32 13)
-  %75 = load double* %r, align 8, !llfi_index !3376
+  %75 = load double* %r, align 8, !llfi_index !3375
   call void @doProfiling(i32 27)
-  %76 = fmul double 0xC04B3CF0CE3004C4, %75, !llfi_index !3377
+  %76 = fmul double 0xC04B3CF0CE3004C4, %75, !llfi_index !3376
   call void @doProfiling(i32 13)
-  %77 = fadd double %76, 0x406432BF2CF04277, !llfi_index !3378
+  %77 = fadd double %76, 0x406432BF2CF04277, !llfi_index !3377
   call void @doProfiling(i32 9)
-  %78 = load double* %r, align 8, !llfi_index !3379
+  %78 = load double* %r, align 8, !llfi_index !3378
   call void @doProfiling(i32 27)
-  %79 = fmul double %77, %78, !llfi_index !3380
+  %79 = fmul double %77, %78, !llfi_index !3379
   call void @doProfiling(i32 13)
-  %80 = fadd double %79, 0xC063765E0B02D8D2, !llfi_index !3381
+  %80 = fadd double %79, 0xC063765E0B02D8D2, !llfi_index !3380
   call void @doProfiling(i32 9)
-  %81 = load double* %r, align 8, !llfi_index !3382
+  %81 = load double* %r, align 8, !llfi_index !3381
   call void @doProfiling(i32 27)
-  %82 = fmul double %80, %81, !llfi_index !3383
+  %82 = fmul double %80, %81, !llfi_index !3382
   call void @doProfiling(i32 13)
-  %83 = fadd double %82, 0x4050B348B1A7E9BE, !llfi_index !3384
+  %83 = fadd double %82, 0x4050B348B1A7E9BE, !llfi_index !3383
   call void @doProfiling(i32 9)
-  %84 = load double* %r, align 8, !llfi_index !3385
+  %84 = load double* %r, align 8, !llfi_index !3384
   call void @doProfiling(i32 27)
-  %85 = fmul double %83, %84, !llfi_index !3386
+  %85 = fmul double %83, %84, !llfi_index !3385
   call void @doProfiling(i32 13)
-  %86 = fadd double %85, 0xC02A8FB57E147826, !llfi_index !3387
+  %86 = fadd double %85, 0xC02A8FB57E147826, !llfi_index !3386
   call void @doProfiling(i32 9)
-  %87 = load double* %r, align 8, !llfi_index !3388
+  %87 = load double* %r, align 8, !llfi_index !3387
   call void @doProfiling(i32 27)
-  %88 = fmul double %86, %87, !llfi_index !3389
+  %88 = fmul double %86, %87, !llfi_index !3388
   call void @doProfiling(i32 13)
-  %89 = fadd double %88, 1.000000e+00, !llfi_index !3390
+  %89 = fadd double %88, 1.000000e+00, !llfi_index !3389
   call void @doProfiling(i32 9)
-  %90 = fdiv double %74, %89, !llfi_index !3391
+  %90 = fdiv double %74, %89, !llfi_index !3390
   call void @doProfiling(i32 16)
-  store double %90, double* %z, align 8, !llfi_index !3392
-  br label %126, !llfi_index !3393
+  store double %90, double* %z, align 8, !llfi_index !3391
+  br label %126, !llfi_index !3392
 
 ; <label>:91                                      ; preds = %49
-  %92 = load double* %u, align 8, !llfi_index !3394
+  %92 = load double* %u, align 8, !llfi_index !3393
   call void @doProfiling(i32 27)
-  %93 = fsub double 1.000000e+00, %92, !llfi_index !3395
+  %93 = fsub double 1.000000e+00, %92, !llfi_index !3394
   call void @doProfiling(i32 11)
-  %94 = call double @log(double %93) #5, !llfi_index !3396
+  %94 = call double @log(double %93) #5, !llfi_index !3395
   call void @doProfiling(i32 49)
-  %95 = fmul double -2.000000e+00, %94, !llfi_index !3397
+  %95 = fmul double -2.000000e+00, %94, !llfi_index !3396
   call void @doProfiling(i32 13)
-  %96 = call double @sqrt(double %95) #5, !llfi_index !3398
+  %96 = call double @sqrt(double %95) #5, !llfi_index !3397
   call void @doProfiling(i32 49)
-  store double %96, double* %z, align 8, !llfi_index !3399
-  %97 = load double* %z, align 8, !llfi_index !3400
+  store double %96, double* %z, align 8, !llfi_index !3398
+  %97 = load double* %z, align 8, !llfi_index !3399
   call void @doProfiling(i32 27)
-  %98 = fmul double 0xBF7FE30D924ACFE0, %97, !llfi_index !3401
+  %98 = fmul double 0xBF7FE30D924ACFE0, %97, !llfi_index !3400
   call void @doProfiling(i32 13)
-  %99 = fadd double %98, 0xBFD4A224C0E881B8, !llfi_index !3402
+  %99 = fadd double %98, 0xBFD4A224C0E881B8, !llfi_index !3401
   call void @doProfiling(i32 9)
-  %100 = load double* %z, align 8, !llfi_index !3403
+  %100 = load double* %z, align 8, !llfi_index !3402
   call void @doProfiling(i32 27)
-  %101 = fmul double %99, %100, !llfi_index !3404
+  %101 = fmul double %99, %100, !llfi_index !3403
   call void @doProfiling(i32 13)
-  %102 = fadd double %101, 0xC00334C0C1701758, !llfi_index !3405
+  %102 = fadd double %101, 0xC00334C0C1701758, !llfi_index !3404
   call void @doProfiling(i32 9)
-  %103 = load double* %z, align 8, !llfi_index !3406
+  %103 = load double* %z, align 8, !llfi_index !3405
   call void @doProfiling(i32 27)
-  %104 = fmul double %102, %103, !llfi_index !3407
+  %104 = fmul double %102, %103, !llfi_index !3406
   call void @doProfiling(i32 13)
-  %105 = fadd double %104, 0xC00465DA2C703A1A, !llfi_index !3408
+  %105 = fadd double %104, 0xC00465DA2C703A1A, !llfi_index !3407
   call void @doProfiling(i32 9)
-  %106 = load double* %z, align 8, !llfi_index !3409
+  %106 = load double* %z, align 8, !llfi_index !3408
   call void @doProfiling(i32 27)
-  %107 = fmul double %105, %106, !llfi_index !3410
+  %107 = fmul double %105, %106, !llfi_index !3409
   call void @doProfiling(i32 13)
-  %108 = fadd double %107, 0x40117FA7F4EA4DC7, !llfi_index !3411
+  %108 = fadd double %107, 0x40117FA7F4EA4DC7, !llfi_index !3410
   call void @doProfiling(i32 9)
-  %109 = load double* %z, align 8, !llfi_index !3412
+  %109 = load double* %z, align 8, !llfi_index !3411
   call void @doProfiling(i32 27)
-  %110 = fmul double %108, %109, !llfi_index !3413
+  %110 = fmul double %108, %109, !llfi_index !3412
   call void @doProfiling(i32 13)
-  %111 = fadd double %110, 0x4007815C1E3FCFA2, !llfi_index !3414
+  %111 = fadd double %110, 0x4007815C1E3FCFA2, !llfi_index !3413
   call void @doProfiling(i32 9)
-  %112 = fsub double -0.000000e+00, %111, !llfi_index !3415
+  %112 = fsub double -0.000000e+00, %111, !llfi_index !3414
   call void @doProfiling(i32 11)
-  %113 = load double* %z, align 8, !llfi_index !3416
+  %113 = load double* %z, align 8, !llfi_index !3415
   call void @doProfiling(i32 27)
-  %114 = fmul double 0x3F7FE2D857AC9FD4, %113, !llfi_index !3417
+  %114 = fmul double 0x3F7FE2D857AC9FD4, %113, !llfi_index !3416
   call void @doProfiling(i32 13)
-  %115 = fadd double %114, 0x3FD4A34D2B590364, !llfi_index !3418
+  %115 = fadd double %114, 0x3FD4A34D2B590364, !llfi_index !3417
   call void @doProfiling(i32 9)
-  %116 = load double* %z, align 8, !llfi_index !3419
+  %116 = load double* %z, align 8, !llfi_index !3418
   call void @doProfiling(i32 27)
-  %117 = fmul double %115, %116, !llfi_index !3420
+  %117 = fmul double %115, %116, !llfi_index !3419
   call void @doProfiling(i32 13)
-  %118 = fadd double %117, 0x40038FA27C8AE616, !llfi_index !3421
+  %118 = fadd double %117, 0x40038FA27C8AE616, !llfi_index !3420
   call void @doProfiling(i32 9)
-  %119 = load double* %z, align 8, !llfi_index !3422
+  %119 = load double* %z, align 8, !llfi_index !3421
   call void @doProfiling(i32 27)
-  %120 = fmul double %118, %119, !llfi_index !3423
+  %120 = fmul double %118, %119, !llfi_index !3422
   call void @doProfiling(i32 13)
-  %121 = fadd double %120, 0x400E09076895B119, !llfi_index !3424
+  %121 = fadd double %120, 0x400E09076895B119, !llfi_index !3423
   call void @doProfiling(i32 9)
-  %122 = load double* %z, align 8, !llfi_index !3425
+  %122 = load double* %z, align 8, !llfi_index !3424
   call void @doProfiling(i32 27)
-  %123 = fmul double %121, %122, !llfi_index !3426
+  %123 = fmul double %121, %122, !llfi_index !3425
   call void @doProfiling(i32 13)
-  %124 = fadd double %123, 1.000000e+00, !llfi_index !3427
+  %124 = fadd double %123, 1.000000e+00, !llfi_index !3426
   call void @doProfiling(i32 9)
-  %125 = fdiv double %112, %124, !llfi_index !3428
+  %125 = fdiv double %112, %124, !llfi_index !3427
   call void @doProfiling(i32 16)
-  store double %125, double* %z, align 8, !llfi_index !3429
-  br label %126, !llfi_index !3430
+  store double %125, double* %z, align 8, !llfi_index !3428
+  br label %126, !llfi_index !3429
 
 ; <label>:126                                     ; preds = %91, %52
-  br label %127, !llfi_index !3431
+  br label %127, !llfi_index !3430
 
 ; <label>:127                                     ; preds = %126, %16
-  %128 = load double* %z, align 8, !llfi_index !3432
+  %128 = load double* %z, align 8, !llfi_index !3431
   call void @doProfiling(i32 27)
-  %129 = load i32* %i, align 4, !llfi_index !3433
+  %129 = load i32* %i, align 4, !llfi_index !3432
   call void @doProfiling(i32 27)
-  %130 = sext i32 %129 to i64, !llfi_index !3434
+  %130 = sext i32 %129 to i64, !llfi_index !3433
   call void @doProfiling(i32 35)
-  %131 = load double** %3, align 8, !llfi_index !3435
+  %131 = load double** %3, align 8, !llfi_index !3434
   call void @doProfiling(i32 27)
-  %132 = getelementptr inbounds double* %131, i64 %130, !llfi_index !3436
+  %132 = getelementptr inbounds double* %131, i64 %130, !llfi_index !3435
   call void @doProfiling(i32 29)
-  store double %128, double* %132, align 8, !llfi_index !3437
-  br label %133, !llfi_index !3438
+  store double %128, double* %132, align 8, !llfi_index !3436
+  br label %133, !llfi_index !3437
 
 ; <label>:133                                     ; preds = %127
-  %134 = load i32* %i, align 4, !llfi_index !3439
+  %134 = load i32* %i, align 4, !llfi_index !3438
   call void @doProfiling(i32 27)
-  %135 = add nsw i32 %134, 1, !llfi_index !3440
+  %135 = add nsw i32 %134, 1, !llfi_index !3439
   call void @doProfiling(i32 8)
-  store i32 %135, i32* %i, align 4, !llfi_index !3441
-  br label %4, !llfi_index !3442
+  store i32 %135, i32* %i, align 4, !llfi_index !3440
+  br label %4, !llfi_index !3441
 
 ; <label>:136                                     ; preds = %4
-  ret void, !llfi_index !3443
+  ret void, !llfi_index !3442
 }
 
 ; Function Attrs: nounwind uwtable
 define double @_Z4dMaxdd(double %dA, double %dB) #0 {
-  %1 = alloca double, align 8, !llfi_index !3444
+  %1 = alloca double, align 8, !llfi_index !3443
   call void @doProfiling(i32 26)
-  %2 = alloca double, align 8, !llfi_index !3445
+  %2 = alloca double, align 8, !llfi_index !3444
   call void @doProfiling(i32 26)
-  store double %dA, double* %1, align 8, !llfi_index !3446
-  store double %dB, double* %2, align 8, !llfi_index !3447
-  %3 = load double* %1, align 8, !llfi_index !3448
+  store double %dA, double* %1, align 8, !llfi_index !3445
+  store double %dB, double* %2, align 8, !llfi_index !3446
+  %3 = load double* %1, align 8, !llfi_index !3447
   call void @doProfiling(i32 27)
-  %4 = load double* %2, align 8, !llfi_index !3449
+  %4 = load double* %2, align 8, !llfi_index !3448
   call void @doProfiling(i32 27)
-  %5 = fcmp ogt double %3, %4, !llfi_index !3450
+  %5 = fcmp ogt double %3, %4, !llfi_index !3449
   call void @doProfiling(i32 47)
-  br i1 %5, label %6, label %8, !llfi_index !3451
+  br i1 %5, label %6, label %8, !llfi_index !3450
 
 ; <label>:6                                       ; preds = %0
-  %7 = load double* %1, align 8, !llfi_index !3452
+  %7 = load double* %1, align 8, !llfi_index !3451
   call void @doProfiling(i32 27)
-  br label %10, !llfi_index !3453
+  br label %10, !llfi_index !3452
 
 ; <label>:8                                       ; preds = %0
-  %9 = load double* %2, align 8, !llfi_index !3454
+  %9 = load double* %2, align 8, !llfi_index !3453
   call void @doProfiling(i32 27)
-  br label %10, !llfi_index !3455
+  br label %10, !llfi_index !3454
 
 ; <label>:10                                      ; preds = %8, %6
-  %11 = phi double [ %7, %6 ], [ %9, %8 ], !llfi_index !3456
+  %11 = phi double [ %7, %6 ], [ %9, %8 ], !llfi_index !3455
   call void @doProfiling(i32 48)
-  ret double %11, !llfi_index !3457
+  ret double %11, !llfi_index !3456
 }
 
 ; Function Attrs: uwtable
 define void @_Z7nrerrorPKc(i8* %error_text) #3 {
-  %1 = alloca i8*, align 8, !llfi_index !3458
+  %1 = alloca i8*, align 8, !llfi_index !3457
   call void @doProfiling(i32 26)
-  store i8* %error_text, i8** %1, align 8, !llfi_index !3459
-  %2 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3460
+  store i8* %error_text, i8** %1, align 8, !llfi_index !3458
+  %2 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3459
   call void @doProfiling(i32 27)
-  %3 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %2, i8* getelementptr inbounds ([37 x i8]* @.str18, i32 0, i32 0)), !llfi_index !3461
+  %3 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %2, i8* getelementptr inbounds ([37 x i8]* @.str18, i32 0, i32 0)), !llfi_index !3460
   call void @doProfiling(i32 49)
-  %4 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3462
+  %4 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3461
   call void @doProfiling(i32 27)
-  %5 = load i8** %1, align 8, !llfi_index !3463
+  %5 = load i8** %1, align 8, !llfi_index !3462
   call void @doProfiling(i32 27)
-  %6 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %4, i8* getelementptr inbounds ([4 x i8]* @.str119, i32 0, i32 0), i8* %5), !llfi_index !3464
+  %6 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %4, i8* getelementptr inbounds ([4 x i8]* @.str119, i32 0, i32 0), i8* %5), !llfi_index !3463
   call void @doProfiling(i32 49)
-  %7 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3465
+  %7 = load %struct._IO_FILE** @stderr, align 8, !llfi_index !3464
   call void @doProfiling(i32 27)
-  %8 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %7, i8* getelementptr inbounds ([29 x i8]* @.str220, i32 0, i32 0)), !llfi_index !3466
+  %8 = call i32 (%struct._IO_FILE*, i8*, ...)* @fprintf(%struct._IO_FILE* %7, i8* getelementptr inbounds ([29 x i8]* @.str220, i32 0, i32 0)), !llfi_index !3465
   call void @doProfiling(i32 49)
   call void @endProfiling()
-  call void @exit(i32 1) #9, !llfi_index !3467
-  unreachable, !llfi_index !3468
+  call void @exit(i32 1) #9, !llfi_index !3466
+  unreachable, !llfi_index !3467
                                                   ; No predecessors!
-  ret void, !llfi_index !3469
+  ret void, !llfi_index !3468
 }
 
 ; Function Attrs: nounwind uwtable
 define i32 @_Z6choldcPPdi(double** %a, i32 %n) #0 {
-  %1 = alloca i32, align 4, !llfi_index !3470
+  %1 = alloca i32, align 4, !llfi_index !3469
   call void @doProfiling(i32 26)
-  %2 = alloca double**, align 8, !llfi_index !3471
+  %2 = alloca double**, align 8, !llfi_index !3470
   call void @doProfiling(i32 26)
-  %3 = alloca i32, align 4, !llfi_index !3472
+  %3 = alloca i32, align 4, !llfi_index !3471
   call void @doProfiling(i32 26)
-  %i = alloca i32, align 4, !llfi_index !3473
+  %i = alloca i32, align 4, !llfi_index !3472
   call void @doProfiling(i32 26)
-  %j = alloca i32, align 4, !llfi_index !3474
+  %j = alloca i32, align 4, !llfi_index !3473
   call void @doProfiling(i32 26)
-  %k = alloca i32, align 4, !llfi_index !3475
+  %k = alloca i32, align 4, !llfi_index !3474
   call void @doProfiling(i32 26)
-  %sum = alloca double, align 8, !llfi_index !3476
+  %sum = alloca double, align 8, !llfi_index !3475
   call void @doProfiling(i32 26)
-  store double** %a, double*** %2, align 8, !llfi_index !3477
-  store i32 %n, i32* %3, align 4, !llfi_index !3478
-  store i32 1, i32* %i, align 4, !llfi_index !3479
-  br label %4, !llfi_index !3480
+  store double** %a, double*** %2, align 8, !llfi_index !3476
+  store i32 %n, i32* %3, align 4, !llfi_index !3477
+  store i32 1, i32* %i, align 4, !llfi_index !3478
+  br label %4, !llfi_index !3479
 
 ; <label>:4                                       ; preds = %98, %0
-  %5 = load i32* %i, align 4, !llfi_index !3481
+  %5 = load i32* %i, align 4, !llfi_index !3480
   call void @doProfiling(i32 27)
-  %6 = load i32* %3, align 4, !llfi_index !3482
+  %6 = load i32* %3, align 4, !llfi_index !3481
   call void @doProfiling(i32 27)
-  %7 = icmp sle i32 %5, %6, !llfi_index !3483
+  %7 = icmp sle i32 %5, %6, !llfi_index !3482
   call void @doProfiling(i32 46)
-  br i1 %7, label %8, label %101, !llfi_index !3484
+  br i1 %7, label %8, label %101, !llfi_index !3483
 
 ; <label>:8                                       ; preds = %4
-  %9 = load i32* %i, align 4, !llfi_index !3485
+  %9 = load i32* %i, align 4, !llfi_index !3484
   call void @doProfiling(i32 27)
-  store i32 %9, i32* %j, align 4, !llfi_index !3486
-  br label %10, !llfi_index !3487
+  store i32 %9, i32* %j, align 4, !llfi_index !3485
+  br label %10, !llfi_index !3486
 
 ; <label>:10                                      ; preds = %94, %8
-  %11 = load i32* %j, align 4, !llfi_index !3488
+  %11 = load i32* %j, align 4, !llfi_index !3487
   call void @doProfiling(i32 27)
-  %12 = load i32* %3, align 4, !llfi_index !3489
+  %12 = load i32* %3, align 4, !llfi_index !3488
   call void @doProfiling(i32 27)
-  %13 = icmp sle i32 %11, %12, !llfi_index !3490
+  %13 = icmp sle i32 %11, %12, !llfi_index !3489
   call void @doProfiling(i32 46)
-  br i1 %13, label %14, label %97, !llfi_index !3491
+  br i1 %13, label %14, label %97, !llfi_index !3490
 
 ; <label>:14                                      ; preds = %10
-  %15 = load i32* %j, align 4, !llfi_index !3492
+  %15 = load i32* %j, align 4, !llfi_index !3491
   call void @doProfiling(i32 27)
-  %16 = sext i32 %15 to i64, !llfi_index !3493
+  %16 = sext i32 %15 to i64, !llfi_index !3492
   call void @doProfiling(i32 35)
-  %17 = load i32* %i, align 4, !llfi_index !3494
+  %17 = load i32* %i, align 4, !llfi_index !3493
   call void @doProfiling(i32 27)
-  %18 = sext i32 %17 to i64, !llfi_index !3495
+  %18 = sext i32 %17 to i64, !llfi_index !3494
   call void @doProfiling(i32 35)
-  %19 = load double*** %2, align 8, !llfi_index !3496
+  %19 = load double*** %2, align 8, !llfi_index !3495
   call void @doProfiling(i32 27)
-  %20 = getelementptr inbounds double** %19, i64 %18, !llfi_index !3497
+  %20 = getelementptr inbounds double** %19, i64 %18, !llfi_index !3496
   call void @doProfiling(i32 29)
-  %21 = load double** %20, align 8, !llfi_index !3498
+  %21 = load double** %20, align 8, !llfi_index !3497
   call void @doProfiling(i32 27)
-  %22 = getelementptr inbounds double* %21, i64 %16, !llfi_index !3499
+  %22 = getelementptr inbounds double* %21, i64 %16, !llfi_index !3498
   call void @doProfiling(i32 29)
-  %23 = load double* %22, align 8, !llfi_index !3500
+  %23 = load double* %22, align 8, !llfi_index !3499
   call void @doProfiling(i32 27)
-  store double %23, double* %sum, align 8, !llfi_index !3501
-  %24 = load i32* %i, align 4, !llfi_index !3502
+  store double %23, double* %sum, align 8, !llfi_index !3500
+  %24 = load i32* %i, align 4, !llfi_index !3501
   call void @doProfiling(i32 27)
-  %25 = sub nsw i32 %24, 1, !llfi_index !3503
+  %25 = sub nsw i32 %24, 1, !llfi_index !3502
   call void @doProfiling(i32 10)
-  store i32 %25, i32* %k, align 4, !llfi_index !3504
-  br label %26, !llfi_index !3505
+  store i32 %25, i32* %k, align 4, !llfi_index !3503
+  br label %26, !llfi_index !3504
 
 ; <label>:26                                      ; preds = %51, %14
-  %27 = load i32* %k, align 4, !llfi_index !3506
+  %27 = load i32* %k, align 4, !llfi_index !3505
   call void @doProfiling(i32 27)
-  %28 = icmp sge i32 %27, 1, !llfi_index !3507
+  %28 = icmp sge i32 %27, 1, !llfi_index !3506
   call void @doProfiling(i32 46)
-  br i1 %28, label %29, label %54, !llfi_index !3508
+  br i1 %28, label %29, label %54, !llfi_index !3507
 
 ; <label>:29                                      ; preds = %26
-  %30 = load i32* %k, align 4, !llfi_index !3509
+  %30 = load i32* %k, align 4, !llfi_index !3508
   call void @doProfiling(i32 27)
-  %31 = sext i32 %30 to i64, !llfi_index !3510
+  %31 = sext i32 %30 to i64, !llfi_index !3509
   call void @doProfiling(i32 35)
-  %32 = load i32* %i, align 4, !llfi_index !3511
+  %32 = load i32* %i, align 4, !llfi_index !3510
   call void @doProfiling(i32 27)
-  %33 = sext i32 %32 to i64, !llfi_index !3512
+  %33 = sext i32 %32 to i64, !llfi_index !3511
   call void @doProfiling(i32 35)
-  %34 = load double*** %2, align 8, !llfi_index !3513
+  %34 = load double*** %2, align 8, !llfi_index !3512
   call void @doProfiling(i32 27)
-  %35 = getelementptr inbounds double** %34, i64 %33, !llfi_index !3514
+  %35 = getelementptr inbounds double** %34, i64 %33, !llfi_index !3513
   call void @doProfiling(i32 29)
-  %36 = load double** %35, align 8, !llfi_index !3515
+  %36 = load double** %35, align 8, !llfi_index !3514
   call void @doProfiling(i32 27)
-  %37 = getelementptr inbounds double* %36, i64 %31, !llfi_index !3516
+  %37 = getelementptr inbounds double* %36, i64 %31, !llfi_index !3515
   call void @doProfiling(i32 29)
-  %38 = load double* %37, align 8, !llfi_index !3517
+  %38 = load double* %37, align 8, !llfi_index !3516
   call void @doProfiling(i32 27)
-  %39 = load i32* %k, align 4, !llfi_index !3518
+  %39 = load i32* %k, align 4, !llfi_index !3517
   call void @doProfiling(i32 27)
-  %40 = sext i32 %39 to i64, !llfi_index !3519
+  %40 = sext i32 %39 to i64, !llfi_index !3518
   call void @doProfiling(i32 35)
-  %41 = load i32* %j, align 4, !llfi_index !3520
+  %41 = load i32* %j, align 4, !llfi_index !3519
   call void @doProfiling(i32 27)
-  %42 = sext i32 %41 to i64, !llfi_index !3521
+  %42 = sext i32 %41 to i64, !llfi_index !3520
   call void @doProfiling(i32 35)
-  %43 = load double*** %2, align 8, !llfi_index !3522
+  %43 = load double*** %2, align 8, !llfi_index !3521
   call void @doProfiling(i32 27)
-  %44 = getelementptr inbounds double** %43, i64 %42, !llfi_index !3523
+  %44 = getelementptr inbounds double** %43, i64 %42, !llfi_index !3522
   call void @doProfiling(i32 29)
-  %45 = load double** %44, align 8, !llfi_index !3524
+  %45 = load double** %44, align 8, !llfi_index !3523
   call void @doProfiling(i32 27)
-  %46 = getelementptr inbounds double* %45, i64 %40, !llfi_index !3525
+  %46 = getelementptr inbounds double* %45, i64 %40, !llfi_index !3524
   call void @doProfiling(i32 29)
-  %47 = load double* %46, align 8, !llfi_index !3526
+  %47 = load double* %46, align 8, !llfi_index !3525
   call void @doProfiling(i32 27)
-  %48 = fmul double %38, %47, !llfi_index !3527
+  %48 = fmul double %38, %47, !llfi_index !3526
   call void @doProfiling(i32 13)
-  %49 = load double* %sum, align 8, !llfi_index !3528
+  %49 = load double* %sum, align 8, !llfi_index !3527
   call void @doProfiling(i32 27)
-  %50 = fsub double %49, %48, !llfi_index !3529
+  %50 = fsub double %49, %48, !llfi_index !3528
   call void @doProfiling(i32 11)
-  store double %50, double* %sum, align 8, !llfi_index !3530
-  br label %51, !llfi_index !3531
+  store double %50, double* %sum, align 8, !llfi_index !3529
+  br label %51, !llfi_index !3530
 
 ; <label>:51                                      ; preds = %29
-  %52 = load i32* %k, align 4, !llfi_index !3532
+  %52 = load i32* %k, align 4, !llfi_index !3531
   call void @doProfiling(i32 27)
-  %53 = add nsw i32 %52, -1, !llfi_index !3533
+  %53 = add nsw i32 %52, -1, !llfi_index !3532
   call void @doProfiling(i32 8)
-  store i32 %53, i32* %k, align 4, !llfi_index !3534
-  br label %26, !llfi_index !3535
+  store i32 %53, i32* %k, align 4, !llfi_index !3533
+  br label %26, !llfi_index !3534
 
 ; <label>:54                                      ; preds = %26
-  %55 = load i32* %i, align 4, !llfi_index !3536
+  %55 = load i32* %i, align 4, !llfi_index !3535
   call void @doProfiling(i32 27)
-  %56 = load i32* %j, align 4, !llfi_index !3537
+  %56 = load i32* %j, align 4, !llfi_index !3536
   call void @doProfiling(i32 27)
-  %57 = icmp eq i32 %55, %56, !llfi_index !3538
+  %57 = icmp eq i32 %55, %56, !llfi_index !3537
   call void @doProfiling(i32 46)
-  br i1 %57, label %58, label %73, !llfi_index !3539
+  br i1 %57, label %58, label %73, !llfi_index !3538
 
 ; <label>:58                                      ; preds = %54
-  %59 = load double* %sum, align 8, !llfi_index !3540
+  %59 = load double* %sum, align 8, !llfi_index !3539
   call void @doProfiling(i32 27)
-  %60 = fcmp ole double %59, 0.000000e+00, !llfi_index !3541
+  %60 = fcmp ole double %59, 0.000000e+00, !llfi_index !3540
   call void @doProfiling(i32 47)
-  br i1 %60, label %61, label %62, !llfi_index !3542
+  br i1 %60, label %61, label %62, !llfi_index !3541
 
 ; <label>:61                                      ; preds = %58
-  store i32 0, i32* %1, !llfi_index !3543
-  br label %131, !llfi_index !3544
+  store i32 0, i32* %1, !llfi_index !3542
+  br label %131, !llfi_index !3543
 
 ; <label>:62                                      ; preds = %58
-  %63 = load double* %sum, align 8, !llfi_index !3545
+  %63 = load double* %sum, align 8, !llfi_index !3544
   call void @doProfiling(i32 27)
-  %64 = call double @sqrt(double %63) #5, !llfi_index !3546
+  %64 = call double @sqrt(double %63) #5, !llfi_index !3545
   call void @doProfiling(i32 49)
-  %65 = load i32* %i, align 4, !llfi_index !3547
+  %65 = load i32* %i, align 4, !llfi_index !3546
   call void @doProfiling(i32 27)
-  %66 = sext i32 %65 to i64, !llfi_index !3548
+  %66 = sext i32 %65 to i64, !llfi_index !3547
   call void @doProfiling(i32 35)
-  %67 = load i32* %i, align 4, !llfi_index !3549
+  %67 = load i32* %i, align 4, !llfi_index !3548
   call void @doProfiling(i32 27)
-  %68 = sext i32 %67 to i64, !llfi_index !3550
+  %68 = sext i32 %67 to i64, !llfi_index !3549
   call void @doProfiling(i32 35)
-  %69 = load double*** %2, align 8, !llfi_index !3551
+  %69 = load double*** %2, align 8, !llfi_index !3550
   call void @doProfiling(i32 27)
-  %70 = getelementptr inbounds double** %69, i64 %68, !llfi_index !3552
+  %70 = getelementptr inbounds double** %69, i64 %68, !llfi_index !3551
   call void @doProfiling(i32 29)
-  %71 = load double** %70, align 8, !llfi_index !3553
+  %71 = load double** %70, align 8, !llfi_index !3552
   call void @doProfiling(i32 27)
-  %72 = getelementptr inbounds double* %71, i64 %66, !llfi_index !3554
+  %72 = getelementptr inbounds double* %71, i64 %66, !llfi_index !3553
   call void @doProfiling(i32 29)
-  store double %64, double* %72, align 8, !llfi_index !3555
-  br label %93, !llfi_index !3556
+  store double %64, double* %72, align 8, !llfi_index !3554
+  br label %93, !llfi_index !3555
 
 ; <label>:73                                      ; preds = %54
-  %74 = load double* %sum, align 8, !llfi_index !3557
+  %74 = load double* %sum, align 8, !llfi_index !3556
   call void @doProfiling(i32 27)
-  %75 = load i32* %i, align 4, !llfi_index !3558
+  %75 = load i32* %i, align 4, !llfi_index !3557
   call void @doProfiling(i32 27)
-  %76 = sext i32 %75 to i64, !llfi_index !3559
+  %76 = sext i32 %75 to i64, !llfi_index !3558
   call void @doProfiling(i32 35)
-  %77 = load i32* %i, align 4, !llfi_index !3560
+  %77 = load i32* %i, align 4, !llfi_index !3559
   call void @doProfiling(i32 27)
-  %78 = sext i32 %77 to i64, !llfi_index !3561
+  %78 = sext i32 %77 to i64, !llfi_index !3560
   call void @doProfiling(i32 35)
-  %79 = load double*** %2, align 8, !llfi_index !3562
+  %79 = load double*** %2, align 8, !llfi_index !3561
   call void @doProfiling(i32 27)
-  %80 = getelementptr inbounds double** %79, i64 %78, !llfi_index !3563
+  %80 = getelementptr inbounds double** %79, i64 %78, !llfi_index !3562
   call void @doProfiling(i32 29)
-  %81 = load double** %80, align 8, !llfi_index !3564
+  %81 = load double** %80, align 8, !llfi_index !3563
   call void @doProfiling(i32 27)
-  %82 = getelementptr inbounds double* %81, i64 %76, !llfi_index !3565
+  %82 = getelementptr inbounds double* %81, i64 %76, !llfi_index !3564
   call void @doProfiling(i32 29)
-  %83 = load double* %82, align 8, !llfi_index !3566
+  %83 = load double* %82, align 8, !llfi_index !3565
   call void @doProfiling(i32 27)
-  %84 = fdiv double %74, %83, !llfi_index !3567
+  %84 = fdiv double %74, %83, !llfi_index !3566
   call void @doProfiling(i32 16)
-  %85 = load i32* %i, align 4, !llfi_index !3568
+  %85 = load i32* %i, align 4, !llfi_index !3567
   call void @doProfiling(i32 27)
-  %86 = sext i32 %85 to i64, !llfi_index !3569
+  %86 = sext i32 %85 to i64, !llfi_index !3568
   call void @doProfiling(i32 35)
-  %87 = load i32* %j, align 4, !llfi_index !3570
+  %87 = load i32* %j, align 4, !llfi_index !3569
   call void @doProfiling(i32 27)
-  %88 = sext i32 %87 to i64, !llfi_index !3571
+  %88 = sext i32 %87 to i64, !llfi_index !3570
   call void @doProfiling(i32 35)
-  %89 = load double*** %2, align 8, !llfi_index !3572
+  %89 = load double*** %2, align 8, !llfi_index !3571
   call void @doProfiling(i32 27)
-  %90 = getelementptr inbounds double** %89, i64 %88, !llfi_index !3573
+  %90 = getelementptr inbounds double** %89, i64 %88, !llfi_index !3572
   call void @doProfiling(i32 29)
-  %91 = load double** %90, align 8, !llfi_index !3574
+  %91 = load double** %90, align 8, !llfi_index !3573
   call void @doProfiling(i32 27)
-  %92 = getelementptr inbounds double* %91, i64 %86, !llfi_index !3575
+  %92 = getelementptr inbounds double* %91, i64 %86, !llfi_index !3574
   call void @doProfiling(i32 29)
-  store double %84, double* %92, align 8, !llfi_index !3576
-  br label %93, !llfi_index !3577
+  store double %84, double* %92, align 8, !llfi_index !3575
+  br label %93, !llfi_index !3576
 
 ; <label>:93                                      ; preds = %73, %62
-  br label %94, !llfi_index !3578
+  br label %94, !llfi_index !3577
 
 ; <label>:94                                      ; preds = %93
-  %95 = load i32* %j, align 4, !llfi_index !3579
+  %95 = load i32* %j, align 4, !llfi_index !3578
   call void @doProfiling(i32 27)
-  %96 = add nsw i32 %95, 1, !llfi_index !3580
+  %96 = add nsw i32 %95, 1, !llfi_index !3579
   call void @doProfiling(i32 8)
-  store i32 %96, i32* %j, align 4, !llfi_index !3581
-  br label %10, !llfi_index !3582
+  store i32 %96, i32* %j, align 4, !llfi_index !3580
+  br label %10, !llfi_index !3581
 
 ; <label>:97                                      ; preds = %10
-  br label %98, !llfi_index !3583
+  br label %98, !llfi_index !3582
 
 ; <label>:98                                      ; preds = %97
-  %99 = load i32* %i, align 4, !llfi_index !3584
+  %99 = load i32* %i, align 4, !llfi_index !3583
   call void @doProfiling(i32 27)
-  %100 = add nsw i32 %99, 1, !llfi_index !3585
+  %100 = add nsw i32 %99, 1, !llfi_index !3584
   call void @doProfiling(i32 8)
-  store i32 %100, i32* %i, align 4, !llfi_index !3586
-  br label %4, !llfi_index !3587
+  store i32 %100, i32* %i, align 4, !llfi_index !3585
+  br label %4, !llfi_index !3586
 
 ; <label>:101                                     ; preds = %4
-  store i32 1, i32* %i, align 4, !llfi_index !3588
-  br label %102, !llfi_index !3589
+  store i32 1, i32* %i, align 4, !llfi_index !3587
+  br label %102, !llfi_index !3588
 
 ; <label>:102                                     ; preds = %127, %101
-  %103 = load i32* %i, align 4, !llfi_index !3590
+  %103 = load i32* %i, align 4, !llfi_index !3589
   call void @doProfiling(i32 27)
-  %104 = load i32* %3, align 4, !llfi_index !3591
+  %104 = load i32* %3, align 4, !llfi_index !3590
   call void @doProfiling(i32 27)
-  %105 = sub nsw i32 %104, 1, !llfi_index !3592
+  %105 = sub nsw i32 %104, 1, !llfi_index !3591
   call void @doProfiling(i32 10)
-  %106 = icmp sle i32 %103, %105, !llfi_index !3593
+  %106 = icmp sle i32 %103, %105, !llfi_index !3592
   call void @doProfiling(i32 46)
-  br i1 %106, label %107, label %130, !llfi_index !3594
+  br i1 %106, label %107, label %130, !llfi_index !3593
 
 ; <label>:107                                     ; preds = %102
-  %108 = load i32* %i, align 4, !llfi_index !3595
+  %108 = load i32* %i, align 4, !llfi_index !3594
   call void @doProfiling(i32 27)
-  %109 = add nsw i32 %108, 1, !llfi_index !3596
+  %109 = add nsw i32 %108, 1, !llfi_index !3595
   call void @doProfiling(i32 8)
-  store i32 %109, i32* %j, align 4, !llfi_index !3597
-  br label %110, !llfi_index !3598
+  store i32 %109, i32* %j, align 4, !llfi_index !3596
+  br label %110, !llfi_index !3597
 
 ; <label>:110                                     ; preds = %123, %107
-  %111 = load i32* %j, align 4, !llfi_index !3599
+  %111 = load i32* %j, align 4, !llfi_index !3598
   call void @doProfiling(i32 27)
-  %112 = load i32* %3, align 4, !llfi_index !3600
+  %112 = load i32* %3, align 4, !llfi_index !3599
   call void @doProfiling(i32 27)
-  %113 = icmp sle i32 %111, %112, !llfi_index !3601
+  %113 = icmp sle i32 %111, %112, !llfi_index !3600
   call void @doProfiling(i32 46)
-  br i1 %113, label %114, label %126, !llfi_index !3602
+  br i1 %113, label %114, label %126, !llfi_index !3601
 
 ; <label>:114                                     ; preds = %110
-  %115 = load i32* %j, align 4, !llfi_index !3603
+  %115 = load i32* %j, align 4, !llfi_index !3602
   call void @doProfiling(i32 27)
-  %116 = sext i32 %115 to i64, !llfi_index !3604
+  %116 = sext i32 %115 to i64, !llfi_index !3603
   call void @doProfiling(i32 35)
-  %117 = load i32* %i, align 4, !llfi_index !3605
+  %117 = load i32* %i, align 4, !llfi_index !3604
   call void @doProfiling(i32 27)
-  %118 = sext i32 %117 to i64, !llfi_index !3606
+  %118 = sext i32 %117 to i64, !llfi_index !3605
   call void @doProfiling(i32 35)
-  %119 = load double*** %2, align 8, !llfi_index !3607
+  %119 = load double*** %2, align 8, !llfi_index !3606
   call void @doProfiling(i32 27)
-  %120 = getelementptr inbounds double** %119, i64 %118, !llfi_index !3608
+  %120 = getelementptr inbounds double** %119, i64 %118, !llfi_index !3607
   call void @doProfiling(i32 29)
-  %121 = load double** %120, align 8, !llfi_index !3609
+  %121 = load double** %120, align 8, !llfi_index !3608
   call void @doProfiling(i32 27)
-  %122 = getelementptr inbounds double* %121, i64 %116, !llfi_index !3610
+  %122 = getelementptr inbounds double* %121, i64 %116, !llfi_index !3609
   call void @doProfiling(i32 29)
-  store double 0.000000e+00, double* %122, align 8, !llfi_index !3611
-  br label %123, !llfi_index !3612
+  store double 0.000000e+00, double* %122, align 8, !llfi_index !3610
+  br label %123, !llfi_index !3611
 
 ; <label>:123                                     ; preds = %114
-  %124 = load i32* %j, align 4, !llfi_index !3613
+  %124 = load i32* %j, align 4, !llfi_index !3612
   call void @doProfiling(i32 27)
-  %125 = add nsw i32 %124, 1, !llfi_index !3614
+  %125 = add nsw i32 %124, 1, !llfi_index !3613
   call void @doProfiling(i32 8)
-  store i32 %125, i32* %j, align 4, !llfi_index !3615
-  br label %110, !llfi_index !3616
+  store i32 %125, i32* %j, align 4, !llfi_index !3614
+  br label %110, !llfi_index !3615
 
 ; <label>:126                                     ; preds = %110
-  br label %127, !llfi_index !3617
+  br label %127, !llfi_index !3616
 
 ; <label>:127                                     ; preds = %126
-  %128 = load i32* %i, align 4, !llfi_index !3618
+  %128 = load i32* %i, align 4, !llfi_index !3617
   call void @doProfiling(i32 27)
-  %129 = add nsw i32 %128, 1, !llfi_index !3619
+  %129 = add nsw i32 %128, 1, !llfi_index !3618
   call void @doProfiling(i32 8)
-  store i32 %129, i32* %i, align 4, !llfi_index !3620
-  br label %102, !llfi_index !3621
+  store i32 %129, i32* %i, align 4, !llfi_index !3619
+  br label %102, !llfi_index !3620
 
 ; <label>:130                                     ; preds = %102
-  store i32 1, i32* %1, !llfi_index !3622
-  br label %131, !llfi_index !3623
+  store i32 1, i32* %1, !llfi_index !3621
+  br label %131, !llfi_index !3622
 
 ; <label>:131                                     ; preds = %130, %61
-  %132 = load i32* %1, !llfi_index !3624
+  %132 = load i32* %1, !llfi_index !3623
   call void @doProfiling(i32 27)
-  ret i32 %132, !llfi_index !3625
+  ret i32 %132, !llfi_index !3624
 }
 
 ; Function Attrs: uwtable
 define void @_Z6gaussjPPdiS0_i(double** %a, i32 %n, double** %b, i32 %m) #3 {
-  %1 = alloca double**, align 8, !llfi_index !3626
+  %1 = alloca double**, align 8, !llfi_index !3625
   call void @doProfiling(i32 26)
-  %2 = alloca i32, align 4, !llfi_index !3627
+  %2 = alloca i32, align 4, !llfi_index !3626
   call void @doProfiling(i32 26)
-  %3 = alloca double**, align 8, !llfi_index !3628
+  %3 = alloca double**, align 8, !llfi_index !3627
   call void @doProfiling(i32 26)
-  %4 = alloca i32, align 4, !llfi_index !3629
+  %4 = alloca i32, align 4, !llfi_index !3628
   call void @doProfiling(i32 26)
-  %indxc = alloca i32*, align 8, !llfi_index !3630
+  %indxc = alloca i32*, align 8, !llfi_index !3629
   call void @doProfiling(i32 26)
-  %indxr = alloca i32*, align 8, !llfi_index !3631
+  %indxr = alloca i32*, align 8, !llfi_index !3630
   call void @doProfiling(i32 26)
-  %ipiv = alloca i32*, align 8, !llfi_index !3632
+  %ipiv = alloca i32*, align 8, !llfi_index !3631
   call void @doProfiling(i32 26)
-  %i = alloca i32, align 4, !llfi_index !3633
+  %i = alloca i32, align 4, !llfi_index !3632
   call void @doProfiling(i32 26)
-  %icol = alloca i32, align 4, !llfi_index !3634
+  %icol = alloca i32, align 4, !llfi_index !3633
   call void @doProfiling(i32 26)
-  %irow = alloca i32, align 4, !llfi_index !3635
+  %irow = alloca i32, align 4, !llfi_index !3634
   call void @doProfiling(i32 26)
-  %j = alloca i32, align 4, !llfi_index !3636
+  %j = alloca i32, align 4, !llfi_index !3635
   call void @doProfiling(i32 26)
-  %k = alloca i32, align 4, !llfi_index !3637
+  %k = alloca i32, align 4, !llfi_index !3636
   call void @doProfiling(i32 26)
-  %l = alloca i32, align 4, !llfi_index !3638
+  %l = alloca i32, align 4, !llfi_index !3637
   call void @doProfiling(i32 26)
-  %ll = alloca i32, align 4, !llfi_index !3639
+  %ll = alloca i32, align 4, !llfi_index !3638
   call void @doProfiling(i32 26)
-  %big = alloca double, align 8, !llfi_index !3640
+  %big = alloca double, align 8, !llfi_index !3639
   call void @doProfiling(i32 26)
-  %dum = alloca double, align 8, !llfi_index !3641
+  %dum = alloca double, align 8, !llfi_index !3640
   call void @doProfiling(i32 26)
-  %pivinv = alloca double, align 8, !llfi_index !3642
+  %pivinv = alloca double, align 8, !llfi_index !3641
   call void @doProfiling(i32 26)
-  %temp = alloca double, align 8, !llfi_index !3643
+  %temp = alloca double, align 8, !llfi_index !3642
   call void @doProfiling(i32 26)
-  store double** %a, double*** %1, align 8, !llfi_index !3644
-  store i32 %n, i32* %2, align 4, !llfi_index !3645
-  store double** %b, double*** %3, align 8, !llfi_index !3646
-  store i32 %m, i32* %4, align 4, !llfi_index !3647
-  %5 = load i32* %2, align 4, !llfi_index !3648
+  store double** %a, double*** %1, align 8, !llfi_index !3643
+  store i32 %n, i32* %2, align 4, !llfi_index !3644
+  store double** %b, double*** %3, align 8, !llfi_index !3645
+  store i32 %m, i32* %4, align 4, !llfi_index !3646
+  %5 = load i32* %2, align 4, !llfi_index !3647
   call void @doProfiling(i32 27)
-  %6 = sext i32 %5 to i64, !llfi_index !3649
+  %6 = sext i32 %5 to i64, !llfi_index !3648
   call void @doProfiling(i32 35)
-  %7 = call i32* @_Z7ivectorll(i64 1, i64 %6), !llfi_index !3650
+  %7 = call i32* @_Z7ivectorll(i64 1, i64 %6), !llfi_index !3649
   call void @doProfiling(i32 49)
-  store i32* %7, i32** %indxc, align 8, !llfi_index !3651
-  %8 = load i32* %2, align 4, !llfi_index !3652
+  store i32* %7, i32** %indxc, align 8, !llfi_index !3650
+  %8 = load i32* %2, align 4, !llfi_index !3651
   call void @doProfiling(i32 27)
-  %9 = sext i32 %8 to i64, !llfi_index !3653
+  %9 = sext i32 %8 to i64, !llfi_index !3652
   call void @doProfiling(i32 35)
-  %10 = call i32* @_Z7ivectorll(i64 1, i64 %9), !llfi_index !3654
+  %10 = call i32* @_Z7ivectorll(i64 1, i64 %9), !llfi_index !3653
   call void @doProfiling(i32 49)
-  store i32* %10, i32** %indxr, align 8, !llfi_index !3655
-  %11 = load i32* %2, align 4, !llfi_index !3656
+  store i32* %10, i32** %indxr, align 8, !llfi_index !3654
+  %11 = load i32* %2, align 4, !llfi_index !3655
   call void @doProfiling(i32 27)
-  %12 = sext i32 %11 to i64, !llfi_index !3657
+  %12 = sext i32 %11 to i64, !llfi_index !3656
   call void @doProfiling(i32 35)
-  %13 = call i32* @_Z7ivectorll(i64 1, i64 %12), !llfi_index !3658
+  %13 = call i32* @_Z7ivectorll(i64 1, i64 %12), !llfi_index !3657
   call void @doProfiling(i32 49)
-  store i32* %13, i32** %ipiv, align 8, !llfi_index !3659
-  store i32 -1, i32* %icol, align 4, !llfi_index !3660
-  store i32 -1, i32* %irow, align 4, !llfi_index !3661
-  store i32 1, i32* %j, align 4, !llfi_index !3662
-  br label %14, !llfi_index !3663
+  store i32* %13, i32** %ipiv, align 8, !llfi_index !3658
+  store i32 -1, i32* %icol, align 4, !llfi_index !3659
+  store i32 -1, i32* %irow, align 4, !llfi_index !3660
+  store i32 1, i32* %j, align 4, !llfi_index !3661
+  br label %14, !llfi_index !3662
 
 ; <label>:14                                      ; preds = %23, %0
-  %15 = load i32* %j, align 4, !llfi_index !3664
+  %15 = load i32* %j, align 4, !llfi_index !3663
   call void @doProfiling(i32 27)
-  %16 = load i32* %2, align 4, !llfi_index !3665
+  %16 = load i32* %2, align 4, !llfi_index !3664
   call void @doProfiling(i32 27)
-  %17 = icmp sle i32 %15, %16, !llfi_index !3666
+  %17 = icmp sle i32 %15, %16, !llfi_index !3665
   call void @doProfiling(i32 46)
-  br i1 %17, label %18, label %26, !llfi_index !3667
+  br i1 %17, label %18, label %26, !llfi_index !3666
 
 ; <label>:18                                      ; preds = %14
-  %19 = load i32* %j, align 4, !llfi_index !3668
+  %19 = load i32* %j, align 4, !llfi_index !3667
   call void @doProfiling(i32 27)
-  %20 = sext i32 %19 to i64, !llfi_index !3669
+  %20 = sext i32 %19 to i64, !llfi_index !3668
   call void @doProfiling(i32 35)
-  %21 = load i32** %ipiv, align 8, !llfi_index !3670
+  %21 = load i32** %ipiv, align 8, !llfi_index !3669
   call void @doProfiling(i32 27)
-  %22 = getelementptr inbounds i32* %21, i64 %20, !llfi_index !3671
+  %22 = getelementptr inbounds i32* %21, i64 %20, !llfi_index !3670
   call void @doProfiling(i32 29)
-  store i32 0, i32* %22, align 4, !llfi_index !3672
-  br label %23, !llfi_index !3673
+  store i32 0, i32* %22, align 4, !llfi_index !3671
+  br label %23, !llfi_index !3672
 
 ; <label>:23                                      ; preds = %18
-  %24 = load i32* %j, align 4, !llfi_index !3674
+  %24 = load i32* %j, align 4, !llfi_index !3673
   call void @doProfiling(i32 27)
-  %25 = add nsw i32 %24, 1, !llfi_index !3675
+  %25 = add nsw i32 %24, 1, !llfi_index !3674
   call void @doProfiling(i32 8)
-  store i32 %25, i32* %j, align 4, !llfi_index !3676
-  br label %14, !llfi_index !3677
+  store i32 %25, i32* %j, align 4, !llfi_index !3675
+  br label %14, !llfi_index !3676
 
 ; <label>:26                                      ; preds = %14
-  store i32 1, i32* %i, align 4, !llfi_index !3678
-  br label %27, !llfi_index !3679
+  store i32 1, i32* %i, align 4, !llfi_index !3677
+  br label %27, !llfi_index !3678
 
 ; <label>:27                                      ; preds = %371, %26
-  %28 = load i32* %i, align 4, !llfi_index !3680
+  %28 = load i32* %i, align 4, !llfi_index !3679
   call void @doProfiling(i32 27)
-  %29 = load i32* %2, align 4, !llfi_index !3681
+  %29 = load i32* %2, align 4, !llfi_index !3680
   call void @doProfiling(i32 27)
-  %30 = icmp sle i32 %28, %29, !llfi_index !3682
+  %30 = icmp sle i32 %28, %29, !llfi_index !3681
   call void @doProfiling(i32 46)
-  br i1 %30, label %31, label %374, !llfi_index !3683
+  br i1 %30, label %31, label %374, !llfi_index !3682
 
 ; <label>:31                                      ; preds = %27
-  store double 0.000000e+00, double* %big, align 8, !llfi_index !3684
-  store i32 1, i32* %j, align 4, !llfi_index !3685
-  br label %32, !llfi_index !3686
+  store double 0.000000e+00, double* %big, align 8, !llfi_index !3683
+  store i32 1, i32* %j, align 4, !llfi_index !3684
+  br label %32, !llfi_index !3685
 
 ; <label>:32                                      ; preds = %97, %31
-  %33 = load i32* %j, align 4, !llfi_index !3687
+  %33 = load i32* %j, align 4, !llfi_index !3686
   call void @doProfiling(i32 27)
-  %34 = load i32* %2, align 4, !llfi_index !3688
+  %34 = load i32* %2, align 4, !llfi_index !3687
   call void @doProfiling(i32 27)
-  %35 = icmp sle i32 %33, %34, !llfi_index !3689
+  %35 = icmp sle i32 %33, %34, !llfi_index !3688
   call void @doProfiling(i32 46)
-  br i1 %35, label %36, label %100, !llfi_index !3690
+  br i1 %35, label %36, label %100, !llfi_index !3689
 
 ; <label>:36                                      ; preds = %32
-  %37 = load i32* %j, align 4, !llfi_index !3691
+  %37 = load i32* %j, align 4, !llfi_index !3690
   call void @doProfiling(i32 27)
-  %38 = sext i32 %37 to i64, !llfi_index !3692
+  %38 = sext i32 %37 to i64, !llfi_index !3691
   call void @doProfiling(i32 35)
-  %39 = load i32** %ipiv, align 8, !llfi_index !3693
+  %39 = load i32** %ipiv, align 8, !llfi_index !3692
   call void @doProfiling(i32 27)
-  %40 = getelementptr inbounds i32* %39, i64 %38, !llfi_index !3694
+  %40 = getelementptr inbounds i32* %39, i64 %38, !llfi_index !3693
   call void @doProfiling(i32 29)
-  %41 = load i32* %40, align 4, !llfi_index !3695
+  %41 = load i32* %40, align 4, !llfi_index !3694
   call void @doProfiling(i32 27)
-  %42 = icmp ne i32 %41, 1, !llfi_index !3696
+  %42 = icmp ne i32 %41, 1, !llfi_index !3695
   call void @doProfiling(i32 46)
-  br i1 %42, label %43, label %96, !llfi_index !3697
+  br i1 %42, label %43, label %96, !llfi_index !3696
 
 ; <label>:43                                      ; preds = %36
-  store i32 1, i32* %k, align 4, !llfi_index !3698
-  br label %44, !llfi_index !3699
+  store i32 1, i32* %k, align 4, !llfi_index !3697
+  br label %44, !llfi_index !3698
 
 ; <label>:44                                      ; preds = %92, %43
-  %45 = load i32* %k, align 4, !llfi_index !3700
+  %45 = load i32* %k, align 4, !llfi_index !3699
   call void @doProfiling(i32 27)
-  %46 = load i32* %2, align 4, !llfi_index !3701
+  %46 = load i32* %2, align 4, !llfi_index !3700
   call void @doProfiling(i32 27)
-  %47 = icmp sle i32 %45, %46, !llfi_index !3702
+  %47 = icmp sle i32 %45, %46, !llfi_index !3701
   call void @doProfiling(i32 46)
-  br i1 %47, label %48, label %95, !llfi_index !3703
+  br i1 %47, label %48, label %95, !llfi_index !3702
 
 ; <label>:48                                      ; preds = %44
-  %49 = load i32* %k, align 4, !llfi_index !3704
+  %49 = load i32* %k, align 4, !llfi_index !3703
   call void @doProfiling(i32 27)
-  %50 = sext i32 %49 to i64, !llfi_index !3705
+  %50 = sext i32 %49 to i64, !llfi_index !3704
   call void @doProfiling(i32 35)
-  %51 = load i32** %ipiv, align 8, !llfi_index !3706
+  %51 = load i32** %ipiv, align 8, !llfi_index !3705
   call void @doProfiling(i32 27)
-  %52 = getelementptr inbounds i32* %51, i64 %50, !llfi_index !3707
+  %52 = getelementptr inbounds i32* %51, i64 %50, !llfi_index !3706
   call void @doProfiling(i32 29)
-  %53 = load i32* %52, align 4, !llfi_index !3708
+  %53 = load i32* %52, align 4, !llfi_index !3707
   call void @doProfiling(i32 27)
-  %54 = icmp eq i32 %53, 0, !llfi_index !3709
+  %54 = icmp eq i32 %53, 0, !llfi_index !3708
   call void @doProfiling(i32 46)
-  br i1 %54, label %55, label %82, !llfi_index !3710
+  br i1 %54, label %55, label %82, !llfi_index !3709
 
 ; <label>:55                                      ; preds = %48
-  %56 = load i32* %k, align 4, !llfi_index !3711
+  %56 = load i32* %k, align 4, !llfi_index !3710
   call void @doProfiling(i32 27)
-  %57 = sext i32 %56 to i64, !llfi_index !3712
+  %57 = sext i32 %56 to i64, !llfi_index !3711
   call void @doProfiling(i32 35)
-  %58 = load i32* %j, align 4, !llfi_index !3713
+  %58 = load i32* %j, align 4, !llfi_index !3712
   call void @doProfiling(i32 27)
-  %59 = sext i32 %58 to i64, !llfi_index !3714
+  %59 = sext i32 %58 to i64, !llfi_index !3713
   call void @doProfiling(i32 35)
-  %60 = load double*** %1, align 8, !llfi_index !3715
+  %60 = load double*** %1, align 8, !llfi_index !3714
   call void @doProfiling(i32 27)
-  %61 = getelementptr inbounds double** %60, i64 %59, !llfi_index !3716
+  %61 = getelementptr inbounds double** %60, i64 %59, !llfi_index !3715
   call void @doProfiling(i32 29)
-  %62 = load double** %61, align 8, !llfi_index !3717
+  %62 = load double** %61, align 8, !llfi_index !3716
   call void @doProfiling(i32 27)
-  %63 = getelementptr inbounds double* %62, i64 %57, !llfi_index !3718
+  %63 = getelementptr inbounds double* %62, i64 %57, !llfi_index !3717
   call void @doProfiling(i32 29)
-  %64 = load double* %63, align 8, !llfi_index !3719
+  %64 = load double* %63, align 8, !llfi_index !3718
   call void @doProfiling(i32 27)
-  %65 = call double @fabs(double %64) #8, !llfi_index !3720
+  %65 = call double @fabs(double %64) #8, !llfi_index !3719
   call void @doProfiling(i32 49)
-  %66 = load double* %big, align 8, !llfi_index !3721
+  %66 = load double* %big, align 8, !llfi_index !3720
   call void @doProfiling(i32 27)
-  %67 = fcmp oge double %65, %66, !llfi_index !3722
+  %67 = fcmp oge double %65, %66, !llfi_index !3721
   call void @doProfiling(i32 47)
-  br i1 %67, label %68, label %81, !llfi_index !3723
+  br i1 %67, label %68, label %81, !llfi_index !3722
 
 ; <label>:68                                      ; preds = %55
-  %69 = load i32* %k, align 4, !llfi_index !3724
+  %69 = load i32* %k, align 4, !llfi_index !3723
   call void @doProfiling(i32 27)
-  %70 = sext i32 %69 to i64, !llfi_index !3725
+  %70 = sext i32 %69 to i64, !llfi_index !3724
   call void @doProfiling(i32 35)
-  %71 = load i32* %j, align 4, !llfi_index !3726
+  %71 = load i32* %j, align 4, !llfi_index !3725
   call void @doProfiling(i32 27)
-  %72 = sext i32 %71 to i64, !llfi_index !3727
+  %72 = sext i32 %71 to i64, !llfi_index !3726
   call void @doProfiling(i32 35)
-  %73 = load double*** %1, align 8, !llfi_index !3728
+  %73 = load double*** %1, align 8, !llfi_index !3727
   call void @doProfiling(i32 27)
-  %74 = getelementptr inbounds double** %73, i64 %72, !llfi_index !3729
+  %74 = getelementptr inbounds double** %73, i64 %72, !llfi_index !3728
   call void @doProfiling(i32 29)
-  %75 = load double** %74, align 8, !llfi_index !3730
+  %75 = load double** %74, align 8, !llfi_index !3729
   call void @doProfiling(i32 27)
-  %76 = getelementptr inbounds double* %75, i64 %70, !llfi_index !3731
+  %76 = getelementptr inbounds double* %75, i64 %70, !llfi_index !3730
   call void @doProfiling(i32 29)
-  %77 = load double* %76, align 8, !llfi_index !3732
+  %77 = load double* %76, align 8, !llfi_index !3731
   call void @doProfiling(i32 27)
-  %78 = call double @fabs(double %77) #8, !llfi_index !3733
+  %78 = call double @fabs(double %77) #8, !llfi_index !3732
   call void @doProfiling(i32 49)
-  store double %78, double* %big, align 8, !llfi_index !3734
-  %79 = load i32* %j, align 4, !llfi_index !3735
+  store double %78, double* %big, align 8, !llfi_index !3733
+  %79 = load i32* %j, align 4, !llfi_index !3734
   call void @doProfiling(i32 27)
-  store i32 %79, i32* %irow, align 4, !llfi_index !3736
-  %80 = load i32* %k, align 4, !llfi_index !3737
+  store i32 %79, i32* %irow, align 4, !llfi_index !3735
+  %80 = load i32* %k, align 4, !llfi_index !3736
   call void @doProfiling(i32 27)
-  store i32 %80, i32* %icol, align 4, !llfi_index !3738
-  br label %81, !llfi_index !3739
+  store i32 %80, i32* %icol, align 4, !llfi_index !3737
+  br label %81, !llfi_index !3738
 
 ; <label>:81                                      ; preds = %68, %55
-  br label %91, !llfi_index !3740
+  br label %91, !llfi_index !3739
 
 ; <label>:82                                      ; preds = %48
-  %83 = load i32* %k, align 4, !llfi_index !3741
+  %83 = load i32* %k, align 4, !llfi_index !3740
   call void @doProfiling(i32 27)
-  %84 = sext i32 %83 to i64, !llfi_index !3742
+  %84 = sext i32 %83 to i64, !llfi_index !3741
   call void @doProfiling(i32 35)
-  %85 = load i32** %ipiv, align 8, !llfi_index !3743
+  %85 = load i32** %ipiv, align 8, !llfi_index !3742
   call void @doProfiling(i32 27)
-  %86 = getelementptr inbounds i32* %85, i64 %84, !llfi_index !3744
+  %86 = getelementptr inbounds i32* %85, i64 %84, !llfi_index !3743
   call void @doProfiling(i32 29)
-  %87 = load i32* %86, align 4, !llfi_index !3745
+  %87 = load i32* %86, align 4, !llfi_index !3744
   call void @doProfiling(i32 27)
-  %88 = icmp sgt i32 %87, 1, !llfi_index !3746
+  %88 = icmp sgt i32 %87, 1, !llfi_index !3745
   call void @doProfiling(i32 46)
-  br i1 %88, label %89, label %90, !llfi_index !3747
+  br i1 %88, label %89, label %90, !llfi_index !3746
 
 ; <label>:89                                      ; preds = %82
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([26 x i8]* @.str321, i32 0, i32 0)), !llfi_index !3748
-  br label %90, !llfi_index !3749
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([26 x i8]* @.str321, i32 0, i32 0)), !llfi_index !3747
+  br label %90, !llfi_index !3748
 
 ; <label>:90                                      ; preds = %89, %82
-  br label %91, !llfi_index !3750
+  br label %91, !llfi_index !3749
 
 ; <label>:91                                      ; preds = %90, %81
-  br label %92, !llfi_index !3751
+  br label %92, !llfi_index !3750
 
 ; <label>:92                                      ; preds = %91
-  %93 = load i32* %k, align 4, !llfi_index !3752
+  %93 = load i32* %k, align 4, !llfi_index !3751
   call void @doProfiling(i32 27)
-  %94 = add nsw i32 %93, 1, !llfi_index !3753
+  %94 = add nsw i32 %93, 1, !llfi_index !3752
   call void @doProfiling(i32 8)
-  store i32 %94, i32* %k, align 4, !llfi_index !3754
-  br label %44, !llfi_index !3755
+  store i32 %94, i32* %k, align 4, !llfi_index !3753
+  br label %44, !llfi_index !3754
 
 ; <label>:95                                      ; preds = %44
-  br label %96, !llfi_index !3756
+  br label %96, !llfi_index !3755
 
 ; <label>:96                                      ; preds = %95, %36
-  br label %97, !llfi_index !3757
+  br label %97, !llfi_index !3756
 
 ; <label>:97                                      ; preds = %96
-  %98 = load i32* %j, align 4, !llfi_index !3758
+  %98 = load i32* %j, align 4, !llfi_index !3757
   call void @doProfiling(i32 27)
-  %99 = add nsw i32 %98, 1, !llfi_index !3759
+  %99 = add nsw i32 %98, 1, !llfi_index !3758
   call void @doProfiling(i32 8)
-  store i32 %99, i32* %j, align 4, !llfi_index !3760
-  br label %32, !llfi_index !3761
+  store i32 %99, i32* %j, align 4, !llfi_index !3759
+  br label %32, !llfi_index !3760
 
 ; <label>:100                                     ; preds = %32
-  %101 = load i32* %icol, align 4, !llfi_index !3762
+  %101 = load i32* %icol, align 4, !llfi_index !3761
   call void @doProfiling(i32 27)
-  %102 = sext i32 %101 to i64, !llfi_index !3763
+  %102 = sext i32 %101 to i64, !llfi_index !3762
   call void @doProfiling(i32 35)
-  %103 = load i32** %ipiv, align 8, !llfi_index !3764
+  %103 = load i32** %ipiv, align 8, !llfi_index !3763
   call void @doProfiling(i32 27)
-  %104 = getelementptr inbounds i32* %103, i64 %102, !llfi_index !3765
+  %104 = getelementptr inbounds i32* %103, i64 %102, !llfi_index !3764
   call void @doProfiling(i32 29)
-  %105 = load i32* %104, align 4, !llfi_index !3766
+  %105 = load i32* %104, align 4, !llfi_index !3765
   call void @doProfiling(i32 27)
-  %106 = add nsw i32 %105, 1, !llfi_index !3767
+  %106 = add nsw i32 %105, 1, !llfi_index !3766
   call void @doProfiling(i32 8)
-  store i32 %106, i32* %104, align 4, !llfi_index !3768
-  %107 = load i32* %irow, align 4, !llfi_index !3769
+  store i32 %106, i32* %104, align 4, !llfi_index !3767
+  %107 = load i32* %irow, align 4, !llfi_index !3768
   call void @doProfiling(i32 27)
-  %108 = load i32* %icol, align 4, !llfi_index !3770
+  %108 = load i32* %icol, align 4, !llfi_index !3769
   call void @doProfiling(i32 27)
-  %109 = icmp ne i32 %107, %108, !llfi_index !3771
+  %109 = icmp ne i32 %107, %108, !llfi_index !3770
   call void @doProfiling(i32 46)
-  br i1 %109, label %110, label %199, !llfi_index !3772
+  br i1 %109, label %110, label %199, !llfi_index !3771
 
 ; <label>:110                                     ; preds = %100
-  store i32 1, i32* %l, align 4, !llfi_index !3773
-  br label %111, !llfi_index !3774
+  store i32 1, i32* %l, align 4, !llfi_index !3772
+  br label %111, !llfi_index !3773
 
 ; <label>:111                                     ; preds = %151, %110
-  %112 = load i32* %l, align 4, !llfi_index !3775
+  %112 = load i32* %l, align 4, !llfi_index !3774
   call void @doProfiling(i32 27)
-  %113 = load i32* %2, align 4, !llfi_index !3776
+  %113 = load i32* %2, align 4, !llfi_index !3775
   call void @doProfiling(i32 27)
-  %114 = icmp sle i32 %112, %113, !llfi_index !3777
+  %114 = icmp sle i32 %112, %113, !llfi_index !3776
   call void @doProfiling(i32 46)
-  br i1 %114, label %115, label %154, !llfi_index !3778
+  br i1 %114, label %115, label %154, !llfi_index !3777
 
 ; <label>:115                                     ; preds = %111
-  %116 = load i32* %l, align 4, !llfi_index !3779
+  %116 = load i32* %l, align 4, !llfi_index !3778
   call void @doProfiling(i32 27)
-  %117 = sext i32 %116 to i64, !llfi_index !3780
+  %117 = sext i32 %116 to i64, !llfi_index !3779
   call void @doProfiling(i32 35)
-  %118 = load i32* %irow, align 4, !llfi_index !3781
+  %118 = load i32* %irow, align 4, !llfi_index !3780
   call void @doProfiling(i32 27)
-  %119 = sext i32 %118 to i64, !llfi_index !3782
+  %119 = sext i32 %118 to i64, !llfi_index !3781
   call void @doProfiling(i32 35)
-  %120 = load double*** %1, align 8, !llfi_index !3783
+  %120 = load double*** %1, align 8, !llfi_index !3782
   call void @doProfiling(i32 27)
-  %121 = getelementptr inbounds double** %120, i64 %119, !llfi_index !3784
+  %121 = getelementptr inbounds double** %120, i64 %119, !llfi_index !3783
   call void @doProfiling(i32 29)
-  %122 = load double** %121, align 8, !llfi_index !3785
+  %122 = load double** %121, align 8, !llfi_index !3784
   call void @doProfiling(i32 27)
-  %123 = getelementptr inbounds double* %122, i64 %117, !llfi_index !3786
+  %123 = getelementptr inbounds double* %122, i64 %117, !llfi_index !3785
   call void @doProfiling(i32 29)
-  %124 = load double* %123, align 8, !llfi_index !3787
+  %124 = load double* %123, align 8, !llfi_index !3786
   call void @doProfiling(i32 27)
-  store double %124, double* %temp, align 8, !llfi_index !3788
-  %125 = load i32* %l, align 4, !llfi_index !3789
+  store double %124, double* %temp, align 8, !llfi_index !3787
+  %125 = load i32* %l, align 4, !llfi_index !3788
   call void @doProfiling(i32 27)
-  %126 = sext i32 %125 to i64, !llfi_index !3790
+  %126 = sext i32 %125 to i64, !llfi_index !3789
   call void @doProfiling(i32 35)
-  %127 = load i32* %icol, align 4, !llfi_index !3791
+  %127 = load i32* %icol, align 4, !llfi_index !3790
   call void @doProfiling(i32 27)
-  %128 = sext i32 %127 to i64, !llfi_index !3792
+  %128 = sext i32 %127 to i64, !llfi_index !3791
   call void @doProfiling(i32 35)
-  %129 = load double*** %1, align 8, !llfi_index !3793
+  %129 = load double*** %1, align 8, !llfi_index !3792
   call void @doProfiling(i32 27)
-  %130 = getelementptr inbounds double** %129, i64 %128, !llfi_index !3794
+  %130 = getelementptr inbounds double** %129, i64 %128, !llfi_index !3793
   call void @doProfiling(i32 29)
-  %131 = load double** %130, align 8, !llfi_index !3795
+  %131 = load double** %130, align 8, !llfi_index !3794
   call void @doProfiling(i32 27)
-  %132 = getelementptr inbounds double* %131, i64 %126, !llfi_index !3796
+  %132 = getelementptr inbounds double* %131, i64 %126, !llfi_index !3795
   call void @doProfiling(i32 29)
-  %133 = load double* %132, align 8, !llfi_index !3797
+  %133 = load double* %132, align 8, !llfi_index !3796
   call void @doProfiling(i32 27)
-  %134 = load i32* %l, align 4, !llfi_index !3798
+  %134 = load i32* %l, align 4, !llfi_index !3797
   call void @doProfiling(i32 27)
-  %135 = sext i32 %134 to i64, !llfi_index !3799
+  %135 = sext i32 %134 to i64, !llfi_index !3798
   call void @doProfiling(i32 35)
-  %136 = load i32* %irow, align 4, !llfi_index !3800
+  %136 = load i32* %irow, align 4, !llfi_index !3799
   call void @doProfiling(i32 27)
-  %137 = sext i32 %136 to i64, !llfi_index !3801
+  %137 = sext i32 %136 to i64, !llfi_index !3800
   call void @doProfiling(i32 35)
-  %138 = load double*** %1, align 8, !llfi_index !3802
+  %138 = load double*** %1, align 8, !llfi_index !3801
   call void @doProfiling(i32 27)
-  %139 = getelementptr inbounds double** %138, i64 %137, !llfi_index !3803
+  %139 = getelementptr inbounds double** %138, i64 %137, !llfi_index !3802
   call void @doProfiling(i32 29)
-  %140 = load double** %139, align 8, !llfi_index !3804
+  %140 = load double** %139, align 8, !llfi_index !3803
   call void @doProfiling(i32 27)
-  %141 = getelementptr inbounds double* %140, i64 %135, !llfi_index !3805
+  %141 = getelementptr inbounds double* %140, i64 %135, !llfi_index !3804
   call void @doProfiling(i32 29)
-  store double %133, double* %141, align 8, !llfi_index !3806
-  %142 = load double* %temp, align 8, !llfi_index !3807
+  store double %133, double* %141, align 8, !llfi_index !3805
+  %142 = load double* %temp, align 8, !llfi_index !3806
   call void @doProfiling(i32 27)
-  %143 = load i32* %l, align 4, !llfi_index !3808
+  %143 = load i32* %l, align 4, !llfi_index !3807
   call void @doProfiling(i32 27)
-  %144 = sext i32 %143 to i64, !llfi_index !3809
+  %144 = sext i32 %143 to i64, !llfi_index !3808
   call void @doProfiling(i32 35)
-  %145 = load i32* %icol, align 4, !llfi_index !3810
+  %145 = load i32* %icol, align 4, !llfi_index !3809
   call void @doProfiling(i32 27)
-  %146 = sext i32 %145 to i64, !llfi_index !3811
+  %146 = sext i32 %145 to i64, !llfi_index !3810
   call void @doProfiling(i32 35)
-  %147 = load double*** %1, align 8, !llfi_index !3812
+  %147 = load double*** %1, align 8, !llfi_index !3811
   call void @doProfiling(i32 27)
-  %148 = getelementptr inbounds double** %147, i64 %146, !llfi_index !3813
+  %148 = getelementptr inbounds double** %147, i64 %146, !llfi_index !3812
   call void @doProfiling(i32 29)
-  %149 = load double** %148, align 8, !llfi_index !3814
+  %149 = load double** %148, align 8, !llfi_index !3813
   call void @doProfiling(i32 27)
-  %150 = getelementptr inbounds double* %149, i64 %144, !llfi_index !3815
+  %150 = getelementptr inbounds double* %149, i64 %144, !llfi_index !3814
   call void @doProfiling(i32 29)
-  store double %142, double* %150, align 8, !llfi_index !3816
-  br label %151, !llfi_index !3817
+  store double %142, double* %150, align 8, !llfi_index !3815
+  br label %151, !llfi_index !3816
 
 ; <label>:151                                     ; preds = %115
-  %152 = load i32* %l, align 4, !llfi_index !3818
+  %152 = load i32* %l, align 4, !llfi_index !3817
   call void @doProfiling(i32 27)
-  %153 = add nsw i32 %152, 1, !llfi_index !3819
+  %153 = add nsw i32 %152, 1, !llfi_index !3818
   call void @doProfiling(i32 8)
-  store i32 %153, i32* %l, align 4, !llfi_index !3820
-  br label %111, !llfi_index !3821
+  store i32 %153, i32* %l, align 4, !llfi_index !3819
+  br label %111, !llfi_index !3820
 
 ; <label>:154                                     ; preds = %111
-  store i32 1, i32* %l, align 4, !llfi_index !3822
-  br label %155, !llfi_index !3823
+  store i32 1, i32* %l, align 4, !llfi_index !3821
+  br label %155, !llfi_index !3822
 
 ; <label>:155                                     ; preds = %195, %154
-  %156 = load i32* %l, align 4, !llfi_index !3824
+  %156 = load i32* %l, align 4, !llfi_index !3823
   call void @doProfiling(i32 27)
-  %157 = load i32* %4, align 4, !llfi_index !3825
+  %157 = load i32* %4, align 4, !llfi_index !3824
   call void @doProfiling(i32 27)
-  %158 = icmp sle i32 %156, %157, !llfi_index !3826
+  %158 = icmp sle i32 %156, %157, !llfi_index !3825
   call void @doProfiling(i32 46)
-  br i1 %158, label %159, label %198, !llfi_index !3827
+  br i1 %158, label %159, label %198, !llfi_index !3826
 
 ; <label>:159                                     ; preds = %155
-  %160 = load i32* %l, align 4, !llfi_index !3828
+  %160 = load i32* %l, align 4, !llfi_index !3827
   call void @doProfiling(i32 27)
-  %161 = sext i32 %160 to i64, !llfi_index !3829
+  %161 = sext i32 %160 to i64, !llfi_index !3828
   call void @doProfiling(i32 35)
-  %162 = load i32* %irow, align 4, !llfi_index !3830
+  %162 = load i32* %irow, align 4, !llfi_index !3829
   call void @doProfiling(i32 27)
-  %163 = sext i32 %162 to i64, !llfi_index !3831
+  %163 = sext i32 %162 to i64, !llfi_index !3830
   call void @doProfiling(i32 35)
-  %164 = load double*** %3, align 8, !llfi_index !3832
+  %164 = load double*** %3, align 8, !llfi_index !3831
   call void @doProfiling(i32 27)
-  %165 = getelementptr inbounds double** %164, i64 %163, !llfi_index !3833
+  %165 = getelementptr inbounds double** %164, i64 %163, !llfi_index !3832
   call void @doProfiling(i32 29)
-  %166 = load double** %165, align 8, !llfi_index !3834
+  %166 = load double** %165, align 8, !llfi_index !3833
   call void @doProfiling(i32 27)
-  %167 = getelementptr inbounds double* %166, i64 %161, !llfi_index !3835
+  %167 = getelementptr inbounds double* %166, i64 %161, !llfi_index !3834
   call void @doProfiling(i32 29)
-  %168 = load double* %167, align 8, !llfi_index !3836
+  %168 = load double* %167, align 8, !llfi_index !3835
   call void @doProfiling(i32 27)
-  store double %168, double* %temp, align 8, !llfi_index !3837
-  %169 = load i32* %l, align 4, !llfi_index !3838
+  store double %168, double* %temp, align 8, !llfi_index !3836
+  %169 = load i32* %l, align 4, !llfi_index !3837
   call void @doProfiling(i32 27)
-  %170 = sext i32 %169 to i64, !llfi_index !3839
+  %170 = sext i32 %169 to i64, !llfi_index !3838
   call void @doProfiling(i32 35)
-  %171 = load i32* %icol, align 4, !llfi_index !3840
+  %171 = load i32* %icol, align 4, !llfi_index !3839
   call void @doProfiling(i32 27)
-  %172 = sext i32 %171 to i64, !llfi_index !3841
+  %172 = sext i32 %171 to i64, !llfi_index !3840
   call void @doProfiling(i32 35)
-  %173 = load double*** %3, align 8, !llfi_index !3842
+  %173 = load double*** %3, align 8, !llfi_index !3841
   call void @doProfiling(i32 27)
-  %174 = getelementptr inbounds double** %173, i64 %172, !llfi_index !3843
+  %174 = getelementptr inbounds double** %173, i64 %172, !llfi_index !3842
   call void @doProfiling(i32 29)
-  %175 = load double** %174, align 8, !llfi_index !3844
+  %175 = load double** %174, align 8, !llfi_index !3843
   call void @doProfiling(i32 27)
-  %176 = getelementptr inbounds double* %175, i64 %170, !llfi_index !3845
+  %176 = getelementptr inbounds double* %175, i64 %170, !llfi_index !3844
   call void @doProfiling(i32 29)
-  %177 = load double* %176, align 8, !llfi_index !3846
+  %177 = load double* %176, align 8, !llfi_index !3845
   call void @doProfiling(i32 27)
-  %178 = load i32* %l, align 4, !llfi_index !3847
+  %178 = load i32* %l, align 4, !llfi_index !3846
   call void @doProfiling(i32 27)
-  %179 = sext i32 %178 to i64, !llfi_index !3848
+  %179 = sext i32 %178 to i64, !llfi_index !3847
   call void @doProfiling(i32 35)
-  %180 = load i32* %irow, align 4, !llfi_index !3849
+  %180 = load i32* %irow, align 4, !llfi_index !3848
   call void @doProfiling(i32 27)
-  %181 = sext i32 %180 to i64, !llfi_index !3850
+  %181 = sext i32 %180 to i64, !llfi_index !3849
   call void @doProfiling(i32 35)
-  %182 = load double*** %3, align 8, !llfi_index !3851
+  %182 = load double*** %3, align 8, !llfi_index !3850
   call void @doProfiling(i32 27)
-  %183 = getelementptr inbounds double** %182, i64 %181, !llfi_index !3852
+  %183 = getelementptr inbounds double** %182, i64 %181, !llfi_index !3851
   call void @doProfiling(i32 29)
-  %184 = load double** %183, align 8, !llfi_index !3853
+  %184 = load double** %183, align 8, !llfi_index !3852
   call void @doProfiling(i32 27)
-  %185 = getelementptr inbounds double* %184, i64 %179, !llfi_index !3854
+  %185 = getelementptr inbounds double* %184, i64 %179, !llfi_index !3853
   call void @doProfiling(i32 29)
-  store double %177, double* %185, align 8, !llfi_index !3855
-  %186 = load double* %temp, align 8, !llfi_index !3856
+  store double %177, double* %185, align 8, !llfi_index !3854
+  %186 = load double* %temp, align 8, !llfi_index !3855
   call void @doProfiling(i32 27)
-  %187 = load i32* %l, align 4, !llfi_index !3857
+  %187 = load i32* %l, align 4, !llfi_index !3856
   call void @doProfiling(i32 27)
-  %188 = sext i32 %187 to i64, !llfi_index !3858
+  %188 = sext i32 %187 to i64, !llfi_index !3857
   call void @doProfiling(i32 35)
-  %189 = load i32* %icol, align 4, !llfi_index !3859
+  %189 = load i32* %icol, align 4, !llfi_index !3858
   call void @doProfiling(i32 27)
-  %190 = sext i32 %189 to i64, !llfi_index !3860
+  %190 = sext i32 %189 to i64, !llfi_index !3859
   call void @doProfiling(i32 35)
-  %191 = load double*** %3, align 8, !llfi_index !3861
+  %191 = load double*** %3, align 8, !llfi_index !3860
   call void @doProfiling(i32 27)
-  %192 = getelementptr inbounds double** %191, i64 %190, !llfi_index !3862
+  %192 = getelementptr inbounds double** %191, i64 %190, !llfi_index !3861
   call void @doProfiling(i32 29)
-  %193 = load double** %192, align 8, !llfi_index !3863
+  %193 = load double** %192, align 8, !llfi_index !3862
   call void @doProfiling(i32 27)
-  %194 = getelementptr inbounds double* %193, i64 %188, !llfi_index !3864
+  %194 = getelementptr inbounds double* %193, i64 %188, !llfi_index !3863
   call void @doProfiling(i32 29)
-  store double %186, double* %194, align 8, !llfi_index !3865
-  br label %195, !llfi_index !3866
+  store double %186, double* %194, align 8, !llfi_index !3864
+  br label %195, !llfi_index !3865
 
 ; <label>:195                                     ; preds = %159
-  %196 = load i32* %l, align 4, !llfi_index !3867
+  %196 = load i32* %l, align 4, !llfi_index !3866
   call void @doProfiling(i32 27)
-  %197 = add nsw i32 %196, 1, !llfi_index !3868
+  %197 = add nsw i32 %196, 1, !llfi_index !3867
   call void @doProfiling(i32 8)
-  store i32 %197, i32* %l, align 4, !llfi_index !3869
-  br label %155, !llfi_index !3870
+  store i32 %197, i32* %l, align 4, !llfi_index !3868
+  br label %155, !llfi_index !3869
 
 ; <label>:198                                     ; preds = %155
-  br label %199, !llfi_index !3871
+  br label %199, !llfi_index !3870
 
 ; <label>:199                                     ; preds = %198, %100
-  %200 = load i32* %irow, align 4, !llfi_index !3872
+  %200 = load i32* %irow, align 4, !llfi_index !3871
   call void @doProfiling(i32 27)
-  %201 = load i32* %i, align 4, !llfi_index !3873
+  %201 = load i32* %i, align 4, !llfi_index !3872
   call void @doProfiling(i32 27)
-  %202 = sext i32 %201 to i64, !llfi_index !3874
+  %202 = sext i32 %201 to i64, !llfi_index !3873
   call void @doProfiling(i32 35)
-  %203 = load i32** %indxr, align 8, !llfi_index !3875
+  %203 = load i32** %indxr, align 8, !llfi_index !3874
   call void @doProfiling(i32 27)
-  %204 = getelementptr inbounds i32* %203, i64 %202, !llfi_index !3876
+  %204 = getelementptr inbounds i32* %203, i64 %202, !llfi_index !3875
   call void @doProfiling(i32 29)
-  store i32 %200, i32* %204, align 4, !llfi_index !3877
-  %205 = load i32* %icol, align 4, !llfi_index !3878
+  store i32 %200, i32* %204, align 4, !llfi_index !3876
+  %205 = load i32* %icol, align 4, !llfi_index !3877
   call void @doProfiling(i32 27)
-  %206 = load i32* %i, align 4, !llfi_index !3879
+  %206 = load i32* %i, align 4, !llfi_index !3878
   call void @doProfiling(i32 27)
-  %207 = sext i32 %206 to i64, !llfi_index !3880
+  %207 = sext i32 %206 to i64, !llfi_index !3879
   call void @doProfiling(i32 35)
-  %208 = load i32** %indxc, align 8, !llfi_index !3881
+  %208 = load i32** %indxc, align 8, !llfi_index !3880
   call void @doProfiling(i32 27)
-  %209 = getelementptr inbounds i32* %208, i64 %207, !llfi_index !3882
+  %209 = getelementptr inbounds i32* %208, i64 %207, !llfi_index !3881
   call void @doProfiling(i32 29)
-  store i32 %205, i32* %209, align 4, !llfi_index !3883
-  %210 = load i32* %icol, align 4, !llfi_index !3884
+  store i32 %205, i32* %209, align 4, !llfi_index !3882
+  %210 = load i32* %icol, align 4, !llfi_index !3883
   call void @doProfiling(i32 27)
-  %211 = sext i32 %210 to i64, !llfi_index !3885
+  %211 = sext i32 %210 to i64, !llfi_index !3884
   call void @doProfiling(i32 35)
-  %212 = load i32* %icol, align 4, !llfi_index !3886
+  %212 = load i32* %icol, align 4, !llfi_index !3885
   call void @doProfiling(i32 27)
-  %213 = sext i32 %212 to i64, !llfi_index !3887
+  %213 = sext i32 %212 to i64, !llfi_index !3886
   call void @doProfiling(i32 35)
-  %214 = load double*** %1, align 8, !llfi_index !3888
+  %214 = load double*** %1, align 8, !llfi_index !3887
   call void @doProfiling(i32 27)
-  %215 = getelementptr inbounds double** %214, i64 %213, !llfi_index !3889
+  %215 = getelementptr inbounds double** %214, i64 %213, !llfi_index !3888
   call void @doProfiling(i32 29)
-  %216 = load double** %215, align 8, !llfi_index !3890
+  %216 = load double** %215, align 8, !llfi_index !3889
   call void @doProfiling(i32 27)
-  %217 = getelementptr inbounds double* %216, i64 %211, !llfi_index !3891
+  %217 = getelementptr inbounds double* %216, i64 %211, !llfi_index !3890
   call void @doProfiling(i32 29)
-  %218 = load double* %217, align 8, !llfi_index !3892
+  %218 = load double* %217, align 8, !llfi_index !3891
   call void @doProfiling(i32 27)
-  %219 = fcmp oeq double %218, 0.000000e+00, !llfi_index !3893
+  %219 = fcmp oeq double %218, 0.000000e+00, !llfi_index !3892
   call void @doProfiling(i32 47)
-  br i1 %219, label %220, label %221, !llfi_index !3894
+  br i1 %219, label %220, label %221, !llfi_index !3893
 
 ; <label>:220                                     ; preds = %199
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([26 x i8]* @.str422, i32 0, i32 0)), !llfi_index !3895
-  br label %221, !llfi_index !3896
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([26 x i8]* @.str422, i32 0, i32 0)), !llfi_index !3894
+  br label %221, !llfi_index !3895
 
 ; <label>:221                                     ; preds = %220, %199
-  %222 = load i32* %icol, align 4, !llfi_index !3897
+  %222 = load i32* %icol, align 4, !llfi_index !3896
   call void @doProfiling(i32 27)
-  %223 = sext i32 %222 to i64, !llfi_index !3898
+  %223 = sext i32 %222 to i64, !llfi_index !3897
   call void @doProfiling(i32 35)
-  %224 = load i32* %icol, align 4, !llfi_index !3899
+  %224 = load i32* %icol, align 4, !llfi_index !3898
   call void @doProfiling(i32 27)
-  %225 = sext i32 %224 to i64, !llfi_index !3900
+  %225 = sext i32 %224 to i64, !llfi_index !3899
   call void @doProfiling(i32 35)
-  %226 = load double*** %1, align 8, !llfi_index !3901
+  %226 = load double*** %1, align 8, !llfi_index !3900
   call void @doProfiling(i32 27)
-  %227 = getelementptr inbounds double** %226, i64 %225, !llfi_index !3902
+  %227 = getelementptr inbounds double** %226, i64 %225, !llfi_index !3901
   call void @doProfiling(i32 29)
-  %228 = load double** %227, align 8, !llfi_index !3903
+  %228 = load double** %227, align 8, !llfi_index !3902
   call void @doProfiling(i32 27)
-  %229 = getelementptr inbounds double* %228, i64 %223, !llfi_index !3904
+  %229 = getelementptr inbounds double* %228, i64 %223, !llfi_index !3903
   call void @doProfiling(i32 29)
-  %230 = load double* %229, align 8, !llfi_index !3905
+  %230 = load double* %229, align 8, !llfi_index !3904
   call void @doProfiling(i32 27)
-  %231 = fdiv double 1.000000e+00, %230, !llfi_index !3906
+  %231 = fdiv double 1.000000e+00, %230, !llfi_index !3905
   call void @doProfiling(i32 16)
-  store double %231, double* %pivinv, align 8, !llfi_index !3907
-  %232 = load i32* %icol, align 4, !llfi_index !3908
+  store double %231, double* %pivinv, align 8, !llfi_index !3906
+  %232 = load i32* %icol, align 4, !llfi_index !3907
   call void @doProfiling(i32 27)
-  %233 = sext i32 %232 to i64, !llfi_index !3909
+  %233 = sext i32 %232 to i64, !llfi_index !3908
   call void @doProfiling(i32 35)
-  %234 = load i32* %icol, align 4, !llfi_index !3910
+  %234 = load i32* %icol, align 4, !llfi_index !3909
   call void @doProfiling(i32 27)
-  %235 = sext i32 %234 to i64, !llfi_index !3911
+  %235 = sext i32 %234 to i64, !llfi_index !3910
   call void @doProfiling(i32 35)
-  %236 = load double*** %1, align 8, !llfi_index !3912
+  %236 = load double*** %1, align 8, !llfi_index !3911
   call void @doProfiling(i32 27)
-  %237 = getelementptr inbounds double** %236, i64 %235, !llfi_index !3913
+  %237 = getelementptr inbounds double** %236, i64 %235, !llfi_index !3912
   call void @doProfiling(i32 29)
-  %238 = load double** %237, align 8, !llfi_index !3914
+  %238 = load double** %237, align 8, !llfi_index !3913
   call void @doProfiling(i32 27)
-  %239 = getelementptr inbounds double* %238, i64 %233, !llfi_index !3915
+  %239 = getelementptr inbounds double* %238, i64 %233, !llfi_index !3914
   call void @doProfiling(i32 29)
-  store double 1.000000e+00, double* %239, align 8, !llfi_index !3916
-  store i32 1, i32* %l, align 4, !llfi_index !3917
-  br label %240, !llfi_index !3918
+  store double 1.000000e+00, double* %239, align 8, !llfi_index !3915
+  store i32 1, i32* %l, align 4, !llfi_index !3916
+  br label %240, !llfi_index !3917
 
 ; <label>:240                                     ; preds = %256, %221
-  %241 = load i32* %l, align 4, !llfi_index !3919
+  %241 = load i32* %l, align 4, !llfi_index !3918
   call void @doProfiling(i32 27)
-  %242 = load i32* %2, align 4, !llfi_index !3920
+  %242 = load i32* %2, align 4, !llfi_index !3919
   call void @doProfiling(i32 27)
-  %243 = icmp sle i32 %241, %242, !llfi_index !3921
+  %243 = icmp sle i32 %241, %242, !llfi_index !3920
   call void @doProfiling(i32 46)
-  br i1 %243, label %244, label %259, !llfi_index !3922
+  br i1 %243, label %244, label %259, !llfi_index !3921
 
 ; <label>:244                                     ; preds = %240
-  %245 = load double* %pivinv, align 8, !llfi_index !3923
+  %245 = load double* %pivinv, align 8, !llfi_index !3922
   call void @doProfiling(i32 27)
-  %246 = load i32* %l, align 4, !llfi_index !3924
+  %246 = load i32* %l, align 4, !llfi_index !3923
   call void @doProfiling(i32 27)
-  %247 = sext i32 %246 to i64, !llfi_index !3925
+  %247 = sext i32 %246 to i64, !llfi_index !3924
   call void @doProfiling(i32 35)
-  %248 = load i32* %icol, align 4, !llfi_index !3926
+  %248 = load i32* %icol, align 4, !llfi_index !3925
   call void @doProfiling(i32 27)
-  %249 = sext i32 %248 to i64, !llfi_index !3927
+  %249 = sext i32 %248 to i64, !llfi_index !3926
   call void @doProfiling(i32 35)
-  %250 = load double*** %1, align 8, !llfi_index !3928
+  %250 = load double*** %1, align 8, !llfi_index !3927
   call void @doProfiling(i32 27)
-  %251 = getelementptr inbounds double** %250, i64 %249, !llfi_index !3929
+  %251 = getelementptr inbounds double** %250, i64 %249, !llfi_index !3928
   call void @doProfiling(i32 29)
-  %252 = load double** %251, align 8, !llfi_index !3930
+  %252 = load double** %251, align 8, !llfi_index !3929
   call void @doProfiling(i32 27)
-  %253 = getelementptr inbounds double* %252, i64 %247, !llfi_index !3931
+  %253 = getelementptr inbounds double* %252, i64 %247, !llfi_index !3930
   call void @doProfiling(i32 29)
-  %254 = load double* %253, align 8, !llfi_index !3932
+  %254 = load double* %253, align 8, !llfi_index !3931
   call void @doProfiling(i32 27)
-  %255 = fmul double %254, %245, !llfi_index !3933
+  %255 = fmul double %254, %245, !llfi_index !3932
   call void @doProfiling(i32 13)
-  store double %255, double* %253, align 8, !llfi_index !3934
-  br label %256, !llfi_index !3935
+  store double %255, double* %253, align 8, !llfi_index !3933
+  br label %256, !llfi_index !3934
 
 ; <label>:256                                     ; preds = %244
-  %257 = load i32* %l, align 4, !llfi_index !3936
+  %257 = load i32* %l, align 4, !llfi_index !3935
   call void @doProfiling(i32 27)
-  %258 = add nsw i32 %257, 1, !llfi_index !3937
+  %258 = add nsw i32 %257, 1, !llfi_index !3936
   call void @doProfiling(i32 8)
-  store i32 %258, i32* %l, align 4, !llfi_index !3938
-  br label %240, !llfi_index !3939
+  store i32 %258, i32* %l, align 4, !llfi_index !3937
+  br label %240, !llfi_index !3938
 
 ; <label>:259                                     ; preds = %240
-  store i32 1, i32* %l, align 4, !llfi_index !3940
-  br label %260, !llfi_index !3941
+  store i32 1, i32* %l, align 4, !llfi_index !3939
+  br label %260, !llfi_index !3940
 
 ; <label>:260                                     ; preds = %276, %259
-  %261 = load i32* %l, align 4, !llfi_index !3942
+  %261 = load i32* %l, align 4, !llfi_index !3941
   call void @doProfiling(i32 27)
-  %262 = load i32* %4, align 4, !llfi_index !3943
+  %262 = load i32* %4, align 4, !llfi_index !3942
   call void @doProfiling(i32 27)
-  %263 = icmp sle i32 %261, %262, !llfi_index !3944
+  %263 = icmp sle i32 %261, %262, !llfi_index !3943
   call void @doProfiling(i32 46)
-  br i1 %263, label %264, label %279, !llfi_index !3945
+  br i1 %263, label %264, label %279, !llfi_index !3944
 
 ; <label>:264                                     ; preds = %260
-  %265 = load double* %pivinv, align 8, !llfi_index !3946
+  %265 = load double* %pivinv, align 8, !llfi_index !3945
   call void @doProfiling(i32 27)
-  %266 = load i32* %l, align 4, !llfi_index !3947
+  %266 = load i32* %l, align 4, !llfi_index !3946
   call void @doProfiling(i32 27)
-  %267 = sext i32 %266 to i64, !llfi_index !3948
+  %267 = sext i32 %266 to i64, !llfi_index !3947
   call void @doProfiling(i32 35)
-  %268 = load i32* %icol, align 4, !llfi_index !3949
+  %268 = load i32* %icol, align 4, !llfi_index !3948
   call void @doProfiling(i32 27)
-  %269 = sext i32 %268 to i64, !llfi_index !3950
+  %269 = sext i32 %268 to i64, !llfi_index !3949
   call void @doProfiling(i32 35)
-  %270 = load double*** %3, align 8, !llfi_index !3951
+  %270 = load double*** %3, align 8, !llfi_index !3950
   call void @doProfiling(i32 27)
-  %271 = getelementptr inbounds double** %270, i64 %269, !llfi_index !3952
+  %271 = getelementptr inbounds double** %270, i64 %269, !llfi_index !3951
   call void @doProfiling(i32 29)
-  %272 = load double** %271, align 8, !llfi_index !3953
+  %272 = load double** %271, align 8, !llfi_index !3952
   call void @doProfiling(i32 27)
-  %273 = getelementptr inbounds double* %272, i64 %267, !llfi_index !3954
+  %273 = getelementptr inbounds double* %272, i64 %267, !llfi_index !3953
   call void @doProfiling(i32 29)
-  %274 = load double* %273, align 8, !llfi_index !3955
+  %274 = load double* %273, align 8, !llfi_index !3954
   call void @doProfiling(i32 27)
-  %275 = fmul double %274, %265, !llfi_index !3956
+  %275 = fmul double %274, %265, !llfi_index !3955
   call void @doProfiling(i32 13)
-  store double %275, double* %273, align 8, !llfi_index !3957
-  br label %276, !llfi_index !3958
+  store double %275, double* %273, align 8, !llfi_index !3956
+  br label %276, !llfi_index !3957
 
 ; <label>:276                                     ; preds = %264
-  %277 = load i32* %l, align 4, !llfi_index !3959
+  %277 = load i32* %l, align 4, !llfi_index !3958
   call void @doProfiling(i32 27)
-  %278 = add nsw i32 %277, 1, !llfi_index !3960
+  %278 = add nsw i32 %277, 1, !llfi_index !3959
   call void @doProfiling(i32 8)
-  store i32 %278, i32* %l, align 4, !llfi_index !3961
-  br label %260, !llfi_index !3962
+  store i32 %278, i32* %l, align 4, !llfi_index !3960
+  br label %260, !llfi_index !3961
 
 ; <label>:279                                     ; preds = %260
-  store i32 1, i32* %ll, align 4, !llfi_index !3963
-  br label %280, !llfi_index !3964
+  store i32 1, i32* %ll, align 4, !llfi_index !3962
+  br label %280, !llfi_index !3963
 
 ; <label>:280                                     ; preds = %367, %279
-  %281 = load i32* %ll, align 4, !llfi_index !3965
+  %281 = load i32* %ll, align 4, !llfi_index !3964
   call void @doProfiling(i32 27)
-  %282 = load i32* %2, align 4, !llfi_index !3966
+  %282 = load i32* %2, align 4, !llfi_index !3965
   call void @doProfiling(i32 27)
-  %283 = icmp sle i32 %281, %282, !llfi_index !3967
+  %283 = icmp sle i32 %281, %282, !llfi_index !3966
   call void @doProfiling(i32 46)
-  br i1 %283, label %284, label %370, !llfi_index !3968
+  br i1 %283, label %284, label %370, !llfi_index !3967
 
 ; <label>:284                                     ; preds = %280
-  %285 = load i32* %ll, align 4, !llfi_index !3969
+  %285 = load i32* %ll, align 4, !llfi_index !3968
   call void @doProfiling(i32 27)
-  %286 = load i32* %icol, align 4, !llfi_index !3970
+  %286 = load i32* %icol, align 4, !llfi_index !3969
   call void @doProfiling(i32 27)
-  %287 = icmp ne i32 %285, %286, !llfi_index !3971
+  %287 = icmp ne i32 %285, %286, !llfi_index !3970
   call void @doProfiling(i32 46)
-  br i1 %287, label %288, label %366, !llfi_index !3972
+  br i1 %287, label %288, label %366, !llfi_index !3971
 
 ; <label>:288                                     ; preds = %284
-  %289 = load i32* %icol, align 4, !llfi_index !3973
+  %289 = load i32* %icol, align 4, !llfi_index !3972
   call void @doProfiling(i32 27)
-  %290 = sext i32 %289 to i64, !llfi_index !3974
+  %290 = sext i32 %289 to i64, !llfi_index !3973
   call void @doProfiling(i32 35)
-  %291 = load i32* %ll, align 4, !llfi_index !3975
+  %291 = load i32* %ll, align 4, !llfi_index !3974
   call void @doProfiling(i32 27)
-  %292 = sext i32 %291 to i64, !llfi_index !3976
+  %292 = sext i32 %291 to i64, !llfi_index !3975
   call void @doProfiling(i32 35)
-  %293 = load double*** %1, align 8, !llfi_index !3977
+  %293 = load double*** %1, align 8, !llfi_index !3976
   call void @doProfiling(i32 27)
-  %294 = getelementptr inbounds double** %293, i64 %292, !llfi_index !3978
+  %294 = getelementptr inbounds double** %293, i64 %292, !llfi_index !3977
   call void @doProfiling(i32 29)
-  %295 = load double** %294, align 8, !llfi_index !3979
+  %295 = load double** %294, align 8, !llfi_index !3978
   call void @doProfiling(i32 27)
-  %296 = getelementptr inbounds double* %295, i64 %290, !llfi_index !3980
+  %296 = getelementptr inbounds double* %295, i64 %290, !llfi_index !3979
   call void @doProfiling(i32 29)
-  %297 = load double* %296, align 8, !llfi_index !3981
+  %297 = load double* %296, align 8, !llfi_index !3980
   call void @doProfiling(i32 27)
-  store double %297, double* %dum, align 8, !llfi_index !3982
-  %298 = load i32* %icol, align 4, !llfi_index !3983
+  store double %297, double* %dum, align 8, !llfi_index !3981
+  %298 = load i32* %icol, align 4, !llfi_index !3982
   call void @doProfiling(i32 27)
-  %299 = sext i32 %298 to i64, !llfi_index !3984
+  %299 = sext i32 %298 to i64, !llfi_index !3983
   call void @doProfiling(i32 35)
-  %300 = load i32* %ll, align 4, !llfi_index !3985
+  %300 = load i32* %ll, align 4, !llfi_index !3984
   call void @doProfiling(i32 27)
-  %301 = sext i32 %300 to i64, !llfi_index !3986
+  %301 = sext i32 %300 to i64, !llfi_index !3985
   call void @doProfiling(i32 35)
-  %302 = load double*** %1, align 8, !llfi_index !3987
+  %302 = load double*** %1, align 8, !llfi_index !3986
   call void @doProfiling(i32 27)
-  %303 = getelementptr inbounds double** %302, i64 %301, !llfi_index !3988
+  %303 = getelementptr inbounds double** %302, i64 %301, !llfi_index !3987
   call void @doProfiling(i32 29)
-  %304 = load double** %303, align 8, !llfi_index !3989
+  %304 = load double** %303, align 8, !llfi_index !3988
   call void @doProfiling(i32 27)
-  %305 = getelementptr inbounds double* %304, i64 %299, !llfi_index !3990
+  %305 = getelementptr inbounds double* %304, i64 %299, !llfi_index !3989
   call void @doProfiling(i32 29)
-  store double 0.000000e+00, double* %305, align 8, !llfi_index !3991
-  store i32 1, i32* %l, align 4, !llfi_index !3992
-  br label %306, !llfi_index !3993
+  store double 0.000000e+00, double* %305, align 8, !llfi_index !3990
+  store i32 1, i32* %l, align 4, !llfi_index !3991
+  br label %306, !llfi_index !3992
 
 ; <label>:306                                     ; preds = %332, %288
-  %307 = load i32* %l, align 4, !llfi_index !3994
+  %307 = load i32* %l, align 4, !llfi_index !3993
   call void @doProfiling(i32 27)
-  %308 = load i32* %2, align 4, !llfi_index !3995
+  %308 = load i32* %2, align 4, !llfi_index !3994
   call void @doProfiling(i32 27)
-  %309 = icmp sle i32 %307, %308, !llfi_index !3996
+  %309 = icmp sle i32 %307, %308, !llfi_index !3995
   call void @doProfiling(i32 46)
-  br i1 %309, label %310, label %335, !llfi_index !3997
+  br i1 %309, label %310, label %335, !llfi_index !3996
 
 ; <label>:310                                     ; preds = %306
-  %311 = load i32* %l, align 4, !llfi_index !3998
+  %311 = load i32* %l, align 4, !llfi_index !3997
   call void @doProfiling(i32 27)
-  %312 = sext i32 %311 to i64, !llfi_index !3999
+  %312 = sext i32 %311 to i64, !llfi_index !3998
   call void @doProfiling(i32 35)
-  %313 = load i32* %icol, align 4, !llfi_index !4000
+  %313 = load i32* %icol, align 4, !llfi_index !3999
   call void @doProfiling(i32 27)
-  %314 = sext i32 %313 to i64, !llfi_index !4001
+  %314 = sext i32 %313 to i64, !llfi_index !4000
   call void @doProfiling(i32 35)
-  %315 = load double*** %1, align 8, !llfi_index !4002
+  %315 = load double*** %1, align 8, !llfi_index !4001
   call void @doProfiling(i32 27)
-  %316 = getelementptr inbounds double** %315, i64 %314, !llfi_index !4003
+  %316 = getelementptr inbounds double** %315, i64 %314, !llfi_index !4002
   call void @doProfiling(i32 29)
-  %317 = load double** %316, align 8, !llfi_index !4004
+  %317 = load double** %316, align 8, !llfi_index !4003
   call void @doProfiling(i32 27)
-  %318 = getelementptr inbounds double* %317, i64 %312, !llfi_index !4005
+  %318 = getelementptr inbounds double* %317, i64 %312, !llfi_index !4004
   call void @doProfiling(i32 29)
-  %319 = load double* %318, align 8, !llfi_index !4006
+  %319 = load double* %318, align 8, !llfi_index !4005
   call void @doProfiling(i32 27)
-  %320 = load double* %dum, align 8, !llfi_index !4007
+  %320 = load double* %dum, align 8, !llfi_index !4006
   call void @doProfiling(i32 27)
-  %321 = fmul double %319, %320, !llfi_index !4008
+  %321 = fmul double %319, %320, !llfi_index !4007
   call void @doProfiling(i32 13)
-  %322 = load i32* %l, align 4, !llfi_index !4009
+  %322 = load i32* %l, align 4, !llfi_index !4008
   call void @doProfiling(i32 27)
-  %323 = sext i32 %322 to i64, !llfi_index !4010
+  %323 = sext i32 %322 to i64, !llfi_index !4009
   call void @doProfiling(i32 35)
-  %324 = load i32* %ll, align 4, !llfi_index !4011
+  %324 = load i32* %ll, align 4, !llfi_index !4010
   call void @doProfiling(i32 27)
-  %325 = sext i32 %324 to i64, !llfi_index !4012
+  %325 = sext i32 %324 to i64, !llfi_index !4011
   call void @doProfiling(i32 35)
-  %326 = load double*** %1, align 8, !llfi_index !4013
+  %326 = load double*** %1, align 8, !llfi_index !4012
   call void @doProfiling(i32 27)
-  %327 = getelementptr inbounds double** %326, i64 %325, !llfi_index !4014
+  %327 = getelementptr inbounds double** %326, i64 %325, !llfi_index !4013
   call void @doProfiling(i32 29)
-  %328 = load double** %327, align 8, !llfi_index !4015
+  %328 = load double** %327, align 8, !llfi_index !4014
   call void @doProfiling(i32 27)
-  %329 = getelementptr inbounds double* %328, i64 %323, !llfi_index !4016
+  %329 = getelementptr inbounds double* %328, i64 %323, !llfi_index !4015
   call void @doProfiling(i32 29)
-  %330 = load double* %329, align 8, !llfi_index !4017
+  %330 = load double* %329, align 8, !llfi_index !4016
   call void @doProfiling(i32 27)
-  %331 = fsub double %330, %321, !llfi_index !4018
+  %331 = fsub double %330, %321, !llfi_index !4017
   call void @doProfiling(i32 11)
-  store double %331, double* %329, align 8, !llfi_index !4019
-  br label %332, !llfi_index !4020
+  store double %331, double* %329, align 8, !llfi_index !4018
+  br label %332, !llfi_index !4019
 
 ; <label>:332                                     ; preds = %310
-  %333 = load i32* %l, align 4, !llfi_index !4021
+  %333 = load i32* %l, align 4, !llfi_index !4020
   call void @doProfiling(i32 27)
-  %334 = add nsw i32 %333, 1, !llfi_index !4022
+  %334 = add nsw i32 %333, 1, !llfi_index !4021
   call void @doProfiling(i32 8)
-  store i32 %334, i32* %l, align 4, !llfi_index !4023
-  br label %306, !llfi_index !4024
+  store i32 %334, i32* %l, align 4, !llfi_index !4022
+  br label %306, !llfi_index !4023
 
 ; <label>:335                                     ; preds = %306
-  store i32 1, i32* %l, align 4, !llfi_index !4025
-  br label %336, !llfi_index !4026
+  store i32 1, i32* %l, align 4, !llfi_index !4024
+  br label %336, !llfi_index !4025
 
 ; <label>:336                                     ; preds = %362, %335
-  %337 = load i32* %l, align 4, !llfi_index !4027
+  %337 = load i32* %l, align 4, !llfi_index !4026
   call void @doProfiling(i32 27)
-  %338 = load i32* %4, align 4, !llfi_index !4028
+  %338 = load i32* %4, align 4, !llfi_index !4027
   call void @doProfiling(i32 27)
-  %339 = icmp sle i32 %337, %338, !llfi_index !4029
+  %339 = icmp sle i32 %337, %338, !llfi_index !4028
   call void @doProfiling(i32 46)
-  br i1 %339, label %340, label %365, !llfi_index !4030
+  br i1 %339, label %340, label %365, !llfi_index !4029
 
 ; <label>:340                                     ; preds = %336
-  %341 = load i32* %l, align 4, !llfi_index !4031
+  %341 = load i32* %l, align 4, !llfi_index !4030
   call void @doProfiling(i32 27)
-  %342 = sext i32 %341 to i64, !llfi_index !4032
+  %342 = sext i32 %341 to i64, !llfi_index !4031
   call void @doProfiling(i32 35)
-  %343 = load i32* %icol, align 4, !llfi_index !4033
+  %343 = load i32* %icol, align 4, !llfi_index !4032
   call void @doProfiling(i32 27)
-  %344 = sext i32 %343 to i64, !llfi_index !4034
+  %344 = sext i32 %343 to i64, !llfi_index !4033
   call void @doProfiling(i32 35)
-  %345 = load double*** %3, align 8, !llfi_index !4035
+  %345 = load double*** %3, align 8, !llfi_index !4034
   call void @doProfiling(i32 27)
-  %346 = getelementptr inbounds double** %345, i64 %344, !llfi_index !4036
+  %346 = getelementptr inbounds double** %345, i64 %344, !llfi_index !4035
   call void @doProfiling(i32 29)
-  %347 = load double** %346, align 8, !llfi_index !4037
+  %347 = load double** %346, align 8, !llfi_index !4036
   call void @doProfiling(i32 27)
-  %348 = getelementptr inbounds double* %347, i64 %342, !llfi_index !4038
+  %348 = getelementptr inbounds double* %347, i64 %342, !llfi_index !4037
   call void @doProfiling(i32 29)
-  %349 = load double* %348, align 8, !llfi_index !4039
+  %349 = load double* %348, align 8, !llfi_index !4038
   call void @doProfiling(i32 27)
-  %350 = load double* %dum, align 8, !llfi_index !4040
+  %350 = load double* %dum, align 8, !llfi_index !4039
   call void @doProfiling(i32 27)
-  %351 = fmul double %349, %350, !llfi_index !4041
+  %351 = fmul double %349, %350, !llfi_index !4040
   call void @doProfiling(i32 13)
-  %352 = load i32* %l, align 4, !llfi_index !4042
+  %352 = load i32* %l, align 4, !llfi_index !4041
   call void @doProfiling(i32 27)
-  %353 = sext i32 %352 to i64, !llfi_index !4043
+  %353 = sext i32 %352 to i64, !llfi_index !4042
   call void @doProfiling(i32 35)
-  %354 = load i32* %ll, align 4, !llfi_index !4044
+  %354 = load i32* %ll, align 4, !llfi_index !4043
   call void @doProfiling(i32 27)
-  %355 = sext i32 %354 to i64, !llfi_index !4045
+  %355 = sext i32 %354 to i64, !llfi_index !4044
   call void @doProfiling(i32 35)
-  %356 = load double*** %3, align 8, !llfi_index !4046
+  %356 = load double*** %3, align 8, !llfi_index !4045
   call void @doProfiling(i32 27)
-  %357 = getelementptr inbounds double** %356, i64 %355, !llfi_index !4047
+  %357 = getelementptr inbounds double** %356, i64 %355, !llfi_index !4046
   call void @doProfiling(i32 29)
-  %358 = load double** %357, align 8, !llfi_index !4048
+  %358 = load double** %357, align 8, !llfi_index !4047
   call void @doProfiling(i32 27)
-  %359 = getelementptr inbounds double* %358, i64 %353, !llfi_index !4049
+  %359 = getelementptr inbounds double* %358, i64 %353, !llfi_index !4048
   call void @doProfiling(i32 29)
-  %360 = load double* %359, align 8, !llfi_index !4050
+  %360 = load double* %359, align 8, !llfi_index !4049
   call void @doProfiling(i32 27)
-  %361 = fsub double %360, %351, !llfi_index !4051
+  %361 = fsub double %360, %351, !llfi_index !4050
   call void @doProfiling(i32 11)
-  store double %361, double* %359, align 8, !llfi_index !4052
-  br label %362, !llfi_index !4053
+  store double %361, double* %359, align 8, !llfi_index !4051
+  br label %362, !llfi_index !4052
 
 ; <label>:362                                     ; preds = %340
-  %363 = load i32* %l, align 4, !llfi_index !4054
+  %363 = load i32* %l, align 4, !llfi_index !4053
   call void @doProfiling(i32 27)
-  %364 = add nsw i32 %363, 1, !llfi_index !4055
+  %364 = add nsw i32 %363, 1, !llfi_index !4054
   call void @doProfiling(i32 8)
-  store i32 %364, i32* %l, align 4, !llfi_index !4056
-  br label %336, !llfi_index !4057
+  store i32 %364, i32* %l, align 4, !llfi_index !4055
+  br label %336, !llfi_index !4056
 
 ; <label>:365                                     ; preds = %336
-  br label %366, !llfi_index !4058
+  br label %366, !llfi_index !4057
 
 ; <label>:366                                     ; preds = %365, %284
-  br label %367, !llfi_index !4059
+  br label %367, !llfi_index !4058
 
 ; <label>:367                                     ; preds = %366
-  %368 = load i32* %ll, align 4, !llfi_index !4060
+  %368 = load i32* %ll, align 4, !llfi_index !4059
   call void @doProfiling(i32 27)
-  %369 = add nsw i32 %368, 1, !llfi_index !4061
+  %369 = add nsw i32 %368, 1, !llfi_index !4060
   call void @doProfiling(i32 8)
-  store i32 %369, i32* %ll, align 4, !llfi_index !4062
-  br label %280, !llfi_index !4063
+  store i32 %369, i32* %ll, align 4, !llfi_index !4061
+  br label %280, !llfi_index !4062
 
 ; <label>:370                                     ; preds = %280
-  br label %371, !llfi_index !4064
+  br label %371, !llfi_index !4063
 
 ; <label>:371                                     ; preds = %370
-  %372 = load i32* %i, align 4, !llfi_index !4065
+  %372 = load i32* %i, align 4, !llfi_index !4064
   call void @doProfiling(i32 27)
-  %373 = add nsw i32 %372, 1, !llfi_index !4066
+  %373 = add nsw i32 %372, 1, !llfi_index !4065
   call void @doProfiling(i32 8)
-  store i32 %373, i32* %i, align 4, !llfi_index !4067
-  br label %27, !llfi_index !4068
+  store i32 %373, i32* %i, align 4, !llfi_index !4066
+  br label %27, !llfi_index !4067
 
 ; <label>:374                                     ; preds = %27
-  %375 = load i32* %2, align 4, !llfi_index !4069
+  %375 = load i32* %2, align 4, !llfi_index !4068
   call void @doProfiling(i32 27)
-  store i32 %375, i32* %l, align 4, !llfi_index !4070
-  br label %376, !llfi_index !4071
+  store i32 %375, i32* %l, align 4, !llfi_index !4069
+  br label %376, !llfi_index !4070
 
 ; <label>:376                                     ; preds = %453, %374
-  %377 = load i32* %l, align 4, !llfi_index !4072
+  %377 = load i32* %l, align 4, !llfi_index !4071
   call void @doProfiling(i32 27)
-  %378 = icmp sge i32 %377, 1, !llfi_index !4073
+  %378 = icmp sge i32 %377, 1, !llfi_index !4072
   call void @doProfiling(i32 46)
-  br i1 %378, label %379, label %456, !llfi_index !4074
+  br i1 %378, label %379, label %456, !llfi_index !4073
 
 ; <label>:379                                     ; preds = %376
-  %380 = load i32* %l, align 4, !llfi_index !4075
+  %380 = load i32* %l, align 4, !llfi_index !4074
   call void @doProfiling(i32 27)
-  %381 = sext i32 %380 to i64, !llfi_index !4076
+  %381 = sext i32 %380 to i64, !llfi_index !4075
   call void @doProfiling(i32 35)
-  %382 = load i32** %indxr, align 8, !llfi_index !4077
+  %382 = load i32** %indxr, align 8, !llfi_index !4076
   call void @doProfiling(i32 27)
-  %383 = getelementptr inbounds i32* %382, i64 %381, !llfi_index !4078
+  %383 = getelementptr inbounds i32* %382, i64 %381, !llfi_index !4077
   call void @doProfiling(i32 29)
-  %384 = load i32* %383, align 4, !llfi_index !4079
+  %384 = load i32* %383, align 4, !llfi_index !4078
   call void @doProfiling(i32 27)
-  %385 = load i32* %l, align 4, !llfi_index !4080
+  %385 = load i32* %l, align 4, !llfi_index !4079
   call void @doProfiling(i32 27)
-  %386 = sext i32 %385 to i64, !llfi_index !4081
+  %386 = sext i32 %385 to i64, !llfi_index !4080
   call void @doProfiling(i32 35)
-  %387 = load i32** %indxc, align 8, !llfi_index !4082
+  %387 = load i32** %indxc, align 8, !llfi_index !4081
   call void @doProfiling(i32 27)
-  %388 = getelementptr inbounds i32* %387, i64 %386, !llfi_index !4083
+  %388 = getelementptr inbounds i32* %387, i64 %386, !llfi_index !4082
   call void @doProfiling(i32 29)
-  %389 = load i32* %388, align 4, !llfi_index !4084
+  %389 = load i32* %388, align 4, !llfi_index !4083
   call void @doProfiling(i32 27)
-  %390 = icmp ne i32 %384, %389, !llfi_index !4085
+  %390 = icmp ne i32 %384, %389, !llfi_index !4084
   call void @doProfiling(i32 46)
-  br i1 %390, label %391, label %452, !llfi_index !4086
+  br i1 %390, label %391, label %452, !llfi_index !4085
 
 ; <label>:391                                     ; preds = %379
-  store i32 1, i32* %k, align 4, !llfi_index !4087
-  br label %392, !llfi_index !4088
+  store i32 1, i32* %k, align 4, !llfi_index !4086
+  br label %392, !llfi_index !4087
 
 ; <label>:392                                     ; preds = %448, %391
-  %393 = load i32* %k, align 4, !llfi_index !4089
+  %393 = load i32* %k, align 4, !llfi_index !4088
   call void @doProfiling(i32 27)
-  %394 = load i32* %2, align 4, !llfi_index !4090
+  %394 = load i32* %2, align 4, !llfi_index !4089
   call void @doProfiling(i32 27)
-  %395 = icmp sle i32 %393, %394, !llfi_index !4091
+  %395 = icmp sle i32 %393, %394, !llfi_index !4090
   call void @doProfiling(i32 46)
-  br i1 %395, label %396, label %451, !llfi_index !4092
+  br i1 %395, label %396, label %451, !llfi_index !4091
 
 ; <label>:396                                     ; preds = %392
-  %397 = load i32* %l, align 4, !llfi_index !4093
+  %397 = load i32* %l, align 4, !llfi_index !4092
   call void @doProfiling(i32 27)
-  %398 = sext i32 %397 to i64, !llfi_index !4094
+  %398 = sext i32 %397 to i64, !llfi_index !4093
   call void @doProfiling(i32 35)
-  %399 = load i32** %indxr, align 8, !llfi_index !4095
+  %399 = load i32** %indxr, align 8, !llfi_index !4094
   call void @doProfiling(i32 27)
-  %400 = getelementptr inbounds i32* %399, i64 %398, !llfi_index !4096
+  %400 = getelementptr inbounds i32* %399, i64 %398, !llfi_index !4095
   call void @doProfiling(i32 29)
-  %401 = load i32* %400, align 4, !llfi_index !4097
+  %401 = load i32* %400, align 4, !llfi_index !4096
   call void @doProfiling(i32 27)
-  %402 = sext i32 %401 to i64, !llfi_index !4098
+  %402 = sext i32 %401 to i64, !llfi_index !4097
   call void @doProfiling(i32 35)
-  %403 = load i32* %k, align 4, !llfi_index !4099
+  %403 = load i32* %k, align 4, !llfi_index !4098
   call void @doProfiling(i32 27)
-  %404 = sext i32 %403 to i64, !llfi_index !4100
+  %404 = sext i32 %403 to i64, !llfi_index !4099
   call void @doProfiling(i32 35)
-  %405 = load double*** %1, align 8, !llfi_index !4101
+  %405 = load double*** %1, align 8, !llfi_index !4100
   call void @doProfiling(i32 27)
-  %406 = getelementptr inbounds double** %405, i64 %404, !llfi_index !4102
+  %406 = getelementptr inbounds double** %405, i64 %404, !llfi_index !4101
   call void @doProfiling(i32 29)
-  %407 = load double** %406, align 8, !llfi_index !4103
+  %407 = load double** %406, align 8, !llfi_index !4102
   call void @doProfiling(i32 27)
-  %408 = getelementptr inbounds double* %407, i64 %402, !llfi_index !4104
+  %408 = getelementptr inbounds double* %407, i64 %402, !llfi_index !4103
   call void @doProfiling(i32 29)
-  %409 = load double* %408, align 8, !llfi_index !4105
+  %409 = load double* %408, align 8, !llfi_index !4104
   call void @doProfiling(i32 27)
-  store double %409, double* %temp, align 8, !llfi_index !4106
-  %410 = load i32* %l, align 4, !llfi_index !4107
+  store double %409, double* %temp, align 8, !llfi_index !4105
+  %410 = load i32* %l, align 4, !llfi_index !4106
   call void @doProfiling(i32 27)
-  %411 = sext i32 %410 to i64, !llfi_index !4108
+  %411 = sext i32 %410 to i64, !llfi_index !4107
   call void @doProfiling(i32 35)
-  %412 = load i32** %indxc, align 8, !llfi_index !4109
+  %412 = load i32** %indxc, align 8, !llfi_index !4108
   call void @doProfiling(i32 27)
-  %413 = getelementptr inbounds i32* %412, i64 %411, !llfi_index !4110
+  %413 = getelementptr inbounds i32* %412, i64 %411, !llfi_index !4109
   call void @doProfiling(i32 29)
-  %414 = load i32* %413, align 4, !llfi_index !4111
+  %414 = load i32* %413, align 4, !llfi_index !4110
   call void @doProfiling(i32 27)
-  %415 = sext i32 %414 to i64, !llfi_index !4112
+  %415 = sext i32 %414 to i64, !llfi_index !4111
   call void @doProfiling(i32 35)
-  %416 = load i32* %k, align 4, !llfi_index !4113
+  %416 = load i32* %k, align 4, !llfi_index !4112
   call void @doProfiling(i32 27)
-  %417 = sext i32 %416 to i64, !llfi_index !4114
+  %417 = sext i32 %416 to i64, !llfi_index !4113
   call void @doProfiling(i32 35)
-  %418 = load double*** %1, align 8, !llfi_index !4115
+  %418 = load double*** %1, align 8, !llfi_index !4114
   call void @doProfiling(i32 27)
-  %419 = getelementptr inbounds double** %418, i64 %417, !llfi_index !4116
+  %419 = getelementptr inbounds double** %418, i64 %417, !llfi_index !4115
   call void @doProfiling(i32 29)
-  %420 = load double** %419, align 8, !llfi_index !4117
+  %420 = load double** %419, align 8, !llfi_index !4116
   call void @doProfiling(i32 27)
-  %421 = getelementptr inbounds double* %420, i64 %415, !llfi_index !4118
+  %421 = getelementptr inbounds double* %420, i64 %415, !llfi_index !4117
   call void @doProfiling(i32 29)
-  %422 = load double* %421, align 8, !llfi_index !4119
+  %422 = load double* %421, align 8, !llfi_index !4118
   call void @doProfiling(i32 27)
-  %423 = load i32* %l, align 4, !llfi_index !4120
+  %423 = load i32* %l, align 4, !llfi_index !4119
   call void @doProfiling(i32 27)
-  %424 = sext i32 %423 to i64, !llfi_index !4121
+  %424 = sext i32 %423 to i64, !llfi_index !4120
   call void @doProfiling(i32 35)
-  %425 = load i32** %indxr, align 8, !llfi_index !4122
+  %425 = load i32** %indxr, align 8, !llfi_index !4121
   call void @doProfiling(i32 27)
-  %426 = getelementptr inbounds i32* %425, i64 %424, !llfi_index !4123
+  %426 = getelementptr inbounds i32* %425, i64 %424, !llfi_index !4122
   call void @doProfiling(i32 29)
-  %427 = load i32* %426, align 4, !llfi_index !4124
+  %427 = load i32* %426, align 4, !llfi_index !4123
   call void @doProfiling(i32 27)
-  %428 = sext i32 %427 to i64, !llfi_index !4125
+  %428 = sext i32 %427 to i64, !llfi_index !4124
   call void @doProfiling(i32 35)
-  %429 = load i32* %k, align 4, !llfi_index !4126
+  %429 = load i32* %k, align 4, !llfi_index !4125
   call void @doProfiling(i32 27)
-  %430 = sext i32 %429 to i64, !llfi_index !4127
+  %430 = sext i32 %429 to i64, !llfi_index !4126
   call void @doProfiling(i32 35)
-  %431 = load double*** %1, align 8, !llfi_index !4128
+  %431 = load double*** %1, align 8, !llfi_index !4127
   call void @doProfiling(i32 27)
-  %432 = getelementptr inbounds double** %431, i64 %430, !llfi_index !4129
+  %432 = getelementptr inbounds double** %431, i64 %430, !llfi_index !4128
   call void @doProfiling(i32 29)
-  %433 = load double** %432, align 8, !llfi_index !4130
+  %433 = load double** %432, align 8, !llfi_index !4129
   call void @doProfiling(i32 27)
-  %434 = getelementptr inbounds double* %433, i64 %428, !llfi_index !4131
+  %434 = getelementptr inbounds double* %433, i64 %428, !llfi_index !4130
   call void @doProfiling(i32 29)
-  store double %422, double* %434, align 8, !llfi_index !4132
-  %435 = load double* %temp, align 8, !llfi_index !4133
+  store double %422, double* %434, align 8, !llfi_index !4131
+  %435 = load double* %temp, align 8, !llfi_index !4132
   call void @doProfiling(i32 27)
-  %436 = load i32* %l, align 4, !llfi_index !4134
+  %436 = load i32* %l, align 4, !llfi_index !4133
   call void @doProfiling(i32 27)
-  %437 = sext i32 %436 to i64, !llfi_index !4135
+  %437 = sext i32 %436 to i64, !llfi_index !4134
   call void @doProfiling(i32 35)
-  %438 = load i32** %indxc, align 8, !llfi_index !4136
+  %438 = load i32** %indxc, align 8, !llfi_index !4135
   call void @doProfiling(i32 27)
-  %439 = getelementptr inbounds i32* %438, i64 %437, !llfi_index !4137
+  %439 = getelementptr inbounds i32* %438, i64 %437, !llfi_index !4136
   call void @doProfiling(i32 29)
-  %440 = load i32* %439, align 4, !llfi_index !4138
+  %440 = load i32* %439, align 4, !llfi_index !4137
   call void @doProfiling(i32 27)
-  %441 = sext i32 %440 to i64, !llfi_index !4139
+  %441 = sext i32 %440 to i64, !llfi_index !4138
   call void @doProfiling(i32 35)
-  %442 = load i32* %k, align 4, !llfi_index !4140
+  %442 = load i32* %k, align 4, !llfi_index !4139
   call void @doProfiling(i32 27)
-  %443 = sext i32 %442 to i64, !llfi_index !4141
+  %443 = sext i32 %442 to i64, !llfi_index !4140
   call void @doProfiling(i32 35)
-  %444 = load double*** %1, align 8, !llfi_index !4142
+  %444 = load double*** %1, align 8, !llfi_index !4141
   call void @doProfiling(i32 27)
-  %445 = getelementptr inbounds double** %444, i64 %443, !llfi_index !4143
+  %445 = getelementptr inbounds double** %444, i64 %443, !llfi_index !4142
   call void @doProfiling(i32 29)
-  %446 = load double** %445, align 8, !llfi_index !4144
+  %446 = load double** %445, align 8, !llfi_index !4143
   call void @doProfiling(i32 27)
-  %447 = getelementptr inbounds double* %446, i64 %441, !llfi_index !4145
+  %447 = getelementptr inbounds double* %446, i64 %441, !llfi_index !4144
   call void @doProfiling(i32 29)
-  store double %435, double* %447, align 8, !llfi_index !4146
-  br label %448, !llfi_index !4147
+  store double %435, double* %447, align 8, !llfi_index !4145
+  br label %448, !llfi_index !4146
 
 ; <label>:448                                     ; preds = %396
-  %449 = load i32* %k, align 4, !llfi_index !4148
+  %449 = load i32* %k, align 4, !llfi_index !4147
   call void @doProfiling(i32 27)
-  %450 = add nsw i32 %449, 1, !llfi_index !4149
+  %450 = add nsw i32 %449, 1, !llfi_index !4148
   call void @doProfiling(i32 8)
-  store i32 %450, i32* %k, align 4, !llfi_index !4150
-  br label %392, !llfi_index !4151
+  store i32 %450, i32* %k, align 4, !llfi_index !4149
+  br label %392, !llfi_index !4150
 
 ; <label>:451                                     ; preds = %392
-  br label %452, !llfi_index !4152
+  br label %452, !llfi_index !4151
 
 ; <label>:452                                     ; preds = %451, %379
-  br label %453, !llfi_index !4153
+  br label %453, !llfi_index !4152
 
 ; <label>:453                                     ; preds = %452
-  %454 = load i32* %l, align 4, !llfi_index !4154
+  %454 = load i32* %l, align 4, !llfi_index !4153
   call void @doProfiling(i32 27)
-  %455 = add nsw i32 %454, -1, !llfi_index !4155
+  %455 = add nsw i32 %454, -1, !llfi_index !4154
   call void @doProfiling(i32 8)
-  store i32 %455, i32* %l, align 4, !llfi_index !4156
-  br label %376, !llfi_index !4157
+  store i32 %455, i32* %l, align 4, !llfi_index !4155
+  br label %376, !llfi_index !4156
 
 ; <label>:456                                     ; preds = %376
-  %457 = load i32** %ipiv, align 8, !llfi_index !4158
+  %457 = load i32** %ipiv, align 8, !llfi_index !4157
   call void @doProfiling(i32 27)
-  %458 = load i32* %2, align 4, !llfi_index !4159
+  %458 = load i32* %2, align 4, !llfi_index !4158
   call void @doProfiling(i32 27)
-  %459 = sext i32 %458 to i64, !llfi_index !4160
+  %459 = sext i32 %458 to i64, !llfi_index !4159
   call void @doProfiling(i32 35)
-  call void @_Z12free_ivectorPill(i32* %457, i64 1, i64 %459), !llfi_index !4161
-  %460 = load i32** %indxr, align 8, !llfi_index !4162
+  call void @_Z12free_ivectorPill(i32* %457, i64 1, i64 %459), !llfi_index !4160
+  %460 = load i32** %indxr, align 8, !llfi_index !4161
   call void @doProfiling(i32 27)
-  %461 = load i32* %2, align 4, !llfi_index !4163
+  %461 = load i32* %2, align 4, !llfi_index !4162
   call void @doProfiling(i32 27)
-  %462 = sext i32 %461 to i64, !llfi_index !4164
+  %462 = sext i32 %461 to i64, !llfi_index !4163
   call void @doProfiling(i32 35)
-  call void @_Z12free_ivectorPill(i32* %460, i64 1, i64 %462), !llfi_index !4165
-  %463 = load i32** %indxc, align 8, !llfi_index !4166
+  call void @_Z12free_ivectorPill(i32* %460, i64 1, i64 %462), !llfi_index !4164
+  %463 = load i32** %indxc, align 8, !llfi_index !4165
   call void @doProfiling(i32 27)
-  %464 = load i32* %2, align 4, !llfi_index !4167
+  %464 = load i32* %2, align 4, !llfi_index !4166
   call void @doProfiling(i32 27)
-  %465 = sext i32 %464 to i64, !llfi_index !4168
+  %465 = sext i32 %464 to i64, !llfi_index !4167
   call void @doProfiling(i32 35)
-  call void @_Z12free_ivectorPill(i32* %463, i64 1, i64 %465), !llfi_index !4169
-  ret void, !llfi_index !4170
+  call void @_Z12free_ivectorPill(i32* %463, i64 1, i64 %465), !llfi_index !4168
+  ret void, !llfi_index !4169
 }
 
 ; Function Attrs: uwtable
 define i32* @_Z7ivectorll(i64 %nl, i64 %nh) #3 {
-  %1 = alloca i64, align 8, !llfi_index !4171
+  %1 = alloca i64, align 8, !llfi_index !4170
   call void @doProfiling(i32 26)
-  %2 = alloca i64, align 8, !llfi_index !4172
+  %2 = alloca i64, align 8, !llfi_index !4171
   call void @doProfiling(i32 26)
-  %v = alloca i32*, align 8, !llfi_index !4173
+  %v = alloca i32*, align 8, !llfi_index !4172
   call void @doProfiling(i32 26)
-  store i64 %nl, i64* %1, align 8, !llfi_index !4174
-  store i64 %nh, i64* %2, align 8, !llfi_index !4175
-  %3 = load i64* %2, align 8, !llfi_index !4176
+  store i64 %nl, i64* %1, align 8, !llfi_index !4173
+  store i64 %nh, i64* %2, align 8, !llfi_index !4174
+  %3 = load i64* %2, align 8, !llfi_index !4175
   call void @doProfiling(i32 27)
-  %4 = load i64* %1, align 8, !llfi_index !4177
+  %4 = load i64* %1, align 8, !llfi_index !4176
   call void @doProfiling(i32 27)
-  %5 = sub nsw i64 %3, %4, !llfi_index !4178
+  %5 = sub nsw i64 %3, %4, !llfi_index !4177
   call void @doProfiling(i32 10)
-  %6 = add nsw i64 %5, 2, !llfi_index !4179
+  %6 = add nsw i64 %5, 2, !llfi_index !4178
   call void @doProfiling(i32 8)
-  %7 = mul i64 %6, 4, !llfi_index !4180
+  %7 = mul i64 %6, 4, !llfi_index !4179
   call void @doProfiling(i32 12)
-  %8 = call noalias i8* @malloc(i64 %7) #5, !llfi_index !4181
+  %8 = call noalias i8* @malloc(i64 %7) #5, !llfi_index !4180
   call void @doProfiling(i32 49)
-  %9 = bitcast i8* %8 to i32*, !llfi_index !4182
+  %9 = bitcast i8* %8 to i32*, !llfi_index !4181
   call void @doProfiling(i32 44)
-  store i32* %9, i32** %v, align 8, !llfi_index !4183
-  %10 = load i32** %v, align 8, !llfi_index !4184
+  store i32* %9, i32** %v, align 8, !llfi_index !4182
+  %10 = load i32** %v, align 8, !llfi_index !4183
   call void @doProfiling(i32 27)
-  %11 = icmp ne i32* %10, null, !llfi_index !4185
+  %11 = icmp ne i32* %10, null, !llfi_index !4184
   call void @doProfiling(i32 46)
-  br i1 %11, label %13, label %12, !llfi_index !4186
+  br i1 %11, label %13, label %12, !llfi_index !4185
 
 ; <label>:12                                      ; preds = %0
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([32 x i8]* @.str523, i32 0, i32 0)), !llfi_index !4187
-  br label %13, !llfi_index !4188
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([32 x i8]* @.str523, i32 0, i32 0)), !llfi_index !4186
+  br label %13, !llfi_index !4187
 
 ; <label>:13                                      ; preds = %12, %0
-  %14 = load i32** %v, align 8, !llfi_index !4189
+  %14 = load i32** %v, align 8, !llfi_index !4188
   call void @doProfiling(i32 27)
-  %15 = load i64* %1, align 8, !llfi_index !4190
+  %15 = load i64* %1, align 8, !llfi_index !4189
   call void @doProfiling(i32 27)
-  %16 = sub i64 0, %15, !llfi_index !4191
+  %16 = sub i64 0, %15, !llfi_index !4190
   call void @doProfiling(i32 10)
-  %17 = getelementptr inbounds i32* %14, i64 %16, !llfi_index !4192
+  %17 = getelementptr inbounds i32* %14, i64 %16, !llfi_index !4191
   call void @doProfiling(i32 29)
-  %18 = getelementptr inbounds i32* %17, i64 1, !llfi_index !4193
+  %18 = getelementptr inbounds i32* %17, i64 1, !llfi_index !4192
   call void @doProfiling(i32 29)
-  ret i32* %18, !llfi_index !4194
+  ret i32* %18, !llfi_index !4193
 }
 
 ; Function Attrs: nounwind uwtable
 define void @_Z12free_ivectorPill(i32* %v, i64 %nl, i64 %nh) #0 {
-  %1 = alloca i32*, align 8, !llfi_index !4195
+  %1 = alloca i32*, align 8, !llfi_index !4194
   call void @doProfiling(i32 26)
-  %2 = alloca i64, align 8, !llfi_index !4196
+  %2 = alloca i64, align 8, !llfi_index !4195
   call void @doProfiling(i32 26)
-  %3 = alloca i64, align 8, !llfi_index !4197
+  %3 = alloca i64, align 8, !llfi_index !4196
   call void @doProfiling(i32 26)
-  store i32* %v, i32** %1, align 8, !llfi_index !4198
-  store i64 %nl, i64* %2, align 8, !llfi_index !4199
-  store i64 %nh, i64* %3, align 8, !llfi_index !4200
-  %4 = load i32** %1, align 8, !llfi_index !4201
+  store i32* %v, i32** %1, align 8, !llfi_index !4197
+  store i64 %nl, i64* %2, align 8, !llfi_index !4198
+  store i64 %nh, i64* %3, align 8, !llfi_index !4199
+  %4 = load i32** %1, align 8, !llfi_index !4200
   call void @doProfiling(i32 27)
-  %5 = load i64* %2, align 8, !llfi_index !4202
+  %5 = load i64* %2, align 8, !llfi_index !4201
   call void @doProfiling(i32 27)
-  %6 = getelementptr inbounds i32* %4, i64 %5, !llfi_index !4203
+  %6 = getelementptr inbounds i32* %4, i64 %5, !llfi_index !4202
   call void @doProfiling(i32 29)
-  %7 = getelementptr inbounds i32* %6, i64 -1, !llfi_index !4204
+  %7 = getelementptr inbounds i32* %6, i64 -1, !llfi_index !4203
   call void @doProfiling(i32 29)
-  %8 = bitcast i32* %7 to i8*, !llfi_index !4205
+  %8 = bitcast i32* %7 to i8*, !llfi_index !4204
   call void @doProfiling(i32 44)
-  call void @free(i8* %8) #5, !llfi_index !4206
-  ret void, !llfi_index !4207
+  call void @free(i8* %8) #5, !llfi_index !4205
+  ret void, !llfi_index !4206
 }
 
 ; Function Attrs: uwtable
 define double* @_Z7dvectorll(i64 %nl, i64 %nh) #3 {
-  %1 = alloca i64, align 8, !llfi_index !4208
+  %1 = alloca i64, align 8, !llfi_index !4207
   call void @doProfiling(i32 26)
-  %2 = alloca i64, align 8, !llfi_index !4209
+  %2 = alloca i64, align 8, !llfi_index !4208
   call void @doProfiling(i32 26)
-  %v = alloca double*, align 8, !llfi_index !4210
+  %v = alloca double*, align 8, !llfi_index !4209
   call void @doProfiling(i32 26)
-  store i64 %nl, i64* %1, align 8, !llfi_index !4211
-  store i64 %nh, i64* %2, align 8, !llfi_index !4212
-  %3 = load i64* %2, align 8, !llfi_index !4213
+  store i64 %nl, i64* %1, align 8, !llfi_index !4210
+  store i64 %nh, i64* %2, align 8, !llfi_index !4211
+  %3 = load i64* %2, align 8, !llfi_index !4212
   call void @doProfiling(i32 27)
-  %4 = load i64* %1, align 8, !llfi_index !4214
+  %4 = load i64* %1, align 8, !llfi_index !4213
   call void @doProfiling(i32 27)
-  %5 = sub nsw i64 %3, %4, !llfi_index !4215
+  %5 = sub nsw i64 %3, %4, !llfi_index !4214
   call void @doProfiling(i32 10)
-  %6 = add nsw i64 %5, 2, !llfi_index !4216
+  %6 = add nsw i64 %5, 2, !llfi_index !4215
   call void @doProfiling(i32 8)
-  %7 = mul i64 %6, 8, !llfi_index !4217
+  %7 = mul i64 %6, 8, !llfi_index !4216
   call void @doProfiling(i32 12)
-  %8 = call noalias i8* @malloc(i64 %7) #5, !llfi_index !4218
+  %8 = call noalias i8* @malloc(i64 %7) #5, !llfi_index !4217
   call void @doProfiling(i32 49)
-  %9 = bitcast i8* %8 to double*, !llfi_index !4219
+  %9 = bitcast i8* %8 to double*, !llfi_index !4218
   call void @doProfiling(i32 44)
-  store double* %9, double** %v, align 8, !llfi_index !4220
-  %10 = load double** %v, align 8, !llfi_index !4221
+  store double* %9, double** %v, align 8, !llfi_index !4219
+  %10 = load double** %v, align 8, !llfi_index !4220
   call void @doProfiling(i32 27)
-  %11 = icmp ne double* %10, null, !llfi_index !4222
+  %11 = icmp ne double* %10, null, !llfi_index !4221
   call void @doProfiling(i32 46)
-  br i1 %11, label %13, label %12, !llfi_index !4223
+  br i1 %11, label %13, label %12, !llfi_index !4222
 
 ; <label>:12                                      ; preds = %0
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([32 x i8]* @.str624, i32 0, i32 0)), !llfi_index !4224
-  br label %13, !llfi_index !4225
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([32 x i8]* @.str624, i32 0, i32 0)), !llfi_index !4223
+  br label %13, !llfi_index !4224
 
 ; <label>:13                                      ; preds = %12, %0
-  %14 = load double** %v, align 8, !llfi_index !4226
+  %14 = load double** %v, align 8, !llfi_index !4225
   call void @doProfiling(i32 27)
-  %15 = load i64* %1, align 8, !llfi_index !4227
+  %15 = load i64* %1, align 8, !llfi_index !4226
   call void @doProfiling(i32 27)
-  %16 = sub i64 0, %15, !llfi_index !4228
+  %16 = sub i64 0, %15, !llfi_index !4227
   call void @doProfiling(i32 10)
-  %17 = getelementptr inbounds double* %14, i64 %16, !llfi_index !4229
+  %17 = getelementptr inbounds double* %14, i64 %16, !llfi_index !4228
   call void @doProfiling(i32 29)
-  %18 = getelementptr inbounds double* %17, i64 1, !llfi_index !4230
+  %18 = getelementptr inbounds double* %17, i64 1, !llfi_index !4229
   call void @doProfiling(i32 29)
-  ret double* %18, !llfi_index !4231
+  ret double* %18, !llfi_index !4230
 }
 
 ; Function Attrs: nounwind uwtable
 define void @_Z12free_dvectorPdll(double* %v, i64 %nl, i64 %nh) #0 {
-  %1 = alloca double*, align 8, !llfi_index !4232
+  %1 = alloca double*, align 8, !llfi_index !4231
   call void @doProfiling(i32 26)
-  %2 = alloca i64, align 8, !llfi_index !4233
+  %2 = alloca i64, align 8, !llfi_index !4232
   call void @doProfiling(i32 26)
-  %3 = alloca i64, align 8, !llfi_index !4234
+  %3 = alloca i64, align 8, !llfi_index !4233
   call void @doProfiling(i32 26)
-  store double* %v, double** %1, align 8, !llfi_index !4235
-  store i64 %nl, i64* %2, align 8, !llfi_index !4236
-  store i64 %nh, i64* %3, align 8, !llfi_index !4237
-  %4 = load double** %1, align 8, !llfi_index !4238
+  store double* %v, double** %1, align 8, !llfi_index !4234
+  store i64 %nl, i64* %2, align 8, !llfi_index !4235
+  store i64 %nh, i64* %3, align 8, !llfi_index !4236
+  %4 = load double** %1, align 8, !llfi_index !4237
   call void @doProfiling(i32 27)
-  %5 = load i64* %2, align 8, !llfi_index !4239
+  %5 = load i64* %2, align 8, !llfi_index !4238
   call void @doProfiling(i32 27)
-  %6 = getelementptr inbounds double* %4, i64 %5, !llfi_index !4240
+  %6 = getelementptr inbounds double* %4, i64 %5, !llfi_index !4239
   call void @doProfiling(i32 29)
-  %7 = getelementptr inbounds double* %6, i64 -1, !llfi_index !4241
+  %7 = getelementptr inbounds double* %6, i64 -1, !llfi_index !4240
   call void @doProfiling(i32 29)
-  %8 = bitcast double* %7 to i8*, !llfi_index !4242
+  %8 = bitcast double* %7 to i8*, !llfi_index !4241
   call void @doProfiling(i32 44)
-  call void @free(i8* %8) #5, !llfi_index !4243
-  ret void, !llfi_index !4244
+  call void @free(i8* %8) #5, !llfi_index !4242
+  ret void, !llfi_index !4243
 }
 
 ; Function Attrs: uwtable
 define double** @_Z7dmatrixllll(i64 %nrl, i64 %nrh, i64 %ncl, i64 %nch) #3 {
-  %1 = alloca i64, align 8, !llfi_index !4245
+  %1 = alloca i64, align 8, !llfi_index !4244
   call void @doProfiling(i32 26)
-  %2 = alloca i64, align 8, !llfi_index !4246
+  %2 = alloca i64, align 8, !llfi_index !4245
   call void @doProfiling(i32 26)
-  %3 = alloca i64, align 8, !llfi_index !4247
+  %3 = alloca i64, align 8, !llfi_index !4246
   call void @doProfiling(i32 26)
-  %4 = alloca i64, align 8, !llfi_index !4248
+  %4 = alloca i64, align 8, !llfi_index !4247
   call void @doProfiling(i32 26)
-  %i = alloca i64, align 8, !llfi_index !4249
+  %i = alloca i64, align 8, !llfi_index !4248
   call void @doProfiling(i32 26)
-  %nrow = alloca i64, align 8, !llfi_index !4250
+  %nrow = alloca i64, align 8, !llfi_index !4249
   call void @doProfiling(i32 26)
-  %ncol = alloca i64, align 8, !llfi_index !4251
+  %ncol = alloca i64, align 8, !llfi_index !4250
   call void @doProfiling(i32 26)
-  %m = alloca double**, align 8, !llfi_index !4252
+  %m = alloca double**, align 8, !llfi_index !4251
   call void @doProfiling(i32 26)
-  store i64 %nrl, i64* %1, align 8, !llfi_index !4253
-  store i64 %nrh, i64* %2, align 8, !llfi_index !4254
-  store i64 %ncl, i64* %3, align 8, !llfi_index !4255
-  store i64 %nch, i64* %4, align 8, !llfi_index !4256
-  %5 = load i64* %2, align 8, !llfi_index !4257
+  store i64 %nrl, i64* %1, align 8, !llfi_index !4252
+  store i64 %nrh, i64* %2, align 8, !llfi_index !4253
+  store i64 %ncl, i64* %3, align 8, !llfi_index !4254
+  store i64 %nch, i64* %4, align 8, !llfi_index !4255
+  %5 = load i64* %2, align 8, !llfi_index !4256
   call void @doProfiling(i32 27)
-  %6 = load i64* %1, align 8, !llfi_index !4258
+  %6 = load i64* %1, align 8, !llfi_index !4257
   call void @doProfiling(i32 27)
-  %7 = sub nsw i64 %5, %6, !llfi_index !4259
+  %7 = sub nsw i64 %5, %6, !llfi_index !4258
   call void @doProfiling(i32 10)
-  %8 = add nsw i64 %7, 1, !llfi_index !4260
+  %8 = add nsw i64 %7, 1, !llfi_index !4259
   call void @doProfiling(i32 8)
-  store i64 %8, i64* %nrow, align 8, !llfi_index !4261
-  %9 = load i64* %4, align 8, !llfi_index !4262
+  store i64 %8, i64* %nrow, align 8, !llfi_index !4260
+  %9 = load i64* %4, align 8, !llfi_index !4261
   call void @doProfiling(i32 27)
-  %10 = load i64* %3, align 8, !llfi_index !4263
+  %10 = load i64* %3, align 8, !llfi_index !4262
   call void @doProfiling(i32 27)
-  %11 = sub nsw i64 %9, %10, !llfi_index !4264
+  %11 = sub nsw i64 %9, %10, !llfi_index !4263
   call void @doProfiling(i32 10)
-  %12 = add nsw i64 %11, 1, !llfi_index !4265
+  %12 = add nsw i64 %11, 1, !llfi_index !4264
   call void @doProfiling(i32 8)
-  store i64 %12, i64* %ncol, align 8, !llfi_index !4266
-  %13 = load i64* %nrow, align 8, !llfi_index !4267
+  store i64 %12, i64* %ncol, align 8, !llfi_index !4265
+  %13 = load i64* %nrow, align 8, !llfi_index !4266
   call void @doProfiling(i32 27)
-  %14 = add nsw i64 %13, 1, !llfi_index !4268
+  %14 = add nsw i64 %13, 1, !llfi_index !4267
   call void @doProfiling(i32 8)
-  %15 = mul i64 %14, 8, !llfi_index !4269
+  %15 = mul i64 %14, 8, !llfi_index !4268
   call void @doProfiling(i32 12)
-  %16 = call noalias i8* @malloc(i64 %15) #5, !llfi_index !4270
+  %16 = call noalias i8* @malloc(i64 %15) #5, !llfi_index !4269
   call void @doProfiling(i32 49)
-  %17 = bitcast i8* %16 to double**, !llfi_index !4271
+  %17 = bitcast i8* %16 to double**, !llfi_index !4270
   call void @doProfiling(i32 44)
-  store double** %17, double*** %m, align 8, !llfi_index !4272
-  %18 = load double*** %m, align 8, !llfi_index !4273
+  store double** %17, double*** %m, align 8, !llfi_index !4271
+  %18 = load double*** %m, align 8, !llfi_index !4272
   call void @doProfiling(i32 27)
-  %19 = icmp ne double** %18, null, !llfi_index !4274
+  %19 = icmp ne double** %18, null, !llfi_index !4273
   call void @doProfiling(i32 46)
-  br i1 %19, label %21, label %20, !llfi_index !4275
+  br i1 %19, label %21, label %20, !llfi_index !4274
 
 ; <label>:20                                      ; preds = %0
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([34 x i8]* @.str725, i32 0, i32 0)), !llfi_index !4276
-  br label %21, !llfi_index !4277
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([34 x i8]* @.str725, i32 0, i32 0)), !llfi_index !4275
+  br label %21, !llfi_index !4276
 
 ; <label>:21                                      ; preds = %20, %0
-  %22 = load double*** %m, align 8, !llfi_index !4278
+  %22 = load double*** %m, align 8, !llfi_index !4277
   call void @doProfiling(i32 27)
-  %23 = getelementptr inbounds double** %22, i64 1, !llfi_index !4279
+  %23 = getelementptr inbounds double** %22, i64 1, !llfi_index !4278
   call void @doProfiling(i32 29)
-  store double** %23, double*** %m, align 8, !llfi_index !4280
-  %24 = load i64* %1, align 8, !llfi_index !4281
+  store double** %23, double*** %m, align 8, !llfi_index !4279
+  %24 = load i64* %1, align 8, !llfi_index !4280
   call void @doProfiling(i32 27)
-  %25 = load double*** %m, align 8, !llfi_index !4282
+  %25 = load double*** %m, align 8, !llfi_index !4281
   call void @doProfiling(i32 27)
-  %26 = sub i64 0, %24, !llfi_index !4283
+  %26 = sub i64 0, %24, !llfi_index !4282
   call void @doProfiling(i32 10)
-  %27 = getelementptr inbounds double** %25, i64 %26, !llfi_index !4284
+  %27 = getelementptr inbounds double** %25, i64 %26, !llfi_index !4283
   call void @doProfiling(i32 29)
-  store double** %27, double*** %m, align 8, !llfi_index !4285
-  %28 = load i64* %nrow, align 8, !llfi_index !4286
+  store double** %27, double*** %m, align 8, !llfi_index !4284
+  %28 = load i64* %nrow, align 8, !llfi_index !4285
   call void @doProfiling(i32 27)
-  %29 = load i64* %ncol, align 8, !llfi_index !4287
+  %29 = load i64* %ncol, align 8, !llfi_index !4286
   call void @doProfiling(i32 27)
-  %30 = mul nsw i64 %28, %29, !llfi_index !4288
+  %30 = mul nsw i64 %28, %29, !llfi_index !4287
   call void @doProfiling(i32 12)
-  %31 = add nsw i64 %30, 1, !llfi_index !4289
+  %31 = add nsw i64 %30, 1, !llfi_index !4288
   call void @doProfiling(i32 8)
-  %32 = mul i64 %31, 8, !llfi_index !4290
+  %32 = mul i64 %31, 8, !llfi_index !4289
   call void @doProfiling(i32 12)
-  %33 = call noalias i8* @malloc(i64 %32) #5, !llfi_index !4291
+  %33 = call noalias i8* @malloc(i64 %32) #5, !llfi_index !4290
   call void @doProfiling(i32 49)
-  %34 = bitcast i8* %33 to double*, !llfi_index !4292
+  %34 = bitcast i8* %33 to double*, !llfi_index !4291
   call void @doProfiling(i32 44)
-  %35 = load i64* %1, align 8, !llfi_index !4293
+  %35 = load i64* %1, align 8, !llfi_index !4292
   call void @doProfiling(i32 27)
-  %36 = load double*** %m, align 8, !llfi_index !4294
+  %36 = load double*** %m, align 8, !llfi_index !4293
   call void @doProfiling(i32 27)
-  %37 = getelementptr inbounds double** %36, i64 %35, !llfi_index !4295
+  %37 = getelementptr inbounds double** %36, i64 %35, !llfi_index !4294
   call void @doProfiling(i32 29)
-  store double* %34, double** %37, align 8, !llfi_index !4296
-  %38 = load i64* %1, align 8, !llfi_index !4297
+  store double* %34, double** %37, align 8, !llfi_index !4295
+  %38 = load i64* %1, align 8, !llfi_index !4296
   call void @doProfiling(i32 27)
-  %39 = load double*** %m, align 8, !llfi_index !4298
+  %39 = load double*** %m, align 8, !llfi_index !4297
   call void @doProfiling(i32 27)
-  %40 = getelementptr inbounds double** %39, i64 %38, !llfi_index !4299
+  %40 = getelementptr inbounds double** %39, i64 %38, !llfi_index !4298
   call void @doProfiling(i32 29)
-  %41 = load double** %40, align 8, !llfi_index !4300
+  %41 = load double** %40, align 8, !llfi_index !4299
   call void @doProfiling(i32 27)
-  %42 = icmp ne double* %41, null, !llfi_index !4301
+  %42 = icmp ne double* %41, null, !llfi_index !4300
   call void @doProfiling(i32 46)
-  br i1 %42, label %44, label %43, !llfi_index !4302
+  br i1 %42, label %44, label %43, !llfi_index !4301
 
 ; <label>:43                                      ; preds = %21
-  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([34 x i8]* @.str826, i32 0, i32 0)), !llfi_index !4303
-  br label %44, !llfi_index !4304
+  call void @_Z7nrerrorPKc(i8* getelementptr inbounds ([34 x i8]* @.str826, i32 0, i32 0)), !llfi_index !4302
+  br label %44, !llfi_index !4303
 
 ; <label>:44                                      ; preds = %43, %21
-  %45 = load i64* %1, align 8, !llfi_index !4305
+  %45 = load i64* %1, align 8, !llfi_index !4304
   call void @doProfiling(i32 27)
-  %46 = load double*** %m, align 8, !llfi_index !4306
+  %46 = load double*** %m, align 8, !llfi_index !4305
   call void @doProfiling(i32 27)
-  %47 = getelementptr inbounds double** %46, i64 %45, !llfi_index !4307
+  %47 = getelementptr inbounds double** %46, i64 %45, !llfi_index !4306
   call void @doProfiling(i32 29)
-  %48 = load double** %47, align 8, !llfi_index !4308
+  %48 = load double** %47, align 8, !llfi_index !4307
   call void @doProfiling(i32 27)
-  %49 = getelementptr inbounds double* %48, i64 1, !llfi_index !4309
+  %49 = getelementptr inbounds double* %48, i64 1, !llfi_index !4308
   call void @doProfiling(i32 29)
-  store double* %49, double** %47, align 8, !llfi_index !4310
-  %50 = load i64* %3, align 8, !llfi_index !4311
+  store double* %49, double** %47, align 8, !llfi_index !4309
+  %50 = load i64* %3, align 8, !llfi_index !4310
   call void @doProfiling(i32 27)
-  %51 = load i64* %1, align 8, !llfi_index !4312
+  %51 = load i64* %1, align 8, !llfi_index !4311
   call void @doProfiling(i32 27)
-  %52 = load double*** %m, align 8, !llfi_index !4313
+  %52 = load double*** %m, align 8, !llfi_index !4312
   call void @doProfiling(i32 27)
-  %53 = getelementptr inbounds double** %52, i64 %51, !llfi_index !4314
+  %53 = getelementptr inbounds double** %52, i64 %51, !llfi_index !4313
   call void @doProfiling(i32 29)
-  %54 = load double** %53, align 8, !llfi_index !4315
+  %54 = load double** %53, align 8, !llfi_index !4314
   call void @doProfiling(i32 27)
-  %55 = sub i64 0, %50, !llfi_index !4316
+  %55 = sub i64 0, %50, !llfi_index !4315
   call void @doProfiling(i32 10)
-  %56 = getelementptr inbounds double* %54, i64 %55, !llfi_index !4317
+  %56 = getelementptr inbounds double* %54, i64 %55, !llfi_index !4316
   call void @doProfiling(i32 29)
-  store double* %56, double** %53, align 8, !llfi_index !4318
-  %57 = load i64* %1, align 8, !llfi_index !4319
+  store double* %56, double** %53, align 8, !llfi_index !4317
+  %57 = load i64* %1, align 8, !llfi_index !4318
   call void @doProfiling(i32 27)
-  %58 = add nsw i64 %57, 1, !llfi_index !4320
+  %58 = add nsw i64 %57, 1, !llfi_index !4319
   call void @doProfiling(i32 8)
-  store i64 %58, i64* %i, align 8, !llfi_index !4321
-  br label %59, !llfi_index !4322
+  store i64 %58, i64* %i, align 8, !llfi_index !4320
+  br label %59, !llfi_index !4321
 
 ; <label>:59                                      ; preds = %74, %44
-  %60 = load i64* %i, align 8, !llfi_index !4323
+  %60 = load i64* %i, align 8, !llfi_index !4322
   call void @doProfiling(i32 27)
-  %61 = load i64* %2, align 8, !llfi_index !4324
+  %61 = load i64* %2, align 8, !llfi_index !4323
   call void @doProfiling(i32 27)
-  %62 = icmp sle i64 %60, %61, !llfi_index !4325
+  %62 = icmp sle i64 %60, %61, !llfi_index !4324
   call void @doProfiling(i32 46)
-  br i1 %62, label %63, label %77, !llfi_index !4326
+  br i1 %62, label %63, label %77, !llfi_index !4325
 
 ; <label>:63                                      ; preds = %59
-  %64 = load i64* %i, align 8, !llfi_index !4327
+  %64 = load i64* %i, align 8, !llfi_index !4326
   call void @doProfiling(i32 27)
-  %65 = sub nsw i64 %64, 1, !llfi_index !4328
+  %65 = sub nsw i64 %64, 1, !llfi_index !4327
   call void @doProfiling(i32 10)
-  %66 = load double*** %m, align 8, !llfi_index !4329
+  %66 = load double*** %m, align 8, !llfi_index !4328
   call void @doProfiling(i32 27)
-  %67 = getelementptr inbounds double** %66, i64 %65, !llfi_index !4330
+  %67 = getelementptr inbounds double** %66, i64 %65, !llfi_index !4329
   call void @doProfiling(i32 29)
-  %68 = load double** %67, align 8, !llfi_index !4331
+  %68 = load double** %67, align 8, !llfi_index !4330
   call void @doProfiling(i32 27)
-  %69 = load i64* %ncol, align 8, !llfi_index !4332
+  %69 = load i64* %ncol, align 8, !llfi_index !4331
   call void @doProfiling(i32 27)
-  %70 = getelementptr inbounds double* %68, i64 %69, !llfi_index !4333
+  %70 = getelementptr inbounds double* %68, i64 %69, !llfi_index !4332
   call void @doProfiling(i32 29)
-  %71 = load i64* %i, align 8, !llfi_index !4334
+  %71 = load i64* %i, align 8, !llfi_index !4333
   call void @doProfiling(i32 27)
-  %72 = load double*** %m, align 8, !llfi_index !4335
+  %72 = load double*** %m, align 8, !llfi_index !4334
   call void @doProfiling(i32 27)
-  %73 = getelementptr inbounds double** %72, i64 %71, !llfi_index !4336
+  %73 = getelementptr inbounds double** %72, i64 %71, !llfi_index !4335
   call void @doProfiling(i32 29)
-  store double* %70, double** %73, align 8, !llfi_index !4337
-  br label %74, !llfi_index !4338
+  store double* %70, double** %73, align 8, !llfi_index !4336
+  br label %74, !llfi_index !4337
 
 ; <label>:74                                      ; preds = %63
-  %75 = load i64* %i, align 8, !llfi_index !4339
+  %75 = load i64* %i, align 8, !llfi_index !4338
   call void @doProfiling(i32 27)
-  %76 = add nsw i64 %75, 1, !llfi_index !4340
+  %76 = add nsw i64 %75, 1, !llfi_index !4339
   call void @doProfiling(i32 8)
-  store i64 %76, i64* %i, align 8, !llfi_index !4341
-  br label %59, !llfi_index !4342
+  store i64 %76, i64* %i, align 8, !llfi_index !4340
+  br label %59, !llfi_index !4341
 
 ; <label>:77                                      ; preds = %59
-  %78 = load double*** %m, align 8, !llfi_index !4343
+  %78 = load double*** %m, align 8, !llfi_index !4342
   call void @doProfiling(i32 27)
-  ret double** %78, !llfi_index !4344
+  ret double** %78, !llfi_index !4343
 }
 
 ; Function Attrs: nounwind uwtable
 define void @_Z12free_dmatrixPPdllll(double** %m, i64 %nrl, i64 %nrh, i64 %ncl, i64 %nch) #0 {
-  %1 = alloca double**, align 8, !llfi_index !4345
+  %1 = alloca double**, align 8, !llfi_index !4344
   call void @doProfiling(i32 26)
-  %2 = alloca i64, align 8, !llfi_index !4346
+  %2 = alloca i64, align 8, !llfi_index !4345
   call void @doProfiling(i32 26)
-  %3 = alloca i64, align 8, !llfi_index !4347
+  %3 = alloca i64, align 8, !llfi_index !4346
   call void @doProfiling(i32 26)
-  %4 = alloca i64, align 8, !llfi_index !4348
+  %4 = alloca i64, align 8, !llfi_index !4347
   call void @doProfiling(i32 26)
-  %5 = alloca i64, align 8, !llfi_index !4349
+  %5 = alloca i64, align 8, !llfi_index !4348
   call void @doProfiling(i32 26)
-  store double** %m, double*** %1, align 8, !llfi_index !4350
-  store i64 %nrl, i64* %2, align 8, !llfi_index !4351
-  store i64 %nrh, i64* %3, align 8, !llfi_index !4352
-  store i64 %ncl, i64* %4, align 8, !llfi_index !4353
-  store i64 %nch, i64* %5, align 8, !llfi_index !4354
-  %6 = load i64* %2, align 8, !llfi_index !4355
+  store double** %m, double*** %1, align 8, !llfi_index !4349
+  store i64 %nrl, i64* %2, align 8, !llfi_index !4350
+  store i64 %nrh, i64* %3, align 8, !llfi_index !4351
+  store i64 %ncl, i64* %4, align 8, !llfi_index !4352
+  store i64 %nch, i64* %5, align 8, !llfi_index !4353
+  %6 = load i64* %2, align 8, !llfi_index !4354
   call void @doProfiling(i32 27)
-  %7 = load double*** %1, align 8, !llfi_index !4356
+  %7 = load double*** %1, align 8, !llfi_index !4355
   call void @doProfiling(i32 27)
-  %8 = getelementptr inbounds double** %7, i64 %6, !llfi_index !4357
+  %8 = getelementptr inbounds double** %7, i64 %6, !llfi_index !4356
   call void @doProfiling(i32 29)
-  %9 = load double** %8, align 8, !llfi_index !4358
+  %9 = load double** %8, align 8, !llfi_index !4357
   call void @doProfiling(i32 27)
-  %10 = load i64* %4, align 8, !llfi_index !4359
+  %10 = load i64* %4, align 8, !llfi_index !4358
   call void @doProfiling(i32 27)
-  %11 = getelementptr inbounds double* %9, i64 %10, !llfi_index !4360
+  %11 = getelementptr inbounds double* %9, i64 %10, !llfi_index !4359
   call void @doProfiling(i32 29)
-  %12 = getelementptr inbounds double* %11, i64 -1, !llfi_index !4361
+  %12 = getelementptr inbounds double* %11, i64 -1, !llfi_index !4360
   call void @doProfiling(i32 29)
-  %13 = bitcast double* %12 to i8*, !llfi_index !4362
+  %13 = bitcast double* %12 to i8*, !llfi_index !4361
   call void @doProfiling(i32 44)
-  call void @free(i8* %13) #5, !llfi_index !4363
-  %14 = load double*** %1, align 8, !llfi_index !4364
+  call void @free(i8* %13) #5, !llfi_index !4362
+  %14 = load double*** %1, align 8, !llfi_index !4363
   call void @doProfiling(i32 27)
-  %15 = load i64* %2, align 8, !llfi_index !4365
+  %15 = load i64* %2, align 8, !llfi_index !4364
   call void @doProfiling(i32 27)
-  %16 = getelementptr inbounds double** %14, i64 %15, !llfi_index !4366
+  %16 = getelementptr inbounds double** %14, i64 %15, !llfi_index !4365
   call void @doProfiling(i32 29)
-  %17 = getelementptr inbounds double** %16, i64 -1, !llfi_index !4367
+  %17 = getelementptr inbounds double** %16, i64 -1, !llfi_index !4366
   call void @doProfiling(i32 29)
-  %18 = bitcast double** %17 to i8*, !llfi_index !4368
+  %18 = bitcast double** %17 to i8*, !llfi_index !4367
   call void @doProfiling(i32 44)
-  call void @free(i8* %18) #5, !llfi_index !4369
-  ret void, !llfi_index !4370
+  call void @free(i8* %18) #5, !llfi_index !4368
+  ret void, !llfi_index !4369
 }
 
 ; Function Attrs: nounwind uwtable
 define double @_Z7RanUnifPl(i64* %s) #0 {
-  %1 = alloca i64*, align 8, !llfi_index !4371
+  %1 = alloca i64*, align 8, !llfi_index !4370
   call void @doProfiling(i32 26)
-  %ix = alloca i64, align 8, !llfi_index !4372
+  %ix = alloca i64, align 8, !llfi_index !4371
   call void @doProfiling(i32 26)
-  %k1 = alloca i64, align 8, !llfi_index !4373
+  %k1 = alloca i64, align 8, !llfi_index !4372
   call void @doProfiling(i32 26)
-  %dRes = alloca double, align 8, !llfi_index !4374
+  %dRes = alloca double, align 8, !llfi_index !4373
   call void @doProfiling(i32 26)
-  store i64* %s, i64** %1, align 8, !llfi_index !4375
-  %2 = load i64** %1, align 8, !llfi_index !4376
+  store i64* %s, i64** %1, align 8, !llfi_index !4374
+  %2 = load i64** %1, align 8, !llfi_index !4375
   call void @doProfiling(i32 27)
-  %3 = load i64* %2, align 8, !llfi_index !4377
+  %3 = load i64* %2, align 8, !llfi_index !4376
   call void @doProfiling(i32 27)
-  store i64 %3, i64* %ix, align 8, !llfi_index !4378
-  %4 = load i64* %ix, align 8, !llfi_index !4379
+  store i64 %3, i64* %ix, align 8, !llfi_index !4377
+  %4 = load i64* %ix, align 8, !llfi_index !4378
   call void @doProfiling(i32 27)
-  %5 = sdiv i64 %4, 127773, !llfi_index !4380
+  %5 = sdiv i64 %4, 127773, !llfi_index !4379
   call void @doProfiling(i32 15)
-  store i64 %5, i64* %k1, align 8, !llfi_index !4381
-  %6 = load i64* %ix, align 8, !llfi_index !4382
+  store i64 %5, i64* %k1, align 8, !llfi_index !4380
+  %6 = load i64* %ix, align 8, !llfi_index !4381
   call void @doProfiling(i32 27)
-  %7 = load i64* %k1, align 8, !llfi_index !4383
+  %7 = load i64* %k1, align 8, !llfi_index !4382
   call void @doProfiling(i32 27)
-  %8 = mul nsw i64 %7, 127773, !llfi_index !4384
+  %8 = mul nsw i64 %7, 127773, !llfi_index !4383
   call void @doProfiling(i32 12)
-  %9 = sub nsw i64 %6, %8, !llfi_index !4385
+  %9 = sub nsw i64 %6, %8, !llfi_index !4384
   call void @doProfiling(i32 10)
-  %10 = mul nsw i64 16807, %9, !llfi_index !4386
+  %10 = mul nsw i64 16807, %9, !llfi_index !4385
   call void @doProfiling(i32 12)
-  %11 = load i64* %k1, align 8, !llfi_index !4387
+  %11 = load i64* %k1, align 8, !llfi_index !4386
   call void @doProfiling(i32 27)
-  %12 = mul nsw i64 %11, 2836, !llfi_index !4388
+  %12 = mul nsw i64 %11, 2836, !llfi_index !4387
   call void @doProfiling(i32 12)
-  %13 = sub nsw i64 %10, %12, !llfi_index !4389
+  %13 = sub nsw i64 %10, %12, !llfi_index !4388
   call void @doProfiling(i32 10)
-  store i64 %13, i64* %ix, align 8, !llfi_index !4390
-  %14 = load i64* %ix, align 8, !llfi_index !4391
+  store i64 %13, i64* %ix, align 8, !llfi_index !4389
+  %14 = load i64* %ix, align 8, !llfi_index !4390
   call void @doProfiling(i32 27)
-  %15 = icmp slt i64 %14, 0, !llfi_index !4392
+  %15 = icmp slt i64 %14, 0, !llfi_index !4391
   call void @doProfiling(i32 46)
-  br i1 %15, label %16, label %19, !llfi_index !4393
+  br i1 %15, label %16, label %19, !llfi_index !4392
 
 ; <label>:16                                      ; preds = %0
-  %17 = load i64* %ix, align 8, !llfi_index !4394
+  %17 = load i64* %ix, align 8, !llfi_index !4393
   call void @doProfiling(i32 27)
-  %18 = add nsw i64 %17, 2147483647, !llfi_index !4395
+  %18 = add nsw i64 %17, 2147483647, !llfi_index !4394
   call void @doProfiling(i32 8)
-  store i64 %18, i64* %ix, align 8, !llfi_index !4396
-  br label %19, !llfi_index !4397
+  store i64 %18, i64* %ix, align 8, !llfi_index !4395
+  br label %19, !llfi_index !4396
 
 ; <label>:19                                      ; preds = %16, %0
-  %20 = load i64* %ix, align 8, !llfi_index !4398
+  %20 = load i64* %ix, align 8, !llfi_index !4397
   call void @doProfiling(i32 27)
-  %21 = load i64** %1, align 8, !llfi_index !4399
+  %21 = load i64** %1, align 8, !llfi_index !4398
   call void @doProfiling(i32 27)
-  store i64 %20, i64* %21, align 8, !llfi_index !4400
-  %22 = load i64* %ix, align 8, !llfi_index !4401
+  store i64 %20, i64* %21, align 8, !llfi_index !4399
+  %22 = load i64* %ix, align 8, !llfi_index !4400
   call void @doProfiling(i32 27)
-  %23 = sitofp i64 %22 to double, !llfi_index !4402
+  %23 = sitofp i64 %22 to double, !llfi_index !4401
   call void @doProfiling(i32 39)
-  %24 = fmul double %23, 0x3E000000001C5F68, !llfi_index !4403
+  %24 = fmul double %23, 0x3E000000001C5F68, !llfi_index !4402
   call void @doProfiling(i32 13)
-  store double %24, double* %dRes, align 8, !llfi_index !4404
-  %25 = load double* %dRes, align 8, !llfi_index !4405
+  store double %24, double* %dRes, align 8, !llfi_index !4403
+  %25 = load double* %dRes, align 8, !llfi_index !4404
   call void @doProfiling(i32 27)
-  ret double %25, !llfi_index !4406
+  ret double %25, !llfi_index !4405
 }
 
 declare void @doProfiling(i32)
@@ -13252,4 +13250,3 @@ attributes #10 = { nounwind readonly }
 !4403 = metadata !{i64 4403}
 !4404 = metadata !{i64 4404}
 !4405 = metadata !{i64 4405}
-!4406 = metadata !{i64 4406}
