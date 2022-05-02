@@ -1342,3 +1342,753 @@ Run with default timeout 500
 	 time taken 149 
 
 [======>--------------------------------------------] 13.4% (268 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 323 
+
+[======>--------------------------------------------] 13.5% (269 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 308 
+
+[======>--------------------------------------------] 13.5% (270 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 313 
+
+[======>--------------------------------------------] 13.6% (271 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 307 
+
+[======>--------------------------------------------] 13.6% (272 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 172 
+
+[======>--------------------------------------------] 13.7% (273 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 318 
+
+[======>--------------------------------------------] 13.7% (274 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 295 
+
+[======>--------------------------------------------] 13.8% (275 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 296 
+
+[======>--------------------------------------------] 13.8% (276 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 302 
+
+[======>--------------------------------------------] 13.9% (277 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 317 
+
+[======>--------------------------------------------] 13.9% (278 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 304 
+
+[======>--------------------------------------------] 14.0% (279 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 273 
+
+[=======>-------------------------------------------] 14.0% (280 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 323 
+
+[=======>-------------------------------------------] 14.1% (281 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 309 
+
+[=======>-------------------------------------------] 14.1% (282 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 322 
+
+[=======>-------------------------------------------] 14.1% (283 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 309 
+
+[=======>-------------------------------------------] 14.2% (284 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 210 
+
+[=======>-------------------------------------------] 14.2% (285 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 306 
+
+[=======>-------------------------------------------] 14.3% (286 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 193 
+
+[=======>-------------------------------------------] 14.3% (287 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 296 
+
+[=======>-------------------------------------------] 14.4% (288 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 202 
+
+[=======>-------------------------------------------] 14.4% (289 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 24 
+
+[=======>-------------------------------------------] 14.5% (290 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 317 
+
+[=======>-------------------------------------------] 14.5% (291 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 294 
+
+[=======>-------------------------------------------] 14.6% (292 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 111 
+
+[=======>-------------------------------------------] 14.6% (293 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 82 
+
+[=======>-------------------------------------------] 14.7% (294 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 277 
+
+[=======>-------------------------------------------] 14.8% (295 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 73 
+
+[=======>-------------------------------------------] 14.8% (296 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 304 
+
+[=======>-------------------------------------------] 14.8% (297 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 318 
+
+[=======>-------------------------------------------] 14.9% (298 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 308 
+
+[=======>-------------------------------------------] 14.9% (299 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 325 
+
+[=======>-------------------------------------------] 15.0% (300 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 296 
+
+[=======>-------------------------------------------] 15.0% (301 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 310 
+
+[=======>-------------------------------------------] 15.1% (302 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 317 
+
+[=======>-------------------------------------------] 15.2% (303 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 297 
+
+[=======>-------------------------------------------] 15.2% (304 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 162 
+
+[=======>-------------------------------------------] 15.2% (305 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 321 
+
+[=======>-------------------------------------------] 15.3% (306 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 323 
+
+[=======>-------------------------------------------] 15.3% (307 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 301 
+
+[=======>-------------------------------------------] 15.4% (308 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 123 
+
+[=======>-------------------------------------------] 15.4% (309 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 89 
+
+[=======>-------------------------------------------] 15.5% (310 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 302 
+
+[=======>-------------------------------------------] 15.6% (311 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 18 
+
+[=======>-------------------------------------------] 15.6% (312 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 196 
+
+[=======>-------------------------------------------] 15.7% (313 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 318 
+
+[=======>-------------------------------------------] 15.7% (314 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 292 
+
+[=======>-------------------------------------------] 15.8% (315 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 319 
+
+[=======>-------------------------------------------] 15.8% (316 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 309 
+
+[=======>-------------------------------------------] 15.8% (317 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 162 
+
+[=======>-------------------------------------------] 15.9% (318 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 308 
+
+[=======>-------------------------------------------] 16.0% (319 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 97 
+
+[========>------------------------------------------] 16.0% (320 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 48 
+
+[========>------------------------------------------] 16.1% (321 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 262 
+
+[========>------------------------------------------] 16.1% (322 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 123 
+
+[========>------------------------------------------] 16.2% (323 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 316 
+
+[========>------------------------------------------] 16.2% (324 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 156 
+
+[========>------------------------------------------] 16.2% (325 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 206 
+
+[========>------------------------------------------] 16.3% (326 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 33 
+
+[========>------------------------------------------] 16.4% (327 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 53 
+
+[========>------------------------------------------] 16.4% (328 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 123 
+
+[========>------------------------------------------] 16.4% (329 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 73 
+
+[========>------------------------------------------] 16.5% (330 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 319 
+
+[========>------------------------------------------] 16.6% (331 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 307 
+
+[========>------------------------------------------] 16.6% (332 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 302 
+
+[========>------------------------------------------] 16.7% (333 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 311 
+
+[========>------------------------------------------] 16.7% (334 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 330 
+
+[========>------------------------------------------] 16.8% (335 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 67 
+
+[========>------------------------------------------] 16.8% (336 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 276 
+
+[========>------------------------------------------] 16.9% (337 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 314 
+
+[========>------------------------------------------] 16.9% (338 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 316 
+
+[========>------------------------------------------] 17.0% (339 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 307 
+
+[========>------------------------------------------] 17.0% (340 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 309 
+
+[========>------------------------------------------] 17.1% (341 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 327 
+
+[========>------------------------------------------] 17.1% (342 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 195 
+
+[========>------------------------------------------] 17.2% (343 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 234 
+
+[========>------------------------------------------] 17.2% (344 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 320 
+
+[========>------------------------------------------] 17.2% (345 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 50 
+
+[========>------------------------------------------] 17.3% (346 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 310 
+
+[========>------------------------------------------] 17.3% (347 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 307 
+
+[========>------------------------------------------] 17.4% (348 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 324 
+
+[========>------------------------------------------] 17.4% (349 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 306 
+
+[========>------------------------------------------] 17.5% (350 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 304 
+
+[========>------------------------------------------] 17.5% (351 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 299 
+
+[========>------------------------------------------] 17.6% (352 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 311 
+
+[========>------------------------------------------] 17.6% (353 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 310 
+
+[========>------------------------------------------] 17.7% (354 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 326 
+
+[========>------------------------------------------] 17.8% (355 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 311 
+
+[========>------------------------------------------] 17.8% (356 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 4 
+
+[========>------------------------------------------] 17.8% (357 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 52 
+
+[========>------------------------------------------] 17.9% (358 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 266 
+
+[========>------------------------------------------] 17.9% (359 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 300 
+
+[=========>-----------------------------------------] 18.0% (360 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 321 
+
+[=========>-----------------------------------------] 18.1% (361 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 297 
+
+[=========>-----------------------------------------] 18.1% (362 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 211 
+
+[=========>-----------------------------------------] 18.1% (363 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 318 
+
+[=========>-----------------------------------------] 18.2% (364 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 317 
+
+[=========>-----------------------------------------] 18.2% (365 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 320 
+
+[=========>-----------------------------------------] 18.3% (366 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 25 
+
+[=========>-----------------------------------------] 18.4% (367 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 143 
+
+[=========>-----------------------------------------] 18.4% (368 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 310 
+
+[=========>-----------------------------------------] 18.4% (369 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 124 
+
+[=========>-----------------------------------------] 18.5% (370 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 254 
+
+[=========>-----------------------------------------] 18.6% (371 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 300 
+
+[=========>-----------------------------------------] 18.6% (372 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 306 
+
+[=========>-----------------------------------------] 18.6% (373 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 307 
+
+[=========>-----------------------------------------] 18.7% (374 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 259 
+
+[=========>-----------------------------------------] 18.8% (375 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 329 
+
+[=========>-----------------------------------------] 18.8% (376 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 328 
+
+[=========>-----------------------------------------] 18.9% (377 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 310 
+
+[=========>-----------------------------------------] 18.9% (378 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 185 
+
+[=========>-----------------------------------------] 18.9% (379 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 307 
+
+[=========>-----------------------------------------] 19.0% (380 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 315 
+
+[=========>-----------------------------------------] 19.1% (381 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 305 
+
+[=========>-----------------------------------------] 19.1% (382 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 327 
+
+[=========>-----------------------------------------] 19.1% (383 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 296 
+
+[=========>-----------------------------------------] 19.2% (384 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 322 
+
+[=========>-----------------------------------------] 19.2% (385 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 325 
+
+[=========>-----------------------------------------] 19.3% (386 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 315 
+
+[=========>-----------------------------------------] 19.4% (387 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 32 
+
+[=========>-----------------------------------------] 19.4% (388 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 328 
+
+[=========>-----------------------------------------] 19.4% (389 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 273 
+
+[=========>-----------------------------------------] 19.5% (390 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 95 
+
+[=========>-----------------------------------------] 19.6% (391 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 309 
+
+[=========>-----------------------------------------] 19.6% (392 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 100 
+
+[=========>-----------------------------------------] 19.7% (393 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 148 
+
+[=========>-----------------------------------------] 19.7% (394 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 307 
+
+[=========>-----------------------------------------] 19.8% (395 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 329 
+
+[=========>-----------------------------------------] 19.8% (396 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 313 
+
+[=========>-----------------------------------------] 19.9% (397 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 232 
+
+[=========>-----------------------------------------] 19.9% (398 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 14 
+
+[=========>-----------------------------------------] 20.0% (399 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 175 
+
+[==========>----------------------------------------] 20.0% (400 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 318 
+
+[==========>----------------------------------------] 20.1% (401 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 303 
+
+[==========>----------------------------------------] 20.1% (402 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 319 
+
+[==========>----------------------------------------] 20.2% (403 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 249 
+
+[==========>----------------------------------------] 20.2% (404 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 323 
+
+[==========>----------------------------------------] 20.2% (405 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 324 
+
+[==========>----------------------------------------] 20.3% (406 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 322 
+
+[==========>----------------------------------------] 20.3% (407 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 304 
+
+[==========>----------------------------------------] 20.4% (408 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 42 
+
+[==========>----------------------------------------] 20.4% (409 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 292 
+
+[==========>----------------------------------------] 20.5% (410 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 303 
+
+[==========>----------------------------------------] 20.5% (411 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 100 
+
+[==========>----------------------------------------] 20.6% (412 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 318 
+
+[==========>----------------------------------------] 20.6% (413 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 325 
+
+[==========>----------------------------------------] 20.7% (414 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 317 
+
+[==========>----------------------------------------] 20.8% (415 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 24 
+
+[==========>----------------------------------------] 20.8% (416 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 302 
+
+[==========>----------------------------------------] 20.8% (417 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 307 
+
+[==========>----------------------------------------] 20.9% (418 / 2000)
