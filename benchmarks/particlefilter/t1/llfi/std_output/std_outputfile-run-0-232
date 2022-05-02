@@ -1,1 +1,0 @@
-openmp.out -x <dimX> -y <dimY> -z <Nfr> -np <Nparticles>
