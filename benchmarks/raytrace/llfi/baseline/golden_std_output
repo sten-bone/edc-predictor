@@ -3,4 +3,19 @@ Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open model file inputs/car.geo.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      59760         59760           144 
+     hashtable entries:        678968        678968             8 
+     emptycell entries:          6632          6632             8 
+     voxel:                   1251480       1251480            40 
+     bintree_node:           12370320      12370320           120 
+
+     Totals:                 14367160      14367160      
+

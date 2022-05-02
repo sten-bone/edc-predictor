@@ -2207,3 +2207,23 @@ Run with default timeout 500
 	 time taken 173 
 
 [===========>---------------------------------------] 22.1% (441 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 310 
+
+[===========>---------------------------------------] 22.1% (442 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 312 
+
+[===========>---------------------------------------] 22.1% (443 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish -11
+	 time taken 304 
+
+[===========>---------------------------------------] 22.2% (444 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simlarge/llfi/swaptions-faultinjection.exe -ns 64 -sm 40000 -nt 1
+	 program finish 0
+	 time taken 326 
+
+[===========>---------------------------------------] 22.2% (445 / 2000)

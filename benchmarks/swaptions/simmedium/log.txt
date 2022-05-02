@@ -8827,3 +8827,93 @@ Run with default timeout 500
 	 time taken 83 
 
 [============================================>------] 88.2% (1765 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 85 
+
+[============================================>------] 88.3% (1766 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 85 
+
+[============================================>------] 88.3% (1767 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 78 
+
+[============================================>------] 88.4% (1768 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 79 
+
+[============================================>------] 88.4% (1769 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish -11
+	 time taken 19 
+
+[============================================>------] 88.5% (1770 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 80 
+
+[============================================>------] 88.5% (1771 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 81 
+
+[============================================>------] 88.6% (1772 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 83 
+
+[============================================>------] 88.6% (1773 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 86 
+
+[============================================>------] 88.7% (1774 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish -11
+	 time taken 29 
+
+[============================================>------] 88.8% (1775 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish -11
+	 time taken 44 
+
+[============================================>------] 88.8% (1776 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish -11
+	 time taken 11 
+
+[============================================>------] 88.8% (1777 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 81 
+
+[============================================>------] 88.9% (1778 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish -11
+	 time taken 29 
+
+[============================================>------] 88.9% (1779 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 84 
+
+[============================================>------] 89.0% (1780 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 82 
+
+[============================================>------] 89.0% (1781 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 83 
+
+[============================================>------] 89.1% (1782 / 2000)
+/home/foo/edc-predictor/benchmarks/swaptions/simmedium/llfi/swaptions-faultinjection.exe -ns 32 -sm 20000 -nt 1
+	 program finish 0
+	 time taken 80 
+
+[============================================>------] 89.1% (1783 / 2000)
