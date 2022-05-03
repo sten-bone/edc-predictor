@@ -1,0 +1,21 @@
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      58320         58320           144 
+     hashtable entries:        662568        662568             8 
+     emptycell entries:          6472          6472             8 
+     voxel:                   1211240       1211240            40 
+     bintree_node:           12071520      12071520           120 
+
+     Totals:                 14010120      14010120      
+
