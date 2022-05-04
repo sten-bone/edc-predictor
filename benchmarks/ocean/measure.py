@@ -41,7 +41,7 @@ def is_edc(file_out, golden_file):
     # trailing line is EDC
     if (gline != "" or rline != ""):
         return True
-    return total_diff_pct > 25
+    return total_diff_pct > 0.1
 
 print("\nBegin\n")
 

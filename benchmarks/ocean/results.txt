@@ -1,5 +1,5 @@
-EDC count     = 113
-Non-EDC count = 205
+EDC count     = 172
+Non-EDC count = 146
 Crash count   = 868
 Benign count  = 795
 Hang count    = 19
