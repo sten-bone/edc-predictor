@@ -1,0 +1,11 @@
+x=$1
+
+clang -O$x -emit-llvm -S *.c
+
+llvm-link -S -o ocean.ll jacobcalc.ll laplacalc.ll main.ll multi.ll slave1.ll slave2.ll
+
+# llc -O$x ocean.ll 
+
+# clang -O$x -lm ocean.s -o ocean -pthread
+
+rm jacobcalc.ll laplacalc.ll main.ll multi.ll slave1.ll slave2.ll

@@ -33,13 +33,13 @@ def compute_edc_ranked_count(di_file_name, edc_file_name):
                     di_match = re.search(DI_COUNT_REGEX, di_line)
                     di_inst = int(di_match.group("instruction"))
                     count = float(di_match.group("count"))
-                    ranks.append((di_inst, count, count))
-                    inst_count = di_inst
-                di_match = re.search(DI_COUNT_REGEX, di_file.readline())
-                edc_rank = get_edc_rank(edc_match)
-                count = float(di_match.group("count"))
-                ranks.append((edc_inst, count * edc_rank, count))
-                inst_count = edc_inst
+                    if (di_inst == edc_inst):
+                        edc_rank = get_edc_rank(edc_match)
+                        ranks.append((edc_inst, count * edc_rank, count))
+                        inst_count = edc_inst
+                    else:
+                        ranks.append((di_inst, count, count))
+                        inst_count = di_inst
             di_line = di_file.readline()
             while (di_line != ""):
                 di_match = re.search(DI_COUNT_REGEX, di_line)
